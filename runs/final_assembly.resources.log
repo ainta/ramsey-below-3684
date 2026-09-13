@@ -1,0 +1,37 @@
+WAIT RESOURCE runs/chain_r00_full_second.resources.json
+WAIT RESOURCE runs/outer_r00_full.resources.json
+ASSEMBLE Kernel/ChainChecks/R00NGroup0000
+
+ASSEMBLE Kernel/ChainChecks/R00NGroup0001
+
+ASSEMBLE Kernel/ChainChecks/R00NAll
+'Compact3684.CheckedChain.R00.all_nodeGuard' depends on axioms: [propext, Quot.sound]
+
+ASSEMBLE Kernel/ChainChecks/R00BGroup0000
+
+ASSEMBLE Kernel/ChainChecks/R00BAll
+'Compact3684.CheckedChain.R00.all_blockGuard' depends on axioms: [propext, Quot.sound]
+
+ASSEMBLE Kernel/ChainChecks/R00PGroup0000
+
+ASSEMBLE Kernel/ChainChecks/R00PAll
+'Compact3684.CheckedChain.R00.all_runGuard' depends on axioms: [propext, Quot.sound]
+
+ASSEMBLE Kernel/OuterChecks/R00CAll
+
+ASSEMBLE Kernel/OuterChecks/R00SAll
+
+ASSEMBLE Kernel/OuterChecks/R00Boundary
+
+ASSEMBLE CertifiedRound/R00
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/finish_verification.py", line 81, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/finish_verification.py", line 63, in main
+    build('CertifiedRound/R00')
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/finish_verification.py", line 50, in build
+    subprocess.run(['lean','+v4.32.1','-o',module+'.olean',module+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'CertifiedRound/R00.olean', 'CertifiedRound/R00.lean']' returned non-zero exit status 1.

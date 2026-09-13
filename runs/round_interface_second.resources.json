@@ -1,0 +1,54 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/round_interface_second.json",
+    "--modules",
+    "Ramsey3683Bootstrap/CheckedRoundInterface"
+  ],
+  "elapsed_seconds": 3.4209838840179145,
+  "peak_sampled_rss_kib": 3557232,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13348,
+      1
+    ],
+    [
+      0.571,
+      13360,
+      1
+    ],
+    [
+      1.141,
+      775668,
+      2
+    ],
+    [
+      1.709,
+      2903884,
+      2
+    ],
+    [
+      2.28,
+      3557232,
+      2
+    ],
+    [
+      2.849,
+      13360,
+      1
+    ]
+  ],
+  "log": "runs/round_interface_second.resources.log"
+}

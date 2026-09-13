@@ -1,0 +1,42 @@
+{
+  "status": "PASS_ISOLATED_SELECTED_LOCAL_IMPORT_CLOSURE",
+  "root_module": "Kernel.CheckedProfiles",
+  "modules": [
+    {
+      "module": "Kernel.Log18",
+      "source_sha256": "4180dd2c17557e6cd578afd5b095f7021139c3f61e5c1bc72a6b76c2e1b137db",
+      "object_sha256": "67513687063986ad39616feb3f26ac3bf044581a1b2ddf30666b9d2ebe04be7e",
+      "seconds": 0.5115453340113163,
+      "log": "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/runs/reproduce_kernel_smoke/Kernel/Log18.compile.log"
+    },
+    {
+      "module": "Kernel.ProfileGuard",
+      "source_sha256": "05401bb7fb87516c06fa9846129e07a616173d68acbaae857380d30b96f0ae38",
+      "object_sha256": "b1f9329adf1bae7bd43479312a754667a37c27478698c40764d4d778562a5736",
+      "seconds": 0.5637710279552266,
+      "log": "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/runs/reproduce_kernel_smoke/Kernel/ProfileGuard.compile.log"
+    },
+    {
+      "module": "Kernel.Elementary",
+      "source_sha256": "6573e61878135e3a22d2296f62f57985ec0192318fb11375b139a89d28952b26",
+      "object_sha256": "870bceeeef7d9ca5e26f98ca492e37fcd901d57db6de8d04e5693e2166a8ea58",
+      "seconds": 0.5794896800071001,
+      "log": "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/runs/reproduce_kernel_smoke/Kernel/Elementary.compile.log"
+    },
+    {
+      "module": "Kernel.CheckedProfiles",
+      "source_sha256": "29614311e1a00574f944029de6072b48230771fc1e596b0441a06472e495f69b",
+      "object_sha256": "da4652ce1452ec62086ba51f6fc6172d7d67499e55f93f08e06dff25eb66a1bc",
+      "seconds": 0.48647204600274563,
+      "log": "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/runs/reproduce_kernel_smoke/Kernel/CheckedProfiles.compile.log"
+    }
+  ],
+  "total_modules": 4,
+  "external_modules": [
+    "Std"
+  ],
+  "external_dependency_builds_reused": true,
+  "existing_local_objects_reused": false,
+  "output_root": "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/runs/reproduce_kernel_smoke",
+  "elapsed_seconds": 2.7543360880808905
+}

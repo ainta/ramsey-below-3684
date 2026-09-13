@@ -1,0 +1,99 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/run_guard_bench_r00_second.json",
+    "--modules",
+    "RunGuardBenchR00"
+  ],
+  "elapsed_seconds": 8.548233643989079,
+  "peak_sampled_rss_kib": 1539896,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13364,
+      1
+    ],
+    [
+      0.57,
+      13372,
+      1
+    ],
+    [
+      1.152,
+      840068,
+      2
+    ],
+    [
+      1.721,
+      963840,
+      2
+    ],
+    [
+      2.29,
+      1044832,
+      2
+    ],
+    [
+      2.86,
+      1134440,
+      2
+    ],
+    [
+      3.428,
+      1234408,
+      2
+    ],
+    [
+      3.995,
+      1315052,
+      2
+    ],
+    [
+      4.566,
+      1394120,
+      2
+    ],
+    [
+      5.136,
+      1456944,
+      2
+    ],
+    [
+      5.705,
+      1523604,
+      2
+    ],
+    [
+      6.274,
+      1539896,
+      2
+    ],
+    [
+      6.843,
+      1539896,
+      2
+    ],
+    [
+      7.412,
+      1539896,
+      2
+    ],
+    [
+      7.981,
+      0,
+      0
+    ]
+  ],
+  "log": "runs/run_guard_bench_r00_second.resources.log"
+}

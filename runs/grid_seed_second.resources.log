@@ -1,0 +1,12 @@
+BUILD SUPPORT Ramsey3683Bootstrap/GridSeed
+Ramsey3683Bootstrap/GridSeed.lean:70:62: error: `ring_nf` made no progress on the goal
+'Ramsey3683Bootstrap.gridCandidate_of_weighted_seed' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 45, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 37, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/GridSeed.olean', 'Ramsey3683Bootstrap/GridSeed.lean']' returned non-zero exit status 1.

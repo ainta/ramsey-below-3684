@@ -1,0 +1,59 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/grid_seed_first.json",
+    "--modules",
+    "Ramsey3683Bootstrap/GridSeed"
+  ],
+  "elapsed_seconds": 3.999185135937296,
+  "peak_sampled_rss_kib": 3577012,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 150,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13424,
+      1
+    ],
+    [
+      0.573,
+      13424,
+      1
+    ],
+    [
+      1.147,
+      753604,
+      2
+    ],
+    [
+      1.719,
+      2965580,
+      2
+    ],
+    [
+      2.288,
+      3460248,
+      2
+    ],
+    [
+      2.86,
+      3577012,
+      2
+    ],
+    [
+      3.432,
+      13432,
+      1
+    ]
+  ],
+  "log": "runs/grid_seed_first.resources.log"
+}

@@ -1,0 +1,39 @@
+BUILD SUPPORT Ramsey3683Bootstrap/RoundSound
+Ramsey3683Bootstrap/RoundSound.lean:60:60: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  n ≥ 0
+  m ≥ 0
+  m ≥ 0
+  m + n ≥ 1
+  l ≥ 0
+  l - m ≥ 0
+  k ≥ 0
+  k + l ≥ 0
+  k + l - m - n ≤ -1
+  f ≥ 0
+  e ≥ 0
+  e - f ≥ 1
+  c ≥ 0
+  b ≥ 1
+  a ≥ 1
+  a - c ≥ 1
+where
+ a := ↑d.coverCount
+ b := (d.knot d.coverCount).den
+ c := ↑i
+ e := ↑d.pathCount
+ f := ↑p
+ k := ↑(d.path p).start
+ l := ↑(j - (d.path p).start)
+ m := ↑(d.chain.N - (d.path ↑⟨p, hp⟩).start)
+ n := ↑(d.path ↑⟨p, hp⟩).start
+'Compact3684.Outer.guards_sound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 55, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 47, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/RoundSound.olean', 'Ramsey3683Bootstrap/RoundSound.lean']' returned non-zero exit status 1.

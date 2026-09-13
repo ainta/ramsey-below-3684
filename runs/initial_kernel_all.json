@@ -1,0 +1,408 @@
+{
+  "status": "PASS_FULL_INITIAL_TANGENTS_KERNEL_COMPUTATION_NOT_RAMSEY_THEOREM",
+  "checked_entries": 20000,
+  "total_entries": 20000,
+  "elapsed_seconds": 785.5174492279766,
+  "real_log_soundness": false,
+  "headline_proved": false,
+  "packed": false,
+  "base_modules_reused": true,
+  "chunks": [
+    {
+      "module": "Kernel/InitialTangents/C0000",
+      "entries": 256,
+      "seconds": 10.896669610985555
+    },
+    {
+      "module": "Kernel/InitialTangents/C0001",
+      "entries": 256,
+      "seconds": 11.483398935990408
+    },
+    {
+      "module": "Kernel/InitialTangents/C0002",
+      "entries": 256,
+      "seconds": 11.651101229013875
+    },
+    {
+      "module": "Kernel/InitialTangents/C0003",
+      "entries": 256,
+      "seconds": 11.463210179004818
+    },
+    {
+      "module": "Kernel/InitialTangents/C0004",
+      "entries": 256,
+      "seconds": 10.543475705082528
+    },
+    {
+      "module": "Kernel/InitialTangents/C0005",
+      "entries": 256,
+      "seconds": 10.65788687299937
+    },
+    {
+      "module": "Kernel/InitialTangents/C0006",
+      "entries": 256,
+      "seconds": 10.31821493501775
+    },
+    {
+      "module": "Kernel/InitialTangents/C0007",
+      "entries": 256,
+      "seconds": 10.574505230993964
+    },
+    {
+      "module": "Kernel/InitialTangents/C0008",
+      "entries": 256,
+      "seconds": 10.854760986054316
+    },
+    {
+      "module": "Kernel/InitialTangents/C0009",
+      "entries": 256,
+      "seconds": 10.577319014933892
+    },
+    {
+      "module": "Kernel/InitialTangents/C0010",
+      "entries": 256,
+      "seconds": 11.636772922007367
+    },
+    {
+      "module": "Kernel/InitialTangents/C0011",
+      "entries": 256,
+      "seconds": 11.505981697002426
+    },
+    {
+      "module": "Kernel/InitialTangents/C0012",
+      "entries": 256,
+      "seconds": 10.664252802031115
+    },
+    {
+      "module": "Kernel/InitialTangents/C0013",
+      "entries": 256,
+      "seconds": 12.919772999943234
+    },
+    {
+      "module": "Kernel/InitialTangents/C0014",
+      "entries": 256,
+      "seconds": 17.49556362698786
+    },
+    {
+      "module": "Kernel/InitialTangents/C0015",
+      "entries": 256,
+      "seconds": 17.912386956973933
+    },
+    {
+      "module": "Kernel/InitialTangents/C0016",
+      "entries": 256,
+      "seconds": 29.742539889062755
+    },
+    {
+      "module": "Kernel/InitialTangents/C0017",
+      "entries": 256,
+      "seconds": 21.838436137069948
+    },
+    {
+      "module": "Kernel/InitialTangents/C0018",
+      "entries": 256,
+      "seconds": 11.96436399500817
+    },
+    {
+      "module": "Kernel/InitialTangents/C0019",
+      "entries": 256,
+      "seconds": 9.063664049957879
+    },
+    {
+      "module": "Kernel/InitialTangents/C0020",
+      "entries": 256,
+      "seconds": 9.001527516986243
+    },
+    {
+      "module": "Kernel/InitialTangents/C0021",
+      "entries": 256,
+      "seconds": 8.949371517053805
+    },
+    {
+      "module": "Kernel/InitialTangents/C0022",
+      "entries": 256,
+      "seconds": 8.727691948995925
+    },
+    {
+      "module": "Kernel/InitialTangents/C0023",
+      "entries": 256,
+      "seconds": 8.83219928399194
+    },
+    {
+      "module": "Kernel/InitialTangents/C0024",
+      "entries": 256,
+      "seconds": 8.634296591044404
+    },
+    {
+      "module": "Kernel/InitialTangents/C0025",
+      "entries": 256,
+      "seconds": 8.65563882899005
+    },
+    {
+      "module": "Kernel/InitialTangents/C0026",
+      "entries": 256,
+      "seconds": 8.775620314991102
+    },
+    {
+      "module": "Kernel/InitialTangents/C0027",
+      "entries": 256,
+      "seconds": 8.849795177928172
+    },
+    {
+      "module": "Kernel/InitialTangents/C0028",
+      "entries": 256,
+      "seconds": 8.799364875885658
+    },
+    {
+      "module": "Kernel/InitialTangents/C0029",
+      "entries": 256,
+      "seconds": 8.703885663999245
+    },
+    {
+      "module": "Kernel/InitialTangents/C0030",
+      "entries": 256,
+      "seconds": 8.723745121038519
+    },
+    {
+      "module": "Kernel/InitialTangents/C0031",
+      "entries": 256,
+      "seconds": 8.725398448994383
+    },
+    {
+      "module": "Kernel/InitialTangents/C0032",
+      "entries": 256,
+      "seconds": 8.672607423039153
+    },
+    {
+      "module": "Kernel/InitialTangents/C0033",
+      "entries": 256,
+      "seconds": 8.600533221964724
+    },
+    {
+      "module": "Kernel/InitialTangents/C0034",
+      "entries": 256,
+      "seconds": 8.633422915940173
+    },
+    {
+      "module": "Kernel/InitialTangents/C0035",
+      "entries": 256,
+      "seconds": 8.543411656981334
+    },
+    {
+      "module": "Kernel/InitialTangents/C0036",
+      "entries": 256,
+      "seconds": 8.636013008072041
+    },
+    {
+      "module": "Kernel/InitialTangents/C0037",
+      "entries": 256,
+      "seconds": 8.848922682926059
+    },
+    {
+      "module": "Kernel/InitialTangents/C0038",
+      "entries": 256,
+      "seconds": 8.885149606969208
+    },
+    {
+      "module": "Kernel/InitialTangents/C0039",
+      "entries": 256,
+      "seconds": 8.807278101914562
+    },
+    {
+      "module": "Kernel/InitialTangents/C0040",
+      "entries": 256,
+      "seconds": 8.812084071105346
+    },
+    {
+      "module": "Kernel/InitialTangents/C0041",
+      "entries": 256,
+      "seconds": 8.747234000009485
+    },
+    {
+      "module": "Kernel/InitialTangents/C0042",
+      "entries": 256,
+      "seconds": 8.769173259963281
+    },
+    {
+      "module": "Kernel/InitialTangents/C0043",
+      "entries": 256,
+      "seconds": 8.698649300029501
+    },
+    {
+      "module": "Kernel/InitialTangents/C0044",
+      "entries": 256,
+      "seconds": 8.79295882594306
+    },
+    {
+      "module": "Kernel/InitialTangents/C0045",
+      "entries": 256,
+      "seconds": 8.768985046073794
+    },
+    {
+      "module": "Kernel/InitialTangents/C0046",
+      "entries": 256,
+      "seconds": 8.695155123947188
+    },
+    {
+      "module": "Kernel/InitialTangents/C0047",
+      "entries": 256,
+      "seconds": 8.63671561400406
+    },
+    {
+      "module": "Kernel/InitialTangents/C0048",
+      "entries": 256,
+      "seconds": 8.76136200898327
+    },
+    {
+      "module": "Kernel/InitialTangents/C0049",
+      "entries": 256,
+      "seconds": 8.634038671967573
+    },
+    {
+      "module": "Kernel/InitialTangents/C0050",
+      "entries": 256,
+      "seconds": 8.645624776021577
+    },
+    {
+      "module": "Kernel/InitialTangents/C0051",
+      "entries": 256,
+      "seconds": 12.730556136113591
+    },
+    {
+      "module": "Kernel/InitialTangents/C0052",
+      "entries": 256,
+      "seconds": 8.920104240067303
+    },
+    {
+      "module": "Kernel/InitialTangents/C0053",
+      "entries": 256,
+      "seconds": 8.873385958955623
+    },
+    {
+      "module": "Kernel/InitialTangents/C0054",
+      "entries": 256,
+      "seconds": 8.943103936035186
+    },
+    {
+      "module": "Kernel/InitialTangents/C0055",
+      "entries": 256,
+      "seconds": 8.94783360499423
+    },
+    {
+      "module": "Kernel/InitialTangents/C0056",
+      "entries": 256,
+      "seconds": 9.080380100989714
+    },
+    {
+      "module": "Kernel/InitialTangents/C0057",
+      "entries": 256,
+      "seconds": 8.85359317297116
+    },
+    {
+      "module": "Kernel/InitialTangents/C0058",
+      "entries": 256,
+      "seconds": 8.90453370497562
+    },
+    {
+      "module": "Kernel/InitialTangents/C0059",
+      "entries": 256,
+      "seconds": 8.896973896073177
+    },
+    {
+      "module": "Kernel/InitialTangents/C0060",
+      "entries": 256,
+      "seconds": 9.46268764603883
+    },
+    {
+      "module": "Kernel/InitialTangents/C0061",
+      "entries": 256,
+      "seconds": 10.443804170005023
+    },
+    {
+      "module": "Kernel/InitialTangents/C0062",
+      "entries": 256,
+      "seconds": 8.90438195108436
+    },
+    {
+      "module": "Kernel/InitialTangents/C0063",
+      "entries": 256,
+      "seconds": 8.92381698207464
+    },
+    {
+      "module": "Kernel/InitialTangents/C0064",
+      "entries": 256,
+      "seconds": 9.77518939098809
+    },
+    {
+      "module": "Kernel/InitialTangents/C0065",
+      "entries": 256,
+      "seconds": 9.719329054001719
+    },
+    {
+      "module": "Kernel/InitialTangents/C0066",
+      "entries": 256,
+      "seconds": 8.806873600929976
+    },
+    {
+      "module": "Kernel/InitialTangents/C0067",
+      "entries": 256,
+      "seconds": 8.747201256104745
+    },
+    {
+      "module": "Kernel/InitialTangents/C0068",
+      "entries": 256,
+      "seconds": 8.856598646030761
+    },
+    {
+      "module": "Kernel/InitialTangents/C0069",
+      "entries": 256,
+      "seconds": 8.868400702020153
+    },
+    {
+      "module": "Kernel/InitialTangents/C0070",
+      "entries": 256,
+      "seconds": 8.868868630030192
+    },
+    {
+      "module": "Kernel/InitialTangents/C0071",
+      "entries": 256,
+      "seconds": 8.893064965028316
+    },
+    {
+      "module": "Kernel/InitialTangents/C0072",
+      "entries": 256,
+      "seconds": 10.186582246096805
+    },
+    {
+      "module": "Kernel/InitialTangents/C0073",
+      "entries": 256,
+      "seconds": 9.637026128009893
+    },
+    {
+      "module": "Kernel/InitialTangents/C0074",
+      "entries": 256,
+      "seconds": 8.797516132937744
+    },
+    {
+      "module": "Kernel/InitialTangents/C0075",
+      "entries": 256,
+      "seconds": 8.93001428002026
+    },
+    {
+      "module": "Kernel/InitialTangents/C0076",
+      "entries": 256,
+      "seconds": 8.814663917990401
+    },
+    {
+      "module": "Kernel/InitialTangents/C0077",
+      "entries": 256,
+      "seconds": 8.734135074890219
+    },
+    {
+      "module": "Kernel/InitialTangents/C0078",
+      "entries": 32,
+      "seconds": 1.2127913830336183
+    }
+  ],
+  "source_catalog_sha256": "29ad691556cfde6f54f2857cf9a301df7e123e179ee3a9e6a0fffcd0896c6795"
+}

@@ -1,0 +1,18 @@
+BUILD SUPPORT Ramsey3683Bootstrap/GridSeed
+Ramsey3683Bootstrap/GridSeed.lean:74:12: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/GridSeed.lean:74:12: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'Ramsey3683Bootstrap.gridCandidate_of_weighted_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Ramsey3683Bootstrap/GridSeed"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 3.041725627030246,
+  "headline_proved": false
+}

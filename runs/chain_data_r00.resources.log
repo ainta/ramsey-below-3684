@@ -1,0 +1,37 @@
+BUILD SUPPORT Kernel/PackedChain
+BUILD SUPPORT Kernel/ProfileAccess/R00
+'Compact3684.Reflected.R00.all_regions' depends on axioms: [propext, Quot.sound]
+'Compact3684.Reflected.R00.all_shapes' depends on axioms: [propext, Quot.sound]
+BUILD SUPPORT Kernel/ChainData/R00N0000
+BUILD SUPPORT Kernel/ChainData/R00N0001
+BUILD SUPPORT Kernel/ChainData/R00N0002
+BUILD SUPPORT Kernel/ChainData/R00P0000
+BUILD SUPPORT Kernel/ChainData/R00P0001
+BUILD SUPPORT Kernel/ChainData/R00P0002
+BUILD SUPPORT Kernel/ChainData/R00L0000
+BUILD SUPPORT Kernel/ChainData/R00L0001
+BUILD SUPPORT Kernel/ChainData/R00L0002
+BUILD SUPPORT Kernel/ChainData/R00L0003
+BUILD SUPPORT Kernel/ChainData/R00
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Kernel/PackedChain",
+    "Kernel/ProfileAccess/R00",
+    "Kernel/ChainData/R00N0000",
+    "Kernel/ChainData/R00N0001",
+    "Kernel/ChainData/R00N0002",
+    "Kernel/ChainData/R00P0000",
+    "Kernel/ChainData/R00P0001",
+    "Kernel/ChainData/R00P0002",
+    "Kernel/ChainData/R00L0000",
+    "Kernel/ChainData/R00L0001",
+    "Kernel/ChainData/R00L0002",
+    "Kernel/ChainData/R00L0003",
+    "Kernel/ChainData/R00"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 286.28492185811047,
+  "headline_proved": false
+}

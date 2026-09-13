@@ -1,0 +1,12 @@
+BUILD SUPPORT CertifiedRound/R07
+'Compact3684.CertifiedRound.R07.valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "CertifiedRound/R07"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 2.8276870700065047,
+  "headline_proved": false
+}

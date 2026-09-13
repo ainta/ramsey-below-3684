@@ -1,0 +1,59 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/log_interval_first.json",
+    "--modules",
+    "Kernel/LogInterval"
+  ],
+  "elapsed_seconds": 4.143107766984031,
+  "peak_sampled_rss_kib": 3466300,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 150,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13004,
+      1
+    ],
+    [
+      0.615,
+      814228,
+      2
+    ],
+    [
+      1.198,
+      342628,
+      2
+    ],
+    [
+      1.795,
+      979884,
+      2
+    ],
+    [
+      2.382,
+      3014172,
+      2
+    ],
+    [
+      2.972,
+      3350768,
+      2
+    ],
+    [
+      3.55,
+      3466300,
+      2
+    ]
+  ],
+  "log": "runs/log_interval_first.resources.log"
+}

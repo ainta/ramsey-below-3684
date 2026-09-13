@@ -1,0 +1,28 @@
+BUILD SUPPORT Ramsey3683Bootstrap/FiniteContinuation
+Ramsey3683Bootstrap/FiniteContinuation.lean:50:4: warning: Try `simp at hb` instead of `simpa using hb`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Ramsey3683Bootstrap/FiniteContinuation.lean:81:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+Ramsey3683Bootstrap/FiniteContinuation.lean:76:5: warning: Variable name `hX` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BUILD SUPPORT Ramsey3683Bootstrap/Preparation
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Ramsey3683Bootstrap/FiniteContinuation",
+    "Ramsey3683Bootstrap/Preparation"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 4.83765305695124,
+  "headline_proved": false
+}

@@ -1,0 +1,30 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "generate_chain_data.py",
+    "--round",
+    "0"
+  ],
+  "elapsed_seconds": 1.1416632439941168,
+  "peak_sampled_rss_kib": 49468,
+  "peak_processes": 1,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 600,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      33688,
+      1
+    ],
+    [
+      0.572,
+      49468,
+      1
+    ]
+  ],
+  "log": "runs/chain_data_generation_r00.resources.log"
+}

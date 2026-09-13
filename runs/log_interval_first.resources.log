@@ -1,0 +1,17 @@
+BUILD SUPPORT Kernel/LogInterval
+Kernel/LogInterval.lean:41:2: error: Type mismatch: After simplification, term
+  ⟨add_le_add ha.left hb.left, add_le_add ha.right hb.right⟩
+ has type
+  value a.1 + value b.1 ≤ x + y ∧ x + y ≤ value a.2 + value b.2
+but is expected to have type
+  value (Log18.plus a b).1 ≤ x + y ∧ x + y ≤ value (Log18.plus a b).2
+Kernel/LogInterval.lean:75:9: error: Tactic `unfold` failed: Local variable `timesInt` has no definition
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 45, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 37, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Kernel/LogInterval.olean', 'Kernel/LogInterval.lean']' returned non-zero exit status 1.

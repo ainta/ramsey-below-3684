@@ -1,0 +1,73 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "check_stable_dependency_exports.py"
+  ],
+  "elapsed_seconds": 6.280004921020009,
+  "peak_sampled_rss_kib": 3514052,
+  "peak_processes": 3,
+  "rss_limit_mib": 6144,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      16288,
+      1
+    ],
+    [
+      0.572,
+      29712,
+      2
+    ],
+    [
+      1.143,
+      774736,
+      3
+    ],
+    [
+      1.713,
+      2451404,
+      3
+    ],
+    [
+      2.282,
+      3514052,
+      3
+    ],
+    [
+      2.85,
+      29728,
+      2
+    ],
+    [
+      3.419,
+      831980,
+      3
+    ],
+    [
+      3.996,
+      524628,
+      3
+    ],
+    [
+      4.567,
+      1611876,
+      3
+    ],
+    [
+      5.139,
+      3343168,
+      3
+    ],
+    [
+      5.711,
+      32172,
+      2
+    ]
+  ],
+  "log": "runs/stable_dependency_exports.resources.log"
+}

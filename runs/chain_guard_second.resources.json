@@ -1,0 +1,44 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/chain_guard_second.json",
+    "--modules",
+    "Kernel/ChainGuard"
+  ],
+  "elapsed_seconds": 2.281321494956501,
+  "peak_sampled_rss_kib": 812500,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      12896,
+      1
+    ],
+    [
+      0.572,
+      812500,
+      2
+    ],
+    [
+      1.141,
+      134500,
+      2
+    ],
+    [
+      1.711,
+      793968,
+      2
+    ]
+  ],
+  "log": "runs/chain_guard_second.resources.log"
+}

@@ -1,0 +1,65 @@
+BUILD SUPPORT Ramsey3683Bootstrap/FinsetCut
+Ramsey3683Bootstrap/FinsetCut.lean:80:4: error: linarith failed to find a contradiction
+V : Type u
+inst✝² : Fintype V
+inst✝¹ : DecidableEq V
+G : SimpleGraph V
+inst✝ : DecidableRel G.Adj
+W : Finset V
+q p : ℝ
+hq : 0 ≤ q
+hqp : q < p
+hW : 2 ≤ #W
+hd : InternalRedAtLeast G W p
+A B : Finset V
+hAB : Disjoint A B
+hcover : A ∪ B = W
+hcut : (↑(redInteredgeCount G W W) - q * ↑(#W) * ↑(#W) + q * ↑(#W)) / 4 ≤ ↑(redInteredgeCount G A B) - q * ↑(#A) * ↑(#B)
+hn : 2 ≤ ↑(#W)
+hnp : 0 < ↑(#W)
+hδ : 0 < p - q
+hcount : p * (↑(#W) * (↑(#W) - 1)) ≤ ↑(redInteredgeCount G W W)
+hprod : 0 ≤ (p - q) * (↑(#W) * (↑(#W) - 2))
+a✝ : excess G q A B < (p - q) / 8 * ↑(#W) ^ 2
+⊢ False
+failed
+Ramsey3683Bootstrap/FinsetCut.lean:97:4: error: linarith failed to find a contradiction
+V : Type u
+inst✝² : Fintype V
+inst✝¹ : DecidableEq V
+G : SimpleGraph V
+inst✝ : DecidableRel G.Adj
+W : Finset V
+q p : ℝ
+hq : 0 ≤ q
+hqp : q < p
+hW : 2 ≤ #W
+hd : InternalRedAtLeast G W p
+A B : Finset V
+hAB : Disjoint A B
+hcover : A ∪ B = W
+hcut : (excess G q W W + q * ↑(#W)) / 4 ≤ excess G q A B
+hn : 2 ≤ ↑(#W)
+hnp : 0 < ↑(#W)
+hδ : 0 < p - q
+hcount : p * (↑(#W) * (↑(#W) - 1)) ≤ ↑(redInteredgeCount G W W)
+hlarge : (p - q) / 8 * ↑(#W) ^ 2 ≤ excess G q A B
+hepos : 0 < (redDensity G A B - q) * (↑(#A) * ↑(#B))
+hc : Candidate G A B
+hAp : 0 < ↑(#A)
+hBp : 0 < ↑(#B)
+hAd : ↑(#A) ≤ ↑(#W)
+hBd : ↑(#B) ≤ ↑(#W)
+hprod : excess G q A B ≤ ↑(#A) * ↑(#B)
+a✝ : redDensity G A B < q
+⊢ False
+failed
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 45, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 37, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/FinsetCut.olean', 'Ramsey3683Bootstrap/FinsetCut.lean']' returned non-zero exit status 1.

@@ -1,0 +1,33 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    "lean",
+    "+v4.32.1",
+    "lean/PrefixRange.lean"
+  ],
+  "elapsed_seconds": 1.7568014889257029,
+  "peak_sampled_rss_kib": 754908,
+  "peak_processes": 1,
+  "rss_limit_mib": 2048,
+  "time_limit_seconds": 120,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      126528,
+      1
+    ],
+    [
+      0.587,
+      561612,
+      1
+    ],
+    [
+      1.171,
+      754908,
+      1
+    ]
+  ],
+  "log": "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/runs/lean_prefix_std.resources.log"
+}

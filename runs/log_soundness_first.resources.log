@@ -1,0 +1,27 @@
+BUILD SUPPORT Kernel/LogInterval
+Kernel/LogInterval.lean:133:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Kernel/LogInterval.lean:206:4: error: Tactic `contradiction` failed
+
+case neg
+n d : ℤ
+a : Interval
+hbad : ¬(n ≤ 0 ∨ d ≤ 0)
+h :
+  (match normalize 128 n d 0 with
+    | none => none
+    | some (nn, dd, k) => some (plus (reduced nn dd) (timesInt logTwoBounds k))) =
+    some a
+⊢ Contains a (Real.log (↑n / ↑d))
+Kernel/LogInterval.lean:207:2: error: No goals to be solved
+'Compact3684.Log18.catalogGuard_sound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 45, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 37, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Kernel/LogInterval.olean', 'Kernel/LogInterval.lean']' returned non-zero exit status 1.

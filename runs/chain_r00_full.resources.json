@@ -1,0 +1,28 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "check_kernel_catalog.py",
+    "--manifest",
+    "lean/Kernel/ChainChecks/R00.json",
+    "--report",
+    "runs/chain_r00_full.json",
+    "--skip-base"
+  ],
+  "elapsed_seconds": 0.5708246199646965,
+  "peak_sampled_rss_kib": 0,
+  "peak_processes": 0,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 7200,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      0,
+      0
+    ]
+  ],
+  "log": "runs/chain_r00_full.resources.log"
+}

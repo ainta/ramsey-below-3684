@@ -1,0 +1,128 @@
+BUILD SUPPORT Kernel/SeedGuard
+BUILD SUPPORT Ramsey3683Bootstrap/Certificate
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Ramsey3683Bootstrap/Certificate.lean:45:74: error: unsolved goals
+cost p : ℤ
+logOneMinusP : CatalogEntry
+h : blueGuard cost p logOneMinusP = true
+hlog : LogValid logOneMinusP
+hg : 0 < cost ∧ 0 < p ∧ p < scale ∧ logOneMinusP.argument = scale - p ∧ 0 < cost * q + scale * logOneMinusP.lo
+hlog' : value logOneMinusP.lo ≤ Real.log (1 - scalar p)
+hn : 0 < ↑(cost * q + scale * logOneMinusP.lo)
+hpositive : 0 < ↑(cost * q + scale * logOneMinusP.lo) / (↑scale * ↑q)
+⊢ ↑cost * (↑scale)⁻¹ + ↑logOneMinusP.lo * (↑q)⁻¹ =
+    ↑cost * (↑scale)⁻¹ * ↑q * (↑q)⁻¹ + ↑scale * (↑scale)⁻¹ * ↑logOneMinusP.lo * (↑q)⁻¹
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Ramsey3683Bootstrap/Certificate.lean:84:86: error: unsolved goals
+s : Seed
+N i j : ℕ
+u v : ℤ
+logMu logOneMinusMu logPi : CatalogEntry
+h : seedGuard s N i j u v logMu logOneMinusMu logPi = true
+hlogMu : LogValid logMu
+hlogOneMinusMu : LogValid logOneMinusMu
+hlogPi : LogValid logPi
+hN : 0 < N
+hi : 0 < i
+hij : i ≤ j
+hjN : j ≤ N
+hθ : 0 < s.theta
+hμ : 0 < s.mu
+hμ1 : s.mu < scale
+hπ : 0 < s.pi
+hπ1 : s.pi < scale
+hargμ : logMu.argument = s.mu
+harg1μ : logOneMinusMu.argument = scale - s.mu
+hargπ : logPi.argument = s.pi
+hden : 0 < densityNumerator s logOneMinusMu.lo logPi.lo
+hbud : 0 < budgetNumerator s N i j u v logMu.lo
+hθR : 0 < scalar s.theta
+hμR : scalar s.mu ∈ Ioo 0 1
+hπR : scalar s.pi ∈ Ioo 0 1
+hμlo : value logMu.lo ≤ Real.log (scalar s.mu)
+hπlo : value logPi.lo ≤ Real.log (scalar s.pi)
+h1μlo : value logOneMinusMu.lo ≤ Real.log (1 - scalar s.mu)
+hn : 0 < ↑(densityNumerator s logOneMinusMu.lo logPi.lo)
+hp : 0 < ↑(densityNumerator s logOneMinusMu.lo logPi.lo) / (↑scale ^ 2 * ↑q)
+⊢ -(↑s.mu * (↑scale)⁻¹ ^ 2 * ↑s.a) - ↑s.mu * (↑scale)⁻¹ ^ 2 * ↑s.theta * ↑logOneMinusMu.lo * (↑q)⁻¹ +
+          (↑scale)⁻¹ * ↑s.a +
+        (↑scale)⁻¹ * ↑s.theta * ↑logOneMinusMu.lo * (↑q)⁻¹ +
+      (↑q)⁻¹ * ↑logPi.lo =
+    -(↑s.mu * (↑scale)⁻¹ ^ 2 * ↑s.a * ↑q * (↑q)⁻¹) - ↑s.mu * (↑scale)⁻¹ ^ 2 * ↑s.theta * ↑logOneMinusMu.lo * (↑q)⁻¹ +
+          ↑scale * (↑scale)⁻¹ ^ 2 * ↑s.a * ↑q * (↑q)⁻¹ +
+        ↑scale * (↑scale)⁻¹ ^ 2 * ↑s.theta * ↑logOneMinusMu.lo * (↑q)⁻¹ +
+      ↑scale ^ 2 * (↑scale)⁻¹ ^ 2 * (↑q)⁻¹ * ↑logPi.lo
+Ramsey3683Bootstrap/Certificate.lean:91:8: error: Application type mismatch: The argument
+  add_le_add_left (mul_le_mul_of_nonneg_left h1μlo (LT.lt.le hθR)) (scalar s.a)
+has type
+  scalar s.theta * value logOneMinusMu.lo + scalar s.a ≤ scalar s.theta * Real.log (1 - scalar s.mu) + scalar s.a
+but is expected to have type
+  scalar s.a + scalar s.theta * value logOneMinusMu.lo ≤ scalar s.a + scalar s.theta * Real.log (1 - scalar s.mu)
+in the application
+  mul_le_mul_of_nonneg_left (add_le_add_left (mul_le_mul_of_nonneg_left h1μlo (LT.lt.le hθR)) (scalar s.a))
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Ramsey3683Bootstrap/Certificate.lean:98:54: error: unsolved goals
+s : Seed
+N i j : ℕ
+u v : ℤ
+logMu logOneMinusMu logPi : CatalogEntry
+h : seedGuard s N i j u v logMu logOneMinusMu logPi = true
+hlogMu : LogValid logMu
+hlogOneMinusMu : LogValid logOneMinusMu
+hlogPi : LogValid logPi
+hN : 0 < N
+hi : 0 < i
+hij : i ≤ j
+hjN : j ≤ N
+hθ : 0 < s.theta
+hμ : 0 < s.mu
+hμ1 : s.mu < scale
+hπ : 0 < s.pi
+hπ1 : s.pi < scale
+hargμ : logMu.argument = s.mu
+harg1μ : logOneMinusMu.argument = scale - s.mu
+hargπ : logPi.argument = s.pi
+hden : 0 < densityNumerator s logOneMinusMu.lo logPi.lo
+hbud : 0 < budgetNumerator s N i j u v logMu.lo
+hθR : 0 < scalar s.theta
+hμR : scalar s.mu ∈ Ioo 0 1
+hπR : scalar s.pi ∈ Ioo 0 1
+hμlo : value logMu.lo ≤ Real.log (scalar s.mu)
+hπlo : value logPi.lo ≤ Real.log (scalar s.pi)
+h1μlo : value logOneMinusMu.lo ≤ Real.log (1 - scalar s.mu)
+hn : 0 < ↑(budgetNumerator s N i j u v logMu.lo)
+hp : 0 < ↑(budgetNumerator s N i j u v logMu.lo) / (↑scale * ↑(valueScale N) * ↑q)
+hNR : ↑N ≠ 0
+⊢ ↑s.theta * ↑u * (↑scale)⁻¹ * (↑unit)⁻¹ + ↑s.theta * (↑scale)⁻¹ * ↑i * ↑logMu.lo * (↑q)⁻¹ - (↑scale)⁻¹ * ↑N * ↑s.a -
+        (↑scale)⁻¹ * ↑j * ↑s.b +
+      ↑v * (↑unit)⁻¹ =
+    ↑s.theta * ↑u * (↑scale)⁻¹ * (↑unit)⁻¹ * ↑q * (↑q)⁻¹ +
+            ↑s.theta * (↑scale)⁻¹ * ↑unit * (↑unit)⁻¹ * ↑i * ↑logMu.lo * (↑q)⁻¹ +
+          ↑scale * (↑scale)⁻¹ * ↑v * (↑unit)⁻¹ * ↑q * (↑q)⁻¹ -
+        (↑scale)⁻¹ * ↑unit * (↑unit)⁻¹ * ↑N * ↑s.a * ↑q * (↑q)⁻¹ -
+      (↑scale)⁻¹ * ↑unit * (↑unit)⁻¹ * ↑j * ↑s.b * ↑q * (↑q)⁻¹
+'Compact3684.Certificate.seedGuard_sound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 45, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 37, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/Certificate.olean', 'Ramsey3683Bootstrap/Certificate.lean']' returned non-zero exit status 1.

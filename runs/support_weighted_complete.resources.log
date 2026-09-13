@@ -1,0 +1,109 @@
+BUILD SUPPORT PrefixRange
+'Compact3684.range_valid_of_bound' depends on axioms: [propext, Quot.sound]
+'Compact3684.range_bound_join' depends on axioms: [propext, Quot.sound]
+'Compact3684.summarize_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.valid_of_checked_summary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.linearLift_compose' depends on axioms: [propext, Quot.sound]
+'Compact3684.linearLift_accepts' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT ControlQuantization
+'Compact3684.support_affine_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.density_exponent_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.weighted_budget_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.blue_budget_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT TerminalNumeric
+'Compact3684.exp_affineA_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.exp_affineD_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.terminal_numeric_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT IntegerLog
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedParameters
+Ramsey3683Bootstrap/WeightedParameters.lean:34:36: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedLocal
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedMoment
+Ramsey3683Bootstrap/WeightedMoment.lean:47:0: warning: automatically included section variable(s) unused in theorem `Ramsey3683Bootstrap.weightedExcessMoment_eq_weightedMoment`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Ramsey3683Bootstrap/WeightedMoment.lean:141:0: warning: automatically included section variable(s) unused in theorem `Ramsey3683Bootstrap.weightedMoment_child_ge`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedEngine
+Ramsey3683Bootstrap/WeightedEngine.lean:130:8: warning: automatically included section variable(s) unused in theorem `_private.Ramsey3683Bootstrap.WeightedEngine.0.Ramsey3683Bootstrap.weighted_minLeft`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Ramsey3683Bootstrap/WeightedEngine.lean:212:33: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/WeightedEngine.lean:212:33: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/WeightedEngine.lean:238:26: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Ramsey3683Bootstrap/WeightedEngine.lean:238:38: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedSchedules
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedSlack
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedConcrete
+Ramsey3683Bootstrap/WeightedConcrete.lean:255:55: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Ramsey3683Bootstrap/WeightedConcrete.lean:286:85: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedUniform
+'Ramsey3683Bootstrap.isGood_of_density_weighted_card_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Ramsey3683Bootstrap/FiniteContinuation
+Ramsey3683Bootstrap/FiniteContinuation.lean:50:4: warning: Try `simp at hb` instead of `simpa using hb`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Ramsey3683Bootstrap/FiniteContinuation.lean:81:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+Ramsey3683Bootstrap/FiniteContinuation.lean:76:5: warning: Variable name `hX` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BUILD SUPPORT Ramsey3683Bootstrap/Preparation
+BUILD SUPPORT Ramsey3683Bootstrap
+BUILD SUPPORT Compact3684
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "PrefixRange",
+    "ControlQuantization",
+    "TerminalNumeric",
+    "IntegerLog",
+    "Ramsey3683Bootstrap/WeightedParameters",
+    "Ramsey3683Bootstrap/WeightedLocal",
+    "Ramsey3683Bootstrap/WeightedMoment",
+    "Ramsey3683Bootstrap/WeightedEngine",
+    "Ramsey3683Bootstrap/WeightedSchedules",
+    "Ramsey3683Bootstrap/WeightedSlack",
+    "Ramsey3683Bootstrap/WeightedConcrete",
+    "Ramsey3683Bootstrap/WeightedUniform",
+    "Ramsey3683Bootstrap/FiniteContinuation",
+    "Ramsey3683Bootstrap/Preparation",
+    "Ramsey3683Bootstrap",
+    "Compact3684"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 41.40651242004242,
+  "headline_proved": false
+}

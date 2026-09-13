@@ -1,0 +1,18 @@
+BUILD SUPPORT Kernel/CheckedProfiles
+BUILD SUPPORT Kernel/ProfileAccess/R00
+'Compact3684.Reflected.R00.all_regions' depends on axioms: [propext, Quot.sound]
+'Compact3684.Reflected.R00.all_shapes' depends on axioms: [propext, Quot.sound]
+BUILD SUPPORT Kernel/CheckedInitial
+'Compact3684.Elementary.CheckedInitial.all_entries' depends on axioms: [propext, Quot.sound]
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Kernel/CheckedProfiles",
+    "Kernel/ProfileAccess/R00",
+    "Kernel/CheckedInitial"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 2.8900800939882174,
+  "headline_proved": false
+}

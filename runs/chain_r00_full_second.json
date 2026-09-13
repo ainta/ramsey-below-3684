@@ -1,0 +1,587 @@
+{
+  "status": "PASS_FULL_CHAIN_0_ALL_GUARDS_KERNEL_COMPUTATION_NOT_RAMSEY_THEOREM",
+  "checked_entries": 219440,
+  "total_entries": 219440,
+  "elapsed_seconds": 1335.7923704780405,
+  "real_log_soundness": false,
+  "headline_proved": false,
+  "packed": false,
+  "base_modules_reused": false,
+  "chunks": [
+    {
+      "module": "Kernel/ChainChecks/R00N00000",
+      "entries": 512,
+      "seconds": 6.925141624058597
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00001",
+      "entries": 512,
+      "seconds": 7.191894558956847
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00002",
+      "entries": 512,
+      "seconds": 7.552496499964036
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00003",
+      "entries": 512,
+      "seconds": 7.573667539982125
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00004",
+      "entries": 512,
+      "seconds": 7.723505814909004
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00005",
+      "entries": 512,
+      "seconds": 7.684096510987729
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00006",
+      "entries": 512,
+      "seconds": 7.78128695092164
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00007",
+      "entries": 512,
+      "seconds": 7.788005191017874
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00008",
+      "entries": 512,
+      "seconds": 7.8296199180185795
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00009",
+      "entries": 512,
+      "seconds": 7.880888687912375
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00010",
+      "entries": 512,
+      "seconds": 7.987618754967116
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00011",
+      "entries": 512,
+      "seconds": 7.7482413509860635
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00012",
+      "entries": 512,
+      "seconds": 8.027069272007793
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00013",
+      "entries": 512,
+      "seconds": 7.748037936980836
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00014",
+      "entries": 512,
+      "seconds": 7.780786128016189
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00015",
+      "entries": 512,
+      "seconds": 7.687954643974081
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00016",
+      "entries": 512,
+      "seconds": 7.821375767001882
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00017",
+      "entries": 512,
+      "seconds": 8.270822243066505
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00018",
+      "entries": 512,
+      "seconds": 7.723615142982453
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00019",
+      "entries": 512,
+      "seconds": 7.682001102017239
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00020",
+      "entries": 512,
+      "seconds": 7.889999173930846
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00021",
+      "entries": 512,
+      "seconds": 7.712177285924554
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00022",
+      "entries": 512,
+      "seconds": 7.876862548990175
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00023",
+      "entries": 512,
+      "seconds": 7.751486310036853
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00024",
+      "entries": 512,
+      "seconds": 7.871804803027771
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00025",
+      "entries": 512,
+      "seconds": 7.671727095032111
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00026",
+      "entries": 512,
+      "seconds": 7.830310472054407
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00027",
+      "entries": 512,
+      "seconds": 7.697716141003184
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00028",
+      "entries": 512,
+      "seconds": 7.730041821952909
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00029",
+      "entries": 512,
+      "seconds": 7.694001155090518
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00030",
+      "entries": 512,
+      "seconds": 7.854133162996732
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00031",
+      "entries": 512,
+      "seconds": 7.6746127649676055
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00032",
+      "entries": 512,
+      "seconds": 7.913386877044104
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00033",
+      "entries": 512,
+      "seconds": 7.80531800200697
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00034",
+      "entries": 512,
+      "seconds": 7.774224409018643
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00035",
+      "entries": 512,
+      "seconds": 7.571538841933943
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00036",
+      "entries": 512,
+      "seconds": 7.713535968097858
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00037",
+      "entries": 512,
+      "seconds": 7.605563670978881
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00038",
+      "entries": 512,
+      "seconds": 7.768297140020877
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00039",
+      "entries": 512,
+      "seconds": 7.5317676240811124
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00040",
+      "entries": 512,
+      "seconds": 7.748825635062531
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00041",
+      "entries": 512,
+      "seconds": 7.609921882976778
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00042",
+      "entries": 512,
+      "seconds": 7.7042670210357755
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00043",
+      "entries": 512,
+      "seconds": 7.502068224013783
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00044",
+      "entries": 512,
+      "seconds": 7.742575246025808
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00045",
+      "entries": 512,
+      "seconds": 7.6984615890542045
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00046",
+      "entries": 512,
+      "seconds": 7.6940117799676955
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00047",
+      "entries": 512,
+      "seconds": 7.499096696032211
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00048",
+      "entries": 512,
+      "seconds": 7.654080225038342
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00049",
+      "entries": 512,
+      "seconds": 7.60071302508004
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00050",
+      "entries": 512,
+      "seconds": 7.681655780063011
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00051",
+      "entries": 512,
+      "seconds": 7.563350259908475
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00052",
+      "entries": 512,
+      "seconds": 7.619189289980568
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00053",
+      "entries": 512,
+      "seconds": 7.627997576026246
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00054",
+      "entries": 512,
+      "seconds": 7.473140666959807
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00055",
+      "entries": 512,
+      "seconds": 7.4469150269869715
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00056",
+      "entries": 512,
+      "seconds": 7.517050419002771
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00057",
+      "entries": 512,
+      "seconds": 7.435632149106823
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00058",
+      "entries": 512,
+      "seconds": 7.592953808954917
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00059",
+      "entries": 512,
+      "seconds": 7.336901206057519
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00060",
+      "entries": 512,
+      "seconds": 7.532249756040983
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00061",
+      "entries": 512,
+      "seconds": 7.446391363977455
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00062",
+      "entries": 512,
+      "seconds": 7.545825752080418
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00063",
+      "entries": 512,
+      "seconds": 7.1803541160188615
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00064",
+      "entries": 512,
+      "seconds": 7.769653092022054
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00065",
+      "entries": 512,
+      "seconds": 7.340265488950536
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00066",
+      "entries": 512,
+      "seconds": 6.56981045298744
+    },
+    {
+      "module": "Kernel/ChainChecks/R00N00067",
+      "entries": 143,
+      "seconds": 1.9799982709810138
+    },
+    {
+      "module": "Kernel/ChainChecks/R00B00000",
+      "entries": 163,
+      "seconds": 0.43839842604938895
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00000",
+      "entries": 4096,
+      "seconds": 17.702081805095077
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00001",
+      "entries": 4096,
+      "seconds": 18.114868529955857
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00002",
+      "entries": 4096,
+      "seconds": 17.81087203102652
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00003",
+      "entries": 4096,
+      "seconds": 17.93349046399817
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00004",
+      "entries": 4096,
+      "seconds": 17.840200231061317
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00005",
+      "entries": 4096,
+      "seconds": 17.939599170000292
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00006",
+      "entries": 4096,
+      "seconds": 18.90063827310223
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00007",
+      "entries": 4096,
+      "seconds": 18.088515715906397
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00008",
+      "entries": 4096,
+      "seconds": 18.13553030102048
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00009",
+      "entries": 4096,
+      "seconds": 17.95665829803329
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00010",
+      "entries": 4096,
+      "seconds": 18.036680790944956
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00011",
+      "entries": 4096,
+      "seconds": 17.90919907402713
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00012",
+      "entries": 4096,
+      "seconds": 18.071077049942687
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00013",
+      "entries": 4096,
+      "seconds": 18.1320237449836
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00014",
+      "entries": 4096,
+      "seconds": 17.92006112902891
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00015",
+      "entries": 4096,
+      "seconds": 18.20134175894782
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00016",
+      "entries": 4096,
+      "seconds": 18.21476702298969
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00017",
+      "entries": 4096,
+      "seconds": 18.231728988932446
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00018",
+      "entries": 4096,
+      "seconds": 18.33030713396147
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00019",
+      "entries": 4096,
+      "seconds": 18.28843010298442
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00020",
+      "entries": 4096,
+      "seconds": 18.282425250974484
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00021",
+      "entries": 4096,
+      "seconds": 18.175817655050196
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00022",
+      "entries": 4096,
+      "seconds": 18.15006340004038
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00023",
+      "entries": 4096,
+      "seconds": 18.17629486392252
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00024",
+      "entries": 4096,
+      "seconds": 18.235155040980317
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00025",
+      "entries": 4096,
+      "seconds": 18.0509271370247
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00026",
+      "entries": 4096,
+      "seconds": 18.33439463796094
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00027",
+      "entries": 4096,
+      "seconds": 18.329417987028137
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00028",
+      "entries": 4096,
+      "seconds": 18.12816929409746
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00029",
+      "entries": 4096,
+      "seconds": 18.40273466706276
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00030",
+      "entries": 4096,
+      "seconds": 18.13840819906909
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00031",
+      "entries": 4096,
+      "seconds": 18.20410659199115
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00032",
+      "entries": 4096,
+      "seconds": 18.229603681946173
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00033",
+      "entries": 4096,
+      "seconds": 18.103831753018312
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00034",
+      "entries": 4096,
+      "seconds": 18.24573617707938
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00035",
+      "entries": 4096,
+      "seconds": 18.28463740402367
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00036",
+      "entries": 4096,
+      "seconds": 18.264105170033872
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00037",
+      "entries": 4096,
+      "seconds": 18.215733067016117
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00038",
+      "entries": 4096,
+      "seconds": 18.26850558910519
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00039",
+      "entries": 4096,
+      "seconds": 18.145916466019116
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00040",
+      "entries": 4096,
+      "seconds": 18.305064536980353
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00041",
+      "entries": 4096,
+      "seconds": 18.320040930062532
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00042",
+      "entries": 4096,
+      "seconds": 18.25331142905634
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00043",
+      "entries": 4096,
+      "seconds": 18.511809129966423
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00044",
+      "entries": 4096,
+      "seconds": 18.37024316692259
+    },
+    {
+      "module": "Kernel/ChainChecks/R00P00045",
+      "entries": 510,
+      "seconds": 2.2331699210917577
+    }
+  ]
+}

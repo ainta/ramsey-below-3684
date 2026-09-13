@@ -1,0 +1,42 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/profile_access_all.json",
+    "--modules",
+    "Kernel/PackedChain",
+    "Kernel/ProfileAccess/R01",
+    "Kernel/ProfileAccess/R02",
+    "Kernel/ProfileAccess/R03",
+    "Kernel/ProfileAccess/R04",
+    "Kernel/ProfileAccess/R05",
+    "Kernel/ProfileAccess/R06",
+    "Kernel/ProfileAccess/R07",
+    "Kernel/ProfileAccess/R08"
+  ],
+  "elapsed_seconds": 1.1387668000534177,
+  "peak_sampled_rss_kib": 13348,
+  "peak_processes": 1,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13348,
+      1
+    ],
+    [
+      0.572,
+      13348,
+      1
+    ]
+  ],
+  "log": "runs/profile_access_all.resources.log"
+}

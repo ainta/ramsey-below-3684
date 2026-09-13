@@ -1,0 +1,352 @@
+{
+  "status": "PASS_FULL_OUTER_0_GUARDS_KERNEL_COMPUTATION_NOT_RAMSEY_THEOREM",
+  "checked_entries": 34403,
+  "total_entries": 34403,
+  "elapsed_seconds": 340.3132898140466,
+  "real_log_soundness": false,
+  "headline_proved": false,
+  "packed": false,
+  "base_modules_reused": false,
+  "chunks": [
+    {
+      "module": "Kernel/OuterChecks/R00C0000",
+      "entries": 512,
+      "seconds": 3.291324306977913
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0001",
+      "entries": 512,
+      "seconds": 3.0101926050847396
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0002",
+      "entries": 512,
+      "seconds": 3.256154033006169
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0003",
+      "entries": 512,
+      "seconds": 3.0130166329909116
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0004",
+      "entries": 512,
+      "seconds": 3.2104567720089108
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0005",
+      "entries": 512,
+      "seconds": 3.0677205899264663
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0006",
+      "entries": 512,
+      "seconds": 3.377082715043798
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0007",
+      "entries": 512,
+      "seconds": 3.059637555037625
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0008",
+      "entries": 512,
+      "seconds": 3.3589942830149084
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0009",
+      "entries": 512,
+      "seconds": 3.059264848008752
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0010",
+      "entries": 512,
+      "seconds": 3.278039788012393
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0011",
+      "entries": 512,
+      "seconds": 3.1836998850340024
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0012",
+      "entries": 512,
+      "seconds": 3.9349817669717595
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0013",
+      "entries": 512,
+      "seconds": 3.770635505905375
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0014",
+      "entries": 512,
+      "seconds": 3.9444026730488986
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0015",
+      "entries": 512,
+      "seconds": 3.6947979809483513
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0016",
+      "entries": 512,
+      "seconds": 3.730202257982455
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0017",
+      "entries": 512,
+      "seconds": 3.634296286967583
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0018",
+      "entries": 512,
+      "seconds": 3.835380579927005
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0019",
+      "entries": 512,
+      "seconds": 3.7854918939992785
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0020",
+      "entries": 512,
+      "seconds": 3.954523119959049
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0021",
+      "entries": 512,
+      "seconds": 3.815938152023591
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0022",
+      "entries": 512,
+      "seconds": 3.947374352021143
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0023",
+      "entries": 512,
+      "seconds": 3.7681432160316035
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0024",
+      "entries": 512,
+      "seconds": 3.8801484460709617
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0025",
+      "entries": 512,
+      "seconds": 3.8042407860048115
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0026",
+      "entries": 512,
+      "seconds": 3.9055288600502536
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0027",
+      "entries": 512,
+      "seconds": 3.7880677729845047
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0028",
+      "entries": 512,
+      "seconds": 3.9425353900296614
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0029",
+      "entries": 512,
+      "seconds": 3.8251376999542117
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0030",
+      "entries": 512,
+      "seconds": 3.9435202149907127
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0031",
+      "entries": 512,
+      "seconds": 3.8231729340041056
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0032",
+      "entries": 512,
+      "seconds": 3.8630760349333286
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0033",
+      "entries": 512,
+      "seconds": 3.7196782579412684
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0034",
+      "entries": 512,
+      "seconds": 3.910572084947489
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0035",
+      "entries": 512,
+      "seconds": 3.7617733268998563
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0036",
+      "entries": 512,
+      "seconds": 3.8853923939168453
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0037",
+      "entries": 512,
+      "seconds": 3.7568983120145276
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0038",
+      "entries": 512,
+      "seconds": 3.8841798019129783
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0039",
+      "entries": 512,
+      "seconds": 3.793965884950012
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0040",
+      "entries": 512,
+      "seconds": 3.8823641730705276
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0041",
+      "entries": 512,
+      "seconds": 3.679294062894769
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0042",
+      "entries": 512,
+      "seconds": 3.788105985033326
+    },
+    {
+      "module": "Kernel/OuterChecks/R00C0043",
+      "entries": 387,
+      "seconds": 2.6575318599352613
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0000",
+      "entries": 512,
+      "seconds": 0.8330144749488682
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0001",
+      "entries": 512,
+      "seconds": 0.9378169170813635
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0002",
+      "entries": 512,
+      "seconds": 0.9845196140231565
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0003",
+      "entries": 512,
+      "seconds": 0.908469217014499
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0004",
+      "entries": 512,
+      "seconds": 0.7991753940004855
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0005",
+      "entries": 512,
+      "seconds": 0.9703439759323373
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0006",
+      "entries": 512,
+      "seconds": 0.9386887110304087
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0007",
+      "entries": 512,
+      "seconds": 0.804641805938445
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0008",
+      "entries": 512,
+      "seconds": 0.605972831021063
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0009",
+      "entries": 512,
+      "seconds": 0.9570333709707484
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0010",
+      "entries": 512,
+      "seconds": 0.9830158799886703
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0011",
+      "entries": 512,
+      "seconds": 0.8083951560547575
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0012",
+      "entries": 512,
+      "seconds": 0.39204994996543974
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0013",
+      "entries": 512,
+      "seconds": 0.7569210130022839
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0014",
+      "entries": 512,
+      "seconds": 0.95909718493931
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0015",
+      "entries": 512,
+      "seconds": 0.7427759610582143
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0016",
+      "entries": 512,
+      "seconds": 0.4065833210479468
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0017",
+      "entries": 512,
+      "seconds": 0.40123208391014487
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0018",
+      "entries": 512,
+      "seconds": 0.938144184066914
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0019",
+      "entries": 512,
+      "seconds": 0.6479585140477866
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0020",
+      "entries": 512,
+      "seconds": 0.3934304559370503
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0021",
+      "entries": 512,
+      "seconds": 0.38755454297643155
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0022",
+      "entries": 512,
+      "seconds": 0.5800191049929708
+    },
+    {
+      "module": "Kernel/OuterChecks/R00S0023",
+      "entries": 224,
+      "seconds": 0.5877716899849474
+    }
+  ]
+}

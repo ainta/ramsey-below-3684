@@ -1,0 +1,12 @@
+BUILD SUPPORT LargeSelectorBench/Tree
+'Compact3684.LargeSelectorBench.treeRuns_checked' does not depend on any axioms
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "LargeSelectorBench/Tree"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 20.975944072008133,
+  "headline_proved": false
+}

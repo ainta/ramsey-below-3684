@@ -1,0 +1,84 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/concrete_bounds2.json",
+    "--modules",
+    "Ramsey3683Bootstrap/WeightedConcrete"
+  ],
+  "elapsed_seconds": 6.856403711019084,
+  "peak_sampled_rss_kib": 3614476,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 150,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13300,
+      1
+    ],
+    [
+      0.575,
+      13300,
+      1
+    ],
+    [
+      1.148,
+      727988,
+      2
+    ],
+    [
+      1.72,
+      2747976,
+      2
+    ],
+    [
+      2.29,
+      3428244,
+      2
+    ],
+    [
+      2.862,
+      3572736,
+      2
+    ],
+    [
+      3.432,
+      3582976,
+      2
+    ],
+    [
+      4.004,
+      3596424,
+      2
+    ],
+    [
+      4.58,
+      3601868,
+      2
+    ],
+    [
+      5.149,
+      3604244,
+      2
+    ],
+    [
+      5.718,
+      3606288,
+      2
+    ],
+    [
+      6.287,
+      3614476,
+      2
+    ]
+  ],
+  "log": "runs/concrete_bounds2.resources.log"
+}

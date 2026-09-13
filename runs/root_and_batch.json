@@ -1,0 +1,12 @@
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Kernel/RootLinksSound",
+    "ReflectedInitial",
+    "RunGuardBench4096R00"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 32.83664621692151,
+  "headline_proved": false
+}

@@ -1,0 +1,79 @@
+{
+  "status": "RSS_LIMIT",
+  "returncode": -15,
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean"
+  ],
+  "elapsed_seconds": 6.433930056053214,
+  "peak_sampled_rss_kib": 2304512,
+  "peak_processes": 2,
+  "rss_limit_mib": 2048,
+  "time_limit_seconds": 120,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      105480,
+      1
+    ],
+    [
+      0.572,
+      311420,
+      1
+    ],
+    [
+      1.143,
+      801452,
+      1
+    ],
+    [
+      1.711,
+      1125468,
+      2
+    ],
+    [
+      2.277,
+      1219908,
+      2
+    ],
+    [
+      2.847,
+      1266140,
+      2
+    ],
+    [
+      3.413,
+      1317776,
+      2
+    ],
+    [
+      3.984,
+      1363068,
+      2
+    ],
+    [
+      4.552,
+      1423348,
+      2
+    ],
+    [
+      5.12,
+      1493040,
+      2
+    ],
+    [
+      5.687,
+      2006280,
+      2
+    ],
+    [
+      6.257,
+      2304512,
+      2
+    ]
+  ],
+  "log": "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/runs/lean_prefix.resources.log"
+}

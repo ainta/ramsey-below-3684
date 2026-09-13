@@ -1,0 +1,28 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "audit_dependency_provenance.py"
+  ],
+  "elapsed_seconds": 1.1832776289666072,
+  "peak_sampled_rss_kib": 819616,
+  "peak_processes": 2,
+  "rss_limit_mib": 6144,
+  "time_limit_seconds": 900,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.004,
+      17476,
+      1
+    ],
+    [
+      0.582,
+      819616,
+      2
+    ]
+  ],
+  "log": "runs/dependency_provenance.resources.log"
+}

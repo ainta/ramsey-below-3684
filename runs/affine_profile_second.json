@@ -1,0 +1,12 @@
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Ramsey3683Bootstrap/GridClosure",
+    "Ramsey3683Bootstrap/Certificate",
+    "Kernel/Codec"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 8.545817348058335,
+  "headline_proved": false
+}

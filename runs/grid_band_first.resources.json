@@ -1,0 +1,94 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/grid_band_first.json",
+    "--modules",
+    "Ramsey3683Bootstrap/GridCell"
+  ],
+  "elapsed_seconds": 8.219834242016077,
+  "peak_sampled_rss_kib": 3619844,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 150,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13336,
+      1
+    ],
+    [
+      0.59,
+      814240,
+      2
+    ],
+    [
+      1.165,
+      435512,
+      2
+    ],
+    [
+      1.745,
+      1316544,
+      2
+    ],
+    [
+      2.348,
+      3140012,
+      2
+    ],
+    [
+      2.93,
+      3509168,
+      2
+    ],
+    [
+      3.522,
+      3584276,
+      2
+    ],
+    [
+      4.106,
+      3592828,
+      2
+    ],
+    [
+      4.688,
+      3599060,
+      2
+    ],
+    [
+      5.268,
+      3603512,
+      2
+    ],
+    [
+      5.849,
+      3607924,
+      2
+    ],
+    [
+      6.432,
+      3610384,
+      2
+    ],
+    [
+      7.017,
+      3607748,
+      2
+    ],
+    [
+      7.62,
+      3619844,
+      2
+    ]
+  ],
+  "log": "runs/grid_band_first.resources.log"
+}

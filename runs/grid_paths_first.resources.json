@@ -1,0 +1,64 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/grid_paths_first.json",
+    "--modules",
+    "Ramsey3683Bootstrap/GridClosure"
+  ],
+  "elapsed_seconds": 4.554470150964335,
+  "peak_sampled_rss_kib": 3619264,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 150,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13352,
+      1
+    ],
+    [
+      0.568,
+      13360,
+      1
+    ],
+    [
+      1.137,
+      760616,
+      2
+    ],
+    [
+      1.705,
+      2959936,
+      2
+    ],
+    [
+      2.275,
+      3459244,
+      2
+    ],
+    [
+      2.844,
+      3596676,
+      2
+    ],
+    [
+      3.414,
+      3616348,
+      2
+    ],
+    [
+      3.98,
+      3619264,
+      2
+    ]
+  ],
+  "log": "runs/grid_paths_first.resources.log"
+}

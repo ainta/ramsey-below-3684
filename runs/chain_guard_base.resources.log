@@ -1,0 +1,66 @@
+BUILD SUPPORT Kernel/CheckedLogChunk
+BUILD SUPPORT Kernel/ChainGuard
+Kernel/ChainGuard.lean:30:10: error: unexpected identifier; expected prec
+Kernel/ChainGuard.lean:63:33: error(lean.invalidField): Invalid field `prefix`: The environment does not contain `Compact3684.Chain.Node.prefix`, so it is not possible to project the field `prefix` from an expression
+  r
+of type `Node`
+Kernel/ChainGuard.lean:64:59: error(lean.invalidField): Invalid field `prefix`: The environment does not contain `Compact3684.Chain.Node.prefix`, so it is not possible to project the field `prefix` from an expression
+  d.node r.upper
+of type `Node`
+Kernel/ChainGuard.lean:84:37: error(lean.invalidField): Invalid field `prefix`: The environment does not contain `Compact3684.Chain.Node.prefix`, so it is not possible to project the field `prefix` from an expression
+  r
+of type `Node`
+Kernel/ChainGuard.lean:86:28: error(lean.invalidField): Invalid field `prefix`: The environment does not contain `Compact3684.Chain.Node.prefix`, so it is not possible to project the field `prefix` from an expression
+  r
+of type `Node`
+Kernel/ChainGuard.lean:88:8: error(lean.invalidField): Invalid field `prefix`: The environment does not contain `Compact3684.Chain.Node.prefix`, so it is not possible to project the field `prefix` from an expression
+  r
+of type `Node`
+Kernel/ChainGuard.lean:88:22: error(lean.invalidField): Invalid field `prefix`: The environment does not contain `Compact3684.Chain.Node.prefix`, so it is not possible to project the field `prefix` from an expression
+  prev
+of type `Node`
+Kernel/ChainGuard.lean:117:6: error(lean.invalidField): Invalid field `pathStart`: The environment does not contain `Compact3684.Chain.Node.pathStart`, so it is not possible to project the field `pathStart` from an expression
+  r
+of type `Node`
+Kernel/ChainGuard.lean:117:18: error(lean.invalidField): Invalid field `pathCount`: The environment does not contain `Compact3684.Chain.Node.pathCount`, so it is not possible to project the field `pathCount` from an expression
+  r
+of type `Node`
+Kernel/ChainGuard.lean:118:10: error(lean.invalidField): Invalid field `pathCount`: The environment does not contain `Compact3684.Chain.Node.pathCount`, so it is not possible to project the field `pathCount` from an expression
+  r
+of type `Node`
+Kernel/ChainGuard.lean:119:27: error(lean.invalidField): Invalid field `pathStart`: The environment does not contain `Compact3684.Chain.Node.pathStart`, so it is not possible to project the field `pathStart` from an expression
+  r
+of type `Node`
+Kernel/ChainGuard.lean:120:27: error(lean.invalidField): Invalid field `pathStart`: The environment does not contain `Compact3684.Chain.Node.pathStart`, so it is not possible to project the field `pathStart` from an expression
+  r
+of type `Node`
+Kernel/ChainGuard.lean:120:39: error(lean.invalidField): Invalid field `pathCount`: The environment does not contain `Compact3684.Chain.Node.pathCount`, so it is not possible to project the field `pathCount` from an expression
+  r
+of type `Node`
+Kernel/ChainGuard.lean:133:10: error(lean.invalidField): Invalid field `pathStart`: The environment does not contain `Compact3684.Chain.Node.pathStart`, so it is not possible to project the field `pathStart` from an expression
+  owner
+of type `Node`
+Kernel/ChainGuard.lean:133:36: error(lean.invalidField): Invalid field `pathStart`: The environment does not contain `Compact3684.Chain.Node.pathStart`, so it is not possible to project the field `pathStart` from an expression
+  owner
+of type `Node`
+Kernel/ChainGuard.lean:133:52: error(lean.invalidField): Invalid field `pathCount`: The environment does not contain `Compact3684.Chain.Node.pathCount`, so it is not possible to project the field `pathCount` from an expression
+  owner
+of type `Node`
+Kernel/ChainGuard.lean:134:7: error(lean.invalidField): Invalid field `prefix`: The environment does not contain `Compact3684.Chain.Node.prefix`, so it is not possible to project the field `prefix` from an expression
+  hi
+of type `Node`
+Kernel/ChainGuard.lean:135:20: error(lean.invalidField): Invalid field `pathStart`: The environment does not contain `Compact3684.Chain.Node.pathStart`, so it is not possible to project the field `pathStart` from an expression
+  owner
+of type `Node`
+Kernel/ChainGuard.lean:135:36: error(lean.invalidField): Invalid field `pathCount`: The environment does not contain `Compact3684.Chain.Node.pathCount`, so it is not possible to project the field `pathCount` from an expression
+  owner
+of type `Node`
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 53, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 45, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Kernel/ChainGuard.olean', 'Kernel/ChainGuard.lean']' returned non-zero exit status 1.

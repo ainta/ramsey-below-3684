@@ -1,0 +1,49 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/TerminalNumeric.lean"
+  ],
+  "elapsed_seconds": 3.484682159963995,
+  "peak_sampled_rss_kib": 2849152,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 120,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      105536,
+      1
+    ],
+    [
+      0.581,
+      800832,
+      1
+    ],
+    [
+      1.163,
+      1298244,
+      2
+    ],
+    [
+      1.747,
+      2556092,
+      2
+    ],
+    [
+      2.327,
+      2849152,
+      2
+    ],
+    [
+      2.903,
+      801512,
+      1
+    ]
+  ],
+  "log": "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/runs/lean_terminal_final.resources.log"
+}

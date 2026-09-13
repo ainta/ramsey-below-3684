@@ -1,0 +1,1732 @@
+{
+  "status": "PASS_FULL_CATALOG_KERNEL_COMPUTATION_NOT_RAMSEY_THEOREM",
+  "checked_entries": 351607,
+  "total_entries": 351607,
+  "elapsed_seconds": 3807.4604248780524,
+  "real_log_soundness": false,
+  "headline_proved": false,
+  "packed": true,
+  "chunks": [
+    {
+      "module": "Kernel/PackedLogCatalog/C0000",
+      "entries": 1024,
+      "seconds": 11.92490137706045
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0001",
+      "entries": 1024,
+      "seconds": 10.749310084036551
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0002",
+      "entries": 1024,
+      "seconds": 10.94843100802973
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0003",
+      "entries": 1024,
+      "seconds": 11.203131813090295
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0004",
+      "entries": 1024,
+      "seconds": 11.543834390933625
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0005",
+      "entries": 1024,
+      "seconds": 11.464751784922555
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0006",
+      "entries": 1024,
+      "seconds": 11.595495294081047
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0007",
+      "entries": 1024,
+      "seconds": 11.685163314105012
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0008",
+      "entries": 1024,
+      "seconds": 11.82650492200628
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0009",
+      "entries": 1024,
+      "seconds": 12.042756374925375
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0010",
+      "entries": 1024,
+      "seconds": 12.470592027995735
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0011",
+      "entries": 1024,
+      "seconds": 11.962520775967278
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0012",
+      "entries": 1024,
+      "seconds": 10.559121364029124
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0013",
+      "entries": 1024,
+      "seconds": 10.533386178081855
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0014",
+      "entries": 1024,
+      "seconds": 10.501094453036785
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0015",
+      "entries": 1024,
+      "seconds": 10.666365992976353
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0016",
+      "entries": 1024,
+      "seconds": 11.669892263947986
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0017",
+      "entries": 1024,
+      "seconds": 10.812976105022244
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0018",
+      "entries": 1024,
+      "seconds": 10.856725146062672
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0019",
+      "entries": 1024,
+      "seconds": 11.0217339489609
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0020",
+      "entries": 1024,
+      "seconds": 10.898719394928776
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0021",
+      "entries": 1024,
+      "seconds": 10.970580699038692
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0022",
+      "entries": 1024,
+      "seconds": 11.041625282960013
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0023",
+      "entries": 1024,
+      "seconds": 11.021161334007047
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0024",
+      "entries": 1024,
+      "seconds": 11.113660771981813
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0025",
+      "entries": 1024,
+      "seconds": 11.18341552594211
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0026",
+      "entries": 1024,
+      "seconds": 11.281904070056044
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0027",
+      "entries": 1024,
+      "seconds": 11.2286952160066
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0028",
+      "entries": 1024,
+      "seconds": 11.235579389962368
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0029",
+      "entries": 1024,
+      "seconds": 11.285903581068851
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0030",
+      "entries": 1024,
+      "seconds": 11.167112185969017
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0031",
+      "entries": 1024,
+      "seconds": 11.267615996999666
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0032",
+      "entries": 1024,
+      "seconds": 11.339791013044305
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0033",
+      "entries": 1024,
+      "seconds": 11.30998218304012
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0034",
+      "entries": 1024,
+      "seconds": 11.382089465041645
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0035",
+      "entries": 1024,
+      "seconds": 11.414369976031594
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0036",
+      "entries": 1024,
+      "seconds": 11.53143743390683
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0037",
+      "entries": 1024,
+      "seconds": 11.536431881948374
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0038",
+      "entries": 1024,
+      "seconds": 11.531529526924714
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0039",
+      "entries": 1024,
+      "seconds": 11.667609290918335
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0040",
+      "entries": 1024,
+      "seconds": 11.625599914928898
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0041",
+      "entries": 1024,
+      "seconds": 11.709775084047578
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0042",
+      "entries": 1024,
+      "seconds": 11.745534444926307
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0043",
+      "entries": 1024,
+      "seconds": 11.667641464970075
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0044",
+      "entries": 1024,
+      "seconds": 11.629277722910047
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0045",
+      "entries": 1024,
+      "seconds": 10.642190834973007
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0046",
+      "entries": 1024,
+      "seconds": 10.073488630005158
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0047",
+      "entries": 1024,
+      "seconds": 10.058677759952843
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0048",
+      "entries": 1024,
+      "seconds": 10.200951371109113
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0049",
+      "entries": 1024,
+      "seconds": 10.238806974026375
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0050",
+      "entries": 1024,
+      "seconds": 10.53572946798522
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0051",
+      "entries": 1024,
+      "seconds": 10.399579177959822
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0052",
+      "entries": 1024,
+      "seconds": 10.488877175026573
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0053",
+      "entries": 1024,
+      "seconds": 10.433673913008533
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0054",
+      "entries": 1024,
+      "seconds": 10.48185779293999
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0055",
+      "entries": 1024,
+      "seconds": 10.536007392918691
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0056",
+      "entries": 1024,
+      "seconds": 10.64077754097525
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0057",
+      "entries": 1024,
+      "seconds": 10.79488068097271
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0058",
+      "entries": 1024,
+      "seconds": 10.767293542041443
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0059",
+      "entries": 1024,
+      "seconds": 10.7766776480712
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0060",
+      "entries": 1024,
+      "seconds": 10.944494667928666
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0061",
+      "entries": 1024,
+      "seconds": 11.077483898960054
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0062",
+      "entries": 1024,
+      "seconds": 10.823769062990323
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0063",
+      "entries": 1024,
+      "seconds": 10.968399613979273
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0064",
+      "entries": 1024,
+      "seconds": 10.917684203013778
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0065",
+      "entries": 1024,
+      "seconds": 11.010909224976785
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0066",
+      "entries": 1024,
+      "seconds": 10.844515989068896
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0067",
+      "entries": 1024,
+      "seconds": 11.008502259035595
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0068",
+      "entries": 1024,
+      "seconds": 11.109148892923258
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0069",
+      "entries": 1024,
+      "seconds": 10.976053770980798
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0070",
+      "entries": 1024,
+      "seconds": 11.108941275975667
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0071",
+      "entries": 1024,
+      "seconds": 10.94858478603419
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0072",
+      "entries": 1024,
+      "seconds": 11.047822877997532
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0073",
+      "entries": 1024,
+      "seconds": 11.05647964507807
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0074",
+      "entries": 1024,
+      "seconds": 11.091304339002818
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0075",
+      "entries": 1024,
+      "seconds": 11.121696159010753
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0076",
+      "entries": 1024,
+      "seconds": 11.217446894966997
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0077",
+      "entries": 1024,
+      "seconds": 11.282592943985946
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0078",
+      "entries": 1024,
+      "seconds": 11.372014745953493
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0079",
+      "entries": 1024,
+      "seconds": 11.404588380013593
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0080",
+      "entries": 1024,
+      "seconds": 11.395933118998073
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0081",
+      "entries": 1024,
+      "seconds": 11.546275555971079
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0082",
+      "entries": 1024,
+      "seconds": 11.451258397079073
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0083",
+      "entries": 1024,
+      "seconds": 11.728636372019537
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0084",
+      "entries": 1024,
+      "seconds": 11.638678707997315
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0085",
+      "entries": 1024,
+      "seconds": 11.58847924391739
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0086",
+      "entries": 1024,
+      "seconds": 11.62078781297896
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0087",
+      "entries": 1024,
+      "seconds": 11.154632222023793
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0088",
+      "entries": 1024,
+      "seconds": 10.053188082994893
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0089",
+      "entries": 1024,
+      "seconds": 10.160884227021597
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0090",
+      "entries": 1024,
+      "seconds": 10.465074167004786
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0091",
+      "entries": 1024,
+      "seconds": 10.331112366053276
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0092",
+      "entries": 1024,
+      "seconds": 10.33778818603605
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0093",
+      "entries": 1024,
+      "seconds": 10.559457631083205
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0094",
+      "entries": 1024,
+      "seconds": 10.389632084988989
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0095",
+      "entries": 1024,
+      "seconds": 10.409758305060677
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0096",
+      "entries": 1024,
+      "seconds": 10.397134228958748
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0097",
+      "entries": 1024,
+      "seconds": 10.381503897020593
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0098",
+      "entries": 1024,
+      "seconds": 10.494794829981402
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0099",
+      "entries": 1024,
+      "seconds": 10.398303524008952
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0100",
+      "entries": 1024,
+      "seconds": 10.462456537992693
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0101",
+      "entries": 1024,
+      "seconds": 10.807042827946134
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0102",
+      "entries": 1024,
+      "seconds": 10.487226310069673
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0103",
+      "entries": 1024,
+      "seconds": 10.540154675021768
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0104",
+      "entries": 1024,
+      "seconds": 10.593325586989522
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0105",
+      "entries": 1024,
+      "seconds": 10.678125782986172
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0106",
+      "entries": 1024,
+      "seconds": 10.582465316983871
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0107",
+      "entries": 1024,
+      "seconds": 10.644657833036035
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0108",
+      "entries": 1024,
+      "seconds": 10.732656889013015
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0109",
+      "entries": 1024,
+      "seconds": 10.961731521994807
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0110",
+      "entries": 1024,
+      "seconds": 10.818060930003412
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0111",
+      "entries": 1024,
+      "seconds": 10.896779959904961
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0112",
+      "entries": 1024,
+      "seconds": 10.851237449096516
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0113",
+      "entries": 1024,
+      "seconds": 10.847130138077773
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0114",
+      "entries": 1024,
+      "seconds": 10.805128325009719
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0115",
+      "entries": 1024,
+      "seconds": 10.946289572049864
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0116",
+      "entries": 1024,
+      "seconds": 11.109869581996463
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0117",
+      "entries": 1024,
+      "seconds": 11.098569674999453
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0118",
+      "entries": 1024,
+      "seconds": 11.058609972940758
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0119",
+      "entries": 1024,
+      "seconds": 11.12893843697384
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0120",
+      "entries": 1024,
+      "seconds": 11.257633358007297
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0121",
+      "entries": 1024,
+      "seconds": 11.401555328047834
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0122",
+      "entries": 1024,
+      "seconds": 14.292884671944194
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0123",
+      "entries": 1024,
+      "seconds": 16.932828673976474
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0124",
+      "entries": 1024,
+      "seconds": 17.818854948040098
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0125",
+      "entries": 1024,
+      "seconds": 16.99494785896968
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0126",
+      "entries": 1024,
+      "seconds": 17.498318849946372
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0127",
+      "entries": 1024,
+      "seconds": 15.268783963983878
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0128",
+      "entries": 1024,
+      "seconds": 16.765772343962453
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0129",
+      "entries": 1024,
+      "seconds": 15.768463376094587
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0130",
+      "entries": 1024,
+      "seconds": 16.092268829001114
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0131",
+      "entries": 1024,
+      "seconds": 11.353537290007807
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0132",
+      "entries": 1024,
+      "seconds": 10.330325359012932
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0133",
+      "entries": 1024,
+      "seconds": 10.296329643926583
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0134",
+      "entries": 1024,
+      "seconds": 10.356314853997901
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0135",
+      "entries": 1024,
+      "seconds": 10.481218073051423
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0136",
+      "entries": 1024,
+      "seconds": 10.28618000796996
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0137",
+      "entries": 1024,
+      "seconds": 10.460298503981903
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0138",
+      "entries": 1024,
+      "seconds": 10.308964223018847
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0139",
+      "entries": 1024,
+      "seconds": 10.414782503969036
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0140",
+      "entries": 1024,
+      "seconds": 10.356763356016017
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0141",
+      "entries": 1024,
+      "seconds": 10.395755348028615
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0142",
+      "entries": 1024,
+      "seconds": 10.497282459051348
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0143",
+      "entries": 1024,
+      "seconds": 10.338861103984527
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0144",
+      "entries": 1024,
+      "seconds": 10.417653660988435
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0145",
+      "entries": 1024,
+      "seconds": 10.374162663007155
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0146",
+      "entries": 1024,
+      "seconds": 10.418225686065853
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0147",
+      "entries": 1024,
+      "seconds": 10.41059879399836
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0148",
+      "entries": 1024,
+      "seconds": 11.107923352043144
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0149",
+      "entries": 1024,
+      "seconds": 10.458632202935405
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0150",
+      "entries": 1024,
+      "seconds": 10.421322441892698
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0151",
+      "entries": 1024,
+      "seconds": 10.32717955391854
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0152",
+      "entries": 1024,
+      "seconds": 10.405063210055232
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0153",
+      "entries": 1024,
+      "seconds": 10.36018622503616
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0154",
+      "entries": 1024,
+      "seconds": 10.471909463987686
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0155",
+      "entries": 1024,
+      "seconds": 10.509801834006794
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0156",
+      "entries": 1024,
+      "seconds": 11.506512766005471
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0157",
+      "entries": 1024,
+      "seconds": 10.420163530041464
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0158",
+      "entries": 1024,
+      "seconds": 10.415831700898707
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0159",
+      "entries": 1024,
+      "seconds": 10.377846890012734
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0160",
+      "entries": 1024,
+      "seconds": 10.45080908993259
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0161",
+      "entries": 1024,
+      "seconds": 10.578631977085024
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0162",
+      "entries": 1024,
+      "seconds": 10.320717442082241
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0163",
+      "entries": 1024,
+      "seconds": 10.426244564005174
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0164",
+      "entries": 1024,
+      "seconds": 10.312610234017484
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0165",
+      "entries": 1024,
+      "seconds": 10.330422286060639
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0166",
+      "entries": 1024,
+      "seconds": 10.601725901011378
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0167",
+      "entries": 1024,
+      "seconds": 10.579280245001428
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0168",
+      "entries": 1024,
+      "seconds": 10.52206391596701
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0169",
+      "entries": 1024,
+      "seconds": 10.55911506805569
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0170",
+      "entries": 1024,
+      "seconds": 10.57504358200822
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0171",
+      "entries": 1024,
+      "seconds": 10.539649000042118
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0172",
+      "entries": 1024,
+      "seconds": 10.534172530984506
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0173",
+      "entries": 1024,
+      "seconds": 10.536019359016791
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0174",
+      "entries": 1024,
+      "seconds": 10.550270342035219
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0175",
+      "entries": 1024,
+      "seconds": 10.776380419032648
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0176",
+      "entries": 1024,
+      "seconds": 12.015148874022998
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0177",
+      "entries": 1024,
+      "seconds": 11.219674477935769
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0178",
+      "entries": 1024,
+      "seconds": 10.636518519022502
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0179",
+      "entries": 1024,
+      "seconds": 10.665462716016918
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0180",
+      "entries": 1024,
+      "seconds": 10.794537944020703
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0181",
+      "entries": 1024,
+      "seconds": 10.753084938041866
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0182",
+      "entries": 1024,
+      "seconds": 10.813946402049623
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0183",
+      "entries": 1024,
+      "seconds": 10.88948956807144
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0184",
+      "entries": 1024,
+      "seconds": 10.716988265048712
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0185",
+      "entries": 1024,
+      "seconds": 10.828982496052049
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0186",
+      "entries": 1024,
+      "seconds": 12.276636768016033
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0187",
+      "entries": 1024,
+      "seconds": 10.680058668018319
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0188",
+      "entries": 1024,
+      "seconds": 10.675910930032842
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0189",
+      "entries": 1024,
+      "seconds": 10.656997852027416
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0190",
+      "entries": 1024,
+      "seconds": 10.67954362090677
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0191",
+      "entries": 1024,
+      "seconds": 10.826317950966768
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0192",
+      "entries": 1024,
+      "seconds": 10.84288985398598
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0193",
+      "entries": 1024,
+      "seconds": 10.81938538106624
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0194",
+      "entries": 1024,
+      "seconds": 10.847557523986325
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0195",
+      "entries": 1024,
+      "seconds": 12.53235901799053
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0196",
+      "entries": 1024,
+      "seconds": 10.693072688067332
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0197",
+      "entries": 1024,
+      "seconds": 10.70896712609101
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0198",
+      "entries": 1024,
+      "seconds": 10.98995894799009
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0199",
+      "entries": 1024,
+      "seconds": 10.838229956920259
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0200",
+      "entries": 1024,
+      "seconds": 10.514564807992429
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0201",
+      "entries": 1024,
+      "seconds": 10.581788194016553
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0202",
+      "entries": 1024,
+      "seconds": 10.895437484025024
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0203",
+      "entries": 1024,
+      "seconds": 10.618348655989394
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0204",
+      "entries": 1024,
+      "seconds": 10.621438773931004
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0205",
+      "entries": 1024,
+      "seconds": 10.539576779934578
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0206",
+      "entries": 1024,
+      "seconds": 10.563165076076984
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0207",
+      "entries": 1024,
+      "seconds": 10.549528834060766
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0208",
+      "entries": 1024,
+      "seconds": 10.592621454969049
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0209",
+      "entries": 1024,
+      "seconds": 10.488221488078125
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0210",
+      "entries": 1024,
+      "seconds": 10.52190828404855
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0211",
+      "entries": 1024,
+      "seconds": 10.578320931061171
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0212",
+      "entries": 1024,
+      "seconds": 10.602437468012795
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0213",
+      "entries": 1024,
+      "seconds": 10.62639307801146
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0214",
+      "entries": 1024,
+      "seconds": 10.649229596951045
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0215",
+      "entries": 1024,
+      "seconds": 11.173842482967302
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0216",
+      "entries": 1024,
+      "seconds": 10.65986828703899
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0217",
+      "entries": 1024,
+      "seconds": 10.670398356975056
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0218",
+      "entries": 1024,
+      "seconds": 10.714095257106237
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0219",
+      "entries": 1024,
+      "seconds": 10.83276013203431
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0220",
+      "entries": 1024,
+      "seconds": 10.70837659703102
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0221",
+      "entries": 1024,
+      "seconds": 10.658117300015874
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0222",
+      "entries": 1024,
+      "seconds": 10.646026234026067
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0223",
+      "entries": 1024,
+      "seconds": 10.664355632965453
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0224",
+      "entries": 1024,
+      "seconds": 10.677702085929923
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0225",
+      "entries": 1024,
+      "seconds": 10.664668682031333
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0226",
+      "entries": 1024,
+      "seconds": 10.7644689748995
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0227",
+      "entries": 1024,
+      "seconds": 10.715163895045407
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0228",
+      "entries": 1024,
+      "seconds": 10.623426054022275
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0229",
+      "entries": 1024,
+      "seconds": 10.719823166029528
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0230",
+      "entries": 1024,
+      "seconds": 10.684766203979962
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0231",
+      "entries": 1024,
+      "seconds": 10.965159425046295
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0232",
+      "entries": 1024,
+      "seconds": 10.556549484026618
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0233",
+      "entries": 1024,
+      "seconds": 10.701218080008402
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0234",
+      "entries": 1024,
+      "seconds": 10.739280526991934
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0235",
+      "entries": 1024,
+      "seconds": 10.694895868073218
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0236",
+      "entries": 1024,
+      "seconds": 10.737627330003306
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0237",
+      "entries": 1024,
+      "seconds": 10.696110730059445
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0238",
+      "entries": 1024,
+      "seconds": 11.494504751986824
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0239",
+      "entries": 1024,
+      "seconds": 10.67319760704413
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0240",
+      "entries": 1024,
+      "seconds": 10.749483673018403
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0241",
+      "entries": 1024,
+      "seconds": 10.68752953398507
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0242",
+      "entries": 1024,
+      "seconds": 10.716472539003007
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0243",
+      "entries": 1024,
+      "seconds": 10.69771006796509
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0244",
+      "entries": 1024,
+      "seconds": 10.698717536986805
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0245",
+      "entries": 1024,
+      "seconds": 10.72379041207023
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0246",
+      "entries": 1024,
+      "seconds": 10.98029120801948
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0247",
+      "entries": 1024,
+      "seconds": 12.511611078050919
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0248",
+      "entries": 1024,
+      "seconds": 11.647234219009988
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0249",
+      "entries": 1024,
+      "seconds": 10.666691181017086
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0250",
+      "entries": 1024,
+      "seconds": 10.715316515997984
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0251",
+      "entries": 1024,
+      "seconds": 10.677179538994096
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0252",
+      "entries": 1024,
+      "seconds": 10.807596144964918
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0253",
+      "entries": 1024,
+      "seconds": 10.69832376204431
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0254",
+      "entries": 1024,
+      "seconds": 10.662365055992268
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0255",
+      "entries": 1024,
+      "seconds": 10.708347701001912
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0256",
+      "entries": 1024,
+      "seconds": 10.86655208398588
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0257",
+      "entries": 1024,
+      "seconds": 10.988511416944675
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0258",
+      "entries": 1024,
+      "seconds": 10.772583205020055
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0259",
+      "entries": 1024,
+      "seconds": 10.795911910012364
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0260",
+      "entries": 1024,
+      "seconds": 10.89422704896424
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0261",
+      "entries": 1024,
+      "seconds": 10.743980734958313
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0262",
+      "entries": 1024,
+      "seconds": 10.932426091982052
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0263",
+      "entries": 1024,
+      "seconds": 10.74614299600944
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0264",
+      "entries": 1024,
+      "seconds": 12.913918603095226
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0265",
+      "entries": 1024,
+      "seconds": 10.804702705936506
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0266",
+      "entries": 1024,
+      "seconds": 10.878870735992678
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0267",
+      "entries": 1024,
+      "seconds": 10.814206314040348
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0268",
+      "entries": 1024,
+      "seconds": 10.775501294992864
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0269",
+      "entries": 1024,
+      "seconds": 12.017147252918221
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0270",
+      "entries": 1024,
+      "seconds": 11.07716209499631
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0271",
+      "entries": 1024,
+      "seconds": 11.078116014017724
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0272",
+      "entries": 1024,
+      "seconds": 10.808990317978896
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0273",
+      "entries": 1024,
+      "seconds": 10.8596782280365
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0274",
+      "entries": 1024,
+      "seconds": 11.058880817028694
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0275",
+      "entries": 1024,
+      "seconds": 11.090622771065682
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0276",
+      "entries": 1024,
+      "seconds": 10.997233459958807
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0277",
+      "entries": 1024,
+      "seconds": 10.994926047045738
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0278",
+      "entries": 1024,
+      "seconds": 10.86806982406415
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0279",
+      "entries": 1024,
+      "seconds": 10.777718057972379
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0280",
+      "entries": 1024,
+      "seconds": 10.932023211964406
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0281",
+      "entries": 1024,
+      "seconds": 10.844442952075042
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0282",
+      "entries": 1024,
+      "seconds": 10.79680901800748
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0283",
+      "entries": 1024,
+      "seconds": 10.807459635077976
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0284",
+      "entries": 1024,
+      "seconds": 10.865352866938338
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0285",
+      "entries": 1024,
+      "seconds": 10.903812329983339
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0286",
+      "entries": 1024,
+      "seconds": 10.777873006067239
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0287",
+      "entries": 1024,
+      "seconds": 10.751410373020917
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0288",
+      "entries": 1024,
+      "seconds": 11.045274061965756
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0289",
+      "entries": 1024,
+      "seconds": 10.714891488896683
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0290",
+      "entries": 1024,
+      "seconds": 10.831209865049459
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0291",
+      "entries": 1024,
+      "seconds": 10.755034941947088
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0292",
+      "entries": 1024,
+      "seconds": 10.911677430034615
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0293",
+      "entries": 1024,
+      "seconds": 10.79851127404254
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0294",
+      "entries": 1024,
+      "seconds": 10.83643052005209
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0295",
+      "entries": 1024,
+      "seconds": 10.794421473052353
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0296",
+      "entries": 1024,
+      "seconds": 10.844346798956394
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0297",
+      "entries": 1024,
+      "seconds": 10.802510292967781
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0298",
+      "entries": 1024,
+      "seconds": 10.740829912014306
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0299",
+      "entries": 1024,
+      "seconds": 10.791031826054677
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0300",
+      "entries": 1024,
+      "seconds": 10.71056299295742
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0301",
+      "entries": 1024,
+      "seconds": 10.85439424496144
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0302",
+      "entries": 1024,
+      "seconds": 10.864594034967013
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0303",
+      "entries": 1024,
+      "seconds": 10.944642029004171
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0304",
+      "entries": 1024,
+      "seconds": 10.921332751982845
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0305",
+      "entries": 1024,
+      "seconds": 10.981893884949386
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0306",
+      "entries": 1024,
+      "seconds": 10.913652416085824
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0307",
+      "entries": 1024,
+      "seconds": 10.946367764030583
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0308",
+      "entries": 1024,
+      "seconds": 10.857288248022087
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0309",
+      "entries": 1024,
+      "seconds": 10.887714085984044
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0310",
+      "entries": 1024,
+      "seconds": 10.915932424017228
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0311",
+      "entries": 1024,
+      "seconds": 11.025503347045742
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0312",
+      "entries": 1024,
+      "seconds": 11.062529638991691
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0313",
+      "entries": 1024,
+      "seconds": 11.024069149978459
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0314",
+      "entries": 1024,
+      "seconds": 10.936511362087913
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0315",
+      "entries": 1024,
+      "seconds": 10.933591831009835
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0316",
+      "entries": 1024,
+      "seconds": 10.948654907988384
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0317",
+      "entries": 1024,
+      "seconds": 10.926778950961307
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0318",
+      "entries": 1024,
+      "seconds": 12.093019046937115
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0319",
+      "entries": 1024,
+      "seconds": 17.245873589999974
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0320",
+      "entries": 1024,
+      "seconds": 16.22739570599515
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0321",
+      "entries": 1024,
+      "seconds": 10.942763320053928
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0322",
+      "entries": 1024,
+      "seconds": 12.103805653983727
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0323",
+      "entries": 1024,
+      "seconds": 10.950015302980319
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0324",
+      "entries": 1024,
+      "seconds": 10.900916040991433
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0325",
+      "entries": 1024,
+      "seconds": 10.921392614021897
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0326",
+      "entries": 1024,
+      "seconds": 13.041551453992724
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0327",
+      "entries": 1024,
+      "seconds": 10.890017275931314
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0328",
+      "entries": 1024,
+      "seconds": 10.88568359205965
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0329",
+      "entries": 1024,
+      "seconds": 10.89852255594451
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0330",
+      "entries": 1024,
+      "seconds": 11.213723022956401
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0331",
+      "entries": 1024,
+      "seconds": 11.010668150964193
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0332",
+      "entries": 1024,
+      "seconds": 10.999152169097215
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0333",
+      "entries": 1024,
+      "seconds": 11.126308894017711
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0334",
+      "entries": 1024,
+      "seconds": 11.336402097018436
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0335",
+      "entries": 1024,
+      "seconds": 14.582616818952374
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0336",
+      "entries": 1024,
+      "seconds": 11.18573353602551
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0337",
+      "entries": 1024,
+      "seconds": 11.235963130020536
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0338",
+      "entries": 1024,
+      "seconds": 11.140752217033878
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0339",
+      "entries": 1024,
+      "seconds": 11.282898633973673
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0340",
+      "entries": 1024,
+      "seconds": 11.201300463057123
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0341",
+      "entries": 1024,
+      "seconds": 11.091790334088728
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0342",
+      "entries": 1024,
+      "seconds": 11.00137136504054
+    },
+    {
+      "module": "Kernel/PackedLogCatalog/C0343",
+      "entries": 375,
+      "seconds": 3.9738566679880023
+    }
+  ],
+  "source_catalog_sha256": "781b3824c407d8a67cc640194d5925afa6aea16409a520dabc5c78c19876c89a"
+}

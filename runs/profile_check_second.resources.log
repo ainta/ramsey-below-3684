@@ -1,0 +1,56 @@
+BUILD SUPPORT Kernel/ProfileGuard
+BUILD SUPPORT Ramsey3683Bootstrap/ProfileCheck
+Ramsey3683Bootstrap/ProfileCheck.lean:35:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Ramsey3683Bootstrap/ProfileCheck.lean:62:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/ProfileCheck.lean:62:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/ProfileCheck.lean:81:15: error: unsolved goals
+lines : ℕ → Line
+n i j : ℕ
+w a b : ℤ
+h : supportGuard lines n i j w a b = true
+r : ℝ
+hr : r ∈ Icc 0 1
+hi : i ≤ n
+hj : j ≤ n
+hw : 0 ≤ w
+hwS : w ≤ scale
+hzero : w * (lines i).a + (scale - w) * (lines j).a ≤ scale * a
+hone : w * ((lines i).a + (lines i).b) + (scale - w) * ((lines j).a + (lines j).b) ≤ scale * (a + b)
+hwR : scalar w ∈ Icc 0 1
+hh : ↑(w * (lines i).a + (scale - w) * (lines j).a) ≤ ↑(scale * a)
+⊢ ↑scale * ↑a = ↑scale * ↑a * ↑q / ↑q
+Ramsey3683Bootstrap/ProfileCheck.lean:91:15: error: unsolved goals
+lines : ℕ → Line
+n i j : ℕ
+w a b : ℤ
+h : supportGuard lines n i j w a b = true
+r : ℝ
+hr : r ∈ Icc 0 1
+hi : i ≤ n
+hj : j ≤ n
+hw : 0 ≤ w
+hwS : w ≤ scale
+hzero : w * (lines i).a + (scale - w) * (lines j).a ≤ scale * a
+hone : w * ((lines i).a + (lines i).b) + (scale - w) * ((lines j).a + (lines j).b) ≤ scale * (a + b)
+hwR : scalar w ∈ Icc 0 1
+hadd : ∀ (x y : ℤ), value x + value y = value (x + y)
+hh : ↑(w * ((lines i).a + (lines i).b) + (scale - w) * ((lines j).a + (lines j).b)) ≤ ↑(scale * (a + b))
+⊢ ↑scale * ↑(a + b) = ↑scale * ↑(a + b) * ↑q / ↑q
+'Compact3684.ProfileCheck.shapeGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.ProfileCheck.activeGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.ProfileCheck.supportGuard_sound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 53, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 45, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/ProfileCheck.olean', 'Ramsey3683Bootstrap/ProfileCheck.lean']' returned non-zero exit status 1.

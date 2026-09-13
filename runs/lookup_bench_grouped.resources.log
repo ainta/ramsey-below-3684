@@ -1,0 +1,12 @@
+BUILD SUPPORT LookupBench/Grouped
+'Compact3684.LookupBench.grouped_checked' does not depend on any axioms
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "LookupBench/Grouped"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 18.827009140048176,
+  "headline_proved": false
+}

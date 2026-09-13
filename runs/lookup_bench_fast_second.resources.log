@@ -1,0 +1,15 @@
+BUILD SUPPORT LookupBench/FastGuard
+'Compact3684.Chain.runGuardFast_eq' depends on axioms: [propext]
+BUILD SUPPORT LookupBench/Fast
+'Compact3684.LookupBench.fast_checked' does not depend on any axioms
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "LookupBench/FastGuard",
+    "LookupBench/Fast"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 18.45398121199105,
+  "headline_proved": false
+}

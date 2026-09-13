@@ -1,0 +1,25 @@
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "PrefixRange",
+    "ControlQuantization",
+    "TerminalNumeric",
+    "IntegerLog",
+    "Ramsey3683Bootstrap/WeightedParameters",
+    "Ramsey3683Bootstrap/WeightedLocal",
+    "Ramsey3683Bootstrap/WeightedMoment",
+    "Ramsey3683Bootstrap/WeightedEngine",
+    "Ramsey3683Bootstrap/WeightedSchedules",
+    "Ramsey3683Bootstrap/WeightedSlack",
+    "Ramsey3683Bootstrap/WeightedConcrete",
+    "Ramsey3683Bootstrap/WeightedUniform",
+    "Ramsey3683Bootstrap/FiniteContinuation",
+    "Ramsey3683Bootstrap/Preparation",
+    "Ramsey3683Bootstrap",
+    "Compact3684"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 41.40651242004242,
+  "headline_proved": false
+}

@@ -1,0 +1,12 @@
+BUILD SUPPORT DependencyReferenceAudit
+DIRECT_DESCENT_REFERENCE RamseyLean.Numerics.Final RamseyLean.denseCaseExponent_final_eq RamseyLean.denseCaseExponent._proof_1
+DependencyReferenceAudit.lean:8:0: error: Additional module needs pinned-source recompilation: RamseyLean.Numerics.Final
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 84, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 76, in main
+    subprocess.run(['lean','+v4.32.1','-o',str(target),name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'DependencyReferenceAudit.olean', 'DependencyReferenceAudit.lean']' returned non-zero exit status 1.

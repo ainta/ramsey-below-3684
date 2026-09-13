@@ -1,0 +1,22 @@
+BUILD SUPPORT Ramsey3683Bootstrap/GridSeed
+Ramsey3683Bootstrap/GridSeed.lean:21:2: error: linarith failed to find a contradiction
+a θ μ p : ℝ
+hμ : μ ∈ Ioo 0 1
+hp : 0 < p
+hgap : 0 < (1 - μ) * (a + θ * Real.log (1 - μ)) + Real.log p
+hb : 0 < 1 - μ
+hlog : -a - θ * Real.log (1 - μ) < Real.log p / (1 - μ)
+a✝ : 1 / (1 - μ) * Real.log p + θ * Real.log (1 - μ) ≤ -a
+⊢ False
+failed
+Ramsey3683Bootstrap/GridSeed.lean:68:41: error: `field_simp` made no progress on the goal
+'Ramsey3683Bootstrap.gridCandidate_of_weighted_seed' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 45, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 37, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/GridSeed.olean', 'Ramsey3683Bootstrap/GridSeed.lean']' returned non-zero exit status 1.

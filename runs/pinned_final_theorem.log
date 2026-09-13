@@ -1,0 +1,53 @@
+BUILD SUPPORT InitialUniform
+'Compact3684.initial_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT ReflectedInitial
+'Compact3684.initial_reflected_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT CheckedCatalogSound
+'Compact3684.Log18.CheckedCatalog.all_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT TerminalStrict
+'Compact3684.terminal_numeric_lt_368395' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.affine_of_final_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.below_368395_of_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT CertifiedRound/R00
+'Compact3684.CertifiedRound.R00.valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT CertifiedRound/R01
+'Compact3684.CertifiedRound.R01.valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT CertifiedRound/R02
+'Compact3684.CertifiedRound.R02.valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT CertifiedRound/R03
+'Compact3684.CertifiedRound.R03.valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT CertifiedRound/R04
+'Compact3684.CertifiedRound.R04.valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT CertifiedRound/R05
+'Compact3684.CertifiedRound.R05.valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT CertifiedRound/R06
+'Compact3684.CertifiedRound.R06.valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT CertifiedRound/R07
+'Compact3684.CertifiedRound.R07.valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT CertifiedRound
+BUILD SUPPORT RamseyBelow3684
+'Compact3684.ramsey_le_368395' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.ramsey_base_below_3684' depends on axioms: [propext, Classical.choice, Quot.sound]
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "InitialUniform",
+    "ReflectedInitial",
+    "CheckedCatalogSound",
+    "TerminalStrict",
+    "CertifiedRound/R00",
+    "CertifiedRound/R01",
+    "CertifiedRound/R02",
+    "CertifiedRound/R03",
+    "CertifiedRound/R04",
+    "CertifiedRound/R05",
+    "CertifiedRound/R06",
+    "CertifiedRound/R07",
+    "CertifiedRound",
+    "RamseyBelow3684"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 39.024796460988,
+  "headline_proved": false
+}

@@ -1,0 +1,66 @@
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedSchedules
+Ramsey3683Bootstrap/WeightedSchedules.lean:39:4: error: linarith failed to find a contradiction
+e η μ β θ : ℝ
+r R n : ℕ
+he : e ∈ Ioo 0 1
+heη : e ≤ η
+hμ : 0 < μ
+hβ : 0 < β
+hθ : 0 < θ
+hrθ : ↑r ≤ ↑R * θ
+hratio : (1 + e) * μ ≤ β
+hn : 0 < n
+b : ℕ := bookSpineSize e R n
+a : ℝ := ↑n ^ 2 / e
+hn1 : 1 ≤ ↑n
+hnpos : 0 < ↑n
+heηpos : 0 < η
+a✝ : ↑n ^ 2 < 1 * e
+⊢ False
+failed
+Ramsey3683Bootstrap/WeightedSchedules.lean:57:31: error: failed to prove positivity/nonnegativity/nonzeroness
+Ramsey3683Bootstrap/WeightedSchedules.lean:59:8: error: failed to prove positivity/nonnegativity/nonzeroness
+Ramsey3683Bootstrap/WeightedSchedules.lean:72:30: error: failed to prove positivity/nonnegativity/nonzeroness
+Ramsey3683Bootstrap/WeightedSchedules.lean:81:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?a * ?b / ?c
+in the target expression
+  (μ ^ b) ^ θ ≤ (η / ↑n ^ 2) ^ r * ((β ^ b) ^ θ / 2 ^ θ)
+
+e η μ β θ : ℝ
+r R n : ℕ
+he : e ∈ Ioo 0 1
+heη : e ≤ η
+hμ : 0 < μ
+hβ : 0 < β
+hθ : 0 < θ
+hrθ : ↑r ≤ ↑R * θ
+hratio : (1 + e) * μ ≤ β
+hn : 0 < n
+b : ℕ := bookSpineSize e R n
+a : ℝ := ↑n ^ 2 / e
+hn1 : 1 ≤ ↑n
+hnpos : 0 < ↑n
+heηpos : 0 < η
+ha : 1 ≤ a
+hap : 0 < a
+hg : 2 * a ^ R ≤ (1 + e) ^ b
+hgp : (2 * a ^ R) ^ θ ≤ ((1 + e) ^ b) ^ θ
+haR : (a ^ R) ^ θ = a ^ (↑R * θ)
+harg : ↑n ^ 2 / η ≤ a
+hpow : (↑n ^ 2 / η) ^ r ≤ (a ^ R) ^ θ
+hratioPow : (1 + e) ^ b * μ ^ b ≤ β ^ b
+hratioTheta : ((1 + e) ^ b * μ ^ b) ^ θ ≤ (β ^ b) ^ θ
+hμb : (μ ^ θ) ^ b = (μ ^ b) ^ θ
+hgain : 2 ^ θ * (↑n ^ 2 / η) ^ r * (μ ^ b) ^ θ ≤ (β ^ b) ^ θ
+htwo : 0 < 2 ^ θ
+hrecip : (η / ↑n ^ 2) ^ r * (↑n ^ 2 / η) ^ r = 1
+⊢ (μ ^ b) ^ θ ≤ (η / ↑n ^ 2) ^ r * ((β ^ b) ^ θ / 2 ^ θ)
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 39, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 31, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/WeightedSchedules.olean', 'Ramsey3683Bootstrap/WeightedSchedules.lean']' returned non-zero exit status 1.

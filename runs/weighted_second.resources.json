@@ -1,0 +1,82 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/weighted_second.json",
+    "--modules",
+    "Ramsey3683Bootstrap/WeightedParameters",
+    "Ramsey3683Bootstrap/WeightedLocal",
+    "Ramsey3683Bootstrap/WeightedMoment",
+    "Ramsey3683Bootstrap/WeightedEngine"
+  ],
+  "elapsed_seconds": 6.255021023098379,
+  "peak_sampled_rss_kib": 3558908,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13320,
+      1
+    ],
+    [
+      0.57,
+      13320,
+      1
+    ],
+    [
+      1.14,
+      694312,
+      2
+    ],
+    [
+      1.71,
+      2706840,
+      2
+    ],
+    [
+      2.279,
+      3426364,
+      2
+    ],
+    [
+      2.848,
+      3555636,
+      2
+    ],
+    [
+      3.412,
+      143440,
+      2
+    ],
+    [
+      3.98,
+      860124,
+      2
+    ],
+    [
+      4.548,
+      3119664,
+      2
+    ],
+    [
+      5.116,
+      3487152,
+      2
+    ],
+    [
+      5.687,
+      3558908,
+      2
+    ]
+  ],
+  "log": "runs/weighted_second.resources.log"
+}

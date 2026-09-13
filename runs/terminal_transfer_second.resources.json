@@ -1,0 +1,59 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/terminal_transfer_second.json",
+    "--modules",
+    "Ramsey3683Bootstrap/TerminalTransfer"
+  ],
+  "elapsed_seconds": 3.9851769340457395,
+  "peak_sampled_rss_kib": 3577800,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13376,
+      1
+    ],
+    [
+      0.568,
+      13376,
+      1
+    ],
+    [
+      1.136,
+      722856,
+      2
+    ],
+    [
+      1.706,
+      2689320,
+      2
+    ],
+    [
+      2.275,
+      3420632,
+      2
+    ],
+    [
+      2.85,
+      3577800,
+      2
+    ],
+    [
+      3.42,
+      13384,
+      1
+    ]
+  ],
+  "log": "runs/terminal_transfer_second.resources.log"
+}

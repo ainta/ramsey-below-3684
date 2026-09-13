@@ -1,0 +1,49 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/packed_catalog_bench.json",
+    "--modules",
+    "PackedCatalogBench"
+  ],
+  "elapsed_seconds": 2.8460140170063823,
+  "peak_sampled_rss_kib": 814608,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13324,
+      1
+    ],
+    [
+      0.569,
+      776032,
+      2
+    ],
+    [
+      1.134,
+      814608,
+      2
+    ],
+    [
+      1.705,
+      265548,
+      2
+    ],
+    [
+      2.271,
+      0,
+      0
+    ]
+  ],
+  "log": "runs/packed_catalog_bench.resources.log"
+}

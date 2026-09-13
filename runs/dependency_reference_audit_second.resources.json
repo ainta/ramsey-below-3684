@@ -1,0 +1,119 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/dependency_reference_audit_second.json",
+    "--modules",
+    "DependencyReferenceAudit"
+  ],
+  "elapsed_seconds": 10.832420236081816,
+  "peak_sampled_rss_kib": 3661804,
+  "peak_processes": 2,
+  "rss_limit_mib": 6144,
+  "time_limit_seconds": 300,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13444,
+      1
+    ],
+    [
+      0.58,
+      13460,
+      1
+    ],
+    [
+      1.151,
+      813748,
+      2
+    ],
+    [
+      1.718,
+      2735924,
+      2
+    ],
+    [
+      2.285,
+      3515672,
+      2
+    ],
+    [
+      2.852,
+      3636804,
+      2
+    ],
+    [
+      3.42,
+      3639336,
+      2
+    ],
+    [
+      3.988,
+      3640804,
+      2
+    ],
+    [
+      4.559,
+      3642920,
+      2
+    ],
+    [
+      5.127,
+      3642820,
+      2
+    ],
+    [
+      5.695,
+      3645192,
+      2
+    ],
+    [
+      6.266,
+      3649704,
+      2
+    ],
+    [
+      6.833,
+      3648964,
+      2
+    ],
+    [
+      7.402,
+      3651140,
+      2
+    ],
+    [
+      7.969,
+      3655020,
+      2
+    ],
+    [
+      8.538,
+      3656812,
+      2
+    ],
+    [
+      9.108,
+      3658540,
+      2
+    ],
+    [
+      9.678,
+      3660332,
+      2
+    ],
+    [
+      10.266,
+      3661804,
+      2
+    ]
+  ],
+  "log": "runs/dependency_reference_audit_second.resources.log"
+}

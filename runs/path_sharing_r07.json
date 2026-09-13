@@ -1,0 +1,15 @@
+{
+  "status": "PATH_SHARING_MEASURED_NOT_PROVED",
+  "rounds": [
+    {
+      "round": 7,
+      "original_runs": 14234339,
+      "unique_suffix_nodes": 13482258,
+      "sharing_factor": 1.0557830149816152,
+      "nonempty_paths": 332673,
+      "maximum_path_runs": 143,
+      "elapsed_seconds": 8.101871884078719,
+      "scope": "Exact structural sharing measurement only; no new Lean theorem or guard result"
+    }
+  ]
+}

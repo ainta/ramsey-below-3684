@@ -1,0 +1,6 @@
+'Compact3684.range_valid_of_bound' depends on axioms: [propext, Quot.sound]
+'Compact3684.range_bound_join' depends on axioms: [propext, Quot.sound]
+'Compact3684.summarize_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.valid_of_checked_summary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.linearLift_compose' depends on axioms: [propext, Quot.sound]
+'Compact3684.linearLift_accepts' depends on axioms: [propext, Classical.choice, Quot.sound]

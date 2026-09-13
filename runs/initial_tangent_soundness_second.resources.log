@@ -1,0 +1,110 @@
+BUILD SUPPORT Ramsey3683Bootstrap/Certificate
+Ramsey3683Bootstrap/Certificate.lean:50:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/Certificate.lean:50:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/Certificate.lean:89:10: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/Certificate.lean:105:10: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/Certificate.lean:89:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/Certificate.lean:105:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'Compact3684.Certificate.checked_seed_candidate' depends on axioms: [propext, Classical.choice, Quot.sound]
+Ramsey3683Bootstrap/Certificate.lean:160:10: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/Certificate.lean:160:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/Certificate.lean:243:27: warning: This simp argument is unused:
+  Option.bind_none
+
+Hint: Omit it from the simp argument list.
+  simp only [hlt,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵n̵o̵n̵e̵] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Ramsey3683Bootstrap/Certificate.lean:246:34: warning: This simp argument is unused:
+  Option.bind_some
+
+Hint: Omit it from the simp argument list.
+  simp only [̵h̵l̵t̵,̵h̵l̵1̵t̵,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵s̵o̵m̵e̵,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵n̵o̵n̵e̵]̵[̲h̲l̲t̲,̲ ̲h̲l̲1̲t̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲b̲i̲n̲d̲_̲n̲o̲n̲e̲]̲ at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Ramsey3683Bootstrap/Certificate.lean:246:51: warning: This simp argument is unused:
+  Option.bind_none
+
+Hint: Omit it from the simp argument list.
+  simp only [̵h̵l̵t̵,̵h̵l̵1̵t̵,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵s̵o̵m̵e̵,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵n̵o̵n̵e̵]̵[̲h̲l̲t̲,̲ ̲h̲l̲1̲t̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲b̲i̲n̲d̲_̲s̲o̲m̲e̲]̲ at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Ramsey3683Bootstrap/Certificate.lean:249:44: warning: This simp argument is unused:
+  Option.bind_some
+
+Hint: Omit it from the simp argument list.
+  simp only [̵h̵l̵t̵,̵h̵l̵1̵t̵,̵h̵l̵r̵a̵t̵i̵o̵,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵s̵o̵m̵e̵,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵n̵o̵n̵e̵]̵[̲h̲l̲t̲,̲ ̲h̲l̲1̲t̲,̲ ̲h̲l̲r̲a̲t̲i̲o̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲b̲i̲n̲d̲_̲n̲o̲n̲e̲]̲ at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Ramsey3683Bootstrap/Certificate.lean:249:61: warning: This simp argument is unused:
+  Option.bind_none
+
+Hint: Omit it from the simp argument list.
+  simp only [̵h̵l̵t̵,̵h̵l̵1̵t̵,̵h̵l̵r̵a̵t̵i̵o̵,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵s̵o̵m̵e̵,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵n̵o̵n̵e̵]̵[̲h̲l̲t̲,̲ ̲h̲l̲1̲t̲,̲ ̲h̲l̲r̲a̲t̲i̲o̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲b̲i̲n̲d̲_̲s̲o̲m̲e̲]̲ at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Ramsey3683Bootstrap/Certificate.lean:251:36: warning: This simp argument is unused:
+  Option.bind_some
+
+Hint: Omit it from the simp argument list.
+  simp only [̵h̵l̵t̵,̵h̵l̵1̵t̵,̵h̵l̵r̵a̵t̵i̵o̵,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵s̵o̵m̵e̵,̵O̵p̵t̵i̵o̵n̵.̵s̵o̵m̵e̵.̵i̵n̵j̵E̵q̵]̵[̲h̲l̲t̲,̲ ̲h̲l̲1̲t̲,̲ ̲h̲l̲r̲a̲t̲i̲o̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲s̲o̲m̲e̲.̲i̲n̲j̲E̲q̲]̲ at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Ramsey3683Bootstrap/Certificate.lean:251:53: warning: This simp argument is unused:
+  Option.some.injEq
+
+Hint: Omit it from the simp argument list.
+  simp only [̵h̵l̵t̵,̵h̵l̵1̵t̵,̵h̵l̵r̵a̵t̵i̵o̵,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵s̵o̵m̵e̵,̵O̵p̵t̵i̵o̵n̵.̵s̵o̵m̵e̵.̵i̵n̵j̵E̵q̵]̵[̲h̲l̲t̲,̲ ̲h̲l̲1̲t̲,̲ ̲h̲l̲r̲a̲t̲i̲o̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲b̲i̲n̲d̲_̲s̲o̲m̲e̲]̲ at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Ramsey3683Bootstrap/Certificate.lean:219:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/Certificate.lean:236:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/Certificate.lean:219:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/Certificate.lean:236:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/Certificate.lean:225:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Ramsey3683Bootstrap/Certificate.lean:232:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Ramsey3683Bootstrap/Certificate.lean:294:12: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/Certificate.lean:294:12: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'Compact3684.Elementary.tangentGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Ramsey3683Bootstrap/Certificate"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 7.393134184065275,
+  "headline_proved": false
+}

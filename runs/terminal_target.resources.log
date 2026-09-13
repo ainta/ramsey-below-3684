@@ -1,0 +1,17 @@
+BUILD SUPPORT TerminalTarget
+TerminalTarget.lean:16:2: error: linarith failed to find a contradiction
+h : UniformRamseyExpBound fun r => affineA + affineD * r
+hb : 102633721 / 50000000 ≤ Real.exp (3811 / 5000)
+a✝ : Real.exp affineD ≤ 2
+⊢ False
+failed
+'Compact3684.below_3684_of_affine' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 50, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 42, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'TerminalTarget.olean', 'TerminalTarget.lean']' returned non-zero exit status 1.

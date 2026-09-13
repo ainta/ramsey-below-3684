@@ -1,0 +1,17 @@
+BUILD SUPPORT Ramsey3683Bootstrap/TerminalCore
+Ramsey3683Bootstrap/TerminalCore.lean:46:5: warning: Variable name `hp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'Ramsey3683Bootstrap.exists_terminal_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Ramsey3683Bootstrap/TerminalCore"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 11.333537545055151,
+  "headline_proved": false
+}

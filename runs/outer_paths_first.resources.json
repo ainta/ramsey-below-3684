@@ -1,0 +1,70 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/outer_paths_first.json",
+    "--modules",
+    "Kernel/OuterGuard",
+    "Ramsey3683Bootstrap/OuterPaths"
+  ],
+  "elapsed_seconds": 5.134404654963873,
+  "peak_sampled_rss_kib": 3674448,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13316,
+      1
+    ],
+    [
+      0.573,
+      815108,
+      2
+    ],
+    [
+      1.146,
+      689116,
+      2
+    ],
+    [
+      1.719,
+      157176,
+      2
+    ],
+    [
+      2.288,
+      622692,
+      2
+    ],
+    [
+      2.862,
+      1456160,
+      2
+    ],
+    [
+      3.431,
+      3244692,
+      2
+    ],
+    [
+      4.0,
+      3420324,
+      2
+    ],
+    [
+      4.569,
+      3674448,
+      2
+    ]
+  ],
+  "log": "runs/outer_paths_first.resources.log"
+}

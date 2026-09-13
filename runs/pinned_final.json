@@ -1,0 +1,16 @@
+{
+  "status": "PASS_UNCONDITIONAL_RAMSEY_THEOREM_PINNED_UPSTREAM",
+  "theorem": "Compact3684.ramsey_le_368395",
+  "base": "73679/20000",
+  "base_decimal": "3.68395",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "upstream_commit": "e53b8cf11d064daae70372b3a93b2556a5fee926",
+  "mathlib_commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "unchanged_dependency_builds_reused": true,
+  "elapsed_seconds": 128663.23967545398,
+  "final_source_sha256": "f9da3cbebb49ee7abc5e31cf84833adab5f3037e593927c8d4a865b8cc49c0cd"
+}

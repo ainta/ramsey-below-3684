@@ -1,0 +1,189 @@
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedSchedules
+Ramsey3683Bootstrap/WeightedSchedules.lean:85:12: error: don't know how to synthesize implicit argument `a`
+  @mul_le_mul_of_nonneg_left ℝ Real.instMul
+    Field.toSemifield.toDivisionSemiring.toGroupWithZero.toMulZeroOneClass.toMulZeroClass.toZero Real.instPreorder
+    ((η / ?m.1016 ^ 2) ^ r) (2 ^ θ * (↑n ^ 2 / η) ^ r * (μ ^ b) ^ θ) ((β ^ b) ^ θ) Real.instIsOrderedRing.toPosMulMono
+    hgain (pow_nonneg (div_nonneg (LT.lt.le heηpos) (sq_nonneg ?m.1016)) r)
+context:
+e η μ β θ : ℝ
+r R n : ℕ
+he : e ∈ Ioo 0 1
+heη : e ≤ η
+hμ : 0 < μ
+hβ : 0 < β
+hθ : 0 < θ
+hrθ : ↑r ≤ ↑R * θ
+hratio : (1 + e) * μ ≤ β
+hn : 0 < n
+b : ℕ := ⋯
+a : ℝ := ⋯
+hn1 : 1 ≤ ↑n
+hnpos : 0 < ↑n
+he0 : 0 < e
+he1 : e < 1
+hbase : 0 < 1 + e
+heηpos : 0 < η
+ha : 1 ≤ a
+hap : 0 < a
+hg : 2 * a ^ R ≤ (1 + e) ^ b
+hgp : (2 * a ^ R) ^ θ ≤ ((1 + e) ^ b) ^ θ
+haR : (a ^ R) ^ θ = a ^ (↑R * θ)
+harg : ↑n ^ 2 / η ≤ a
+hpow : (↑n ^ 2 / η) ^ r ≤ (a ^ R) ^ θ
+hratioPow : (1 + e) ^ b * μ ^ b ≤ β ^ b
+hratioTheta : ((1 + e) ^ b * μ ^ b) ^ θ ≤ (β ^ b) ^ θ
+hμb : (μ ^ θ) ^ b = (μ ^ b) ^ θ
+hgain : 2 ^ θ * (↑n ^ 2 / η) ^ r * (μ ^ b) ^ θ ≤ (β ^ b) ^ θ
+htwo : 0 < 2 ^ θ
+hrecip : (η / ↑n ^ 2) ^ r * (↑n ^ 2 / η) ^ r = 1
+⊢ ℝ
+Ramsey3683Bootstrap/WeightedSchedules.lean:86:5: error: don't know how to synthesize implicit argument `a`
+  @pow_nonneg ℝ Field.toSemifield.toDivisionSemiring.toGroupWithZero.toMonoidWithZero Real.partialOrder.toPreorder
+    (η / ?m.1016 ^ 2) Real.instZeroLEOneClass Real.instIsOrderedRing.toPosMulMono
+    (div_nonneg (LT.lt.le heηpos) (sq_nonneg ?m.1016)) r
+context:
+e η μ β θ : ℝ
+r R n : ℕ
+he : e ∈ Ioo 0 1
+heη : e ≤ η
+hμ : 0 < μ
+hβ : 0 < β
+hθ : 0 < θ
+hrθ : ↑r ≤ ↑R * θ
+hratio : (1 + e) * μ ≤ β
+hn : 0 < n
+b : ℕ := ⋯
+a : ℝ := ⋯
+hn1 : 1 ≤ ↑n
+hnpos : 0 < ↑n
+he0 : 0 < e
+he1 : e < 1
+hbase : 0 < 1 + e
+heηpos : 0 < η
+ha : 1 ≤ a
+hap : 0 < a
+hg : 2 * a ^ R ≤ (1 + e) ^ b
+hgp : (2 * a ^ R) ^ θ ≤ ((1 + e) ^ b) ^ θ
+haR : (a ^ R) ^ θ = a ^ (↑R * θ)
+harg : ↑n ^ 2 / η ≤ a
+hpow : (↑n ^ 2 / η) ^ r ≤ (a ^ R) ^ θ
+hratioPow : (1 + e) ^ b * μ ^ b ≤ β ^ b
+hratioTheta : ((1 + e) ^ b * μ ^ b) ^ θ ≤ (β ^ b) ^ θ
+hμb : (μ ^ θ) ^ b = (μ ^ b) ^ θ
+hgain : 2 ^ θ * (↑n ^ 2 / η) ^ r * (μ ^ b) ^ θ ≤ (β ^ b) ^ θ
+htwo : 0 < 2 ^ θ
+hrecip : (η / ↑n ^ 2) ^ r * (↑n ^ 2 / η) ^ r = 1
+⊢ ℝ
+Ramsey3683Bootstrap/WeightedSchedules.lean:86:17: error: don't know how to synthesize implicit argument `b`
+  @div_nonneg ℝ Field.toSemifield.toDivisionSemiring.toGroupWithZero Real.partialOrder PosMulReflectLE.toPosMulReflectLT
+    η (?m.1016 ^ 2) (LT.lt.le heηpos) (sq_nonneg ?m.1016)
+context:
+e η μ β θ : ℝ
+r R n : ℕ
+he : e ∈ Ioo 0 1
+heη : e ≤ η
+hμ : 0 < μ
+hβ : 0 < β
+hθ : 0 < θ
+hrθ : ↑r ≤ ↑R * θ
+hratio : (1 + e) * μ ≤ β
+hn : 0 < n
+b : ℕ := ⋯
+a : ℝ := ⋯
+hn1 : 1 ≤ ↑n
+hnpos : 0 < ↑n
+he0 : 0 < e
+he1 : e < 1
+hbase : 0 < 1 + e
+heηpos : 0 < η
+ha : 1 ≤ a
+hap : 0 < a
+hg : 2 * a ^ R ≤ (1 + e) ^ b
+hgp : (2 * a ^ R) ^ θ ≤ ((1 + e) ^ b) ^ θ
+haR : (a ^ R) ^ θ = a ^ (↑R * θ)
+harg : ↑n ^ 2 / η ≤ a
+hpow : (↑n ^ 2 / η) ^ r ≤ (a ^ R) ^ θ
+hratioPow : (1 + e) ^ b * μ ^ b ≤ β ^ b
+hratioTheta : ((1 + e) ^ b * μ ^ b) ^ θ ≤ (β ^ b) ^ θ
+hμb : (μ ^ θ) ^ b = (μ ^ b) ^ θ
+hgain : 2 ^ θ * (↑n ^ 2 / η) ^ r * (μ ^ b) ^ θ ≤ (β ^ b) ^ θ
+htwo : 0 < 2 ^ θ
+hrecip : (η / ↑n ^ 2) ^ r * (↑n ^ 2 / η) ^ r = 1
+⊢ ℝ
+Ramsey3683Bootstrap/WeightedSchedules.lean:86:49: error: don't know how to synthesize placeholder for argument `a`
+context:
+e η μ β θ : ℝ
+r R n : ℕ
+he : e ∈ Ioo 0 1
+heη : e ≤ η
+hμ : 0 < μ
+hβ : 0 < β
+hθ : 0 < θ
+hrθ : ↑r ≤ ↑R * θ
+hratio : (1 + e) * μ ≤ β
+hn : 0 < n
+b : ℕ := ⋯
+a : ℝ := ⋯
+hn1 : 1 ≤ ↑n
+hnpos : 0 < ↑n
+he0 : 0 < e
+he1 : e < 1
+hbase : 0 < 1 + e
+heηpos : 0 < η
+ha : 1 ≤ a
+hap : 0 < a
+hg : 2 * a ^ R ≤ (1 + e) ^ b
+hgp : (2 * a ^ R) ^ θ ≤ ((1 + e) ^ b) ^ θ
+haR : (a ^ R) ^ θ = a ^ (↑R * θ)
+harg : ↑n ^ 2 / η ≤ a
+hpow : (↑n ^ 2 / η) ^ r ≤ (a ^ R) ^ θ
+hratioPow : (1 + e) ^ b * μ ^ b ≤ β ^ b
+hratioTheta : ((1 + e) ^ b * μ ^ b) ^ θ ≤ (β ^ b) ^ θ
+hμb : (μ ^ θ) ^ b = (μ ^ b) ^ θ
+hgain : 2 ^ θ * (↑n ^ 2 / η) ^ r * (μ ^ b) ^ θ ≤ (β ^ b) ^ θ
+htwo : 0 < 2 ^ θ
+hrecip : (η / ↑n ^ 2) ^ r * (↑n ^ 2 / η) ^ r = 1
+⊢ ℝ
+Ramsey3683Bootstrap/WeightedSchedules.lean:85:7: error: failed to infer `have` declaration type
+Ramsey3683Bootstrap/WeightedSchedules.lean:30:45: error: unsolved goals
+e η μ β θ : ℝ
+r R n : ℕ
+he : e ∈ Ioo 0 1
+heη : e ≤ η
+hμ : 0 < μ
+hβ : 0 < β
+hθ : 0 < θ
+hrθ : ↑r ≤ ↑R * θ
+hratio : (1 + e) * μ ≤ β
+hn : 0 < n
+b : ℕ := bookSpineSize e R n
+a : ℝ := ↑n ^ 2 / e
+hn1 : 1 ≤ ↑n
+hnpos : 0 < ↑n
+he0 : 0 < e
+he1 : e < 1
+hbase : 0 < 1 + e
+heηpos : 0 < η
+ha : 1 ≤ a
+hap : 0 < a
+hg : 2 * a ^ R ≤ (1 + e) ^ b
+hgp : (2 * a ^ R) ^ θ ≤ ((1 + e) ^ b) ^ θ
+haR : (a ^ R) ^ θ = a ^ (↑R * θ)
+harg : ↑n ^ 2 / η ≤ a
+hpow : (↑n ^ 2 / η) ^ r ≤ (a ^ R) ^ θ
+hratioPow : (1 + e) ^ b * μ ^ b ≤ β ^ b
+hratioTheta : ((1 + e) ^ b * μ ^ b) ^ θ ≤ (β ^ b) ^ θ
+hμb : (μ ^ θ) ^ b = (μ ^ b) ^ θ
+hgain : 2 ^ θ * (↑n ^ 2 / η) ^ r * (μ ^ b) ^ θ ≤ (β ^ b) ^ θ
+htwo : 0 < 2 ^ θ
+hrecip : (η / ↑n ^ 2) ^ r * (↑n ^ 2 / η) ^ r = 1
+⊢ (μ ^ b) ^ θ * 2 ^ θ ≤ (η / ↑n ^ 2) ^ r * (β ^ b) ^ θ
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 39, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 31, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/WeightedSchedules.olean', 'Ramsey3683Bootstrap/WeightedSchedules.lean']' returned non-zero exit status 1.

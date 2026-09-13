@@ -1,0 +1,55 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "analyze_plan.py",
+    "runs/u2000m160/round_5.npz",
+    "--output",
+    "runs/plan2000.json"
+  ],
+  "elapsed_seconds": 3.9853810819331557,
+  "peak_sampled_rss_kib": 207592,
+  "peak_processes": 1,
+  "rss_limit_mib": 1024,
+  "time_limit_seconds": 120,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      20340,
+      1
+    ],
+    [
+      0.572,
+      171852,
+      1
+    ],
+    [
+      1.139,
+      185528,
+      1
+    ],
+    [
+      1.711,
+      192192,
+      1
+    ],
+    [
+      2.281,
+      196740,
+      1
+    ],
+    [
+      2.85,
+      201268,
+      1
+    ],
+    [
+      3.418,
+      207592,
+      1
+    ]
+  ],
+  "log": "runs/plan2000.resources.log"
+}

@@ -1,0 +1,105 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/chain_paths_first.json",
+    "--modules",
+    "Ramsey3683Bootstrap/RunSemantics",
+    "Ramsey3683Bootstrap/ChainPaths"
+  ],
+  "elapsed_seconds": 9.078846869058907,
+  "peak_sampled_rss_kib": 3711528,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13352,
+      1
+    ],
+    [
+      0.57,
+      815156,
+      2
+    ],
+    [
+      1.137,
+      309004,
+      2
+    ],
+    [
+      1.706,
+      922780,
+      2
+    ],
+    [
+      2.272,
+      1725288,
+      2
+    ],
+    [
+      2.839,
+      3308272,
+      2
+    ],
+    [
+      3.405,
+      3591680,
+      2
+    ],
+    [
+      3.974,
+      3680748,
+      2
+    ],
+    [
+      4.542,
+      13376,
+      1
+    ],
+    [
+      5.108,
+      455032,
+      2
+    ],
+    [
+      5.674,
+      808836,
+      2
+    ],
+    [
+      6.244,
+      1661172,
+      2
+    ],
+    [
+      6.813,
+      3262712,
+      2
+    ],
+    [
+      7.377,
+      3569540,
+      2
+    ],
+    [
+      7.945,
+      3661732,
+      2
+    ],
+    [
+      8.512,
+      3711528,
+      2
+    ]
+  ],
+  "log": "runs/chain_paths_first.resources.log"
+}

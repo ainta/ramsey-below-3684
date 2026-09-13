@@ -1,0 +1,30 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "compress_runs.py",
+    "certificates/pilot/bellman.json",
+    "certificates/pilot_runs/bellman.json"
+  ],
+  "elapsed_seconds": 1.1403574160067365,
+  "peak_sampled_rss_kib": 21176,
+  "peak_processes": 1,
+  "rss_limit_mib": 2048,
+  "time_limit_seconds": 120,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      20892,
+      1
+    ],
+    [
+      0.572,
+      21176,
+      1
+    ]
+  ],
+  "log": "runs/compress_pilot.resources.log"
+}

@@ -1,0 +1,13 @@
+BUILD SUPPORT Ramsey3683Bootstrap/CheckedRoundInterface
+'Compact3684.Chain.guards_of_checks' depends on axioms: [propext]
+'Compact3684.Outer.guards_of_checks' depends on axioms: [propext, Quot.sound]
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Ramsey3683Bootstrap/CheckedRoundInterface"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 2.331422448041849,
+  "headline_proved": false
+}

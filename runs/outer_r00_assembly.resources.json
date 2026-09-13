@@ -1,0 +1,49 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/outer_r00_assembly.json",
+    "--module-manifest",
+    "lean/Kernel/OuterChecks/R00Assemblies.json"
+  ],
+  "elapsed_seconds": 2.895564228994772,
+  "peak_sampled_rss_kib": 803048,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13328,
+      1
+    ],
+    [
+      0.568,
+      13328,
+      1
+    ],
+    [
+      1.142,
+      803048,
+      2
+    ],
+    [
+      1.753,
+      774328,
+      2
+    ],
+    [
+      2.323,
+      764000,
+      2
+    ]
+  ],
+  "log": "runs/outer_r00_assembly.resources.log"
+}

@@ -1,0 +1,8 @@
+{"round": 0, "columns": 50, "adjacent": 34289, "negative": 33445, "zero": 0, "positive": 844, "sign_changes": 5}
+{"round": 1, "columns": 62, "adjacent": 46774, "negative": 44883, "zero": 0, "positive": 1891, "sign_changes": 22}
+{"round": 2, "columns": 66, "adjacent": 50433, "negative": 49218, "zero": 0, "positive": 1215, "sign_changes": 37}
+{"round": 3, "columns": 67, "adjacent": 51194, "negative": 50435, "zero": 0, "positive": 759, "sign_changes": 21}
+{"round": 4, "columns": 68, "adjacent": 51536, "negative": 50845, "zero": 0, "positive": 691, "sign_changes": 35}
+{"round": 5, "columns": 196, "adjacent": 460694, "negative": 457290, "zero": 0, "positive": 3404, "sign_changes": 65}
+{"round": 6, "columns": 207, "adjacent": 496618, "negative": 491723, "zero": 0, "positive": 4895, "sign_changes": 99}
+{"round": 7, "columns": 209, "adjacent": 500457, "negative": 498040, "zero": 0, "positive": 2417, "sign_changes": 95}

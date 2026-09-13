@@ -1,0 +1,21 @@
+BUILD SUPPORT Ramsey3683Bootstrap/ChainSound
+Ramsey3683Bootstrap/ChainSound.lean:30:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/ChainSound.lean:30:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/ChainSound.lean:92:18: error(lean.invalidField): Invalid field `gridProfile`: The environment does not contain `Nonempty.gridProfile`, so it is not possible to project the field `gridProfile` from an expression
+  hF
+of type
+  Nonempty (UniformRamseyExpWitness (ProfileCheck.profile d.oldLine d.oldLast))
+'Compact3684.Chain.guards_sound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 55, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 47, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/ChainSound.olean', 'Ramsey3683Bootstrap/ChainSound.lean']' returned non-zero exit status 1.

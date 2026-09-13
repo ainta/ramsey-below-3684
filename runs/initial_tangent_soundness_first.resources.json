@@ -1,0 +1,89 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/initial_tangent_soundness_first.json",
+    "--modules",
+    "Ramsey3683Bootstrap/Certificate"
+  ],
+  "elapsed_seconds": 7.777904517017305,
+  "peak_sampled_rss_kib": 3749056,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13336,
+      1
+    ],
+    [
+      0.584,
+      814300,
+      2
+    ],
+    [
+      1.19,
+      337832,
+      2
+    ],
+    [
+      1.784,
+      921412,
+      2
+    ],
+    [
+      2.375,
+      3231436,
+      2
+    ],
+    [
+      2.98,
+      3588128,
+      2
+    ],
+    [
+      3.581,
+      3692812,
+      2
+    ],
+    [
+      4.217,
+      3708220,
+      2
+    ],
+    [
+      4.804,
+      3710176,
+      2
+    ],
+    [
+      5.401,
+      3727732,
+      2
+    ],
+    [
+      5.99,
+      3728380,
+      2
+    ],
+    [
+      6.573,
+      3749056,
+      2
+    ],
+    [
+      7.176,
+      13344,
+      1
+    ]
+  ],
+  "log": "runs/initial_tangent_soundness_first.resources.log"
+}

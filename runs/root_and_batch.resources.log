@@ -1,0 +1,18 @@
+BUILD SUPPORT Kernel/RootLinksSound
+'Compact3684.ReflectedRoot.all_checked' depends on axioms: [propext, Quot.sound]
+BUILD SUPPORT ReflectedInitial
+'Compact3684.initial_reflected_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT RunGuardBench4096R00
+'Compact3684.Bench4096R00.run_guards' does not depend on any axioms
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Kernel/RootLinksSound",
+    "ReflectedInitial",
+    "RunGuardBench4096R00"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 32.83664621692151,
+  "headline_proved": false
+}

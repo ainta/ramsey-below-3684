@@ -1,0 +1,21 @@
+BUILD SUPPORT Kernel/ChainChecks/R07P00000
+'Compact3684.CheckedChain.R07.P00000.checked' depends on axioms: [propext, Quot.sound]
+BUILD SUPPORT Kernel/ChainChecks/R07P01738
+'Compact3684.CheckedChain.R07.P01738.checked' depends on axioms: [propext, Quot.sound]
+BUILD SUPPORT Kernel/ChainChecks/R07P03474
+'Compact3684.CheckedChain.R07.P03474.checked' depends on axioms: [propext, Quot.sound]
+BUILD SUPPORT Kernel/ChainChecks/R07P03475
+'Compact3684.CheckedChain.R07.P03475.checked' does not depend on any axioms
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Kernel/ChainChecks/R07P00000",
+    "Kernel/ChainChecks/R07P01738",
+    "Kernel/ChainChecks/R07P03474",
+    "Kernel/ChainChecks/R07P03475"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 71.1016455750214,
+  "headline_proved": false
+}

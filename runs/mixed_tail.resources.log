@@ -1,0 +1,10 @@
+START 0 diagonal 3.695615807801386 terminal {'rate': 1.305815502120592, 'base': 3.6906976385516335, 'ratio': 0.9380183023639345, 'intercept': 0.5464946202107782, 'slope': 0.7615087652084797}
+SWEEP 0 seconds 54.49041087599471
+END {"round": 0, "terminal": {"rate": 1.3044197494865784, "base": 3.6855499309002324, "ratio": 0.9394094316544855, "intercept": 0.546684331999921, "slope": 0.7598197890572743}, "diagonal_base": 3.6907042401689707, "knots": 10495, "maximum_depth": 75, "possible_states": 2082413, "elapsed_seconds": 58.57432716502808}
+START 1 diagonal 3.6907042401689707 terminal {'rate': 1.3044197494865784, 'base': 3.6855499309002324, 'ratio': 0.9394094316544855, 'intercept': 0.546684331999921, 'slope': 0.7598197890572743}
+SWEEP 1 seconds 57.98467534396332
+END {"round": 1, "terminal": {"rate": 1.3040143399419692, "base": 3.6840560766129653, "ratio": 0.9403322841596116, "intercept": 0.5473279267562816, "slope": 0.7587036734159549}, "diagonal_base": 3.689065836477282, "knots": 10058, "maximum_depth": 80, "possible_states": 2077732, "elapsed_seconds": 61.73361841100268}
+START 2 diagonal 3.689065836477282 terminal {'rate': 1.3040143399419692, 'base': 3.6840560766129653, 'ratio': 0.9403322841596116, 'intercept': 0.5473279267562816, 'slope': 0.7587036734159549}
+SWEEP 2 seconds 57.39154134190176
+END {"round": 2, "terminal": {"rate": 1.3039141430335195, "base": 3.6836869640758096, "ratio": 0.9374744659721423, "intercept": 0.5439720835635825, "slope": 0.7621711805750615}, "diagonal_base": 3.6887067113704632, "knots": 10152, "maximum_depth": 84, "possible_states": 2076778, "elapsed_seconds": 61.14555052795913}
+SEARCH_TARGET_REACHED; exact certification is still required

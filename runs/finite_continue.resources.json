@@ -1,0 +1,55 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/finite_continue.json",
+    "--modules",
+    "Ramsey3683Bootstrap/FiniteContinuation",
+    "Ramsey3683Bootstrap/Preparation"
+  ],
+  "elapsed_seconds": 3.4047689149156213,
+  "peak_sampled_rss_kib": 3213732,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 150,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13328,
+      1
+    ],
+    [
+      0.571,
+      13328,
+      1
+    ],
+    [
+      1.141,
+      704408,
+      2
+    ],
+    [
+      1.707,
+      2801880,
+      2
+    ],
+    [
+      2.273,
+      3213732,
+      2
+    ],
+    [
+      2.838,
+      13336,
+      1
+    ]
+  ],
+  "log": "runs/finite_continue.resources.log"
+}

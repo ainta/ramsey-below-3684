@@ -1,0 +1,55 @@
+name = "Compact3684"
+version = "0.1.0"
+defaultTargets = ["RamseyBelow3684"]
+
+[[lean_lib]]
+name = "Compact3684"
+
+[[lean_lib]]
+name = "PrefixRange"
+
+[[lean_lib]]
+name = "ControlQuantization"
+
+[[lean_lib]]
+name = "TerminalNumeric"
+
+[[lean_lib]]
+name = "IntegerLog"
+
+[[lean_lib]]
+name = "Ramsey3683Bootstrap"
+
+[[lean_lib]]
+name = "Kernel"
+
+[[lean_lib]]
+name = "InitialUniform"
+
+[[lean_lib]]
+name = "ReflectedInitial"
+
+[[lean_lib]]
+name = "CheckedCatalogSound"
+
+[[lean_lib]]
+name = "TerminalTarget"
+
+[[lean_lib]]
+name = "TerminalStrict"
+
+[[lean_lib]]
+name = "CertifiedRound"
+
+[[lean_lib]]
+name = "RamseyBelow3684"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "520045ab14e26149ee970e2e617ca04b09bde5d6"
+
+[[require]]
+name = "RamseyLean"
+git = "https://github.com/wamlat/RamseyLean-bootstrap.git"
+rev = "e53b8cf11d064daae70372b3a93b2556a5fee926"

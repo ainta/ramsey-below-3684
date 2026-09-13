@@ -1,0 +1,53 @@
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedSlack
+Ramsey3683Bootstrap/WeightedSlack.lean:135:59: error: unexpected token '('; expected ')', ',' or ':'
+Ramsey3683Bootstrap/WeightedSlack.lean:118:61: error: Type mismatch: After simplification, term
+  s.η_pos
+ has type
+  0 < s.η
+but is expected to have type
+  s.η < 2 * s.η
+Ramsey3683Bootstrap/WeightedSlack.lean:120:61: error: Type mismatch: After simplification, term
+  s.η_pos
+ has type
+  0 < s.η
+but is expected to have type
+  s.η < 2 * s.η
+Ramsey3683Bootstrap/WeightedSlack.lean:126:24: error: Type mismatch: After simplification, term
+  s.η_pos
+ has type
+  0 < s.η
+but is expected to have type
+  s.η < 2 * s.η
+Ramsey3683Bootstrap/WeightedSlack.lean:135:24: error: Type mismatch: After simplification, term
+  Real.rpow_lt_rpow (LT.lt.le hμ)
+ has type
+  μ₀ < ?m.726 → 0 < ?m.727 → μ₀ ^ ?m.727 < ?m.726 ^ ?m.727
+but is expected to have type
+  μ₀ ^ θ < (μ₀ + s.η) ^ θ
+Ramsey3683Bootstrap/WeightedSlack.lean:113:48: error: unsolved goals
+x₀ y₀ μ₀ p θ : ℝ
+s : WeightedSlack x₀ y₀ μ₀ p θ
+hμ : 0 < μ₀
+hθ : 0 < θ
+R : ℕ
+hR : 0 < R
+hrR : s.r ≤ R
+hrθ : ↑s.r ≤ ↑R * θ
+hc : ContinuousAt (fun e => (1 + e) ^ θ) 0
+hred : ∀ᶠ (e : ℝ) in 𝓝 0, (1 + e) ^ θ * (x₀ + s.η) < x₀ + 2 * s.η
+hright : ∀ᶠ (e : ℝ) in 𝓝 0, (1 + e) ^ θ * (y₀ + s.η) < y₀ + 2 * s.η
+hblue : ∀ᶠ (e : ℝ) in 𝓝 0, (1 + e) * (μ₀ + s.η) < 1
+hratio : ∀ᶠ (e : ℝ) in 𝓝 0, (1 + e) * (μ₀ + s.η) < μ₀ + 2 * s.η
+hri : ∀ᶠ (e : ℝ) in 𝓝 0, (1 + e) * x₀ < x₀ + s.η
+hyi : ∀ᶠ (e : ℝ) in 𝓝 0, (1 + e) * y₀ < y₀ + s.η
+hbi : ∀ᶠ (e : ℝ) in 𝓝 0, (1 + e) * μ₀ ^ θ < (μ₀ + s.η) ^ θ
+⊢ Nonempty (WeightedGrowth x₀ y₀ μ₀ p θ s)
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 39, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 31, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/WeightedSlack.olean', 'Ramsey3683Bootstrap/WeightedSlack.lean']' returned non-zero exit status 1.

@@ -1,0 +1,33 @@
+BUILD SUPPORT Ramsey3683Bootstrap/GridClosure
+Ramsey3683Bootstrap/GridClosure.lean:34:47: warning: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Ramsey3683Bootstrap/GridClosure.lean:165:57: error: Application type mismatch: The argument
+  add_le_add_right hold ε
+has type
+  ε + P r ≤ ε + F r
+but is expected to have type
+  P (↑ℓ / ↑(N * m)) + ε ≤ F (↑ℓ / ↑(N * m)) + ε
+in the application
+  mul_le_mul_of_nonneg_left (add_le_add_right hold ε)
+Ramsey3683Bootstrap/GridClosure.lean:186:36: error: Application type mismatch: The argument
+  add_le_add_right hline ε
+has type
+  ε + (start b + slope b * (r - ↑(row b) / ↑N)) ≤ ε + F r
+but is expected to have type
+  start b + slope b * (r - ↑(row b) / ↑N) + ε ≤ F (↑ℓ / ↑(N * m)) + ε
+in the application
+  mul_le_mul_of_nonneg_left (add_le_add_right hline ε)
+'Ramsey3683Bootstrap.GridProfile.uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.GridProfile.of_cover' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 45, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 37, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/GridClosure.olean', 'Ramsey3683Bootstrap/GridClosure.lean']' returned non-zero exit status 1.

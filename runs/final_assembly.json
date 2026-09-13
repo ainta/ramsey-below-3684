@@ -1,0 +1,66 @@
+{
+  "status": "ASSEMBLY_IN_PROGRESS_NOT_HEADLINE_THEOREM",
+  "elapsed_seconds": 828.6180911259726,
+  "modules": [
+    {
+      "module": "Kernel/ChainChecks/R00NGroup0000",
+      "seconds": 0.9270579449366778,
+      "source_sha256": "055e68891206a1da745749123b36f79a60c9b5ebbada03844c4c87d5e85ffa3f",
+      "log": "runs/Kernel_ChainChecks_R00NGroup0000.final_compile.log"
+    },
+    {
+      "module": "Kernel/ChainChecks/R00NGroup0001",
+      "seconds": 0.47107037098612636,
+      "source_sha256": "6225572b20db5f9615fbf3cba1b87321532977d12911c59dde773073cef8b766",
+      "log": "runs/Kernel_ChainChecks_R00NGroup0001.final_compile.log"
+    },
+    {
+      "module": "Kernel/ChainChecks/R00NAll",
+      "seconds": 0.46240312804002315,
+      "source_sha256": "6ce2b6387ac929225f5e99201871c4bbb12fbc9d18389fa3aa03b39d0f394636",
+      "log": "runs/Kernel_ChainChecks_R00NAll.final_compile.log"
+    },
+    {
+      "module": "Kernel/ChainChecks/R00BGroup0000",
+      "seconds": 0.4388449309626594,
+      "source_sha256": "8e270753ab5d9d1eac5597fe82ba0babce8f5328d864c9178ea716bdf6f66fa6",
+      "log": "runs/Kernel_ChainChecks_R00BGroup0000.final_compile.log"
+    },
+    {
+      "module": "Kernel/ChainChecks/R00BAll",
+      "seconds": 0.44243102706968784,
+      "source_sha256": "4dad33a5e1cc139730944e46445348c35ff5f55443ede9e6e8b5aa7dcf45c210",
+      "log": "runs/Kernel_ChainChecks_R00BAll.final_compile.log"
+    },
+    {
+      "module": "Kernel/ChainChecks/R00PGroup0000",
+      "seconds": 0.7492341910256073,
+      "source_sha256": "b667f9078362c26f6130c85e7e0e51f1c99462cd8ab72d2232d8f8d47b7860bc",
+      "log": "runs/Kernel_ChainChecks_R00PGroup0000.final_compile.log"
+    },
+    {
+      "module": "Kernel/ChainChecks/R00PAll",
+      "seconds": 0.45137174509000033,
+      "source_sha256": "ba2acb9b8a8537338a06c4238a08370469c62fdcb4a9f6bdd3bf6895a6ca2ac1",
+      "log": "runs/Kernel_ChainChecks_R00PAll.final_compile.log"
+    },
+    {
+      "module": "Kernel/OuterChecks/R00CAll",
+      "seconds": 0.7989686900982633,
+      "source_sha256": "3fb965f202c0a7d53a64b7347f602255039c75e1fcc347523634e783959f00a5",
+      "log": "runs/Kernel_OuterChecks_R00CAll.final_compile.log"
+    },
+    {
+      "module": "Kernel/OuterChecks/R00SAll",
+      "seconds": 0.6183534550946206,
+      "source_sha256": "fac91502a0793ca76edacaf80d97a4f43f375374e761a6fdfb108c90cd8b7dc4",
+      "log": "runs/Kernel_OuterChecks_R00SAll.final_compile.log"
+    },
+    {
+      "module": "Kernel/OuterChecks/R00Boundary",
+      "seconds": 0.4495772599475458,
+      "source_sha256": "2f54f95210feca74cb62af1a35efb2c8f5726ea3cb46c21e249a5f77c9981ff8",
+      "log": "runs/Kernel_OuterChecks_R00Boundary.final_compile.log"
+    }
+  ]
+}

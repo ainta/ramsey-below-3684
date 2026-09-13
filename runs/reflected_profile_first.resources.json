@@ -1,0 +1,59 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/reflected_profile_first.json",
+    "--modules",
+    "Ramsey3683Bootstrap/ReflectedProfile"
+  ],
+  "elapsed_seconds": 3.9855743859661743,
+  "peak_sampled_rss_kib": 3696856,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13336,
+      1
+    ],
+    [
+      0.57,
+      13336,
+      1
+    ],
+    [
+      1.139,
+      702440,
+      2
+    ],
+    [
+      1.707,
+      2400832,
+      2
+    ],
+    [
+      2.278,
+      3502772,
+      2
+    ],
+    [
+      2.846,
+      3696856,
+      2
+    ],
+    [
+      3.414,
+      13348,
+      1
+    ]
+  ],
+  "log": "runs/reflected_profile_first.resources.log"
+}

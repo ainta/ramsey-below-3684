@@ -1,0 +1,60 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/terminal_strict.json",
+    "--modules",
+    "Kernel/TerminalSupport",
+    "TerminalStrict"
+  ],
+  "elapsed_seconds": 3.9951470310334116,
+  "peak_sampled_rss_kib": 3683848,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13364,
+      1
+    ],
+    [
+      0.577,
+      13372,
+      1
+    ],
+    [
+      1.147,
+      217888,
+      2
+    ],
+    [
+      1.717,
+      959016,
+      2
+    ],
+    [
+      2.285,
+      3236648,
+      2
+    ],
+    [
+      2.856,
+      3626400,
+      2
+    ],
+    [
+      3.426,
+      3683848,
+      2
+    ]
+  ],
+  "log": "runs/terminal_strict.resources.log"
+}

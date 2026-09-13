@@ -1,0 +1,45 @@
+BUILD SUPPORT Ramsey3683Bootstrap/ChainRuns
+'Compact3684.Chain.runGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Kernel/PackedChain
+BUILD SUPPORT Kernel/ProfileAccess/R01
+'Compact3684.Reflected.R01.all_regions' depends on axioms: [propext, Quot.sound]
+'Compact3684.Reflected.R01.all_shapes' depends on axioms: [propext, Quot.sound]
+BUILD SUPPORT Kernel/ProfileAccess/R02
+'Compact3684.Reflected.R02.all_regions' depends on axioms: [propext, Quot.sound]
+'Compact3684.Reflected.R02.all_shapes' depends on axioms: [propext, Quot.sound]
+BUILD SUPPORT Kernel/ProfileAccess/R03
+'Compact3684.Reflected.R03.all_regions' depends on axioms: [propext, Quot.sound]
+'Compact3684.Reflected.R03.all_shapes' depends on axioms: [propext, Quot.sound]
+BUILD SUPPORT Kernel/ProfileAccess/R04
+'Compact3684.Reflected.R04.all_regions' depends on axioms: [propext, Quot.sound]
+'Compact3684.Reflected.R04.all_shapes' depends on axioms: [propext, Quot.sound]
+BUILD SUPPORT Kernel/ProfileAccess/R05
+'Compact3684.Reflected.R05.all_regions' depends on axioms: [propext, Quot.sound]
+'Compact3684.Reflected.R05.all_shapes' depends on axioms: [propext, Quot.sound]
+BUILD SUPPORT Kernel/ProfileAccess/R06
+'Compact3684.Reflected.R06.all_regions' depends on axioms: [propext, Quot.sound]
+'Compact3684.Reflected.R06.all_shapes' depends on axioms: [propext, Quot.sound]
+BUILD SUPPORT Kernel/ProfileAccess/R07
+'Compact3684.Reflected.R07.all_regions' depends on axioms: [propext, Quot.sound]
+'Compact3684.Reflected.R07.all_shapes' depends on axioms: [propext, Quot.sound]
+BUILD SUPPORT Kernel/ProfileAccess/R08
+'Compact3684.Reflected.R08.all_shapes' depends on axioms: [propext, Quot.sound]
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Ramsey3683Bootstrap/ChainRuns",
+    "Kernel/PackedChain",
+    "Kernel/ProfileAccess/R01",
+    "Kernel/ProfileAccess/R02",
+    "Kernel/ProfileAccess/R03",
+    "Kernel/ProfileAccess/R04",
+    "Kernel/ProfileAccess/R05",
+    "Kernel/ProfileAccess/R06",
+    "Kernel/ProfileAccess/R07",
+    "Kernel/ProfileAccess/R08"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 8.036249095923267,
+  "headline_proved": false
+}

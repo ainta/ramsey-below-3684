@@ -1,0 +1,29 @@
+BUILD SUPPORT PrefixRange
+'Compact3684.range_valid_of_bound' depends on axioms: [propext, Quot.sound]
+'Compact3684.range_bound_join' depends on axioms: [propext, Quot.sound]
+'Compact3684.summarize_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.valid_of_checked_summary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.linearLift_compose' depends on axioms: [propext, Quot.sound]
+'Compact3684.linearLift_accepts' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT ControlQuantization
+ControlQuantization.lean:26:22: error: Application type mismatch: The argument
+  hi
+has type
+  theta * Real.log (1 - mu) + a ≤ theta * Real.log (1 - small) + a
+but is expected to have type
+  a + theta * Real.log (1 - mu) ≤ a + theta * Real.log (1 - small)
+in the application
+  mul_le_mul hz hi
+'Compact3684.support_affine_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.density_exponent_mono' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Compact3684.weighted_budget_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.blue_budget_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 37, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 29, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'ControlQuantization.olean', 'ControlQuantization.lean']' returned non-zero exit status 1.

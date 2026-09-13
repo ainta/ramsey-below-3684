@@ -1,0 +1,12 @@
+BUILD SUPPORT RunGuardBenchR00
+'Compact3684.BenchR00.run_guards' does not depend on any axioms
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "RunGuardBenchR00"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 7.359858002979308,
+  "headline_proved": false
+}

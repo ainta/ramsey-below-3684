@@ -1,0 +1,50 @@
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedParameters
+Ramsey3683Bootstrap/WeightedParameters.lean:34:36: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedLocal
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedMoment
+Ramsey3683Bootstrap/WeightedMoment.lean:47:0: warning: automatically included section variable(s) unused in theorem `Ramsey3683Bootstrap.weightedExcessMoment_eq_weightedMoment`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Ramsey3683Bootstrap/WeightedMoment.lean:141:0: warning: automatically included section variable(s) unused in theorem `Ramsey3683Bootstrap.weightedMoment_child_ge`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedEngine
+Ramsey3683Bootstrap/WeightedEngine.lean:130:8: warning: automatically included section variable(s) unused in theorem `_private.Ramsey3683Bootstrap.WeightedEngine.0.Ramsey3683Bootstrap.weighted_minLeft`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Ramsey3683Bootstrap/WeightedEngine.lean:212:33: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/WeightedEngine.lean:212:33: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/WeightedEngine.lean:238:26: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Ramsey3683Bootstrap/WeightedEngine.lean:238:38: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Ramsey3683Bootstrap/WeightedParameters",
+    "Ramsey3683Bootstrap/WeightedLocal",
+    "Ramsey3683Bootstrap/WeightedMoment",
+    "Ramsey3683Bootstrap/WeightedEngine"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 11.850902799982578,
+  "headline_proved": false
+}

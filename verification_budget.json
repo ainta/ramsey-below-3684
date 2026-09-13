@@ -1,0 +1,21 @@
+{
+  "complete_verification_wall_time_limit_seconds": 604800,
+  "verification_budget_origin_utc": "2026-09-11T02:50:00Z",
+  "verification_deadline_utc": "2026-09-18T02:50:00Z",
+  "origin_note": "Conservative minute before the first complete log-catalog kernel run, reconstructed from its completion timestamp and measured duration. Any retry must fit the remaining absolute budget.",
+  "default_job_sampled_rss_limit_mib": 4096,
+  "full_round_job_sampled_rss_limit_mib": 6144,
+  "final_assembly_sampled_rss_limit_mib": 8192,
+  "parallel_full_round_jobs": 2,
+  "largest_data_preparation_limit_seconds": 43200,
+  "rounds_01_06_limit_seconds": 518400,
+  "round_07_limit_seconds": 345600,
+  "final_assembly_limit_seconds": 518400,
+  "aggregate_memory_monitor": "runs/aggregate_active_memory.json",
+  "includes": "The complete Lean verification run; dependency preparation must be reported separately if cached dependencies are reused.",
+  "complete_run_measured": true,
+  "completion_evidence": "runs/pinned_final.json",
+  "continuous_memory_measurement": false,
+  "aggregate_memory_monitor_recovery": "runs/aggregate_recovered_pipeline.json",
+  "policy": "Benchmark representative kernel computations before scaling. Enforce the one-week wall-clock limit around the complete verification command. Do not infer a complete resource guarantee from component benchmarks."
+}

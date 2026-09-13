@@ -1,0 +1,36 @@
+BUILD SUPPORT Ramsey3683Bootstrap/ProfileCheck
+Ramsey3683Bootstrap/ProfileCheck.lean:35:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Ramsey3683Bootstrap/ProfileCheck.lean:62:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/ProfileCheck.lean:62:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/ProfileCheck.lean:81:82: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/ProfileCheck.lean:91:82: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/ProfileCheck.lean:81:82: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/ProfileCheck.lean:91:82: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'Compact3684.ProfileCheck.shapeGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.ProfileCheck.activeGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.ProfileCheck.supportGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.ProfileCheck.regionGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Ramsey3683Bootstrap/ProfileCheck"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 6.068930121953599,
+  "headline_proved": false
+}

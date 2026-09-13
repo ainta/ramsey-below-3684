@@ -1,0 +1,22 @@
+BUILD SUPPORT Ramsey3683Bootstrap/GridClosure
+Ramsey3683Bootstrap/GridClosure.lean:34:47: warning: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Ramsey3683Bootstrap/GridClosure.lean:184:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Ramsey3683Bootstrap.GridProfile.uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.GridProfile.of_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.GridCandidate.path' depends on axioms: [propext, Classical.choice, Quot.sound]
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Ramsey3683Bootstrap/GridClosure"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 3.9126968920463696,
+  "headline_proved": false
+}

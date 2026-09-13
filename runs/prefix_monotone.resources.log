@@ -1,0 +1,43 @@
+BUILD SUPPORT PrefixRange
+PrefixRange.lean:43:45: error: unsolved goals
+case neg
+value pref : ℕ → ℤ
+lo mid hi : ℕ
+a b : ℤ
+hleft : RangeBound value pref lo mid a
+hright : RangeBound value pref (mid + 1) hi b
+i : ℕ
+hlo : lo ≤ i
+hhi : i ≤ hi
+h : ¬i ≤ mid
+⊢ value i - pref (i - 1) ≤ max a b
+PrefixRange.lean:56:24: error(lean.unknownIdentifier): Unknown constant `Nat.le_induction`
+PrefixRange.lean:66:24: error(lean.unknownIdentifier): Unknown constant `Nat.le_induction`
+PrefixRange.lean:80:52: error(lean.invalidField): Invalid field `trans`: The environment does not contain `Nat.le.trans`, so it is not possible to project the field `trans` from an expression
+  hl
+of type `blockLo.le lo`
+PrefixRange.lean:80:68: error(lean.invalidField): Invalid field `trans_le`: The environment does not contain `Nat.le.trans_le`, so it is not possible to project the field `trans_le` from an expression
+  hjh
+of type `j.succ.le hi`
+PrefixRange.lean:91:52: error(lean.invalidField): Invalid field `trans`: The environment does not contain `Nat.le.trans`, so it is not possible to project the field `trans` from an expression
+  hl
+of type `blockLo.le lo`
+PrefixRange.lean:91:80: error(lean.invalidField): Invalid field `trans_le`: The environment does not contain `Nat.le.trans_le`, so it is not possible to project the field `trans_le` from an expression
+  hjh
+of type `j.succ.le hi`
+PrefixRange.lean:92:2: error: No goals to be solved
+'Compact3684.range_valid_of_bound' depends on axioms: [propext, Quot.sound]
+'Compact3684.range_bound_join' depends on axioms: [propext, sorryAx, Quot.sound]
+'Compact3684.summarize_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.valid_of_checked_summary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.linearLift_compose' depends on axioms: [propext, Quot.sound]
+'Compact3684.linearLift_accepts' depends on axioms: [propext, Classical.choice, Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 45, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 37, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'PrefixRange.olean', 'PrefixRange.lean']' returned non-zero exit status 1.

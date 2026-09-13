@@ -1,0 +1,66 @@
+BUILD SUPPORT Ramsey3683Bootstrap/FiniteContinuation
+Ramsey3683Bootstrap/FiniteContinuation.lean:50:4: warning: Try `simp at hb` instead of `simpa using hb`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Ramsey3683Bootstrap/FiniteContinuation.lean:58:6: error: unsolved goals
+case neg
+V : Type u
+inst✝² : Fintype V
+inst✝¹ : DecidableEq V
+G : SimpleGraph V
+inst✝ : DecidableRel G.Adj
+X : Finset V
+v : V
+hv : v ∈ X
+hd : Disjoint (G.neighborFinset v ∩ X) (Gᶜ.neighborFinset v ∩ X)
+w : V
+hw : ¬w = v
+hr : ¬G.Adj v w
+⊢ w ∈ X → ¬v = w
+Ramsey3683Bootstrap/FiniteContinuation.lean:57:18: warning: This simp argument is unused:
+  ne_comm
+
+Hint: Omit it from the simp argument list.
+  simp [hw, n̵e̵_̵c̵o̵m̵m̵,̵ ̵hr]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Ramsey3683Bootstrap/FiniteContinuation.lean:58:18: warning: This simp argument is unused:
+  ne_comm
+
+Hint: Omit it from the simp argument list.
+  simp [hw, n̵e̵_̵c̵o̵m̵m̵,̵ ̵hr]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Ramsey3683Bootstrap/FiniteContinuation.lean:81:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+Ramsey3683Bootstrap/FiniteContinuation.lean:76:5: warning: Variable name `hX` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Ramsey3683Bootstrap/FiniteContinuation.lean:124:45: error(lean.invalidField): Invalid field `mp`: The environment does not contain `Function.mp`, so it is not possible to project the field `mp` from an expression
+  mul_le_mul_right ?m.131
+of type
+  ∀ (a : ?m.119), a * ?m.123 ≤ a * ?m.124
+Ramsey3683Bootstrap/FiniteContinuation.lean:124:26: error: Application type mismatch: The argument
+  mul_pos hXp hYp
+has type
+  0 < ↑(#X) * ↑(#Y)
+but is expected to have type
+  ?m.123 ≤ ?m.124
+in the application
+  mul_le_mul_right (mul_pos hXp hYp)
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 39, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 31, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/FiniteContinuation.olean', 'Ramsey3683Bootstrap/FiniteContinuation.lean']' returned non-zero exit status 1.

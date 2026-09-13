@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/check_kernel_catalog.py", line 64, in <module>
+    main()
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/check_kernel_catalog.py", line 38, in main
+    assert (base/(module+'.olean')).stat().st_mtime >= (base/(module+'.lean')).stat().st_mtime
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

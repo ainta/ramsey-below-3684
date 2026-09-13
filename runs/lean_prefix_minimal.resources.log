@@ -1,0 +1,34 @@
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:16:21: error: unexpected token 'prefix'; expected ')'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:16:30: error: unexpected token 'ℕ'; expected prec
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:17:41: error: unexpected token '('; expected ':'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:19:21: error: unexpected token 'prefix'; expected ')'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:19:30: error: unexpected token 'ℕ'; expected prec
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:20:46: error: unexpected identifier; expected ':'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:20:58: error: unexpected token '('; expected ':'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:23:35: error: unexpected token 'prefix'; expected '}'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:23:44: error: unexpected token 'ℕ'; expected prec
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:24:32: error: unexpected identifier; expected ':'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:24:54: error: unexpected identifier; expected ':'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:25:27: error: unexpected identifier; expected ':'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:30:36: error: unexpected token 'prefix'; expected ')'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:30:45: error: unexpected token 'ℕ'; expected prec
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:31:27: error: unexpected identifier; expected ':'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:31:49: error: unexpected token '('; expected ':'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:38:31: error: unexpected token 'prefix'; expected '}'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:38:40: error: unexpected token 'ℕ'; expected prec
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:39:36: error: unexpected identifier; expected ':'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:40:37: error: unexpected token '('; expected ':'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:41:27: error: unexpected identifier; expected ':'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:48:25: error: unexpected token 'prefix'; expected '_' or identifier
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:48:33: error: unexpected token 'ℕ'; expected prec
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:49:16: error: unexpected identifier; expected ':'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:49:28: error: unexpected identifier; expected ':'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:49:44: error: unexpected identifier; expected ':'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:49:57: error: unexpected identifier; expected ':'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:50:17: error: unexpected identifier; expected ':'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:50:29: error: unexpected identifier; expected ':'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:76:8: error(lean.unknownIdentifier): Unknown identifier `max_lt_iff`
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:86:14: error(lean.unknownIdentifier): Unknown constant `range_valid_of_bound`
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean:87:14: error(lean.unknownIdentifier): Unknown constant `range_bound_join`
+'Compact3684.summarize_correct' depends on axioms: [sorryAx]
+'Compact3684.valid_of_checked_summary' depends on axioms: [sorryAx]

@@ -1,0 +1,15 @@
+BUILD SUPPORT Kernel/CheckedCatalog
+'Compact3684.Log18.CheckedCatalog.entry' does not depend on any axioms
+BUILD SUPPORT CheckedCatalogSound
+'Compact3684.Log18.CheckedCatalog.all_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Kernel/CheckedCatalog",
+    "CheckedCatalogSound"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 3.63250936800614,
+  "headline_proved": false
+}

@@ -1,0 +1,14 @@
+BUILD SUPPORT Ramsey3683Bootstrap/ReflectedProfile
+'Ramsey3683Bootstrap.affineProfile_support_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.OrderedLines.profile_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.affine_le_concave_on_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Ramsey3683Bootstrap/ReflectedProfile"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 2.889624200994149,
+  "headline_proved": false
+}

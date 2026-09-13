@@ -1,0 +1,911 @@
+PASS LOG CATALOG 20000
+PASS LOG CATALOG 40000
+PASS LOG CATALOG 60000
+PASS LOG CATALOG 80000
+PASS LOG CATALOG 100000
+PASS LOG CATALOG 120000
+PASS LOG CATALOG 140000
+PASS LOG CATALOG 160000
+PASS LOG CATALOG 180000
+PASS LOG CATALOG 200000
+PASS LOG CATALOG 220000
+PASS LOG CATALOG 240000
+PASS LOG CATALOG 260000
+PASS LOG CATALOG 280000
+PASS LOG CATALOG 300000
+PASS LOG CATALOG 320000
+PASS LOG CATALOG 340000
+PASS all 351607 logarithm enclosures independently recomputed
+PASS 1695911 nodes, 41793102 runs, 813922863 implied edges
+PASS RECORDS 10000 / 1695911
+PASS RECORDS 20000 / 1695911
+PASS RECORDS 30000 / 1695911
+PASS ROUND 0 exponent 1.313565645948851408738047948200 records 34447
+PASS RECORDS 40000 / 1695911
+PASS RECORDS 50000 / 1695911
+PASS RECORDS 60000 / 1695911
+PASS RECORDS 70000 / 1695911
+PASS RECORDS 80000 / 1695911
+PASS ROUND 1 exponent 1.308962124472958070000000000000 records 81454
+PASS RECORDS 90000 / 1695911
+PASS RECORDS 100000 / 1695911
+PASS RECORDS 110000 / 1695911
+PASS RECORDS 120000 / 1695911
+PASS RECORDS 130000 / 1695911
+PASS ROUND 2 exponent 1.307802091636673164876340058512 records 132124
+PASS RECORDS 140000 / 1695911
+PASS RECORDS 150000 / 1695911
+PASS RECORDS 160000 / 1695911
+PASS RECORDS 170000 / 1695911
+PASS RECORDS 180000 / 1695911
+PASS ROUND 3 exponent 1.307242208188577040000000000000 records 183528
+PASS RECORDS 190000 / 1695911
+PASS RECORDS 200000 / 1695911
+PASS RECORDS 210000 / 1695911
+PASS RECORDS 220000 / 1695911
+PASS RECORDS 230000 / 1695911
+PASS ROUND 4 exponent 1.307165200270773270000000000000 records 235337
+PASS RECORDS 240000 / 1695911
+PASS RECORDS 250000 / 1695911
+PASS RECORDS 260000 / 1695911
+PASS RECORDS 270000 / 1695911
+PASS RECORDS 280000 / 1695911
+PASS RECORDS 290000 / 1695911
+PASS RECORDS 300000 / 1695911
+PASS RECORDS 310000 / 1695911
+PASS RECORDS 320000 / 1695911
+PASS RECORDS 330000 / 1695911
+PASS RECORDS 340000 / 1695911
+PASS RECORDS 350000 / 1695911
+PASS RECORDS 360000 / 1695911
+PASS RECORDS 370000 / 1695911
+PASS RECORDS 380000 / 1695911
+PASS RECORDS 390000 / 1695911
+PASS RECORDS 400000 / 1695911
+PASS RECORDS 410000 / 1695911
+PASS RECORDS 420000 / 1695911
+PASS RECORDS 430000 / 1695911
+PASS RECORDS 440000 / 1695911
+PASS RECORDS 450000 / 1695911
+PASS RECORDS 460000 / 1695911
+PASS RECORDS 470000 / 1695911
+PASS RECORDS 480000 / 1695911
+PASS RECORDS 490000 / 1695911
+PASS RECORDS 500000 / 1695911
+PASS RECORDS 510000 / 1695911
+PASS RECORDS 520000 / 1695911
+PASS RECORDS 530000 / 1695911
+PASS RECORDS 540000 / 1695911
+PASS RECORDS 550000 / 1695911
+PASS RECORDS 560000 / 1695911
+PASS RECORDS 570000 / 1695911
+PASS RECORDS 580000 / 1695911
+PASS RECORDS 590000 / 1695911
+PASS RECORDS 600000 / 1695911
+PASS RECORDS 610000 / 1695911
+PASS RECORDS 620000 / 1695911
+PASS RECORDS 630000 / 1695911
+PASS RECORDS 640000 / 1695911
+PASS RECORDS 650000 / 1695911
+PASS RECORDS 660000 / 1695911
+PASS RECORDS 670000 / 1695911
+PASS RECORDS 680000 / 1695911
+PASS RECORDS 690000 / 1695911
+PASS ROUND 5 exponent 1.305835290837298072298090591158 records 696838
+PASS RECORDS 700000 / 1695911
+PASS RECORDS 710000 / 1695911
+PASS RECORDS 720000 / 1695911
+PASS RECORDS 730000 / 1695911
+PASS RECORDS 740000 / 1695911
+PASS RECORDS 750000 / 1695911
+PASS RECORDS 760000 / 1695911
+PASS RECORDS 770000 / 1695911
+PASS RECORDS 780000 / 1695911
+PASS RECORDS 790000 / 1695911
+PASS RECORDS 800000 / 1695911
+PASS RECORDS 810000 / 1695911
+PASS RECORDS 820000 / 1695911
+PASS RECORDS 830000 / 1695911
+PASS RECORDS 840000 / 1695911
+PASS RECORDS 850000 / 1695911
+PASS RECORDS 860000 / 1695911
+PASS RECORDS 870000 / 1695911
+PASS RECORDS 880000 / 1695911
+PASS RECORDS 890000 / 1695911
+PASS RECORDS 900000 / 1695911
+PASS RECORDS 910000 / 1695911
+PASS RECORDS 920000 / 1695911
+PASS RECORDS 930000 / 1695911
+PASS RECORDS 940000 / 1695911
+PASS RECORDS 950000 / 1695911
+PASS RECORDS 960000 / 1695911
+PASS RECORDS 970000 / 1695911
+PASS RECORDS 980000 / 1695911
+PASS RECORDS 990000 / 1695911
+PASS RECORDS 1000000 / 1695911
+PASS RECORDS 1010000 / 1695911
+PASS RECORDS 1020000 / 1695911
+PASS RECORDS 1030000 / 1695911
+PASS RECORDS 1040000 / 1695911
+PASS RECORDS 1050000 / 1695911
+PASS RECORDS 1060000 / 1695911
+PASS RECORDS 1070000 / 1695911
+PASS RECORDS 1080000 / 1695911
+PASS RECORDS 1090000 / 1695911
+PASS RECORDS 1100000 / 1695911
+PASS RECORDS 1110000 / 1695911
+PASS RECORDS 1120000 / 1695911
+PASS RECORDS 1130000 / 1695911
+PASS RECORDS 1140000 / 1695911
+PASS RECORDS 1150000 / 1695911
+PASS RECORDS 1160000 / 1695911
+PASS RECORDS 1170000 / 1695911
+PASS RECORDS 1180000 / 1695911
+PASS RECORDS 1190000 / 1695911
+PASS ROUND 6 exponent 1.305391316256026436666666666666 records 1194435
+PASS RECORDS 1200000 / 1695911
+PASS RECORDS 1210000 / 1695911
+PASS RECORDS 1220000 / 1695911
+PASS RECORDS 1230000 / 1695911
+PASS RECORDS 1240000 / 1695911
+PASS RECORDS 1250000 / 1695911
+PASS RECORDS 1260000 / 1695911
+PASS RECORDS 1270000 / 1695911
+PASS RECORDS 1280000 / 1695911
+PASS RECORDS 1290000 / 1695911
+PASS RECORDS 1300000 / 1695911
+PASS RECORDS 1310000 / 1695911
+PASS RECORDS 1320000 / 1695911
+PASS RECORDS 1330000 / 1695911
+PASS RECORDS 1340000 / 1695911
+PASS RECORDS 1350000 / 1695911
+PASS RECORDS 1360000 / 1695911
+PASS RECORDS 1370000 / 1695911
+PASS RECORDS 1380000 / 1695911
+PASS RECORDS 1390000 / 1695911
+PASS RECORDS 1400000 / 1695911
+PASS RECORDS 1410000 / 1695911
+PASS RECORDS 1420000 / 1695911
+PASS RECORDS 1430000 / 1695911
+PASS RECORDS 1440000 / 1695911
+PASS RECORDS 1450000 / 1695911
+PASS RECORDS 1460000 / 1695911
+PASS RECORDS 1470000 / 1695911
+PASS RECORDS 1480000 / 1695911
+PASS RECORDS 1490000 / 1695911
+PASS RECORDS 1500000 / 1695911
+PASS RECORDS 1510000 / 1695911
+PASS RECORDS 1520000 / 1695911
+PASS RECORDS 1530000 / 1695911
+PASS RECORDS 1540000 / 1695911
+PASS RECORDS 1550000 / 1695911
+PASS RECORDS 1560000 / 1695911
+PASS RECORDS 1570000 / 1695911
+PASS RECORDS 1580000 / 1695911
+PASS RECORDS 1590000 / 1695911
+PASS RECORDS 1600000 / 1695911
+PASS RECORDS 1610000 / 1695911
+PASS RECORDS 1620000 / 1695911
+PASS RECORDS 1630000 / 1695911
+PASS RECORDS 1640000 / 1695911
+PASS RECORDS 1650000 / 1695911
+PASS RECORDS 1660000 / 1695911
+PASS RECORDS 1670000 / 1695911
+PASS RECORDS 1680000 / 1695911
+PASS RECORDS 1690000 / 1695911
+PASS ROUND 7 exponent 1.305293962995252730000000000000 records 1695911
+{
+  "status": "PASS_FINITE_CHAIN_NOT_LEAN",
+  "terminal": {
+    "status": "PASS_TARGET",
+    "target": "921/250",
+    "base_upper": "3683749312877/1000000000000",
+    "base_upper_decimal": "3.683749312877",
+    "selected_cell": 10057,
+    "intercept": "163191640399201219/300000000000000000",
+    "slope": "30487567223/40000000000",
+    "squared_margin_scaled": "1846999884357328",
+    "scope": "Exact finite arithmetic plus the written global-affine maximum-clique transfer; not Lean verified"
+  },
+  "simple_terminal": {
+    "status": "PASS_TARGET",
+    "target": "921/250",
+    "base_upper": "3683889327713/1000000000000",
+    "base_upper_decimal": "3.683889327713",
+    "selected_cell": null,
+    "intercept": "68/125",
+    "slope": "3811/5000",
+    "squared_margin_scaled": "815421164577464",
+    "scope": "Exact finite arithmetic plus the written global-affine maximum-clique transfer; not Lean verified"
+  },
+  "initial_majorant_sha256": "e405c39ce2402a5258c45ae7be2bfb6134daea99f22803e65f65dca083408677",
+  "metadata_sha256": "f7e2aae40ec118b4ead03ac3a6c4621cc11b1bae6fca3245a2f2d176a60fa4ac",
+  "record_file_sha256": "47c28752d56420adbe483af2ed9f353cd8a140a0508f9388d2f750cd56eaa9dc",
+  "edge_file_sha256": "3d0ce55a7e228919579198edce2953bc6e78fb86b5d2202706cce43160e5a15d",
+  "arithmetic": "exact fractions and directed integer intervals; path edges checked with overflow-checked C++ integers; floating point only selects a terminal cell, never certifies it",
+  "interval_decimal_places": 18,
+  "logarithm_terms": 20,
+  "verified_log_catalog_entries": 351607,
+  "rounds": [
+    {
+      "round": 0,
+      "N": 2000,
+      "profiles": [
+        {
+          "start": [
+            1,
+            20
+          ],
+          "endpoint": [
+            131356607751280527,
+            100000000000000000
+          ],
+          "exponent_decimal": "1.313566077512805270000000000000"
+        },
+        {
+          "start": [
+            1,
+            10
+          ],
+          "endpoint": [
+            82097911220300369155728136687,
+            62500000000000000000000000000
+          ],
+          "exponent_decimal": "1.313566579524805906491650186992"
+        },
+        {
+          "start": [
+            1,
+            5
+          ],
+          "endpoint": [
+            164196292148637,
+            125000000000000
+          ],
+          "exponent_decimal": "1.313570337189096000000000000000"
+        },
+        {
+          "start": [
+            2,
+            5
+          ],
+          "endpoint": [
+            3283929449735653,
+            2500000000000000
+          ],
+          "exponent_decimal": "1.313571779894261200000000000000"
+        },
+        {
+          "start": [
+            3,
+            5
+          ],
+          "endpoint": [
+            6567828229744257043690239741,
+            5000000000000000000000000000
+          ],
+          "exponent_decimal": "1.313565645948851408738047948200"
+        },
+        {
+          "start": [
+            4,
+            5
+          ],
+          "endpoint": [
+            13135797652054093,
+            10000000000000000
+          ],
+          "exponent_decimal": "1.313579765205409300000000000000"
+        }
+      ],
+      "best_exponent": [
+        6567828229744257043690239741,
+        5000000000000000000000000000
+      ],
+      "support_endpoint": [
+        6567828229744257043690239741,
+        5000000000000000000000000000
+      ],
+      "support_knots": 7604
+    },
+    {
+      "round": 1,
+      "N": 2000,
+      "profiles": [
+        {
+          "start": [
+            1,
+            20
+          ],
+          "endpoint": [
+            130897006747614527,
+            100000000000000000
+          ],
+          "exponent_decimal": "1.308970067476145270000000000000"
+        },
+        {
+          "start": [
+            1,
+            10
+          ],
+          "endpoint": [
+            130896212447295807,
+            100000000000000000
+          ],
+          "exponent_decimal": "1.308962124472958070000000000000"
+        },
+        {
+          "start": [
+            1,
+            5
+          ],
+          "endpoint": [
+            13089665743852739,
+            10000000000000000
+          ],
+          "exponent_decimal": "1.308966574385273900000000000000"
+        },
+        {
+          "start": [
+            2,
+            5
+          ],
+          "endpoint": [
+            6544845242856107,
+            5000000000000000
+          ],
+          "exponent_decimal": "1.308969048571221400000000000000"
+        },
+        {
+          "start": [
+            3,
+            5
+          ],
+          "endpoint": [
+            13089625207399679,
+            10000000000000000
+          ],
+          "exponent_decimal": "1.308962520739967900000000000000"
+        },
+        {
+          "start": [
+            4,
+            5
+          ],
+          "endpoint": [
+            163621541000957,
+            125000000000000
+          ],
+          "exponent_decimal": "1.308972328007656000000000000000"
+        }
+      ],
+      "best_exponent": [
+        130896212447295807,
+        100000000000000000
+      ],
+      "support_endpoint": [
+        130896212447295807,
+        100000000000000000
+      ],
+      "support_knots": 7425
+    },
+    {
+      "round": 2,
+      "N": 2000,
+      "profiles": [
+        {
+          "start": [
+            1,
+            20
+          ],
+          "endpoint": [
+            130780449534030977,
+            100000000000000000
+          ],
+          "exponent_decimal": "1.307804495340309770000000000000"
+        },
+        {
+          "start": [
+            1,
+            10
+          ],
+          "endpoint": [
+            130780659284763833,
+            100000000000000000
+          ],
+          "exponent_decimal": "1.307806592847638330000000000000"
+        },
+        {
+          "start": [
+            1,
+            5
+          ],
+          "endpoint": [
+            26156121487760527,
+            20000000000000000
+          ],
+          "exponent_decimal": "1.307806074388026350000000000000"
+        },
+        {
+          "start": [
+            2,
+            5
+          ],
+          "endpoint": [
+            81737630727292072804771253657,
+            62500000000000000000000000000
+          ],
+          "exponent_decimal": "1.307802091636673164876340058512"
+        },
+        {
+          "start": [
+            3,
+            5
+          ],
+          "endpoint": [
+            13078026589629179,
+            10000000000000000
+          ],
+          "exponent_decimal": "1.307802658962917900000000000000"
+        },
+        {
+          "start": [
+            4,
+            5
+          ],
+          "endpoint": [
+            13078067621230063,
+            10000000000000000
+          ],
+          "exponent_decimal": "1.307806762123006300000000000000"
+        }
+      ],
+      "best_exponent": [
+        81737630727292072804771253657,
+        62500000000000000000000000000
+      ],
+      "support_endpoint": [
+        81737630727292072804771253657,
+        62500000000000000000000000000
+      ],
+      "support_knots": 7567
+    },
+    {
+      "round": 3,
+      "N": 2000,
+      "profiles": [
+        {
+          "start": [
+            1,
+            20
+          ],
+          "endpoint": [
+            130724238659261627,
+            100000000000000000
+          ],
+          "exponent_decimal": "1.307242386592616270000000000000"
+        },
+        {
+          "start": [
+            1,
+            10
+          ],
+          "endpoint": [
+            16340527602357213,
+            12500000000000000
+          ],
+          "exponent_decimal": "1.307242208188577040000000000000"
+        },
+        {
+          "start": [
+            1,
+            5
+          ],
+          "endpoint": [
+            130724469360896537,
+            100000000000000000
+          ],
+          "exponent_decimal": "1.307244693608965370000000000000"
+        },
+        {
+          "start": [
+            2,
+            5
+          ],
+          "endpoint": [
+            13072459594176771,
+            10000000000000000
+          ],
+          "exponent_decimal": "1.307245959417677100000000000000"
+        },
+        {
+          "start": [
+            3,
+            5
+          ],
+          "endpoint": [
+            326811444821396958428119160967,
+            250000000000000000000000000000
+          ],
+          "exponent_decimal": "1.307245779285587833712476643868"
+        },
+        {
+          "start": [
+            4,
+            5
+          ],
+          "endpoint": [
+            13072455937333281,
+            10000000000000000
+          ],
+          "exponent_decimal": "1.307245593733328100000000000000"
+        }
+      ],
+      "best_exponent": [
+        16340527602357213,
+        12500000000000000
+      ],
+      "support_endpoint": [
+        16340527602357213,
+        12500000000000000
+      ],
+      "support_knots": 7542
+    },
+    {
+      "round": 4,
+      "N": 2000,
+      "profiles": [
+        {
+          "start": [
+            1,
+            20
+          ],
+          "endpoint": [
+            130716882876580377,
+            100000000000000000
+          ],
+          "exponent_decimal": "1.307168828765803770000000000000"
+        },
+        {
+          "start": [
+            1,
+            10
+          ],
+          "endpoint": [
+            130716520027077327,
+            100000000000000000
+          ],
+          "exponent_decimal": "1.307165200270773270000000000000"
+        },
+        {
+          "start": [
+            1,
+            5
+          ],
+          "endpoint": [
+            130716895468682127,
+            100000000000000000
+          ],
+          "exponent_decimal": "1.307168954686821270000000000000"
+        },
+        {
+          "start": [
+            2,
+            5
+          ],
+          "endpoint": [
+            4084895454662847,
+            3125000000000000
+          ],
+          "exponent_decimal": "1.307166545492111040000000000000"
+        },
+        {
+          "start": [
+            3,
+            5
+          ],
+          "endpoint": [
+            326791607899234243699701163607,
+            250000000000000000000000000000
+          ],
+          "exponent_decimal": "1.307166431596936974798804654428"
+        },
+        {
+          "start": [
+            4,
+            5
+          ],
+          "endpoint": [
+            130716645413483087,
+            100000000000000000
+          ],
+          "exponent_decimal": "1.307166454134830870000000000000"
+        }
+      ],
+      "best_exponent": [
+        130716520027077327,
+        100000000000000000
+      ],
+      "support_endpoint": [
+        130716520027077327,
+        100000000000000000
+      ],
+      "support_knots": 7535
+    },
+    {
+      "round": 5,
+      "N": 6000,
+      "profiles": [
+        {
+          "start": [
+            1,
+            20
+          ],
+          "endpoint": [
+            391750854401085931,
+            300000000000000000
+          ],
+          "exponent_decimal": "1.305836181336953103333333333333"
+        },
+        {
+          "start": [
+            1,
+            10
+          ],
+          "endpoint": [
+            391750863646170581,
+            300000000000000000
+          ],
+          "exponent_decimal": "1.305836212153901936666666666666"
+        },
+        {
+          "start": [
+            1,
+            5
+          ],
+          "endpoint": [
+            130583623951976577,
+            100000000000000000
+          ],
+          "exponent_decimal": "1.305836239519765770000000000000"
+        },
+        {
+          "start": [
+            2,
+            5
+          ],
+          "endpoint": [
+            652917645418649036149045295579,
+            500000000000000000000000000000
+          ],
+          "exponent_decimal": "1.305835290837298072298090591158"
+        },
+        {
+          "start": [
+            3,
+            5
+          ],
+          "endpoint": [
+            39175072827138637,
+            30000000000000000
+          ],
+          "exponent_decimal": "1.305835760904621233333333333333"
+        },
+        {
+          "start": [
+            4,
+            5
+          ],
+          "endpoint": [
+            39175078800538387,
+            30000000000000000
+          ],
+          "exponent_decimal": "1.305835960017946233333333333333"
+        }
+      ],
+      "best_exponent": [
+        652917645418649036149045295579,
+        500000000000000000000000000000
+      ],
+      "support_endpoint": [
+        652917645418649036149045295579,
+        500000000000000000000000000000
+      ],
+      "support_knots": 10648
+    },
+    {
+      "round": 6,
+      "N": 6000,
+      "profiles": [
+        {
+          "start": [
+            1,
+            20
+          ],
+          "endpoint": [
+            391617394876807931,
+            300000000000000000
+          ],
+          "exponent_decimal": "1.305391316256026436666666666666"
+        },
+        {
+          "start": [
+            1,
+            10
+          ],
+          "endpoint": [
+            3916176165653711,
+            3000000000000000
+          ],
+          "exponent_decimal": "1.305392055217903666666666666666"
+        },
+        {
+          "start": [
+            1,
+            5
+          ],
+          "endpoint": [
+            391617616448327819,
+            300000000000000000
+          ],
+          "exponent_decimal": "1.305392054827759396666666666666"
+        },
+        {
+          "start": [
+            2,
+            5
+          ],
+          "endpoint": [
+            326347857608949,
+            250000000000000
+          ],
+          "exponent_decimal": "1.305391430435796000000000000000"
+        },
+        {
+          "start": [
+            3,
+            5
+          ],
+          "endpoint": [
+            2447609056221727,
+            1875000000000000
+          ],
+          "exponent_decimal": "1.305391496651587733333333333333"
+        },
+        {
+          "start": [
+            4,
+            5
+          ],
+          "endpoint": [
+            261078408163023346752947752353,
+            200000000000000000000000000000
+          ],
+          "exponent_decimal": "1.305392040815116733764738761765"
+        }
+      ],
+      "best_exponent": [
+        391617394876807931,
+        300000000000000000
+      ],
+      "support_endpoint": [
+        391617394876807931,
+        300000000000000000
+      ],
+      "support_knots": 10135
+    },
+    {
+      "round": 7,
+      "N": 6000,
+      "profiles": [
+        {
+          "start": [
+            1,
+            20
+          ],
+          "endpoint": [
+            391588265147550931,
+            300000000000000000
+          ],
+          "exponent_decimal": "1.305294217158503103333333333333"
+        },
+        {
+          "start": [
+            1,
+            10
+          ],
+          "endpoint": [
+            391588253000867081,
+            300000000000000000
+          ],
+          "exponent_decimal": "1.305294176669556936666666666666"
+        },
+        {
+          "start": [
+            1,
+            5
+          ],
+          "endpoint": [
+            1305294266986976436666666666667,
+            1000000000000000000000000000000
+          ],
+          "exponent_decimal": "1.305294266986976436666666666667"
+        },
+        {
+          "start": [
+            2,
+            5
+          ],
+          "endpoint": [
+            130529396299525273,
+            100000000000000000
+          ],
+          "exponent_decimal": "1.305293962995252730000000000000"
+        },
+        {
+          "start": [
+            3,
+            5
+          ],
+          "endpoint": [
+            3915882683484833,
+            3000000000000000
+          ],
+          "exponent_decimal": "1.305294227828277666666666666666"
+        },
+        {
+          "start": [
+            4,
+            5
+          ],
+          "endpoint": [
+            12237133226132419860677296897,
+            9375000000000000000000000000
+          ],
+          "exponent_decimal": "1.305294210787458118472245002346"
+        }
+      ],
+      "best_exponent": [
+        130529396299525273,
+        100000000000000000
+      ],
+      "support_endpoint": [
+        130529396299525273,
+        100000000000000000
+      ],
+      "support_knots": 10255
+    }
+  ],
+  "records": 1695911,
+  "record_types": {
+    "weighted_path": 1691788,
+    "unconditional_path": 4123
+  },
+  "path_edges": 813922863,
+  "path_runs": 41793102,
+  "expanded_path_differential_replay": false,
+  "weighted_seeds": 1691788,
+  "maximum_dependency_depth": 1571,
+  "exponent": [
+    130529396299525273,
+    100000000000000000
+  ],
+  "exponent_decimal_lower": "1.30529396299525273000000000000000",
+  "exponent_decimal_upper": "1.30529396299525273000000000000000",
+  "base_lower": "3.688773297186606449000000000000000000",
+  "base_upper": "3.688773297186707035000000000000000000",
+  "strict_upper_base_decimal": "3.68877330",
+  "minimum_margins": {
+    "path_size": "0.000000001090561900000000000000000000",
+    "unconditional_start": "0.000000001018123700000000000000000000",
+    "blue_cost": "0.000002001588974772000000000000000000",
+    "seed_density": "0.000000001238828588000000000000000000",
+    "seed_size": "0.000000012108545854000000000000000000",
+    "outer_start": "0.000000100000000000000000000000000000",
+    "outer_size": "0.000000004749347470000000000000000000",
+    "final_decimal": "0.000000000762690710000000000000000000"
+  },
+  "elapsed_seconds": 93.94396072800737,
+  "arithmetic_workers": 1,
+  "scope": "Finite analytic certificate conditional on the written graph-theoretic lemmas. No proof-system optimality or sub-3.6 claim."
+}

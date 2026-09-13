@@ -1,0 +1,54 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/grid_semantics_first.json",
+    "--modules",
+    "Ramsey3683Bootstrap/GridSemantics"
+  ],
+  "elapsed_seconds": 3.4109283570433035,
+  "peak_sampled_rss_kib": 3557416,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 150,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13428,
+      1
+    ],
+    [
+      0.571,
+      13428,
+      1
+    ],
+    [
+      1.139,
+      718752,
+      2
+    ],
+    [
+      1.708,
+      2747772,
+      2
+    ],
+    [
+      2.276,
+      3427688,
+      2
+    ],
+    [
+      2.843,
+      3557416,
+      2
+    ]
+  ],
+  "log": "runs/grid_semantics_first.resources.log"
+}

@@ -1,0 +1,38 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    "lean",
+    "+v4.32.1",
+    "lean/BlueBench64.lean"
+  ],
+  "elapsed_seconds": 2.269507171935402,
+  "peak_sampled_rss_kib": 856612,
+  "peak_processes": 1,
+  "rss_limit_mib": 2048,
+  "time_limit_seconds": 60,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      125616,
+      1
+    ],
+    [
+      0.57,
+      768336,
+      1
+    ],
+    [
+      1.134,
+      807360,
+      1
+    ],
+    [
+      1.702,
+      856612,
+      1
+    ]
+  ],
+  "log": "runs/lean_blue64.resources.log"
+}

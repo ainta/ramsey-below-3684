@@ -1,0 +1,15 @@
+BUILD SUPPORT Ramsey3683Bootstrap/TerminalTransfer
+Ramsey3683Bootstrap/TerminalTransfer.lean:24:6: warning: Try `simp at hb` instead of `simpa using hb`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'Ramsey3683Bootstrap.ramsey_terminal' depends on axioms: [propext, Classical.choice, Quot.sound]
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Ramsey3683Bootstrap/TerminalTransfer"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 2.9057730730855837,
+  "headline_proved": false
+}

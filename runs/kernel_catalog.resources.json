@@ -1,0 +1,23 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "check_kernel_catalog.py"
+  ],
+  "elapsed_seconds": 0.5666678509442136,
+  "peak_sampled_rss_kib": 17452,
+  "peak_processes": 1,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 21600,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      17452,
+      1
+    ]
+  ],
+  "log": "runs/kernel_catalog.resources.log"
+}

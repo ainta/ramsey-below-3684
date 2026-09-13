@@ -1,0 +1,29 @@
+BUILD SUPPORT InitialUniform
+'Compact3684.initial_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT ReflectedInitial
+'Compact3684.initial_reflected_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT CheckedCatalogSound
+'Compact3684.Log18.CheckedCatalog.all_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT TerminalStrict
+'Compact3684.terminal_numeric_lt_368395' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.affine_of_final_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.below_368395_of_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT CertifiedRound/R00
+'Compact3684.CertifiedRound.R00.valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT ClosedFirstRound
+'Compact3684.first_round_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "InitialUniform",
+    "ReflectedInitial",
+    "CheckedCatalogSound",
+    "TerminalStrict",
+    "CertifiedRound/R00",
+    "ClosedFirstRound"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 15.222793130087666,
+  "headline_proved": false
+}

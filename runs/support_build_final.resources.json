@@ -1,0 +1,85 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean"
+  ],
+  "elapsed_seconds": 7.410434714984149,
+  "peak_sampled_rss_kib": 2405684,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 120,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13336,
+      1
+    ],
+    [
+      0.571,
+      814852,
+      2
+    ],
+    [
+      1.14,
+      756224,
+      2
+    ],
+    [
+      1.71,
+      362600,
+      2
+    ],
+    [
+      2.28,
+      2048124,
+      2
+    ],
+    [
+      2.848,
+      2386432,
+      2
+    ],
+    [
+      3.425,
+      366832,
+      2
+    ],
+    [
+      3.994,
+      1758596,
+      2
+    ],
+    [
+      4.561,
+      2080540,
+      2
+    ],
+    [
+      5.134,
+      153808,
+      2
+    ],
+    [
+      5.699,
+      181328,
+      2
+    ],
+    [
+      6.268,
+      1299836,
+      2
+    ],
+    [
+      6.839,
+      2405684,
+      2
+    ]
+  ],
+  "log": "runs/support_build_final.resources.log"
+}

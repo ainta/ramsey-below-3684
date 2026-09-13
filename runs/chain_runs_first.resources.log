@@ -1,0 +1,45 @@
+BUILD SUPPORT Ramsey3683Bootstrap/ChainRuns
+Ramsey3683Bootstrap/ChainRuns.lean:71:4: error: Tactic `simp` failed with a nested error:
+maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+Ramsey3683Bootstrap/ChainRuns.lean:85:31: error: Type mismatch: After simplification, term
+  hmonotone row hlo hhi
+ has type
+  if (d.block (d.node (d.run i).upper).block).increasing = true then
+    (rowNode d (d.node (d.run i).upper).block row).value - prefAt d (d.node (d.run i).upper).block (row - 1) ≤
+      (rowNode d (d.node (d.run i).upper).block (row + 1)).value - prefAt d (d.node (d.run i).upper).block row
+  else
+    (rowNode d (d.node (d.run i).upper).block (row + 1)).value - prefAt d (d.node (d.run i).upper).block row ≤
+      (rowNode d (d.node (d.run i).upper).block row).value - prefAt d (d.node (d.run i).upper).block (row - 1)
+but is expected to have type
+  floor row - pref (row - 1) ≤ floor (row + 1) - pref row
+Ramsey3683Bootstrap/ChainRuns.lean:91:31: error: Type mismatch: After simplification, term
+  hmonotone row hlo hhi
+ has type
+  if (d.block (d.node (d.run i).upper).block).increasing = true then
+    (rowNode d (d.node (d.run i).upper).block row).value - prefAt d (d.node (d.run i).upper).block (row - 1) ≤
+      (rowNode d (d.node (d.run i).upper).block (row + 1)).value - prefAt d (d.node (d.run i).upper).block row
+  else
+    (rowNode d (d.node (d.run i).upper).block (row + 1)).value - prefAt d (d.node (d.run i).upper).block row ≤
+      (rowNode d (d.node (d.run i).upper).block row).value - prefAt d (d.node (d.run i).upper).block (row - 1)
+but is expected to have type
+  floor (row + 1) - pref row ≤ floor row - pref (row - 1)
+Ramsey3683Bootstrap/ChainRuns.lean:93:6: error: Type mismatch: After simplification, term
+  hm
+ has type
+  RangeBound (fun row => (rowNode d b row).value) pref lower.row upper.row (lower.value - before lower)
+but is expected to have type
+  RangeBound (fun row => (rowNode d b row).value) pref lower.row upper.row
+    ((if false = true then d.node run.upper else d.node run.lower).value -
+      before (if false = true then d.node run.upper else d.node run.lower))
+'Compact3684.Chain.runGuard_sound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 53, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 45, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/ChainRuns.olean', 'Ramsey3683Bootstrap/ChainRuns.lean']' returned non-zero exit status 1.

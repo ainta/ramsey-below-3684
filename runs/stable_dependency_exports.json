@@ -1,0 +1,15 @@
+{
+  "status": "PASS_EXACT_STABLE_EXPORT_EXPRESSIONS",
+  "exports": [
+    {
+      "name": "RamseyLean.denseCaseExponent",
+      "type_sha256": "e92d3ecfd2df0f31fe908866e25b90940cd9eac2dc1c15fbb405dc4c3b29b994",
+      "value_sha256": "9f84e31bcada49d940a7a48e7218084e0a31bdb2302b647fad615bcf9ff3491b"
+    },
+    {
+      "name": "RamseyLean.denseCaseExponent._proof_1",
+      "type_sha256": "6c02067f924b78c114a7ef51dd5a4179869472507eddd0fbb108b9c86bbee807",
+      "value_sha256": "06c93a5acac6d848d7bd6b6645f7206778e07c3279717abde161cd880226f8a8"
+    }
+  ]
+}

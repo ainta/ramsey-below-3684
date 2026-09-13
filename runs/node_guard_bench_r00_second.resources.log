@@ -1,0 +1,14 @@
+BUILD SUPPORT NodeGuardBenchR00
+'Compact3684.BenchR00.column_guards' does not depend on any axioms
+'Compact3684.BenchR00.path_guards' does not depend on any axioms
+'Compact3684.BenchR00.block_guards' does not depend on any axioms
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "NodeGuardBenchR00"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 9.269920616061427,
+  "headline_proved": false
+}

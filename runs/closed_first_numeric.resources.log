@@ -1,0 +1,12 @@
+BUILD SUPPORT ClosedFirstRoundNumeric
+'Compact3684.ramsey_le_372' depends on axioms: [propext, Classical.choice, Quot.sound]
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "ClosedFirstRoundNumeric"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 2.863317206967622,
+  "headline_proved": false
+}

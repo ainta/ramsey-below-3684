@@ -1,0 +1,35 @@
+{
+  "status": "RECOVERY_LAUNCHED_NO_NUMERICAL_RESTART",
+  "started_utc": "2026-09-11T23:49:16.001939+00:00",
+  "previous_group_identities": {
+    "1728610": {
+      "state": "S",
+      "group": 1728610,
+      "start": 85433371
+    },
+    "1729281": {
+      "state": "S",
+      "group": 1729281,
+      "start": 85433490
+    },
+    "2174028": {
+      "state": "S",
+      "group": 2174028,
+      "start": 85564174
+    },
+    "2315820": {
+      "state": "S",
+      "group": 2315820,
+      "start": 85605364
+    }
+  },
+  "original_wait_statuses_unavailable": true,
+  "last_old_aggregate_sample_utc": "2026-09-11T23:43:40.059871+00:00",
+  "numerical_workers_not_restarted": true,
+  "new_processes": {
+    "rounds_01_06_full_monitor": 3993911,
+    "round_07_full_monitor": 3993912,
+    "final_assembly_second_supervisor": 3993949,
+    "pinned_final_supervisor": 3993950
+  }
+}

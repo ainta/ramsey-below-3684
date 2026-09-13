@@ -1,0 +1,39 @@
+BUILD SUPPORT Kernel/PackedChain
+Kernel/PackedChain.lean:11:6: error: unexpected token ':'; expected 'abbrev', 'axiom', 'builtin_initialize', 'class', 'coinductive', 'def', 'example', 'inductive', 'initialize', 'instance', 'opaque', 'section', 'structure' or 'theorem'
+Kernel/PackedChain.lean:20:24: error(lean.invalidField): Invalid field `meta`: The environment does not contain `Compact3684.Chain.Packed.NodeBlob.meta`, so it is not possible to project the field `meta` from an expression
+  blob
+of type `NodeBlob`
+Kernel/PackedChain.lean:21:27: error(lean.invalidField): Invalid field `blue`: The environment does not contain `Compact3684.Chain.Packed.NodeBlob.blue`, so it is not possible to project the field `blue` from an expression
+  blob
+of type `NodeBlob`
+Kernel/PackedChain.lean:22:31: error(lean.invalidField): Invalid field `controls`: The environment does not contain `Compact3684.Chain.Packed.NodeBlob.controls`, so it is not possible to project the field `controls` from an expression
+  blob
+of type `NodeBlob`
+Kernel/PackedChain.lean:34:37: error(lean.invalidField): Invalid field `value`: The environment does not contain `Compact3684.Chain.Packed.NodeBlob.value`, so it is not possible to project the field `value` from an expression
+  blob
+of type `NodeBlob`
+Kernel/PackedChain.lean:35:38: error(lean.invalidField): Invalid field `finish`: The environment does not contain `Compact3684.Chain.Packed.NodeBlob.finish`, so it is not possible to project the field `finish` from an expression
+  blob
+of type `NodeBlob`
+Kernel/PackedChain.lean:36:37: error(lean.invalidField): Invalid field `begin`: The environment does not contain `Compact3684.Chain.Packed.NodeBlob.begin`, so it is not possible to project the field `begin` from an expression
+  blob
+of type `NodeBlob`
+Kernel/PackedChain.lean:37:36: error(lean.invalidField): Invalid field `pref`: The environment does not contain `Compact3684.Chain.Packed.NodeBlob.pref`, so it is not possible to project the field `pref` from an expression
+  blob
+of type `NodeBlob`
+Kernel/PackedChain.lean:50:6: error: unexpected token ':'; expected 'abbrev', 'axiom', 'builtin_initialize', 'class', 'coinductive', 'def', 'example', 'inductive', 'initialize', 'instance', 'opaque', 'section', 'structure' or 'theorem'
+Kernel/PackedChain.lean:54:23: error(lean.invalidField): Invalid field `meta`: The environment does not contain `Compact3684.Chain.Packed.RunBlob.meta`, so it is not possible to project the field `meta` from an expression
+  blob
+of type `RunBlob`
+Kernel/PackedChain.lean:56:28: error(lean.invalidField): Invalid field `finish`: The environment does not contain `Compact3684.Chain.Packed.RunBlob.finish`, so it is not possible to project the field `finish` from an expression
+  blob
+of type `RunBlob`
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 53, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 45, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Kernel/PackedChain.olean', 'Kernel/PackedChain.lean']' returned non-zero exit status 1.

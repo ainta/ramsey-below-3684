@@ -1,0 +1,54 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/grid_padding.json",
+    "--modules",
+    "Ramsey3683Bootstrap/GridSemantics"
+  ],
+  "elapsed_seconds": 3.4058909710729495,
+  "peak_sampled_rss_kib": 3561824,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 150,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13328,
+      1
+    ],
+    [
+      0.569,
+      13328,
+      1
+    ],
+    [
+      1.137,
+      725648,
+      2
+    ],
+    [
+      1.705,
+      2764700,
+      2
+    ],
+    [
+      2.271,
+      3429744,
+      2
+    ],
+    [
+      2.839,
+      3561824,
+      2
+    ]
+  ],
+  "log": "runs/grid_padding.resources.log"
+}

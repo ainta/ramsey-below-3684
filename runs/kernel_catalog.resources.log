@@ -1,0 +1,11 @@
+Kernel/Log18.lean:31:64: error: Tactic `decide` proved that the proposition
+  reduced 2 1 = logTwoBounds
+is false
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/check_kernel_catalog.py", line 46, in <module>
+    main()
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/check_kernel_catalog.py", line 24, in main
+    subprocess.run(['lean','+v4.32.1','-o','Kernel/Log18.olean','Kernel/Log18.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Kernel/Log18.olean', 'Kernel/Log18.lean']' returned non-zero exit status 1.

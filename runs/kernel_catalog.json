@@ -1,0 +1,1731 @@
+{
+  "status": "PASS_FULL_CATALOG_KERNEL_COMPUTATION_NOT_RAMSEY_THEOREM",
+  "checked_entries": 351607,
+  "total_entries": 351607,
+  "elapsed_seconds": 4645.821531984024,
+  "real_log_soundness": false,
+  "headline_proved": false,
+  "chunks": [
+    {
+      "module": "Kernel/LogCatalog/C0000",
+      "entries": 1024,
+      "seconds": 14.844264653045684
+    },
+    {
+      "module": "Kernel/LogCatalog/C0001",
+      "entries": 1024,
+      "seconds": 13.766354902065359
+    },
+    {
+      "module": "Kernel/LogCatalog/C0002",
+      "entries": 1024,
+      "seconds": 13.960139845963567
+    },
+    {
+      "module": "Kernel/LogCatalog/C0003",
+      "entries": 1024,
+      "seconds": 14.07762364903465
+    },
+    {
+      "module": "Kernel/LogCatalog/C0004",
+      "entries": 1024,
+      "seconds": 12.58893980702851
+    },
+    {
+      "module": "Kernel/LogCatalog/C0005",
+      "entries": 1024,
+      "seconds": 12.72054092597682
+    },
+    {
+      "module": "Kernel/LogCatalog/C0006",
+      "entries": 1024,
+      "seconds": 13.034183779032901
+    },
+    {
+      "module": "Kernel/LogCatalog/C0007",
+      "entries": 1024,
+      "seconds": 13.05918452993501
+    },
+    {
+      "module": "Kernel/LogCatalog/C0008",
+      "entries": 1024,
+      "seconds": 15.075554889976047
+    },
+    {
+      "module": "Kernel/LogCatalog/C0009",
+      "entries": 1024,
+      "seconds": 14.973586704931222
+    },
+    {
+      "module": "Kernel/LogCatalog/C0010",
+      "entries": 1024,
+      "seconds": 15.219943825970404
+    },
+    {
+      "module": "Kernel/LogCatalog/C0011",
+      "entries": 1024,
+      "seconds": 15.212447331985459
+    },
+    {
+      "module": "Kernel/LogCatalog/C0012",
+      "entries": 1024,
+      "seconds": 14.09365053800866
+    },
+    {
+      "module": "Kernel/LogCatalog/C0013",
+      "entries": 1024,
+      "seconds": 13.501772606978193
+    },
+    {
+      "module": "Kernel/LogCatalog/C0014",
+      "entries": 1024,
+      "seconds": 13.540511680068448
+    },
+    {
+      "module": "Kernel/LogCatalog/C0015",
+      "entries": 1024,
+      "seconds": 13.51418817800004
+    },
+    {
+      "module": "Kernel/LogCatalog/C0016",
+      "entries": 1024,
+      "seconds": 13.824419890996069
+    },
+    {
+      "module": "Kernel/LogCatalog/C0017",
+      "entries": 1024,
+      "seconds": 13.75681386294309
+    },
+    {
+      "module": "Kernel/LogCatalog/C0018",
+      "entries": 1024,
+      "seconds": 13.937126238946803
+    },
+    {
+      "module": "Kernel/LogCatalog/C0019",
+      "entries": 1024,
+      "seconds": 14.02702231099829
+    },
+    {
+      "module": "Kernel/LogCatalog/C0020",
+      "entries": 1024,
+      "seconds": 13.949780266033486
+    },
+    {
+      "module": "Kernel/LogCatalog/C0021",
+      "entries": 1024,
+      "seconds": 14.034377260017209
+    },
+    {
+      "module": "Kernel/LogCatalog/C0022",
+      "entries": 1024,
+      "seconds": 14.535228419932537
+    },
+    {
+      "module": "Kernel/LogCatalog/C0023",
+      "entries": 1024,
+      "seconds": 14.0649003169965
+    },
+    {
+      "module": "Kernel/LogCatalog/C0024",
+      "entries": 1024,
+      "seconds": 13.95107200392522
+    },
+    {
+      "module": "Kernel/LogCatalog/C0025",
+      "entries": 1024,
+      "seconds": 14.063595221959986
+    },
+    {
+      "module": "Kernel/LogCatalog/C0026",
+      "entries": 1024,
+      "seconds": 14.824708095984533
+    },
+    {
+      "module": "Kernel/LogCatalog/C0027",
+      "entries": 1024,
+      "seconds": 14.229753191000782
+    },
+    {
+      "module": "Kernel/LogCatalog/C0028",
+      "entries": 1024,
+      "seconds": 14.305398850003257
+    },
+    {
+      "module": "Kernel/LogCatalog/C0029",
+      "entries": 1024,
+      "seconds": 15.234096006955951
+    },
+    {
+      "module": "Kernel/LogCatalog/C0030",
+      "entries": 1024,
+      "seconds": 14.099019828950986
+    },
+    {
+      "module": "Kernel/LogCatalog/C0031",
+      "entries": 1024,
+      "seconds": 14.494099559029564
+    },
+    {
+      "module": "Kernel/LogCatalog/C0032",
+      "entries": 1024,
+      "seconds": 14.483242723043077
+    },
+    {
+      "module": "Kernel/LogCatalog/C0033",
+      "entries": 1024,
+      "seconds": 14.529706862056628
+    },
+    {
+      "module": "Kernel/LogCatalog/C0034",
+      "entries": 1024,
+      "seconds": 14.527934530051425
+    },
+    {
+      "module": "Kernel/LogCatalog/C0035",
+      "entries": 1024,
+      "seconds": 14.66594948200509
+    },
+    {
+      "module": "Kernel/LogCatalog/C0036",
+      "entries": 1024,
+      "seconds": 14.614525172975846
+    },
+    {
+      "module": "Kernel/LogCatalog/C0037",
+      "entries": 1024,
+      "seconds": 14.72988451900892
+    },
+    {
+      "module": "Kernel/LogCatalog/C0038",
+      "entries": 1024,
+      "seconds": 14.638571043033153
+    },
+    {
+      "module": "Kernel/LogCatalog/C0039",
+      "entries": 1024,
+      "seconds": 16.106601619976573
+    },
+    {
+      "module": "Kernel/LogCatalog/C0040",
+      "entries": 1024,
+      "seconds": 14.741037999978289
+    },
+    {
+      "module": "Kernel/LogCatalog/C0041",
+      "entries": 1024,
+      "seconds": 14.927794086979702
+    },
+    {
+      "module": "Kernel/LogCatalog/C0042",
+      "entries": 1024,
+      "seconds": 15.012600698042661
+    },
+    {
+      "module": "Kernel/LogCatalog/C0043",
+      "entries": 1024,
+      "seconds": 14.843480148003437
+    },
+    {
+      "module": "Kernel/LogCatalog/C0044",
+      "entries": 1024,
+      "seconds": 14.87995418801438
+    },
+    {
+      "module": "Kernel/LogCatalog/C0045",
+      "entries": 1024,
+      "seconds": 13.839455129927956
+    },
+    {
+      "module": "Kernel/LogCatalog/C0046",
+      "entries": 1024,
+      "seconds": 13.123217069078237
+    },
+    {
+      "module": "Kernel/LogCatalog/C0047",
+      "entries": 1024,
+      "seconds": 13.133692872012034
+    },
+    {
+      "module": "Kernel/LogCatalog/C0048",
+      "entries": 1024,
+      "seconds": 13.287781983963214
+    },
+    {
+      "module": "Kernel/LogCatalog/C0049",
+      "entries": 1024,
+      "seconds": 13.327147374046035
+    },
+    {
+      "module": "Kernel/LogCatalog/C0050",
+      "entries": 1024,
+      "seconds": 13.448648404912092
+    },
+    {
+      "module": "Kernel/LogCatalog/C0051",
+      "entries": 1024,
+      "seconds": 13.472006415948272
+    },
+    {
+      "module": "Kernel/LogCatalog/C0052",
+      "entries": 1024,
+      "seconds": 13.419426660053432
+    },
+    {
+      "module": "Kernel/LogCatalog/C0053",
+      "entries": 1024,
+      "seconds": 13.663420833996497
+    },
+    {
+      "module": "Kernel/LogCatalog/C0054",
+      "entries": 1024,
+      "seconds": 13.59022598201409
+    },
+    {
+      "module": "Kernel/LogCatalog/C0055",
+      "entries": 1024,
+      "seconds": 13.43088302097749
+    },
+    {
+      "module": "Kernel/LogCatalog/C0056",
+      "entries": 1024,
+      "seconds": 13.687712738988921
+    },
+    {
+      "module": "Kernel/LogCatalog/C0057",
+      "entries": 1024,
+      "seconds": 13.616518730996177
+    },
+    {
+      "module": "Kernel/LogCatalog/C0058",
+      "entries": 1024,
+      "seconds": 13.70622298901435
+    },
+    {
+      "module": "Kernel/LogCatalog/C0059",
+      "entries": 1024,
+      "seconds": 13.643483403953724
+    },
+    {
+      "module": "Kernel/LogCatalog/C0060",
+      "entries": 1024,
+      "seconds": 13.853883662028238
+    },
+    {
+      "module": "Kernel/LogCatalog/C0061",
+      "entries": 1024,
+      "seconds": 14.184261704911478
+    },
+    {
+      "module": "Kernel/LogCatalog/C0062",
+      "entries": 1024,
+      "seconds": 13.898972903960384
+    },
+    {
+      "module": "Kernel/LogCatalog/C0063",
+      "entries": 1024,
+      "seconds": 13.803759878035635
+    },
+    {
+      "module": "Kernel/LogCatalog/C0064",
+      "entries": 1024,
+      "seconds": 13.90372592501808
+    },
+    {
+      "module": "Kernel/LogCatalog/C0065",
+      "entries": 1024,
+      "seconds": 14.073408756987192
+    },
+    {
+      "module": "Kernel/LogCatalog/C0066",
+      "entries": 1024,
+      "seconds": 13.905629343003966
+    },
+    {
+      "module": "Kernel/LogCatalog/C0067",
+      "entries": 1024,
+      "seconds": 14.039546761079691
+    },
+    {
+      "module": "Kernel/LogCatalog/C0068",
+      "entries": 1024,
+      "seconds": 13.77618916996289
+    },
+    {
+      "module": "Kernel/LogCatalog/C0069",
+      "entries": 1024,
+      "seconds": 12.18217393103987
+    },
+    {
+      "module": "Kernel/LogCatalog/C0070",
+      "entries": 1024,
+      "seconds": 12.18315504991915
+    },
+    {
+      "module": "Kernel/LogCatalog/C0071",
+      "entries": 1024,
+      "seconds": 12.185032289940864
+    },
+    {
+      "module": "Kernel/LogCatalog/C0072",
+      "entries": 1024,
+      "seconds": 12.60600642405916
+    },
+    {
+      "module": "Kernel/LogCatalog/C0073",
+      "entries": 1024,
+      "seconds": 12.273360316990875
+    },
+    {
+      "module": "Kernel/LogCatalog/C0074",
+      "entries": 1024,
+      "seconds": 12.25148718105629
+    },
+    {
+      "module": "Kernel/LogCatalog/C0075",
+      "entries": 1024,
+      "seconds": 12.231799653964117
+    },
+    {
+      "module": "Kernel/LogCatalog/C0076",
+      "entries": 1024,
+      "seconds": 12.232925866963342
+    },
+    {
+      "module": "Kernel/LogCatalog/C0077",
+      "entries": 1024,
+      "seconds": 12.312909025000408
+    },
+    {
+      "module": "Kernel/LogCatalog/C0078",
+      "entries": 1024,
+      "seconds": 13.23246716905851
+    },
+    {
+      "module": "Kernel/LogCatalog/C0079",
+      "entries": 1024,
+      "seconds": 12.478386808070354
+    },
+    {
+      "module": "Kernel/LogCatalog/C0080",
+      "entries": 1024,
+      "seconds": 12.472762221004814
+    },
+    {
+      "module": "Kernel/LogCatalog/C0081",
+      "entries": 1024,
+      "seconds": 14.236119005014189
+    },
+    {
+      "module": "Kernel/LogCatalog/C0082",
+      "entries": 1024,
+      "seconds": 17.479989034007303
+    },
+    {
+      "module": "Kernel/LogCatalog/C0083",
+      "entries": 1024,
+      "seconds": 17.824974976014346
+    },
+    {
+      "module": "Kernel/LogCatalog/C0084",
+      "entries": 1024,
+      "seconds": 17.824175524991006
+    },
+    {
+      "module": "Kernel/LogCatalog/C0085",
+      "entries": 1024,
+      "seconds": 17.611577447038144
+    },
+    {
+      "module": "Kernel/LogCatalog/C0086",
+      "entries": 1024,
+      "seconds": 15.549638941069134
+    },
+    {
+      "module": "Kernel/LogCatalog/C0087",
+      "entries": 1024,
+      "seconds": 15.015963639016263
+    },
+    {
+      "module": "Kernel/LogCatalog/C0088",
+      "entries": 1024,
+      "seconds": 15.210422396077774
+    },
+    {
+      "module": "Kernel/LogCatalog/C0089",
+      "entries": 1024,
+      "seconds": 16.113885752041824
+    },
+    {
+      "module": "Kernel/LogCatalog/C0090",
+      "entries": 1024,
+      "seconds": 15.639123579021543
+    },
+    {
+      "module": "Kernel/LogCatalog/C0091",
+      "entries": 1024,
+      "seconds": 15.866621906985529
+    },
+    {
+      "module": "Kernel/LogCatalog/C0092",
+      "entries": 1024,
+      "seconds": 16.071035970002413
+    },
+    {
+      "module": "Kernel/LogCatalog/C0093",
+      "entries": 1024,
+      "seconds": 16.197206042008474
+    },
+    {
+      "module": "Kernel/LogCatalog/C0094",
+      "entries": 1024,
+      "seconds": 16.113292073016055
+    },
+    {
+      "module": "Kernel/LogCatalog/C0095",
+      "entries": 1024,
+      "seconds": 16.05308286403306
+    },
+    {
+      "module": "Kernel/LogCatalog/C0096",
+      "entries": 1024,
+      "seconds": 16.516655431012623
+    },
+    {
+      "module": "Kernel/LogCatalog/C0097",
+      "entries": 1024,
+      "seconds": 16.370710855000652
+    },
+    {
+      "module": "Kernel/LogCatalog/C0098",
+      "entries": 1024,
+      "seconds": 16.290364737971686
+    },
+    {
+      "module": "Kernel/LogCatalog/C0099",
+      "entries": 1024,
+      "seconds": 16.245254229055718
+    },
+    {
+      "module": "Kernel/LogCatalog/C0100",
+      "entries": 1024,
+      "seconds": 16.270625355071388
+    },
+    {
+      "module": "Kernel/LogCatalog/C0101",
+      "entries": 1024,
+      "seconds": 16.461056384956464
+    },
+    {
+      "module": "Kernel/LogCatalog/C0102",
+      "entries": 1024,
+      "seconds": 17.12815472204238
+    },
+    {
+      "module": "Kernel/LogCatalog/C0103",
+      "entries": 1024,
+      "seconds": 16.39167029201053
+    },
+    {
+      "module": "Kernel/LogCatalog/C0104",
+      "entries": 1024,
+      "seconds": 16.40343241300434
+    },
+    {
+      "module": "Kernel/LogCatalog/C0105",
+      "entries": 1024,
+      "seconds": 16.34249652805738
+    },
+    {
+      "module": "Kernel/LogCatalog/C0106",
+      "entries": 1024,
+      "seconds": 16.45461694104597
+    },
+    {
+      "module": "Kernel/LogCatalog/C0107",
+      "entries": 1024,
+      "seconds": 16.741290364065208
+    },
+    {
+      "module": "Kernel/LogCatalog/C0108",
+      "entries": 1024,
+      "seconds": 16.785936312982813
+    },
+    {
+      "module": "Kernel/LogCatalog/C0109",
+      "entries": 1024,
+      "seconds": 16.661642135004513
+    },
+    {
+      "module": "Kernel/LogCatalog/C0110",
+      "entries": 1024,
+      "seconds": 16.538485636003315
+    },
+    {
+      "module": "Kernel/LogCatalog/C0111",
+      "entries": 1024,
+      "seconds": 12.07820648595225
+    },
+    {
+      "module": "Kernel/LogCatalog/C0112",
+      "entries": 1024,
+      "seconds": 11.998045598040335
+    },
+    {
+      "module": "Kernel/LogCatalog/C0113",
+      "entries": 1024,
+      "seconds": 12.055350000038743
+    },
+    {
+      "module": "Kernel/LogCatalog/C0114",
+      "entries": 1024,
+      "seconds": 12.116961291059852
+    },
+    {
+      "module": "Kernel/LogCatalog/C0115",
+      "entries": 1024,
+      "seconds": 12.241541946888901
+    },
+    {
+      "module": "Kernel/LogCatalog/C0116",
+      "entries": 1024,
+      "seconds": 12.190979077015072
+    },
+    {
+      "module": "Kernel/LogCatalog/C0117",
+      "entries": 1024,
+      "seconds": 12.29519124107901
+    },
+    {
+      "module": "Kernel/LogCatalog/C0118",
+      "entries": 1024,
+      "seconds": 12.390004943008535
+    },
+    {
+      "module": "Kernel/LogCatalog/C0119",
+      "entries": 1024,
+      "seconds": 12.256980639998801
+    },
+    {
+      "module": "Kernel/LogCatalog/C0120",
+      "entries": 1024,
+      "seconds": 12.292478327057324
+    },
+    {
+      "module": "Kernel/LogCatalog/C0121",
+      "entries": 1024,
+      "seconds": 12.39930703502614
+    },
+    {
+      "module": "Kernel/LogCatalog/C0122",
+      "entries": 1024,
+      "seconds": 12.489716741023585
+    },
+    {
+      "module": "Kernel/LogCatalog/C0123",
+      "entries": 1024,
+      "seconds": 12.505750780925155
+    },
+    {
+      "module": "Kernel/LogCatalog/C0124",
+      "entries": 1024,
+      "seconds": 12.50723729096353
+    },
+    {
+      "module": "Kernel/LogCatalog/C0125",
+      "entries": 1024,
+      "seconds": 12.514437659992836
+    },
+    {
+      "module": "Kernel/LogCatalog/C0126",
+      "entries": 1024,
+      "seconds": 12.586355244042352
+    },
+    {
+      "module": "Kernel/LogCatalog/C0127",
+      "entries": 1024,
+      "seconds": 11.826365089043975
+    },
+    {
+      "module": "Kernel/LogCatalog/C0128",
+      "entries": 1024,
+      "seconds": 11.191208653035574
+    },
+    {
+      "module": "Kernel/LogCatalog/C0129",
+      "entries": 1024,
+      "seconds": 11.219433089951053
+    },
+    {
+      "module": "Kernel/LogCatalog/C0130",
+      "entries": 1024,
+      "seconds": 11.228980574058369
+    },
+    {
+      "module": "Kernel/LogCatalog/C0131",
+      "entries": 1024,
+      "seconds": 11.27141575794667
+    },
+    {
+      "module": "Kernel/LogCatalog/C0132",
+      "entries": 1024,
+      "seconds": 11.390541731962003
+    },
+    {
+      "module": "Kernel/LogCatalog/C0133",
+      "entries": 1024,
+      "seconds": 11.28073771391064
+    },
+    {
+      "module": "Kernel/LogCatalog/C0134",
+      "entries": 1024,
+      "seconds": 11.490718647022732
+    },
+    {
+      "module": "Kernel/LogCatalog/C0135",
+      "entries": 1024,
+      "seconds": 11.416282005957328
+    },
+    {
+      "module": "Kernel/LogCatalog/C0136",
+      "entries": 1024,
+      "seconds": 11.431427570991218
+    },
+    {
+      "module": "Kernel/LogCatalog/C0137",
+      "entries": 1024,
+      "seconds": 11.306520118028857
+    },
+    {
+      "module": "Kernel/LogCatalog/C0138",
+      "entries": 1024,
+      "seconds": 11.39914630097337
+    },
+    {
+      "module": "Kernel/LogCatalog/C0139",
+      "entries": 1024,
+      "seconds": 11.298467881977558
+    },
+    {
+      "module": "Kernel/LogCatalog/C0140",
+      "entries": 1024,
+      "seconds": 11.375989717897028
+    },
+    {
+      "module": "Kernel/LogCatalog/C0141",
+      "entries": 1024,
+      "seconds": 11.464996676077135
+    },
+    {
+      "module": "Kernel/LogCatalog/C0142",
+      "entries": 1024,
+      "seconds": 11.44483392406255
+    },
+    {
+      "module": "Kernel/LogCatalog/C0143",
+      "entries": 1024,
+      "seconds": 11.492901582969353
+    },
+    {
+      "module": "Kernel/LogCatalog/C0144",
+      "entries": 1024,
+      "seconds": 11.51463158801198
+    },
+    {
+      "module": "Kernel/LogCatalog/C0145",
+      "entries": 1024,
+      "seconds": 11.731994790025055
+    },
+    {
+      "module": "Kernel/LogCatalog/C0146",
+      "entries": 1024,
+      "seconds": 11.588827850064263
+    },
+    {
+      "module": "Kernel/LogCatalog/C0147",
+      "entries": 1024,
+      "seconds": 11.64097926102113
+    },
+    {
+      "module": "Kernel/LogCatalog/C0148",
+      "entries": 1024,
+      "seconds": 12.604524775990285
+    },
+    {
+      "module": "Kernel/LogCatalog/C0149",
+      "entries": 1024,
+      "seconds": 11.531816664035432
+    },
+    {
+      "module": "Kernel/LogCatalog/C0150",
+      "entries": 1024,
+      "seconds": 11.44771438895259
+    },
+    {
+      "module": "Kernel/LogCatalog/C0151",
+      "entries": 1024,
+      "seconds": 11.494728087913245
+    },
+    {
+      "module": "Kernel/LogCatalog/C0152",
+      "entries": 1024,
+      "seconds": 11.573415335034952
+    },
+    {
+      "module": "Kernel/LogCatalog/C0153",
+      "entries": 1024,
+      "seconds": 11.494303607032634
+    },
+    {
+      "module": "Kernel/LogCatalog/C0154",
+      "entries": 1024,
+      "seconds": 11.571703270077705
+    },
+    {
+      "module": "Kernel/LogCatalog/C0155",
+      "entries": 1024,
+      "seconds": 11.662357519031502
+    },
+    {
+      "module": "Kernel/LogCatalog/C0156",
+      "entries": 1024,
+      "seconds": 11.60011850297451
+    },
+    {
+      "module": "Kernel/LogCatalog/C0157",
+      "entries": 1024,
+      "seconds": 11.466266499017365
+    },
+    {
+      "module": "Kernel/LogCatalog/C0158",
+      "entries": 1024,
+      "seconds": 11.537945725023746
+    },
+    {
+      "module": "Kernel/LogCatalog/C0159",
+      "entries": 1024,
+      "seconds": 11.573465820983984
+    },
+    {
+      "module": "Kernel/LogCatalog/C0160",
+      "entries": 1024,
+      "seconds": 11.685136165004224
+    },
+    {
+      "module": "Kernel/LogCatalog/C0161",
+      "entries": 1024,
+      "seconds": 11.611496506026015
+    },
+    {
+      "module": "Kernel/LogCatalog/C0162",
+      "entries": 1024,
+      "seconds": 11.650128567940556
+    },
+    {
+      "module": "Kernel/LogCatalog/C0163",
+      "entries": 1024,
+      "seconds": 11.715775714023039
+    },
+    {
+      "module": "Kernel/LogCatalog/C0164",
+      "entries": 1024,
+      "seconds": 11.642413838999346
+    },
+    {
+      "module": "Kernel/LogCatalog/C0165",
+      "entries": 1024,
+      "seconds": 11.565004796953872
+    },
+    {
+      "module": "Kernel/LogCatalog/C0166",
+      "entries": 1024,
+      "seconds": 11.580145756015554
+    },
+    {
+      "module": "Kernel/LogCatalog/C0167",
+      "entries": 1024,
+      "seconds": 12.510970430914313
+    },
+    {
+      "module": "Kernel/LogCatalog/C0168",
+      "entries": 1024,
+      "seconds": 11.60196973301936
+    },
+    {
+      "module": "Kernel/LogCatalog/C0169",
+      "entries": 1024,
+      "seconds": 11.870794381946325
+    },
+    {
+      "module": "Kernel/LogCatalog/C0170",
+      "entries": 1024,
+      "seconds": 11.405476044048555
+    },
+    {
+      "module": "Kernel/LogCatalog/C0171",
+      "entries": 1024,
+      "seconds": 11.393179659964517
+    },
+    {
+      "module": "Kernel/LogCatalog/C0172",
+      "entries": 1024,
+      "seconds": 11.537958131055348
+    },
+    {
+      "module": "Kernel/LogCatalog/C0173",
+      "entries": 1024,
+      "seconds": 11.61049560108222
+    },
+    {
+      "module": "Kernel/LogCatalog/C0174",
+      "entries": 1024,
+      "seconds": 11.617402153089643
+    },
+    {
+      "module": "Kernel/LogCatalog/C0175",
+      "entries": 1024,
+      "seconds": 11.676795556093566
+    },
+    {
+      "module": "Kernel/LogCatalog/C0176",
+      "entries": 1024,
+      "seconds": 11.754276845022105
+    },
+    {
+      "module": "Kernel/LogCatalog/C0177",
+      "entries": 1024,
+      "seconds": 11.72210942604579
+    },
+    {
+      "module": "Kernel/LogCatalog/C0178",
+      "entries": 1024,
+      "seconds": 11.73265022598207
+    },
+    {
+      "module": "Kernel/LogCatalog/C0179",
+      "entries": 1024,
+      "seconds": 11.810825482010841
+    },
+    {
+      "module": "Kernel/LogCatalog/C0180",
+      "entries": 1024,
+      "seconds": 11.841779082082212
+    },
+    {
+      "module": "Kernel/LogCatalog/C0181",
+      "entries": 1024,
+      "seconds": 11.634596231975593
+    },
+    {
+      "module": "Kernel/LogCatalog/C0182",
+      "entries": 1024,
+      "seconds": 11.646342516993172
+    },
+    {
+      "module": "Kernel/LogCatalog/C0183",
+      "entries": 1024,
+      "seconds": 11.760864633950405
+    },
+    {
+      "module": "Kernel/LogCatalog/C0184",
+      "entries": 1024,
+      "seconds": 11.764697751961648
+    },
+    {
+      "module": "Kernel/LogCatalog/C0185",
+      "entries": 1024,
+      "seconds": 11.649510803981684
+    },
+    {
+      "module": "Kernel/LogCatalog/C0186",
+      "entries": 1024,
+      "seconds": 11.776204000925645
+    },
+    {
+      "module": "Kernel/LogCatalog/C0187",
+      "entries": 1024,
+      "seconds": 11.658676762948744
+    },
+    {
+      "module": "Kernel/LogCatalog/C0188",
+      "entries": 1024,
+      "seconds": 11.656363879097626
+    },
+    {
+      "module": "Kernel/LogCatalog/C0189",
+      "entries": 1024,
+      "seconds": 11.619026647065766
+    },
+    {
+      "module": "Kernel/LogCatalog/C0190",
+      "entries": 1024,
+      "seconds": 11.630696182954125
+    },
+    {
+      "module": "Kernel/LogCatalog/C0191",
+      "entries": 1024,
+      "seconds": 11.723667853977531
+    },
+    {
+      "module": "Kernel/LogCatalog/C0192",
+      "entries": 1024,
+      "seconds": 11.701231968938373
+    },
+    {
+      "module": "Kernel/LogCatalog/C0193",
+      "entries": 1024,
+      "seconds": 11.715173079981469
+    },
+    {
+      "module": "Kernel/LogCatalog/C0194",
+      "entries": 1024,
+      "seconds": 11.684900929103605
+    },
+    {
+      "module": "Kernel/LogCatalog/C0195",
+      "entries": 1024,
+      "seconds": 11.779084649984725
+    },
+    {
+      "module": "Kernel/LogCatalog/C0196",
+      "entries": 1024,
+      "seconds": 11.753487459034659
+    },
+    {
+      "module": "Kernel/LogCatalog/C0197",
+      "entries": 1024,
+      "seconds": 11.800464867963456
+    },
+    {
+      "module": "Kernel/LogCatalog/C0198",
+      "entries": 1024,
+      "seconds": 11.794161222991534
+    },
+    {
+      "module": "Kernel/LogCatalog/C0199",
+      "entries": 1024,
+      "seconds": 11.840140214073472
+    },
+    {
+      "module": "Kernel/LogCatalog/C0200",
+      "entries": 1024,
+      "seconds": 11.708496022038162
+    },
+    {
+      "module": "Kernel/LogCatalog/C0201",
+      "entries": 1024,
+      "seconds": 11.684998141950928
+    },
+    {
+      "module": "Kernel/LogCatalog/C0202",
+      "entries": 1024,
+      "seconds": 11.744035584968515
+    },
+    {
+      "module": "Kernel/LogCatalog/C0203",
+      "entries": 1024,
+      "seconds": 11.964654345996678
+    },
+    {
+      "module": "Kernel/LogCatalog/C0204",
+      "entries": 1024,
+      "seconds": 11.93027280003298
+    },
+    {
+      "module": "Kernel/LogCatalog/C0205",
+      "entries": 1024,
+      "seconds": 11.960544605040923
+    },
+    {
+      "module": "Kernel/LogCatalog/C0206",
+      "entries": 1024,
+      "seconds": 12.07021677098237
+    },
+    {
+      "module": "Kernel/LogCatalog/C0207",
+      "entries": 1024,
+      "seconds": 11.781176339020021
+    },
+    {
+      "module": "Kernel/LogCatalog/C0208",
+      "entries": 1024,
+      "seconds": 11.720754293026403
+    },
+    {
+      "module": "Kernel/LogCatalog/C0209",
+      "entries": 1024,
+      "seconds": 11.934941428015009
+    },
+    {
+      "module": "Kernel/LogCatalog/C0210",
+      "entries": 1024,
+      "seconds": 11.777677583973855
+    },
+    {
+      "module": "Kernel/LogCatalog/C0211",
+      "entries": 1024,
+      "seconds": 11.806390107958578
+    },
+    {
+      "module": "Kernel/LogCatalog/C0212",
+      "entries": 1024,
+      "seconds": 11.904970010975376
+    },
+    {
+      "module": "Kernel/LogCatalog/C0213",
+      "entries": 1024,
+      "seconds": 12.026169422082603
+    },
+    {
+      "module": "Kernel/LogCatalog/C0214",
+      "entries": 1024,
+      "seconds": 11.995105634094216
+    },
+    {
+      "module": "Kernel/LogCatalog/C0215",
+      "entries": 1024,
+      "seconds": 11.881336093065329
+    },
+    {
+      "module": "Kernel/LogCatalog/C0216",
+      "entries": 1024,
+      "seconds": 11.792505386983976
+    },
+    {
+      "module": "Kernel/LogCatalog/C0217",
+      "entries": 1024,
+      "seconds": 12.249190655071288
+    },
+    {
+      "module": "Kernel/LogCatalog/C0218",
+      "entries": 1024,
+      "seconds": 14.189416448003612
+    },
+    {
+      "module": "Kernel/LogCatalog/C0219",
+      "entries": 1024,
+      "seconds": 15.316066644038074
+    },
+    {
+      "module": "Kernel/LogCatalog/C0220",
+      "entries": 1024,
+      "seconds": 15.425967719056644
+    },
+    {
+      "module": "Kernel/LogCatalog/C0221",
+      "entries": 1024,
+      "seconds": 15.28604348108638
+    },
+    {
+      "module": "Kernel/LogCatalog/C0222",
+      "entries": 1024,
+      "seconds": 13.226240720949136
+    },
+    {
+      "module": "Kernel/LogCatalog/C0223",
+      "entries": 1024,
+      "seconds": 15.264039446017705
+    },
+    {
+      "module": "Kernel/LogCatalog/C0224",
+      "entries": 1024,
+      "seconds": 15.247050788952038
+    },
+    {
+      "module": "Kernel/LogCatalog/C0225",
+      "entries": 1024,
+      "seconds": 15.387307855999097
+    },
+    {
+      "module": "Kernel/LogCatalog/C0226",
+      "entries": 1024,
+      "seconds": 14.471117786015384
+    },
+    {
+      "module": "Kernel/LogCatalog/C0227",
+      "entries": 1024,
+      "seconds": 15.200738910934888
+    },
+    {
+      "module": "Kernel/LogCatalog/C0228",
+      "entries": 1024,
+      "seconds": 15.340658203931525
+    },
+    {
+      "module": "Kernel/LogCatalog/C0229",
+      "entries": 1024,
+      "seconds": 15.431462263921276
+    },
+    {
+      "module": "Kernel/LogCatalog/C0230",
+      "entries": 1024,
+      "seconds": 14.998389701009728
+    },
+    {
+      "module": "Kernel/LogCatalog/C0231",
+      "entries": 1024,
+      "seconds": 14.977230713935569
+    },
+    {
+      "module": "Kernel/LogCatalog/C0232",
+      "entries": 1024,
+      "seconds": 16.375755948014557
+    },
+    {
+      "module": "Kernel/LogCatalog/C0233",
+      "entries": 1024,
+      "seconds": 15.318409715080634
+    },
+    {
+      "module": "Kernel/LogCatalog/C0234",
+      "entries": 1024,
+      "seconds": 15.149055605987087
+    },
+    {
+      "module": "Kernel/LogCatalog/C0235",
+      "entries": 1024,
+      "seconds": 15.541450700024143
+    },
+    {
+      "module": "Kernel/LogCatalog/C0236",
+      "entries": 1024,
+      "seconds": 15.408797416021116
+    },
+    {
+      "module": "Kernel/LogCatalog/C0237",
+      "entries": 1024,
+      "seconds": 15.038708674022928
+    },
+    {
+      "module": "Kernel/LogCatalog/C0238",
+      "entries": 1024,
+      "seconds": 14.910561935976148
+    },
+    {
+      "module": "Kernel/LogCatalog/C0239",
+      "entries": 1024,
+      "seconds": 15.288734111003578
+    },
+    {
+      "module": "Kernel/LogCatalog/C0240",
+      "entries": 1024,
+      "seconds": 17.762362345005386
+    },
+    {
+      "module": "Kernel/LogCatalog/C0241",
+      "entries": 1024,
+      "seconds": 14.20865987392608
+    },
+    {
+      "module": "Kernel/LogCatalog/C0242",
+      "entries": 1024,
+      "seconds": 15.508948069997132
+    },
+    {
+      "module": "Kernel/LogCatalog/C0243",
+      "entries": 1024,
+      "seconds": 15.429886646918021
+    },
+    {
+      "module": "Kernel/LogCatalog/C0244",
+      "entries": 1024,
+      "seconds": 15.40247595589608
+    },
+    {
+      "module": "Kernel/LogCatalog/C0245",
+      "entries": 1024,
+      "seconds": 15.553125757956877
+    },
+    {
+      "module": "Kernel/LogCatalog/C0246",
+      "entries": 1024,
+      "seconds": 15.119604419916868
+    },
+    {
+      "module": "Kernel/LogCatalog/C0247",
+      "entries": 1024,
+      "seconds": 15.791444135946222
+    },
+    {
+      "module": "Kernel/LogCatalog/C0248",
+      "entries": 1024,
+      "seconds": 13.788893037009984
+    },
+    {
+      "module": "Kernel/LogCatalog/C0249",
+      "entries": 1024,
+      "seconds": 14.107850119937211
+    },
+    {
+      "module": "Kernel/LogCatalog/C0250",
+      "entries": 1024,
+      "seconds": 14.311261494993232
+    },
+    {
+      "module": "Kernel/LogCatalog/C0251",
+      "entries": 1024,
+      "seconds": 15.031871865969151
+    },
+    {
+      "module": "Kernel/LogCatalog/C0252",
+      "entries": 1024,
+      "seconds": 15.418010581983253
+    },
+    {
+      "module": "Kernel/LogCatalog/C0253",
+      "entries": 1024,
+      "seconds": 14.90106049797032
+    },
+    {
+      "module": "Kernel/LogCatalog/C0254",
+      "entries": 1024,
+      "seconds": 13.818270354997367
+    },
+    {
+      "module": "Kernel/LogCatalog/C0255",
+      "entries": 1024,
+      "seconds": 15.1796107130358
+    },
+    {
+      "module": "Kernel/LogCatalog/C0256",
+      "entries": 1024,
+      "seconds": 13.502979262033477
+    },
+    {
+      "module": "Kernel/LogCatalog/C0257",
+      "entries": 1024,
+      "seconds": 13.55507680599112
+    },
+    {
+      "module": "Kernel/LogCatalog/C0258",
+      "entries": 1024,
+      "seconds": 13.450818564975634
+    },
+    {
+      "module": "Kernel/LogCatalog/C0259",
+      "entries": 1024,
+      "seconds": 14.397869613021612
+    },
+    {
+      "module": "Kernel/LogCatalog/C0260",
+      "entries": 1024,
+      "seconds": 13.344356977962889
+    },
+    {
+      "module": "Kernel/LogCatalog/C0261",
+      "entries": 1024,
+      "seconds": 13.357735656900331
+    },
+    {
+      "module": "Kernel/LogCatalog/C0262",
+      "entries": 1024,
+      "seconds": 13.118269435944967
+    },
+    {
+      "module": "Kernel/LogCatalog/C0263",
+      "entries": 1024,
+      "seconds": 14.29049365897663
+    },
+    {
+      "module": "Kernel/LogCatalog/C0264",
+      "entries": 1024,
+      "seconds": 13.16204463597387
+    },
+    {
+      "module": "Kernel/LogCatalog/C0265",
+      "entries": 1024,
+      "seconds": 13.66532647702843
+    },
+    {
+      "module": "Kernel/LogCatalog/C0266",
+      "entries": 1024,
+      "seconds": 14.357153559918515
+    },
+    {
+      "module": "Kernel/LogCatalog/C0267",
+      "entries": 1024,
+      "seconds": 14.684581025037915
+    },
+    {
+      "module": "Kernel/LogCatalog/C0268",
+      "entries": 1024,
+      "seconds": 13.036281393957324
+    },
+    {
+      "module": "Kernel/LogCatalog/C0269",
+      "entries": 1024,
+      "seconds": 14.743113560019992
+    },
+    {
+      "module": "Kernel/LogCatalog/C0270",
+      "entries": 1024,
+      "seconds": 16.408176196040586
+    },
+    {
+      "module": "Kernel/LogCatalog/C0271",
+      "entries": 1024,
+      "seconds": 13.382877529016696
+    },
+    {
+      "module": "Kernel/LogCatalog/C0272",
+      "entries": 1024,
+      "seconds": 15.899449346004985
+    },
+    {
+      "module": "Kernel/LogCatalog/C0273",
+      "entries": 1024,
+      "seconds": 13.670872822054662
+    },
+    {
+      "module": "Kernel/LogCatalog/C0274",
+      "entries": 1024,
+      "seconds": 13.890602280967869
+    },
+    {
+      "module": "Kernel/LogCatalog/C0275",
+      "entries": 1024,
+      "seconds": 14.87051002192311
+    },
+    {
+      "module": "Kernel/LogCatalog/C0276",
+      "entries": 1024,
+      "seconds": 15.849159509991296
+    },
+    {
+      "module": "Kernel/LogCatalog/C0277",
+      "entries": 1024,
+      "seconds": 15.815087878960185
+    },
+    {
+      "module": "Kernel/LogCatalog/C0278",
+      "entries": 1024,
+      "seconds": 14.642571193980984
+    },
+    {
+      "module": "Kernel/LogCatalog/C0279",
+      "entries": 1024,
+      "seconds": 15.332766107050702
+    },
+    {
+      "module": "Kernel/LogCatalog/C0280",
+      "entries": 1024,
+      "seconds": 15.44179604202509
+    },
+    {
+      "module": "Kernel/LogCatalog/C0281",
+      "entries": 1024,
+      "seconds": 23.37176630506292
+    },
+    {
+      "module": "Kernel/LogCatalog/C0282",
+      "entries": 1024,
+      "seconds": 40.8953432579292
+    },
+    {
+      "module": "Kernel/LogCatalog/C0283",
+      "entries": 1024,
+      "seconds": 31.612306497991085
+    },
+    {
+      "module": "Kernel/LogCatalog/C0284",
+      "entries": 1024,
+      "seconds": 12.552766503067687
+    },
+    {
+      "module": "Kernel/LogCatalog/C0285",
+      "entries": 1024,
+      "seconds": 12.44042699795682
+    },
+    {
+      "module": "Kernel/LogCatalog/C0286",
+      "entries": 1024,
+      "seconds": 12.366694791940972
+    },
+    {
+      "module": "Kernel/LogCatalog/C0287",
+      "entries": 1024,
+      "seconds": 12.363787387963384
+    },
+    {
+      "module": "Kernel/LogCatalog/C0288",
+      "entries": 1024,
+      "seconds": 12.176580779021606
+    },
+    {
+      "module": "Kernel/LogCatalog/C0289",
+      "entries": 1024,
+      "seconds": 12.42286372196395
+    },
+    {
+      "module": "Kernel/LogCatalog/C0290",
+      "entries": 1024,
+      "seconds": 12.359954104060307
+    },
+    {
+      "module": "Kernel/LogCatalog/C0291",
+      "entries": 1024,
+      "seconds": 12.489795512985438
+    },
+    {
+      "module": "Kernel/LogCatalog/C0292",
+      "entries": 1024,
+      "seconds": 12.380619638017379
+    },
+    {
+      "module": "Kernel/LogCatalog/C0293",
+      "entries": 1024,
+      "seconds": 12.336136288009584
+    },
+    {
+      "module": "Kernel/LogCatalog/C0294",
+      "entries": 1024,
+      "seconds": 12.472381027997471
+    },
+    {
+      "module": "Kernel/LogCatalog/C0295",
+      "entries": 1024,
+      "seconds": 12.126526521053165
+    },
+    {
+      "module": "Kernel/LogCatalog/C0296",
+      "entries": 1024,
+      "seconds": 12.407484194030985
+    },
+    {
+      "module": "Kernel/LogCatalog/C0297",
+      "entries": 1024,
+      "seconds": 12.365712378988974
+    },
+    {
+      "module": "Kernel/LogCatalog/C0298",
+      "entries": 1024,
+      "seconds": 12.279351013945416
+    },
+    {
+      "module": "Kernel/LogCatalog/C0299",
+      "entries": 1024,
+      "seconds": 12.31206949800253
+    },
+    {
+      "module": "Kernel/LogCatalog/C0300",
+      "entries": 1024,
+      "seconds": 12.378368030069396
+    },
+    {
+      "module": "Kernel/LogCatalog/C0301",
+      "entries": 1024,
+      "seconds": 12.650720637990162
+    },
+    {
+      "module": "Kernel/LogCatalog/C0302",
+      "entries": 1024,
+      "seconds": 12.39929581200704
+    },
+    {
+      "module": "Kernel/LogCatalog/C0303",
+      "entries": 1024,
+      "seconds": 12.32625741395168
+    },
+    {
+      "module": "Kernel/LogCatalog/C0304",
+      "entries": 1024,
+      "seconds": 12.364329595002346
+    },
+    {
+      "module": "Kernel/LogCatalog/C0305",
+      "entries": 1024,
+      "seconds": 12.508930266019888
+    },
+    {
+      "module": "Kernel/LogCatalog/C0306",
+      "entries": 1024,
+      "seconds": 12.8316208969336
+    },
+    {
+      "module": "Kernel/LogCatalog/C0307",
+      "entries": 1024,
+      "seconds": 14.378066990990192
+    },
+    {
+      "module": "Kernel/LogCatalog/C0308",
+      "entries": 1024,
+      "seconds": 12.364250899059698
+    },
+    {
+      "module": "Kernel/LogCatalog/C0309",
+      "entries": 1024,
+      "seconds": 12.531896831002086
+    },
+    {
+      "module": "Kernel/LogCatalog/C0310",
+      "entries": 1024,
+      "seconds": 12.48296038492117
+    },
+    {
+      "module": "Kernel/LogCatalog/C0311",
+      "entries": 1024,
+      "seconds": 12.623690946027637
+    },
+    {
+      "module": "Kernel/LogCatalog/C0312",
+      "entries": 1024,
+      "seconds": 12.425235165981576
+    },
+    {
+      "module": "Kernel/LogCatalog/C0313",
+      "entries": 1024,
+      "seconds": 12.438907535979524
+    },
+    {
+      "module": "Kernel/LogCatalog/C0314",
+      "entries": 1024,
+      "seconds": 14.087374094990082
+    },
+    {
+      "module": "Kernel/LogCatalog/C0315",
+      "entries": 1024,
+      "seconds": 12.492031628964469
+    },
+    {
+      "module": "Kernel/LogCatalog/C0316",
+      "entries": 1024,
+      "seconds": 12.419470158056356
+    },
+    {
+      "module": "Kernel/LogCatalog/C0317",
+      "entries": 1024,
+      "seconds": 13.928017377969809
+    },
+    {
+      "module": "Kernel/LogCatalog/C0318",
+      "entries": 1024,
+      "seconds": 12.49843440996483
+    },
+    {
+      "module": "Kernel/LogCatalog/C0319",
+      "entries": 1024,
+      "seconds": 12.516758662066422
+    },
+    {
+      "module": "Kernel/LogCatalog/C0320",
+      "entries": 1024,
+      "seconds": 12.45030407095328
+    },
+    {
+      "module": "Kernel/LogCatalog/C0321",
+      "entries": 1024,
+      "seconds": 12.463244624901563
+    },
+    {
+      "module": "Kernel/LogCatalog/C0322",
+      "entries": 1024,
+      "seconds": 14.936389332986437
+    },
+    {
+      "module": "Kernel/LogCatalog/C0323",
+      "entries": 1024,
+      "seconds": 12.457180480007082
+    },
+    {
+      "module": "Kernel/LogCatalog/C0324",
+      "entries": 1024,
+      "seconds": 12.558103571995161
+    },
+    {
+      "module": "Kernel/LogCatalog/C0325",
+      "entries": 1024,
+      "seconds": 12.545414300984703
+    },
+    {
+      "module": "Kernel/LogCatalog/C0326",
+      "entries": 1024,
+      "seconds": 12.33250570204109
+    },
+    {
+      "module": "Kernel/LogCatalog/C0327",
+      "entries": 1024,
+      "seconds": 12.147262098966166
+    },
+    {
+      "module": "Kernel/LogCatalog/C0328",
+      "entries": 1024,
+      "seconds": 12.245476920041256
+    },
+    {
+      "module": "Kernel/LogCatalog/C0329",
+      "entries": 1024,
+      "seconds": 12.135396025958471
+    },
+    {
+      "module": "Kernel/LogCatalog/C0330",
+      "entries": 1024,
+      "seconds": 13.660335054039024
+    },
+    {
+      "module": "Kernel/LogCatalog/C0331",
+      "entries": 1024,
+      "seconds": 12.29318878299091
+    },
+    {
+      "module": "Kernel/LogCatalog/C0332",
+      "entries": 1024,
+      "seconds": 12.364215453038923
+    },
+    {
+      "module": "Kernel/LogCatalog/C0333",
+      "entries": 1024,
+      "seconds": 15.545086315949447
+    },
+    {
+      "module": "Kernel/LogCatalog/C0334",
+      "entries": 1024,
+      "seconds": 12.295645219041035
+    },
+    {
+      "module": "Kernel/LogCatalog/C0335",
+      "entries": 1024,
+      "seconds": 12.316014132113196
+    },
+    {
+      "module": "Kernel/LogCatalog/C0336",
+      "entries": 1024,
+      "seconds": 12.272463397006504
+    },
+    {
+      "module": "Kernel/LogCatalog/C0337",
+      "entries": 1024,
+      "seconds": 12.330804146942683
+    },
+    {
+      "module": "Kernel/LogCatalog/C0338",
+      "entries": 1024,
+      "seconds": 12.321227457956411
+    },
+    {
+      "module": "Kernel/LogCatalog/C0339",
+      "entries": 1024,
+      "seconds": 12.375551825971343
+    },
+    {
+      "module": "Kernel/LogCatalog/C0340",
+      "entries": 1024,
+      "seconds": 12.312850574962795
+    },
+    {
+      "module": "Kernel/LogCatalog/C0341",
+      "entries": 1024,
+      "seconds": 12.409127107006498
+    },
+    {
+      "module": "Kernel/LogCatalog/C0342",
+      "entries": 1024,
+      "seconds": 12.348729660036042
+    },
+    {
+      "module": "Kernel/LogCatalog/C0343",
+      "entries": 375,
+      "seconds": 4.561007454060018
+    }
+  ],
+  "source_catalog_sha256": "781b3824c407d8a67cc640194d5925afa6aea16409a520dabc5c78c19876c89a"
+}

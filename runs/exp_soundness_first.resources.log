@@ -1,0 +1,100 @@
+BUILD SUPPORT Kernel/Elementary
+BUILD SUPPORT Ramsey3683Bootstrap/Certificate
+Ramsey3683Bootstrap/Certificate.lean:50:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/Certificate.lean:50:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/Certificate.lean:89:10: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/Certificate.lean:105:10: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/Certificate.lean:89:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/Certificate.lean:105:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'Compact3684.Certificate.checked_seed_candidate' depends on axioms: [propext, Classical.choice, Quot.sound]
+Ramsey3683Bootstrap/Certificate.lean:130:24: error: `ring_nf` made no progress on the goal
+Ramsey3683Bootstrap/Certificate.lean:135:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  Contains (plus a (timesInt b (-1))) (x + -y)
+but is expected to have type
+  Contains (minus a b) (x + -y)
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Ramsey3683Bootstrap/Certificate.lean:155:41: error: unsolved goals
+t L : ℝ
+ti : Interval
+hti : Contains ti t
+hNti : Nonneg ti
+n : ℕ
+ih :
+  ∀ (j : ℕ) (w total : Interval),
+    Contains w (t ^ j / ↑j.factorial) →
+      Nonneg w →
+        Contains total (expPoly j (-t)) →
+          expPoly (j + n) (-t) - value 1 ≤ L →
+            L ≤ expPoly (j + n) (-t) + value 1 → Contains (expSeries ti n j w total) L
+j : ℕ
+w total : Interval
+hw : Contains w (t ^ j / ↑j.factorial)
+hNw : Nonneg w
+htotal : Contains total (expPoly j (-t))
+hlo : expPoly (j + (n + 1)) (-t) - value 1 ≤ L
+hhi : L ≤ expPoly (j + (n + 1)) (-t) + value 1
+hd : 0 < ↑j + 1
+hnext : Contains (divide (timesPos w ti) (↑j + 1)) (t ^ j / ↑j.factorial * t / ↑(↑j + 1))
+⊢ t * t ^ j * (↑j.factorial)⁻¹ * (1 + ↑j)⁻¹ = t * t ^ j * (↑j.factorial + ↑j.factorial * ↑j)⁻¹
+Ramsey3683Bootstrap/Certificate.lean:162:6: error: failed to synthesize
+  HasDistribNeg ℤ
+maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+Ramsey3683Bootstrap/Certificate.lean:181:52: error: unsolved goals
+case hac
+n d : ℤ
+hn : 0 ≤ n
+hd : 0 < d
+hnd : n ≤ d
+t : ℝ := ⋯
+hdR : 0 < ↑d
+ht0 : 0 ≤ t
+ht1 : t ≤ 1
+hpoly : expPoly 20 (-t) - expError 20 (-t) ≤ Real.exp (-t) ∧ Real.exp (-t) ≤ expPoly 20 (-t) + expError 20 (-t)
+hp : t ^ 20 ≤ 1
+⊢ ↑(Nat.succ 20) ≤ 21
+
+case hbc
+n d : ℤ
+hn : 0 ≤ n
+hd : 0 < d
+hnd : n ≤ d
+t : ℝ := ⋯
+hdR : 0 < ↑d
+ht0 : 0 ≤ t
+ht1 : t ≤ 1
+hpoly : expPoly 20 (-t) - expError 20 (-t) ≤ Real.exp (-t) ∧ Real.exp (-t) ≤ expPoly 20 (-t) + expError 20 (-t)
+hp : t ^ 20 ≤ 1
+⊢ 20 ≤ ↑20
+'Compact3684.Elementary.expNeg_contains' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 50, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 42, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/Certificate.olean', 'Ramsey3683Bootstrap/Certificate.lean']' returned non-zero exit status 1.

@@ -1,0 +1,12 @@
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedUniform
+'Ramsey3683Bootstrap.isGood_of_density_weighted_card_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Ramsey3683Bootstrap/WeightedUniform"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 3.0802765489788726,
+  "headline_proved": false
+}

@@ -1,0 +1,168 @@
+BUILD SUPPORT Ramsey3683Bootstrap/GridCell
+Ramsey3683Bootstrap/GridCell.lean:83:22: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  h ≥ 0
+  h - k ≥ 1
+  g ≥ 0
+  f ≥ 0
+  f - g ≥ 0
+  e ≥ 0
+  d ≥ 0
+  d - e ≥ 0
+  b ≥ 1
+  a ≥ 1
+where
+ a := ↑N
+ b := ↑m
+ d := ↑(#X)
+ e := ↑(A ((i + 1) * m))
+ f := ↑(#Y)
+ g := ↑(ceilThreshold (Real.exp (↑(N * m) * (v + ε / 2))))
+ h := ↑i * ↑m
+ k := ↑(i + 1) * ↑m
+Ramsey3683Bootstrap/GridCell.lean:91:46: error: linarith failed to find a contradiction
+N j i : ℕ
+u v p w q c : ℝ
+hN : 0 < N
+hu : 0 < u
+hv : 0 < v
+hc : 0 < c
+hq : q < 1
+hslope : 0 < c + Real.log (1 - q)
+hsize : w < u
+hbase : GridCandidate N j i u v p
+hdensity : GridDensity N (i + 1) w q
+ε : ℝ
+hε : 0 < ε
+hNr : 0 < ↑N
+hεhalf : 0 < ε / 2
+hεquarter : 0 < ε / 4
+hw : 0 < (u - w) / 2
+hpad : 0 < ↑N * (ε / 2)
+hlower : 0 < ↑N * u
+m : ℕ
+hmBase :
+  ∀ {V : Type u} [inst : Fintype V] [inst_1 : DecidableEq V] {G : SimpleGraph V} [inst_2 : DecidableRel G.Adj]
+    {X Y : Finset V},
+    Candidate G X Y →
+      RowFloor G X Y p →
+        Real.exp (↑(N * m) * (u + ε / 4)) ≤ ↑(#X) →
+          Real.exp (↑(N * m) * (v + ε / 4)) ≤ ↑(#Y) → Candidate.IsGood G X Y (N * m) (j * m) (i * m)
+hmDense :
+  ∀ {V : Type u} [inst : Fintype V] [inst_1 : DecidableEq V] {G : SimpleGraph V} [inst_2 : DecidableRel G.Adj]
+    {X : Finset V},
+    Real.exp (↑(N * m) * (w + (u - w) / 2)) ≤ ↑(#X) →
+      InternalRedAtLeast G X q → hasRedClique G X (N * m) ∨ hasBlueClique G X ((i + 1) * m)
+hmStep :
+  ∀ (a b : ℝ),
+    ↑N * u * ↑m ≤ a → a + c ≤ b → ↑(ceilThreshold (Real.exp a)) ≤ (1 - q) * (↑(ceilThreshold (Real.exp b)) - 1)
+hmPad : ∀ (a : ℝ), 0 ≤ a → ↑(ceilThreshold (Real.exp a)) ≤ Real.exp (a + ↑N * (ε / 2) * ↑m)
+hm : 0 < m
+V : Type u
+instF : Fintype V
+instEq : DecidableEq V
+G : SimpleGraph V
+instAdj : DecidableRel G.Adj
+X Y : Finset V
+hcan : Candidate G X Y
+hrow : RowFloor G X Y p
+hX : Real.exp (↑(N * m) * (u + c / ↑N + ε)) ≤ ↑(#X)
+hY : Real.exp (↑(N * m) * (v + ε)) ≤ ↑(#Y)
+E : ℕ → ℝ := blockExponent N i m u c (ε / 2)
+A : ℕ → ℕ := fun t => ceilThreshold (Real.exp (E t))
+B : ℕ := ceilThreshold (Real.exp (↑(N * m) * (v + ε / 2)))
+hNm : 0 ≤ ↑(N * m)
+hXthreshold : A ((i + 1) * m) ≤ #X
+hYthreshold : B ≤ #Y
+X' Y' : Finset V
+hc' : Candidate G X' Y'
+hr' : RowFloor G X' Y' p
+hX' : A (i * m) ≤ #X'
+hY' : B ≤ #Y'
+hXr : ↑(A (i * m)) ≤ ↑(#X')
+a✝ : ?m.767 < ↑(N * m) * (u + ε / 4)
+⊢ False
+failed
+Ramsey3683Bootstrap/GridCell.lean:103:46: error: linarith failed to find a contradiction
+N j i : ℕ
+u v p w q c : ℝ
+hN : 0 < N
+hu : 0 < u
+hv : 0 < v
+hc : 0 < c
+hq : q < 1
+hslope : 0 < c + Real.log (1 - q)
+hsize : w < u
+hbase : GridCandidate N j i u v p
+hdensity : GridDensity N (i + 1) w q
+ε : ℝ
+hε : 0 < ε
+hNr : 0 < ↑N
+hεhalf : 0 < ε / 2
+hεquarter : 0 < ε / 4
+hw : 0 < (u - w) / 2
+hpad : 0 < ↑N * (ε / 2)
+hlower : 0 < ↑N * u
+m : ℕ
+hmBase :
+  ∀ {V : Type u} [inst : Fintype V] [inst_1 : DecidableEq V] {G : SimpleGraph V} [inst_2 : DecidableRel G.Adj]
+    {X Y : Finset V},
+    Candidate G X Y →
+      RowFloor G X Y p →
+        Real.exp (↑(N * m) * (u + ε / 4)) ≤ ↑(#X) →
+          Real.exp (↑(N * m) * (v + ε / 4)) ≤ ↑(#Y) → Candidate.IsGood G X Y (N * m) (j * m) (i * m)
+hmDense :
+  ∀ {V : Type u} [inst : Fintype V] [inst_1 : DecidableEq V] {G : SimpleGraph V} [inst_2 : DecidableRel G.Adj]
+    {X : Finset V},
+    Real.exp (↑(N * m) * (w + (u - w) / 2)) ≤ ↑(#X) →
+      InternalRedAtLeast G X q → hasRedClique G X (N * m) ∨ hasBlueClique G X ((i + 1) * m)
+hmStep :
+  ∀ (a b : ℝ),
+    ↑N * u * ↑m ≤ a → a + c ≤ b → ↑(ceilThreshold (Real.exp a)) ≤ (1 - q) * (↑(ceilThreshold (Real.exp b)) - 1)
+hmPad : ∀ (a : ℝ), 0 ≤ a → ↑(ceilThreshold (Real.exp a)) ≤ Real.exp (a + ↑N * (ε / 2) * ↑m)
+hm : 0 < m
+V : Type u
+instF : Fintype V
+instEq : DecidableEq V
+G : SimpleGraph V
+instAdj : DecidableRel G.Adj
+X Y : Finset V
+hcan : Candidate G X Y
+hrow : RowFloor G X Y p
+hX : Real.exp (↑(N * m) * (u + c / ↑N + ε)) ≤ ↑(#X)
+hY : Real.exp (↑(N * m) * (v + ε)) ≤ ↑(#Y)
+E : ℕ → ℝ := blockExponent N i m u c (ε / 2)
+A : ℕ → ℕ := fun t => ceilThreshold (Real.exp (E t))
+B : ℕ := ceilThreshold (Real.exp (↑(N * m) * (v + ε / 2)))
+hNm : 0 ≤ ↑(N * m)
+hXthreshold : A ((i + 1) * m) ≤ #X
+hYthreshold : B ≤ #Y
+t : ℕ
+ht0 : i * m < t
+ht1 : t ≤ (i + 1) * m
+X' : Finset V
+hX' : A t ≤ #X'
+hd' : InternalRedAtLeast G X' q
+hEt : ↑(N * m) * u ≤ E t
+a✝ : ?m.961 < ↑(N * m) * (w + (u - w) / 2)
+⊢ False
+failed
+Ramsey3683Bootstrap/GridCell.lean:111:6: error: Type mismatch: After simplification, term
+  h
+ has type
+  ↑N * (↑m * u) ≤ blockExponent N i m u c (ε / 2) (t - 1)
+but is expected to have type
+  ↑N * (u * ↑m) ≤ E (t - 1)
+Error in Linarith.normalizeDenominatorsLHS: Expr.rewrite may not produce subgoals.
+Error in Linarith.normalizeDenominatorsLHS: Expr.rewrite may not produce subgoals.
+'Ramsey3683Bootstrap.GridCandidate.cell' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 45, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 37, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/GridCell.olean', 'Ramsey3683Bootstrap/GridCell.lean']' returned non-zero exit status 1.

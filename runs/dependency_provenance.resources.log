@@ -1,0 +1,11 @@
+REBUILD PINNED UPSTREAM RamseyLean/Descent.lean
+RamseyLean/Descent.lean:1:0: error: object file '/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/dependencies/upstream_overlay/RamseyLean/BookInduction.olean' of module RamseyLean.BookInduction does not exist
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/audit_dependency_provenance.py", line 58, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/audit_dependency_provenance.py", line 48, in main
+    subprocess.run(['lean','+v4.32.1','-o',str(target),module],cwd=UPSTREAM,env=env,check=True)
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', '/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/dependencies/upstream_overlay/RamseyLean/Descent.olean', 'RamseyLean/Descent.lean']' returned non-zero exit status 1.

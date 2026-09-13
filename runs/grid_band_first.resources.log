@@ -1,0 +1,12 @@
+BUILD SUPPORT Ramsey3683Bootstrap/GridCell
+'Ramsey3683Bootstrap.GridUnconditional.band' depends on axioms: [propext, Classical.choice, Quot.sound]
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Ramsey3683Bootstrap/GridCell"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 7.3109113459941,
+  "headline_proved": false
+}

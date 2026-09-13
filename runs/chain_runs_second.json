@@ -1,0 +1,19 @@
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Ramsey3683Bootstrap/ChainRuns",
+    "Kernel/PackedChain",
+    "Kernel/ProfileAccess/R01",
+    "Kernel/ProfileAccess/R02",
+    "Kernel/ProfileAccess/R03",
+    "Kernel/ProfileAccess/R04",
+    "Kernel/ProfileAccess/R05",
+    "Kernel/ProfileAccess/R06",
+    "Kernel/ProfileAccess/R07",
+    "Kernel/ProfileAccess/R08"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 8.036249095923267,
+  "headline_proved": false
+}

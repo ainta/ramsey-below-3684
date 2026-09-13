@@ -1,0 +1,54 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/round_sound_second.json",
+    "--modules",
+    "Ramsey3683Bootstrap/RoundSound"
+  ],
+  "elapsed_seconds": 3.432167327031493,
+  "peak_sampled_rss_kib": 3701048,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13368,
+      1
+    ],
+    [
+      0.57,
+      13368,
+      1
+    ],
+    [
+      1.145,
+      735964,
+      2
+    ],
+    [
+      1.713,
+      2663804,
+      2
+    ],
+    [
+      2.284,
+      3531124,
+      2
+    ],
+    [
+      2.856,
+      3701048,
+      2
+    ]
+  ],
+  "log": "runs/round_sound_second.resources.log"
+}

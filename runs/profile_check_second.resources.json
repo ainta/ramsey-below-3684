@@ -1,0 +1,65 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/profile_check_second.json",
+    "--modules",
+    "Kernel/ProfileGuard",
+    "Ramsey3683Bootstrap/ProfileCheck"
+  ],
+  "elapsed_seconds": 4.564638997078873,
+  "peak_sampled_rss_kib": 3679880,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13336,
+      1
+    ],
+    [
+      0.572,
+      13336,
+      1
+    ],
+    [
+      1.144,
+      780404,
+      2
+    ],
+    [
+      1.711,
+      659100,
+      2
+    ],
+    [
+      2.283,
+      2149516,
+      2
+    ],
+    [
+      2.851,
+      3452172,
+      2
+    ],
+    [
+      3.422,
+      3679880,
+      2
+    ],
+    [
+      3.995,
+      13344,
+      1
+    ]
+  ],
+  "log": "runs/profile_check_second.resources.log"
+}

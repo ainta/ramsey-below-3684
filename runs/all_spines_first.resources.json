@@ -1,0 +1,64 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/all_spines_first.json",
+    "--modules",
+    "Ramsey3683Bootstrap/AllSpines"
+  ],
+  "elapsed_seconds": 4.562907323939726,
+  "peak_sampled_rss_kib": 3330844,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13324,
+      1
+    ],
+    [
+      0.573,
+      814960,
+      2
+    ],
+    [
+      1.145,
+      603144,
+      2
+    ],
+    [
+      1.716,
+      1964284,
+      2
+    ],
+    [
+      2.286,
+      2935120,
+      2
+    ],
+    [
+      2.855,
+      3232224,
+      2
+    ],
+    [
+      3.418,
+      3330844,
+      2
+    ],
+    [
+      3.993,
+      13332,
+      1
+    ]
+  ],
+  "log": "runs/all_spines_first.resources.log"
+}

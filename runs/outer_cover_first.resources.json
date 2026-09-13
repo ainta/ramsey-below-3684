@@ -1,0 +1,105 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/outer_cover_first.json",
+    "--modules",
+    "Ramsey3683Bootstrap/OuterPaths",
+    "Ramsey3683Bootstrap/OuterCover"
+  ],
+  "elapsed_seconds": 9.110799464979209,
+  "peak_sampled_rss_kib": 3679904,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13336,
+      1
+    ],
+    [
+      0.571,
+      814448,
+      2
+    ],
+    [
+      1.141,
+      114868,
+      2
+    ],
+    [
+      1.711,
+      658212,
+      2
+    ],
+    [
+      2.28,
+      1235280,
+      2
+    ],
+    [
+      2.85,
+      2921732,
+      2
+    ],
+    [
+      3.42,
+      3359536,
+      2
+    ],
+    [
+      3.989,
+      3669648,
+      2
+    ],
+    [
+      4.558,
+      13348,
+      1
+    ],
+    [
+      5.127,
+      536260,
+      2
+    ],
+    [
+      5.696,
+      1098848,
+      2
+    ],
+    [
+      6.266,
+      3185684,
+      2
+    ],
+    [
+      6.836,
+      3449968,
+      2
+    ],
+    [
+      7.402,
+      3631196,
+      2
+    ],
+    [
+      7.971,
+      3679904,
+      2
+    ],
+    [
+      8.541,
+      13348,
+      1
+    ]
+  ],
+  "log": "runs/outer_cover_first.resources.log"
+}

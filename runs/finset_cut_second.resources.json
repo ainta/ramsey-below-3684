@@ -1,0 +1,74 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/finset_cut_second.json",
+    "--modules",
+    "Ramsey3683Bootstrap/FinsetCut"
+  ],
+  "elapsed_seconds": 5.6790988920256495,
+  "peak_sampled_rss_kib": 3622696,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 150,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13328,
+      1
+    ],
+    [
+      0.57,
+      13328,
+      1
+    ],
+    [
+      1.137,
+      722804,
+      2
+    ],
+    [
+      1.707,
+      2821436,
+      2
+    ],
+    [
+      2.274,
+      3443084,
+      2
+    ],
+    [
+      2.841,
+      3582992,
+      2
+    ],
+    [
+      3.409,
+      3601128,
+      2
+    ],
+    [
+      3.977,
+      3604148,
+      2
+    ],
+    [
+      4.544,
+      3606728,
+      2
+    ],
+    [
+      5.111,
+      3622696,
+      2
+    ]
+  ],
+  "log": "runs/finset_cut_second.resources.log"
+}

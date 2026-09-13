@@ -1,0 +1,105 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/grid_closure_third.json",
+    "--modules",
+    "Ramsey3683Bootstrap/GridClosure",
+    "Kernel/LogInterval"
+  ],
+  "elapsed_seconds": 9.111966429045424,
+  "peak_sampled_rss_kib": 3625320,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 150,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13308,
+      1
+    ],
+    [
+      0.57,
+      13308,
+      1
+    ],
+    [
+      1.141,
+      757972,
+      2
+    ],
+    [
+      1.713,
+      2968712,
+      2
+    ],
+    [
+      2.281,
+      3448520,
+      2
+    ],
+    [
+      2.85,
+      3589620,
+      2
+    ],
+    [
+      3.419,
+      3614060,
+      2
+    ],
+    [
+      3.988,
+      3625320,
+      2
+    ],
+    [
+      4.558,
+      303268,
+      2
+    ],
+    [
+      5.127,
+      1021020,
+      2
+    ],
+    [
+      5.696,
+      3027196,
+      2
+    ],
+    [
+      6.269,
+      3404724,
+      2
+    ],
+    [
+      6.838,
+      3478484,
+      2
+    ],
+    [
+      7.405,
+      3495236,
+      2
+    ],
+    [
+      7.975,
+      3541924,
+      2
+    ],
+    [
+      8.546,
+      3595900,
+      2
+    ]
+  ],
+  "log": "runs/grid_closure_third.resources.log"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    "lean",
+    "+v4.32.1",
+    "lean/PrefixRange.lean"
+  ],
+  "elapsed_seconds": 1.1374185959575698,
+  "peak_sampled_rss_kib": 119120,
+  "peak_processes": 1,
+  "rss_limit_mib": 2048,
+  "time_limit_seconds": 120,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      119120,
+      1
+    ],
+    [
+      0.57,
+      0,
+      0
+    ]
+  ],
+  "log": "runs/lean_lift.resources.log"
+}

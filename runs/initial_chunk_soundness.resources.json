@@ -1,0 +1,104 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/initial_chunk_soundness.json",
+    "--modules",
+    "Ramsey3683Bootstrap/Certificate"
+  ],
+  "elapsed_seconds": 9.10361450293567,
+  "peak_sampled_rss_kib": 3743060,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13344,
+      1
+    ],
+    [
+      0.57,
+      787896,
+      2
+    ],
+    [
+      1.139,
+      13344,
+      1
+    ],
+    [
+      1.708,
+      510128,
+      2
+    ],
+    [
+      2.278,
+      990172,
+      2
+    ],
+    [
+      2.846,
+      2665668,
+      2
+    ],
+    [
+      3.415,
+      3346116,
+      2
+    ],
+    [
+      3.993,
+      3635648,
+      2
+    ],
+    [
+      4.561,
+      3681044,
+      2
+    ],
+    [
+      5.129,
+      3689600,
+      2
+    ],
+    [
+      5.696,
+      3691736,
+      2
+    ],
+    [
+      6.264,
+      3696872,
+      2
+    ],
+    [
+      6.831,
+      3707628,
+      2
+    ],
+    [
+      7.4,
+      3716576,
+      2
+    ],
+    [
+      7.967,
+      3743060,
+      2
+    ],
+    [
+      8.536,
+      0,
+      0
+    ]
+  ],
+  "log": "runs/initial_chunk_soundness.resources.log"
+}

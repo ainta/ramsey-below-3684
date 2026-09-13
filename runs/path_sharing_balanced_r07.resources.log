@@ -1,0 +1,1 @@
+{"round": 7, "original_runs": 14234339, "unique_shared_nodes": 7133751, "unique_intervals": 1228797, "balanced": true, "sharing_factor": 1.9953512534990359, "nonempty_paths": 332673, "maximum_path_runs": 143, "elapsed_seconds": 14.996161704999395, "scope": "Exact structural sharing measurement only; no new Lean theorem or guard result"}

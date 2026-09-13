@@ -1,0 +1,47 @@
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedConcrete
+Ramsey3683Bootstrap/WeightedConcrete.lean:289:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  bookTarget ?m.1464 ?m.1465 ((μ + s.η) ^ θ) ℓ k (t - (weightedConcrete s g ℓ).spineSize n)
+in the target expression
+  bookTarget (x + s.η) (y + s.η) ((μ + s.η) ^ θ) ℓ k (t - bookSpineSize g.e g.R n) ≤
+    (s.η / ↑n ^ 2) ^ s.r * ((μ + 2 * s.η) ^ bookSpineSize g.e g.R n / 2) ^ θ *
+      bookTarget (x + s.η) (y + s.η) ((μ + s.η) ^ θ) ℓ k t
+
+case refine_15
+x y μ p θ : ℝ
+s : WeightedSlack x y μ p θ
+g : WeightedGrowth x y μ p θ s
+hx : 0 < x
+hy : 0 < y
+hμ : 0 < μ
+hp : p < 1
+hθ : 0 < θ
+L ℓ : ℕ
+hs : BookAsymptoticScaleBounds g.e (μ + 2 * s.η) (p - s.η + g.e) g.R L
+hL : L ≤ ℓ - 1
+hl : (1 + g.e) / g.e ≤ (1 + g.e) ^ ℓ
+hright : ∀ (k : ℕ), 0 < k → ↑(ramseyNumber k ℓ) ≤ (x + 2 * s.η)⁻¹ ^ k * (y + 2 * s.η)⁻¹ ^ ℓ
+hη : 0 < s.η
+he : 0 < g.e
+hxp : 0 < x + s.η
+hyp : 0 < y + s.η
+hμp : 0 < μ + s.η
+hfloor : 0 < p - s.η
+hhigh : 0 < μ + 2 * s.η
+hL' : L ≤ ℓ
+n k t : ℕ
+hn : n = k + t
+hk : 2 ≤ k
+ht : 2 ≤ t
+hb : (weightedConcrete s g ℓ).spineSize n < t
+⊢ bookTarget (x + s.η) (y + s.η) ((μ + s.η) ^ θ) ℓ k (t - bookSpineSize g.e g.R n) ≤
+    (s.η / ↑n ^ 2) ^ s.r * ((μ + 2 * s.η) ^ bookSpineSize g.e g.R n / 2) ^ θ *
+      bookTarget (x + s.η) (y + s.η) ((μ + s.η) ^ θ) ℓ k t
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 39, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 31, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/WeightedConcrete.olean', 'Ramsey3683Bootstrap/WeightedConcrete.lean']' returned non-zero exit status 1.

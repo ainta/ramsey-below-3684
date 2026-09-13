@@ -1,0 +1,59 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/slack_first.json",
+    "--modules",
+    "Ramsey3683Bootstrap/WeightedSlack"
+  ],
+  "elapsed_seconds": 3.981929371948354,
+  "peak_sampled_rss_kib": 3579816,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 120,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13300,
+      1
+    ],
+    [
+      0.573,
+      13300,
+      1
+    ],
+    [
+      1.143,
+      704636,
+      2
+    ],
+    [
+      1.712,
+      2624068,
+      2
+    ],
+    [
+      2.279,
+      3423780,
+      2
+    ],
+    [
+      2.847,
+      3567244,
+      2
+    ],
+    [
+      3.415,
+      3579816,
+      2
+    ]
+  ],
+  "log": "runs/slack_first.resources.log"
+}

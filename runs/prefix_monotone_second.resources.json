@@ -1,0 +1,45 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/prefix_monotone_second.json",
+    "--modules",
+    "PrefixRange",
+    "Kernel/Codec"
+  ],
+  "elapsed_seconds": 2.270730659016408,
+  "peak_sampled_rss_kib": 781592,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 150,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13328,
+      1
+    ],
+    [
+      0.571,
+      13328,
+      1
+    ],
+    [
+      1.141,
+      781592,
+      2
+    ],
+    [
+      1.708,
+      239596,
+      2
+    ]
+  ],
+  "log": "runs/prefix_monotone_second.resources.log"
+}

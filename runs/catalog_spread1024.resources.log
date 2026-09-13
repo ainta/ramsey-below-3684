@@ -1,0 +1,7 @@
+lean/CatalogSpread1024.lean:594:16: error: (deterministic) timeout at `«synthesize pending MVars»`, maximum number of heartbeats (1000000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+lean/CatalogSpread1024.lean:1090:33: error(lean.unknownIdentifier): Unknown identifier `catalogSample.all`
+'Compact3684.Bench.checked_catalog_sample' depends on axioms: [sorryAx]

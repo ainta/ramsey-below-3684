@@ -1,0 +1,53 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "reproduce_lean.py",
+    "--module",
+    "Kernel.CheckedProfiles",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--dependency-overlay",
+    "dependencies/upstream_overlay",
+    "--output-root",
+    "runs/reproduce_kernel_smoke",
+    "--report",
+    "runs/reproduce_kernel_smoke.json"
+  ],
+  "elapsed_seconds": 2.8774131229147315,
+  "peak_sampled_rss_kib": 146220,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      17652,
+      1
+    ],
+    [
+      0.574,
+      17676,
+      1
+    ],
+    [
+      1.151,
+      140128,
+      2
+    ],
+    [
+      1.724,
+      146220,
+      2
+    ],
+    [
+      2.294,
+      135960,
+      2
+    ]
+  ],
+  "log": "runs/reproduce_kernel_smoke.resources.log"
+}

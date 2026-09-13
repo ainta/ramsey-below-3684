@@ -1,0 +1,8 @@
+{
+  "status": "FINITE_U_MAJORANT_CHECKS_PASS_NOT_LEAN",
+  "source_sha256": "87cea6076633a4f50c4dc6b4d2115b1e11c90e39936fbd67a633a7601f275a8d",
+  "source": "/home/ainta/manuscripts/ramsey/continuation_research/source/ramsey_candidate_continuation_release/baseline/certificate.json.gz",
+  "bootstrap_rounds_used": 0,
+  "node_margin_lower": "0.000000009999999409108413159961956161"
+}
+knots 20001

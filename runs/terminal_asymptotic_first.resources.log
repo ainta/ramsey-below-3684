@@ -1,0 +1,25 @@
+BUILD SUPPORT Ramsey3683Bootstrap/TerminalTransfer
+Ramsey3683Bootstrap/TerminalTransfer.lean:24:6: warning: Try `simp at hb` instead of `simpa using hb`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Ramsey3683Bootstrap/TerminalTransfer.lean:195:40: error: Application type mismatch: The argument
+  add_le_add_right hmax 2
+has type
+  2 + max (32 * ↑k ^ 3) (8 * ↑k * Real.exp ((a + ε / 4) * ↑k) * Real.exp b * s ^ 2 * D ^ k) ≤ 2 + Real.exp v
+but is expected to have type
+  max (32 * ↑k ^ 3) (8 * ↑k * Real.exp ((a + ε / 4) * ↑k) * Real.exp b * s ^ 2 * ((Real.exp b + s ^ 2 - 1) / s) ^ k) +
+      2 ≤
+    Real.exp v + 2
+in the application
+  LE.le.trans hfinite (add_le_add_right hmax 2)
+'Ramsey3683Bootstrap.ramsey_terminal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.terminal_exp_of_uniform' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 50, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 42, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/TerminalTransfer.olean', 'Ramsey3683Bootstrap/TerminalTransfer.lean']' returned non-zero exit status 1.

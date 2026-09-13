@@ -1,0 +1,80 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/affine_profile_first.json",
+    "--modules",
+    "Ramsey3683Bootstrap/GridClosure",
+    "Ramsey3683Bootstrap/Certificate"
+  ],
+  "elapsed_seconds": 6.252230318961665,
+  "peak_sampled_rss_kib": 3631504,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 150,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13332,
+      1
+    ],
+    [
+      0.571,
+      13332,
+      1
+    ],
+    [
+      1.14,
+      715756,
+      2
+    ],
+    [
+      1.709,
+      1482468,
+      2
+    ],
+    [
+      2.271,
+      3115912,
+      2
+    ],
+    [
+      2.838,
+      3394956,
+      2
+    ],
+    [
+      3.409,
+      3518320,
+      2
+    ],
+    [
+      3.979,
+      3609748,
+      2
+    ],
+    [
+      4.547,
+      3621172,
+      2
+    ],
+    [
+      5.115,
+      3631504,
+      2
+    ],
+    [
+      5.683,
+      0,
+      0
+    ]
+  ],
+  "log": "runs/affine_profile_first.resources.log"
+}

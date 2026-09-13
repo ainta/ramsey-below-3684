@@ -1,0 +1,113 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/chain_runs_second.json",
+    "--modules",
+    "Ramsey3683Bootstrap/ChainRuns",
+    "Kernel/PackedChain",
+    "Kernel/ProfileAccess/R01",
+    "Kernel/ProfileAccess/R02",
+    "Kernel/ProfileAccess/R03",
+    "Kernel/ProfileAccess/R04",
+    "Kernel/ProfileAccess/R05",
+    "Kernel/ProfileAccess/R06",
+    "Kernel/ProfileAccess/R07",
+    "Kernel/ProfileAccess/R08"
+  ],
+  "elapsed_seconds": 9.098063223995268,
+  "peak_sampled_rss_kib": 3685892,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13388,
+      1
+    ],
+    [
+      0.572,
+      13388,
+      1
+    ],
+    [
+      1.141,
+      718244,
+      2
+    ],
+    [
+      1.709,
+      2278396,
+      2
+    ],
+    [
+      2.278,
+      3493088,
+      2
+    ],
+    [
+      2.846,
+      3685892,
+      2
+    ],
+    [
+      3.413,
+      226420,
+      2
+    ],
+    [
+      3.979,
+      490420,
+      2
+    ],
+    [
+      4.547,
+      442828,
+      2
+    ],
+    [
+      5.12,
+      269916,
+      2
+    ],
+    [
+      5.688,
+      219116,
+      2
+    ],
+    [
+      6.255,
+      201400,
+      2
+    ],
+    [
+      6.821,
+      202884,
+      2
+    ],
+    [
+      7.393,
+      13400,
+      1
+    ],
+    [
+      7.961,
+      766236,
+      2
+    ],
+    [
+      8.531,
+      756264,
+      2
+    ]
+  ],
+  "log": "runs/chain_runs_second.resources.log"
+}

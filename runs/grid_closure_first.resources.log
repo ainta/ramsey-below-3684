@@ -1,0 +1,20 @@
+BUILD SUPPORT Ramsey3683Bootstrap/GridClosure
+Ramsey3683Bootstrap/GridClosure.lean:29:4: error: mod_cast has type
+  ↑(ramseyNumber (N * m) ℓ) ≤ ?m.95
+but is expected to have type
+  ramseyNumber (N * m) ℓ ≤ #X
+Ramsey3683Bootstrap/GridClosure.lean:32:47: warning: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'Ramsey3683Bootstrap.GridProfile.uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 45, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 37, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/GridClosure.olean', 'Ramsey3683Bootstrap/GridClosure.lean']' returned non-zero exit status 1.

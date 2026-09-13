@@ -1,0 +1,21 @@
+BUILD SUPPORT DependencyReferenceAudit
+DIRECT_DESCENT_REFERENCE RamseyLean.Numerics.Final RamseyLean.denseCaseExponent_final_eq RamseyLean.denseCaseExponent._proof_1
+DIRECT_DESCENT_REFERENCE RamseyLean.Numerics.Final RamseyLean.denseCaseExponent_final_eq RamseyLean.denseCaseExponent
+DIRECT_DESCENT_REFERENCE RamseyLean.Numerics RamseyLean.uniformRamseyExpBound_final RamseyLean.denseCaseExponent
+DIRECT_DESCENT_REFERENCE RamseyLean.Numerics RamseyLean.uniformRamseyExpBound_final RamseyLean.uniformRamseyExpBound_of_descent
+DIRECT_DESCENT_REFERENCE RamseyLean.Numerics.Final RamseyLean.final_descent_of_certificate RamseyLean.denseCaseExponent
+DIRECT_DESCENT_REFERENCE RamseyLean.Numerics.Preliminary RamseyLean.uniformRamseyExpBound_preliminary RamseyLean.uniformRamseyExpBound_of_descent
+DIRECT_DESCENT_REFERENCE RamseyLean.Numerics.Preliminary RamseyLean.denseCaseExponent_preliminary_eq RamseyLean.denseCaseExponent._proof_1
+DIRECT_DESCENT_REFERENCE RamseyLean.Numerics.Preliminary RamseyLean.denseCaseExponent_preliminary_eq RamseyLean.denseCaseExponent
+DIRECT_DESCENT_REFERENCE RamseyLean.Numerics.Preliminary RamseyLean.denseCaseExponent_preliminary_lt RamseyLean.denseCaseExponent
+PASS_REFERENCE_AUDIT declarations=6856 direct_references=9
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "DependencyReferenceAudit"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 46.148227378027514,
+  "headline_proved": false
+}

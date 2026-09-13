@@ -1,0 +1,137 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/weighted_trimmed.json",
+    "--modules",
+    "Ramsey3683Bootstrap/WeightedParameters",
+    "Ramsey3683Bootstrap/WeightedLocal",
+    "Ramsey3683Bootstrap/WeightedMoment",
+    "Ramsey3683Bootstrap/WeightedEngine"
+  ],
+  "elapsed_seconds": 12.63332762895152,
+  "peak_sampled_rss_kib": 3633316,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13324,
+      1
+    ],
+    [
+      0.569,
+      13324,
+      1
+    ],
+    [
+      1.138,
+      735224,
+      2
+    ],
+    [
+      1.71,
+      2867520,
+      2
+    ],
+    [
+      2.285,
+      3449696,
+      2
+    ],
+    [
+      2.858,
+      3579448,
+      2
+    ],
+    [
+      3.431,
+      229136,
+      2
+    ],
+    [
+      3.999,
+      974684,
+      2
+    ],
+    [
+      4.569,
+      3136424,
+      2
+    ],
+    [
+      5.14,
+      3514780,
+      2
+    ],
+    [
+      5.711,
+      3580108,
+      2
+    ],
+    [
+      6.281,
+      458920,
+      2
+    ],
+    [
+      6.85,
+      1548020,
+      2
+    ],
+    [
+      7.422,
+      3212208,
+      2
+    ],
+    [
+      7.992,
+      3556016,
+      2
+    ],
+    [
+      8.561,
+      13336,
+      1
+    ],
+    [
+      9.132,
+      788440,
+      2
+    ],
+    [
+      9.699,
+      3075884,
+      2
+    ],
+    [
+      10.273,
+      3483508,
+      2
+    ],
+    [
+      10.848,
+      3581520,
+      2
+    ],
+    [
+      11.464,
+      3599688,
+      2
+    ],
+    [
+      12.051,
+      3633316,
+      2
+    ]
+  ],
+  "log": "runs/weighted_trimmed.resources.log"
+}

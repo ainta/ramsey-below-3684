@@ -1,0 +1,3 @@
+'Compact3684.exp_affineA_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.exp_affineD_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.terminal_numeric_lt' depends on axioms: [propext, Classical.choice, Quot.sound]

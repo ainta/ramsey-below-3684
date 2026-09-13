@@ -1,0 +1,57 @@
+BUILD SUPPORT Ramsey3683Bootstrap/AllSpines
+Ramsey3683Bootstrap/AllSpines.lean:21:64: error: unsolved goals
+V : Type u
+inst✝² : Fintype V
+inst✝¹ : DecidableEq V
+G : SimpleGraph V
+inst✝ : DecidableRel G.Adj
+S X : Finset V
+z : ℝ
+A : Finset V
+⊢ ∑ x ∈ X, ↑(if A ⊆ G.neighborFinset x then 1 else 0) = ∑ v ∈ X, if A ⊆ G.neighborFinset v then 1 else 0
+Ramsey3683Bootstrap/AllSpines.lean:23:6: warning: This simp argument is unused:
+  Nat.cast_one
+
+Hint: Omit it from the simp argument list.
+  simp only [commonRedNeighbors, Finset.card_eq_sum_ones, Nat.cast_sum, N̵a̵t̵.̵c̵a̵s̵t̵_̵o̵n̵e̵,̵ ̵Finset.sum_filter]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Ramsey3683Bootstrap/AllSpines.lean:58:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?a * ∑ i ∈ ?s, ?f i
+in the target expression
+  Real.instLE = Real.instPreorder.toLE
+
+case e'_2
+V : Type u
+inst✝¹ : Fintype V
+inst✝ : DecidableEq V
+X : Finset V
+hX : X.Nonempty
+f : V → ℝ
+α t : ℝ
+ht : 0 ≤ t
+havg : α * ↑(#X) ≤ ∑ v ∈ X, f v
+hn : 0 < ↑(#X)
+hw : ∑ _v ∈ X, 1 / ↑(#X) = 1
+hj : Real.exp (∑ x ∈ X, 1 / ↑(#X) * (t * f x)) ≤ ∑ x ∈ X, 1 / ↑(#X) * Real.exp (t * f x)
+ha : t * α ≤ ∑ v ∈ X, 1 / ↑(#X) * (t * f v)
+h : ↑(#X) * Real.exp (t * α) ≤ ↑(#X) * ∑ x ∈ X, 1 / ↑(#X) * Real.exp (t * f x)
+⊢ Real.instLE = Real.instPreorder.toLE
+'Ramsey3683Bootstrap.sum_weighted_commonRedNeighbors' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'Ramsey3683Bootstrap.exp_average_lower' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.MaximumRedClique.all_spines_upper' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 50, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 42, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/AllSpines.olean', 'Ramsey3683Bootstrap/AllSpines.lean']' returned non-zero exit status 1.

@@ -1,0 +1,118 @@
+PASS ROUND PATH EXPORT {"round": 0, "records": 34447, "blocks": 163, "runs": 184830, "zero_paths": 14512, "minimum_integer_margin": 2342119200000000000000000, "run_record_bytes": 28, "column_record_bytes": 20, "path_index_record_bytes": 12}
+PASS ROUND PATH EXPORT {"round": 1, "records": 47007, "blocks": 254, "runs": 347968, "zero_paths": 18205, "minimum_integer_margin": 3021379200000000000000000, "run_record_bytes": 28, "column_record_bytes": 20, "path_index_record_bytes": 12}
+PASS ROUND PATH EXPORT {"round": 2, "records": 50670, "blocks": 267, "runs": 420667, "zero_paths": 18737, "minimum_integer_margin": 2181123800000000000000000, "run_record_bytes": 28, "column_record_bytes": 20, "path_index_record_bytes": 12}
+PASS ROUND PATH EXPORT {"round": 3, "records": 51404, "blocks": 228, "runs": 447598, "zero_paths": 19131, "minimum_integer_margin": 2316659800000000000000000, "run_record_bytes": 28, "column_record_bytes": 20, "path_index_record_bytes": 12}
+PASS ROUND PATH EXPORT {"round": 4, "records": 51809, "blocks": 301, "runs": 461998, "zero_paths": 19131, "minimum_integer_margin": 2187705800000000000000000, "run_record_bytes": 28, "column_record_bytes": 20, "path_index_record_bytes": 12}
+PASS COMPACT PATHS 5 100000 runs 1490384
+PASS COMPACT PATHS 5 200000 runs 3892773
+PASS COMPACT PATHS 5 300000 runs 6856693
+PASS COMPACT PATHS 5 400000 runs 9952991
+PASS ROUND PATH EXPORT {"round": 5, "records": 461501, "blocks": 847, "runs": 11888962, "zero_paths": 163335, "minimum_integer_margin": 42006171800000000000000000, "run_record_bytes": 28, "column_record_bytes": 20, "path_index_record_bytes": 12}
+PASS COMPACT PATHS 6 100000 runs 1565181
+PASS COMPACT PATHS 6 200000 runs 4024991
+PASS COMPACT PATHS 6 300000 runs 7136148
+PASS COMPACT PATHS 6 400000 runs 10450574
+PASS ROUND PATH EXPORT {"round": 6, "records": 497597, "blocks": 1054, "runs": 13807699, "zero_paths": 168780, "minimum_integer_margin": 42004269620000000000000000, "run_record_bytes": 28, "column_record_bytes": 20, "path_index_record_bytes": 12}
+PASS COMPACT PATHS 7 100000 runs 1598934
+PASS COMPACT PATHS 7 200000 runs 4063692
+PASS COMPACT PATHS 7 300000 runs 7255175
+PASS COMPACT PATHS 7 400000 runs 10654761
+PASS COMPACT PATHS 7 500000 runs 14127565
+PASS ROUND PATH EXPORT {"round": 7, "records": 501476, "blocks": 1097, "runs": 14234339, "zero_paths": 168803, "minimum_integer_margin": 42001255200000000000000000, "run_record_bytes": 28, "column_record_bytes": 20, "path_index_record_bytes": 12}
+{
+  "status": "PASS_INDEPENDENT_MONOTONE_RUN_REPLAY_NOT_LEAN",
+  "rounds": [
+    {
+      "round": 0,
+      "records": 34447,
+      "blocks": 163,
+      "runs": 184830,
+      "zero_paths": 14512,
+      "minimum_integer_margin": 2342119200000000000000000,
+      "run_record_bytes": 28,
+      "column_record_bytes": 20,
+      "path_index_record_bytes": 12
+    },
+    {
+      "round": 1,
+      "records": 47007,
+      "blocks": 254,
+      "runs": 347968,
+      "zero_paths": 18205,
+      "minimum_integer_margin": 3021379200000000000000000,
+      "run_record_bytes": 28,
+      "column_record_bytes": 20,
+      "path_index_record_bytes": 12
+    },
+    {
+      "round": 2,
+      "records": 50670,
+      "blocks": 267,
+      "runs": 420667,
+      "zero_paths": 18737,
+      "minimum_integer_margin": 2181123800000000000000000,
+      "run_record_bytes": 28,
+      "column_record_bytes": 20,
+      "path_index_record_bytes": 12
+    },
+    {
+      "round": 3,
+      "records": 51404,
+      "blocks": 228,
+      "runs": 447598,
+      "zero_paths": 19131,
+      "minimum_integer_margin": 2316659800000000000000000,
+      "run_record_bytes": 28,
+      "column_record_bytes": 20,
+      "path_index_record_bytes": 12
+    },
+    {
+      "round": 4,
+      "records": 51809,
+      "blocks": 301,
+      "runs": 461998,
+      "zero_paths": 19131,
+      "minimum_integer_margin": 2187705800000000000000000,
+      "run_record_bytes": 28,
+      "column_record_bytes": 20,
+      "path_index_record_bytes": 12
+    },
+    {
+      "round": 5,
+      "records": 461501,
+      "blocks": 847,
+      "runs": 11888962,
+      "zero_paths": 163335,
+      "minimum_integer_margin": 42006171800000000000000000,
+      "run_record_bytes": 28,
+      "column_record_bytes": 20,
+      "path_index_record_bytes": 12
+    },
+    {
+      "round": 6,
+      "records": 497597,
+      "blocks": 1054,
+      "runs": 13807699,
+      "zero_paths": 168780,
+      "minimum_integer_margin": 42004269620000000000000000,
+      "run_record_bytes": 28,
+      "column_record_bytes": 20,
+      "path_index_record_bytes": 12
+    },
+    {
+      "round": 7,
+      "records": 501476,
+      "blocks": 1097,
+      "runs": 14234339,
+      "zero_paths": 168803,
+      "minimum_integer_margin": 42001255200000000000000000,
+      "run_record_bytes": 28,
+      "column_record_bytes": 20,
+      "path_index_record_bytes": 12
+    }
+  ],
+  "original_runs": 41793102,
+  "split_runs": 41794061,
+  "expanded_edges": 813922863,
+  "elapsed_seconds": 178.97271870891564
+}

@@ -1,0 +1,102 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/actual_chain_bench.json",
+    "--modules",
+    "Kernel/ChainChecks",
+    "Kernel/CheckedChainData/R00",
+    "Kernel/ChainChecks/R00N00000",
+    "Kernel/ChainChecks/R00P00000"
+  ],
+  "elapsed_seconds": 9.020352360908873,
+  "peak_sampled_rss_kib": 2112856,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 240,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.004,
+      13356,
+      1
+    ],
+    [
+      0.623,
+      815116,
+      2
+    ],
+    [
+      1.22,
+      175696,
+      2
+    ],
+    [
+      1.82,
+      574812,
+      2
+    ],
+    [
+      2.417,
+      927048,
+      2
+    ],
+    [
+      3.017,
+      1085816,
+      2
+    ],
+    [
+      3.615,
+      1227400,
+      2
+    ],
+    [
+      4.215,
+      1388028,
+      2
+    ],
+    [
+      4.816,
+      1537344,
+      2
+    ],
+    [
+      5.416,
+      1654300,
+      2
+    ],
+    [
+      6.017,
+      1811436,
+      2
+    ],
+    [
+      6.616,
+      1964764,
+      2
+    ],
+    [
+      7.22,
+      2112856,
+      2
+    ],
+    [
+      7.822,
+      2098840,
+      2
+    ],
+    [
+      8.42,
+      2022744,
+      2
+    ]
+  ],
+  "log": "runs/actual_chain_bench.resources.log"
+}

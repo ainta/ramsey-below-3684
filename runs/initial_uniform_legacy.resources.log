@@ -1,0 +1,14 @@
+BUILD SUPPORT InitialUniform
+'Compact3684.initial_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Kernel/Elementary
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "InitialUniform",
+    "Kernel/Elementary"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 3.8900913069956005,
+  "headline_proved": false
+}

@@ -1,0 +1,425 @@
+BUILD SUPPORT PrefixRange
+'Compact3684.range_valid_of_bound' depends on axioms: [propext, Quot.sound]
+'Compact3684.range_bound_join' depends on axioms: [propext, Quot.sound]
+'Compact3684.summarize_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.valid_of_checked_summary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.linearLift_compose' depends on axioms: [propext, Quot.sound]
+'Compact3684.linearLift_accepts' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT ControlQuantization
+'Compact3684.support_affine_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.density_exponent_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.weighted_budget_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.blue_budget_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT TerminalNumeric
+'Compact3684.exp_affineA_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.exp_affineD_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.terminal_numeric_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT IntegerLog
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedParameters
+Ramsey3683Bootstrap/WeightedParameters.lean:34:36: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedLocal
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedMoment
+Ramsey3683Bootstrap/WeightedMoment.lean:47:0: warning: automatically included section variable(s) unused in theorem `Ramsey3683Bootstrap.weightedExcessMoment_eq_weightedMoment`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Ramsey3683Bootstrap/WeightedMoment.lean:141:0: warning: automatically included section variable(s) unused in theorem `Ramsey3683Bootstrap.weightedMoment_child_ge`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedEngine
+Ramsey3683Bootstrap/WeightedEngine.lean:130:8: warning: automatically included section variable(s) unused in theorem `_private.Ramsey3683Bootstrap.WeightedEngine.0.Ramsey3683Bootstrap.weighted_minLeft`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Ramsey3683Bootstrap/WeightedEngine.lean:212:33: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/WeightedEngine.lean:212:33: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/WeightedEngine.lean:238:26: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Ramsey3683Bootstrap/WeightedEngine.lean:238:38: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedSchedules
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedSlack
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedConcrete
+Ramsey3683Bootstrap/WeightedConcrete.lean:255:55: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Ramsey3683Bootstrap/WeightedConcrete.lean:286:85: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedUniform
+'Ramsey3683Bootstrap.isGood_of_density_weighted_card_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Ramsey3683Bootstrap/FiniteContinuation
+Ramsey3683Bootstrap/FiniteContinuation.lean:50:4: warning: Try `simp at hb` instead of `simpa using hb`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Ramsey3683Bootstrap/FiniteContinuation.lean:81:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+Ramsey3683Bootstrap/FiniteContinuation.lean:76:5: warning: Variable name `hX` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BUILD SUPPORT Ramsey3683Bootstrap/Preparation
+BUILD SUPPORT Ramsey3683Bootstrap/GridSemantics
+BUILD SUPPORT Ramsey3683Bootstrap/FinsetCut
+BUILD SUPPORT Ramsey3683Bootstrap/GridCell
+'Ramsey3683Bootstrap.GridUnconditional.band' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Ramsey3683Bootstrap/GridDensity
+'Ramsey3683Bootstrap.GridCandidate.density' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Ramsey3683Bootstrap/GridSeed
+Ramsey3683Bootstrap/GridSeed.lean:74:12: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/GridSeed.lean:74:12: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'Ramsey3683Bootstrap.gridCandidate_of_weighted_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Ramsey3683Bootstrap/GridClosure
+Ramsey3683Bootstrap/GridClosure.lean:35:47: warning: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Ramsey3683Bootstrap/GridClosure.lean:185:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Ramsey3683Bootstrap.GridProfile.uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.GridProfile.of_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.GridCandidate.path' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.affineProfile_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Kernel/Log18
+BUILD SUPPORT Kernel/LogInterval
+Kernel/LogInterval.lean:133:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Compact3684.Log18.catalogGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Kernel/SeedGuard
+BUILD SUPPORT Kernel/Codec
+BUILD SUPPORT Kernel/Elementary
+BUILD SUPPORT Ramsey3683Bootstrap/Certificate
+Ramsey3683Bootstrap/Certificate.lean:50:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/Certificate.lean:50:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/Certificate.lean:89:10: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/Certificate.lean:105:10: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/Certificate.lean:89:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/Certificate.lean:105:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'Compact3684.Certificate.checked_seed_candidate' depends on axioms: [propext, Classical.choice, Quot.sound]
+Ramsey3683Bootstrap/Certificate.lean:160:10: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/Certificate.lean:160:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/Certificate.lean:243:27: warning: This simp argument is unused:
+  Option.bind_none
+
+Hint: Omit it from the simp argument list.
+  simp only [hlt,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵n̵o̵n̵e̵] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Ramsey3683Bootstrap/Certificate.lean:246:34: warning: This simp argument is unused:
+  Option.bind_some
+
+Hint: Omit it from the simp argument list.
+  simp only [̵h̵l̵t̵,̵h̵l̵1̵t̵,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵s̵o̵m̵e̵,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵n̵o̵n̵e̵]̵[̲h̲l̲t̲,̲ ̲h̲l̲1̲t̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲b̲i̲n̲d̲_̲n̲o̲n̲e̲]̲ at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Ramsey3683Bootstrap/Certificate.lean:246:51: warning: This simp argument is unused:
+  Option.bind_none
+
+Hint: Omit it from the simp argument list.
+  simp only [̵h̵l̵t̵,̵h̵l̵1̵t̵,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵s̵o̵m̵e̵,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵n̵o̵n̵e̵]̵[̲h̲l̲t̲,̲ ̲h̲l̲1̲t̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲b̲i̲n̲d̲_̲s̲o̲m̲e̲]̲ at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Ramsey3683Bootstrap/Certificate.lean:249:44: warning: This simp argument is unused:
+  Option.bind_some
+
+Hint: Omit it from the simp argument list.
+  simp only [̵h̵l̵t̵,̵h̵l̵1̵t̵,̵h̵l̵r̵a̵t̵i̵o̵,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵s̵o̵m̵e̵,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵n̵o̵n̵e̵]̵[̲h̲l̲t̲,̲ ̲h̲l̲1̲t̲,̲ ̲h̲l̲r̲a̲t̲i̲o̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲b̲i̲n̲d̲_̲n̲o̲n̲e̲]̲ at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Ramsey3683Bootstrap/Certificate.lean:249:61: warning: This simp argument is unused:
+  Option.bind_none
+
+Hint: Omit it from the simp argument list.
+  simp only [̵h̵l̵t̵,̵h̵l̵1̵t̵,̵h̵l̵r̵a̵t̵i̵o̵,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵s̵o̵m̵e̵,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵n̵o̵n̵e̵]̵[̲h̲l̲t̲,̲ ̲h̲l̲1̲t̲,̲ ̲h̲l̲r̲a̲t̲i̲o̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲b̲i̲n̲d̲_̲s̲o̲m̲e̲]̲ at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Ramsey3683Bootstrap/Certificate.lean:251:36: warning: This simp argument is unused:
+  Option.bind_some
+
+Hint: Omit it from the simp argument list.
+  simp only [̵h̵l̵t̵,̵h̵l̵1̵t̵,̵h̵l̵r̵a̵t̵i̵o̵,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵s̵o̵m̵e̵,̵O̵p̵t̵i̵o̵n̵.̵s̵o̵m̵e̵.̵i̵n̵j̵E̵q̵]̵[̲h̲l̲t̲,̲ ̲h̲l̲1̲t̲,̲ ̲h̲l̲r̲a̲t̲i̲o̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲s̲o̲m̲e̲.̲i̲n̲j̲E̲q̲]̲ at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Ramsey3683Bootstrap/Certificate.lean:251:53: warning: This simp argument is unused:
+  Option.some.injEq
+
+Hint: Omit it from the simp argument list.
+  simp only [̵h̵l̵t̵,̵h̵l̵1̵t̵,̵h̵l̵r̵a̵t̵i̵o̵,̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵s̵o̵m̵e̵,̵O̵p̵t̵i̵o̵n̵.̵s̵o̵m̵e̵.̵i̵n̵j̵E̵q̵]̵[̲h̲l̲t̲,̲ ̲h̲l̲1̲t̲,̲ ̲h̲l̲r̲a̲t̲i̲o̲,̲ ̲O̲p̲t̲i̲o̲n̲.̲b̲i̲n̲d̲_̲s̲o̲m̲e̲]̲ at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Ramsey3683Bootstrap/Certificate.lean:219:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/Certificate.lean:236:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/Certificate.lean:219:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/Certificate.lean:236:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/Certificate.lean:225:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Ramsey3683Bootstrap/Certificate.lean:232:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Ramsey3683Bootstrap/Certificate.lean:294:12: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/Certificate.lean:294:12: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'Compact3684.Elementary.tangentGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Kernel/ProfileGuard
+BUILD SUPPORT Ramsey3683Bootstrap/ReflectedProfile
+'Ramsey3683Bootstrap.affineProfile_support_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.OrderedLines.profile_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.affine_le_concave_on_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Ramsey3683Bootstrap/ProfileCheck
+Ramsey3683Bootstrap/ProfileCheck.lean:35:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Ramsey3683Bootstrap/ProfileCheck.lean:62:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/ProfileCheck.lean:62:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/ProfileCheck.lean:81:82: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/ProfileCheck.lean:91:82: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/ProfileCheck.lean:81:82: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/ProfileCheck.lean:91:82: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'Compact3684.ProfileCheck.shapeGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.ProfileCheck.activeGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.ProfileCheck.supportGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.ProfileCheck.regionGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Kernel/ChainGuard
+BUILD SUPPORT Ramsey3683Bootstrap/RunSemantics
+Ramsey3683Bootstrap/RunSemantics.lean:46:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Compact3684.Certificate.continuation_of_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Ramsey3683Bootstrap/ChainColumns
+Ramsey3683Bootstrap/ChainColumns.lean:86:24: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Ramsey3683Bootstrap/ChainColumns.lean:89:20: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Compact3684.Chain.block_rows' depends on axioms: [propext, Quot.sound]
+'Compact3684.Chain.block_prefix_step' depends on axioms: [propext, Quot.sound]
+'Compact3684.Chain.block_adjusted_step' depends on axioms: [propext, Quot.sound]
+BUILD SUPPORT Ramsey3683Bootstrap/ChainRuns
+'Compact3684.Chain.runGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Ramsey3683Bootstrap/ChainPaths
+'Compact3684.Chain.path_owners' depends on axioms: [propext, Quot.sound]
+'Compact3684.Chain.pathGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Ramsey3683Bootstrap/ChainSound
+Ramsey3683Bootstrap/ChainSound.lean:30:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/ChainSound.lean:30:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'Compact3684.Chain.guards_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Kernel/OuterGuard
+BUILD SUPPORT Ramsey3683Bootstrap/OuterPaths
+'Compact3684.Outer.pathGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Ramsey3683Bootstrap/OuterCover
+Ramsey3683Bootstrap/OuterCover.lean:16:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/OuterCover.lean:16:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/OuterCover.lean:55:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Compact3684.Outer.coverGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Ramsey3683Bootstrap/RoundSound
+'Compact3684.Outer.guards_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Kernel/ChainChecks
+BUILD SUPPORT Ramsey3683Bootstrap/CheckedRoundInterface
+'Compact3684.Chain.guards_of_checks' depends on axioms: [propext]
+'Compact3684.Outer.guards_of_checks' depends on axioms: [propext, Quot.sound]
+BUILD SUPPORT Kernel/PackedChain
+BUILD SUPPORT Kernel/PackedOuter
+BUILD SUPPORT Kernel/CheckedProfiles
+BUILD SUPPORT Kernel/CheckedLogChunk
+BUILD SUPPORT Kernel
+BUILD SUPPORT Ramsey3683Bootstrap/MinimumDegreeCore
+Ramsey3683Bootstrap/MinimumDegreeCore.lean:56:8: warning: Try `simp at hn` instead of `simpa using hn`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Ramsey3683Bootstrap/MinimumDegreeCore.lean:95:4: warning: 'change _ ≤ (redInteredgeCount G W W : ℝ)' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+BUILD SUPPORT Ramsey3683Bootstrap/MaximumClique
+Ramsey3683Bootstrap/MaximumClique.lean:33:0: warning: automatically included section variable(s) unused in theorem `Ramsey3683Bootstrap.exists_maximumRedClique`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BUILD SUPPORT Ramsey3683Bootstrap/AllSpines
+Ramsey3683Bootstrap/AllSpines.lean:39:0: warning: automatically included section variable(s) unused in theorem `Ramsey3683Bootstrap.exp_average_lower`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Ramsey3683Bootstrap/AllSpines.lean:128:31: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Ramsey3683Bootstrap.sum_weighted_commonRedNeighbors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.exp_average_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.MaximumRedClique.all_spines_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.MaximumRedClique.all_spines_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Ramsey3683Bootstrap/TerminalCore
+Ramsey3683Bootstrap/TerminalCore.lean:46:5: warning: Variable name `hp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'Ramsey3683Bootstrap.exists_terminal_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Ramsey3683Bootstrap/TerminalTransfer
+Ramsey3683Bootstrap/TerminalTransfer.lean:24:6: warning: Try `simp at hb` instead of `simpa using hb`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Ramsey3683Bootstrap/TerminalTransfer.lean:195:44: warning: 'change _ + 2 ≤ _ + 2' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/TerminalTransfer.lean:168:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Ramsey3683Bootstrap.ramsey_terminal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.terminal_exp_of_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.diagonal_lt_base_of_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT TerminalTarget
+'Compact3684.below_3684_of_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Ramsey3683Bootstrap
+BUILD SUPPORT Compact3684
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "PrefixRange",
+    "ControlQuantization",
+    "TerminalNumeric",
+    "IntegerLog",
+    "Ramsey3683Bootstrap/WeightedParameters",
+    "Ramsey3683Bootstrap/WeightedLocal",
+    "Ramsey3683Bootstrap/WeightedMoment",
+    "Ramsey3683Bootstrap/WeightedEngine",
+    "Ramsey3683Bootstrap/WeightedSchedules",
+    "Ramsey3683Bootstrap/WeightedSlack",
+    "Ramsey3683Bootstrap/WeightedConcrete",
+    "Ramsey3683Bootstrap/WeightedUniform",
+    "Ramsey3683Bootstrap/FiniteContinuation",
+    "Ramsey3683Bootstrap/Preparation",
+    "Ramsey3683Bootstrap/GridSemantics",
+    "Ramsey3683Bootstrap/FinsetCut",
+    "Ramsey3683Bootstrap/GridCell",
+    "Ramsey3683Bootstrap/GridDensity",
+    "Ramsey3683Bootstrap/GridSeed",
+    "Ramsey3683Bootstrap/GridClosure",
+    "Kernel/Log18",
+    "Kernel/LogInterval",
+    "Kernel/SeedGuard",
+    "Kernel/Codec",
+    "Kernel/Elementary",
+    "Ramsey3683Bootstrap/Certificate",
+    "Kernel/ProfileGuard",
+    "Ramsey3683Bootstrap/ReflectedProfile",
+    "Ramsey3683Bootstrap/ProfileCheck",
+    "Kernel/ChainGuard",
+    "Ramsey3683Bootstrap/RunSemantics",
+    "Ramsey3683Bootstrap/ChainColumns",
+    "Ramsey3683Bootstrap/ChainRuns",
+    "Ramsey3683Bootstrap/ChainPaths",
+    "Ramsey3683Bootstrap/ChainSound",
+    "Kernel/OuterGuard",
+    "Ramsey3683Bootstrap/OuterPaths",
+    "Ramsey3683Bootstrap/OuterCover",
+    "Ramsey3683Bootstrap/RoundSound",
+    "Kernel/ChainChecks",
+    "Ramsey3683Bootstrap/CheckedRoundInterface",
+    "Kernel/PackedChain",
+    "Kernel/PackedOuter",
+    "Kernel/CheckedProfiles",
+    "Kernel/CheckedLogChunk",
+    "Kernel",
+    "Ramsey3683Bootstrap/MinimumDegreeCore",
+    "Ramsey3683Bootstrap/MaximumClique",
+    "Ramsey3683Bootstrap/AllSpines",
+    "Ramsey3683Bootstrap/TerminalCore",
+    "Ramsey3683Bootstrap/TerminalTransfer",
+    "TerminalTarget",
+    "Ramsey3683Bootstrap",
+    "Compact3684"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 133.66381318296771,
+  "headline_proved": false
+}

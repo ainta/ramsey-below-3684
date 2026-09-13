@@ -1,0 +1,2 @@
+'Compact3684.ramsey_le_368395' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.ramsey_base_below_3684' depends on axioms: [propext, Classical.choice, Quot.sound]

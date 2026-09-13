@@ -1,0 +1,54 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/closed_first_round.json",
+    "--modules",
+    "ClosedFirstRound"
+  ],
+  "elapsed_seconds": 3.4234418499981984,
+  "peak_sampled_rss_kib": 3474104,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 120,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13404,
+      1
+    ],
+    [
+      0.571,
+      13404,
+      1
+    ],
+    [
+      1.144,
+      765072,
+      2
+    ],
+    [
+      1.713,
+      1984060,
+      2
+    ],
+    [
+      2.285,
+      3474104,
+      2
+    ],
+    [
+      2.855,
+      13420,
+      1
+    ]
+  ],
+  "log": "runs/closed_first_round.resources.log"
+}

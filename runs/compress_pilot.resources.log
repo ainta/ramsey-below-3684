@@ -1,0 +1,9 @@
+ENCODED 41254 records, 1676051 edges, 878884 runs
+{
+  "status": "ENCODED_PENDING_VERIFICATION",
+  "records": 41254,
+  "expanded_edges": 1676051,
+  "runs": 878884,
+  "raw_path_bytes_before": 3352102,
+  "raw_path_bytes_after": 3515536
+}

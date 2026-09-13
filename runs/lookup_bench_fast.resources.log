@@ -1,0 +1,93 @@
+BUILD SUPPORT LookupBench/FastGuard
+LookupBench/FastGuard.lean:26:37: error(lean.unknownIdentifier): Unknown identifier `decide_and`
+LookupBench/FastGuard.lean:26:49: error(lean.unknownIdentifier): Unknown identifier `decide_or`
+LookupBench/FastGuard.lean:27:23: error(lean.unknownIdentifier): Unknown identifier `decide_and`
+LookupBench/FastGuard.lean:27:23: error(lean.unknownIdentifier): Unknown identifier `decide_and`
+LookupBench/FastGuard.lean:25:82: error: unsolved goals
+case isTrue
+d : Data
+i : Nat
+h✝ : i + 1 < (d.node (d.run i).owner).pathStart + (d.node (d.run i).owner).pathCount
+⊢ (decide (i < d.runCount) &&
+      (decide ((d.run i).owner < d.nodeCount) &&
+        (decide ((d.run i).upper < d.nodeCount) &&
+          (decide ((d.run i).lower < d.nodeCount) &&
+            (decide ((d.node (d.run i).lower).block = (d.node (d.run i).upper).block) &&
+              (decide ((d.node (d.run i).lower).col = (d.node (d.run i).upper).col) &&
+                (decide ((d.node (d.run i).lower).row ≤ (d.node (d.run i).upper).row) &&
+                  ((decide ((d.node (d.run i).upper).row < (d.node (d.run i).owner).row) ||
+                      decide ((d.node (d.run i).upper).row = (d.node (d.run i).owner).row) &&
+                        decide ((d.node (d.run i).upper).col < (d.node (d.run i).owner).col)) &&
+                    (decide ((d.node (d.run i).owner).pathStart ≤ i) &&
+                      (decide (i < (d.node (d.run i).owner).pathStart + (d.node (d.run i).owner).pathCount) &&
+                        (decide ((d.node (d.run i).upper).pref + runMaximum d (d.run i) < (d.run i).finish) &&
+                          (decide (0 < runExit d (d.run i)) &&
+                            (decide ((d.run (i + 1)).owner = (d.run i).owner) &&
+                              (decide ((d.node (d.run (i + 1)).upper).row + 1 = (d.node (d.run i).lower).row) &&
+                                decide ((d.run (i + 1)).finish = runExit d (d.run i)))))))))))))))) =
+    decide
+      (i < d.runCount ∧
+        (d.run i).owner < d.nodeCount ∧
+          (d.run i).upper < d.nodeCount ∧
+            (d.run i).lower < d.nodeCount ∧
+              (d.node (d.run i).lower).block = (d.node (d.run i).upper).block ∧
+                (d.node (d.run i).lower).col = (d.node (d.run i).upper).col ∧
+                  (d.node (d.run i).lower).row ≤ (d.node (d.run i).upper).row ∧
+                    ((d.node (d.run i).upper).row < (d.node (d.run i).owner).row ∨
+                        (d.node (d.run i).upper).row = (d.node (d.run i).owner).row ∧
+                          (d.node (d.run i).upper).col < (d.node (d.run i).owner).col) ∧
+                      (d.node (d.run i).owner).pathStart ≤ i ∧
+                        i < (d.node (d.run i).owner).pathStart + (d.node (d.run i).owner).pathCount ∧
+                          (d.node (d.run i).upper).pref + runMaximum d (d.run i) < (d.run i).finish ∧
+                            0 < runExit d (d.run i) ∧
+                              (d.run (i + 1)).owner = (d.run i).owner ∧
+                                (d.node (d.run (i + 1)).upper).row + 1 = (d.node (d.run i).lower).row ∧
+                                  (d.run (i + 1)).finish = runExit d (d.run i))
+
+case isFalse
+d : Data
+i : Nat
+h✝ : ¬i + 1 < (d.node (d.run i).owner).pathStart + (d.node (d.run i).owner).pathCount
+⊢ (decide (i < d.runCount) &&
+      (decide ((d.run i).owner < d.nodeCount) &&
+        (decide ((d.run i).upper < d.nodeCount) &&
+          (decide ((d.run i).lower < d.nodeCount) &&
+            (decide ((d.node (d.run i).lower).block = (d.node (d.run i).upper).block) &&
+              (decide ((d.node (d.run i).lower).col = (d.node (d.run i).upper).col) &&
+                (decide ((d.node (d.run i).lower).row ≤ (d.node (d.run i).upper).row) &&
+                  ((decide ((d.node (d.run i).upper).row < (d.node (d.run i).owner).row) ||
+                      decide ((d.node (d.run i).upper).row = (d.node (d.run i).owner).row) &&
+                        decide ((d.node (d.run i).upper).col < (d.node (d.run i).owner).col)) &&
+                    (decide ((d.node (d.run i).owner).pathStart ≤ i) &&
+                      (decide (i < (d.node (d.run i).owner).pathStart + (d.node (d.run i).owner).pathCount) &&
+                        (decide ((d.node (d.run i).upper).pref + runMaximum d (d.run i) < (d.run i).finish) &&
+                          (decide (0 < runExit d (d.run i)) &&
+                            (decide ((d.node (d.run i).lower).row = (d.node (d.run i).owner).start + 1) &&
+                              decide (runExit d (d.run i) = (d.node (d.run i).owner).begin)))))))))))))) =
+    decide
+      (i < d.runCount ∧
+        (d.run i).owner < d.nodeCount ∧
+          (d.run i).upper < d.nodeCount ∧
+            (d.run i).lower < d.nodeCount ∧
+              (d.node (d.run i).lower).block = (d.node (d.run i).upper).block ∧
+                (d.node (d.run i).lower).col = (d.node (d.run i).upper).col ∧
+                  (d.node (d.run i).lower).row ≤ (d.node (d.run i).upper).row ∧
+                    ((d.node (d.run i).upper).row < (d.node (d.run i).owner).row ∨
+                        (d.node (d.run i).upper).row = (d.node (d.run i).owner).row ∧
+                          (d.node (d.run i).upper).col < (d.node (d.run i).owner).col) ∧
+                      (d.node (d.run i).owner).pathStart ≤ i ∧
+                        i < (d.node (d.run i).owner).pathStart + (d.node (d.run i).owner).pathCount ∧
+                          (d.node (d.run i).upper).pref + runMaximum d (d.run i) < (d.run i).finish ∧
+                            0 < runExit d (d.run i) ∧
+                              (d.node (d.run i).lower).row = (d.node (d.run i).owner).start + 1 ∧
+                                runExit d (d.run i) = (d.node (d.run i).owner).begin)
+'Compact3684.Chain.runGuardFast_eq' depends on axioms: [sorryAx]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 84, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 76, in main
+    subprocess.run(['lean','+v4.32.1','-o',str(target),name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'LookupBench/FastGuard.olean', 'LookupBench/FastGuard.lean']' returned non-zero exit status 1.

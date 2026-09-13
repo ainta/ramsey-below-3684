@@ -1,0 +1,79 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/log_soundness_second.json",
+    "--modules",
+    "Kernel/LogInterval"
+  ],
+  "elapsed_seconds": 6.576095839031041,
+  "peak_sampled_rss_kib": 3571436,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 150,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13324,
+      1
+    ],
+    [
+      0.586,
+      814888,
+      2
+    ],
+    [
+      1.169,
+      504220,
+      2
+    ],
+    [
+      1.77,
+      1606368,
+      2
+    ],
+    [
+      2.391,
+      3047696,
+      2
+    ],
+    [
+      2.984,
+      3404604,
+      2
+    ],
+    [
+      3.626,
+      3476144,
+      2
+    ],
+    [
+      4.235,
+      3494756,
+      2
+    ],
+    [
+      4.818,
+      3512728,
+      2
+    ],
+    [
+      5.414,
+      3571436,
+      2
+    ],
+    [
+      5.996,
+      13336,
+      1
+    ]
+  ],
+  "log": "runs/log_soundness_second.resources.log"
+}

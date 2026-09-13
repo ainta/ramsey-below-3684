@@ -1,0 +1,12 @@
+{
+  "status": "FINISHED_MONITOR_WINDOW",
+  "elapsed_seconds": 128817.95951591211,
+  "current_sampled_rss_kib": 0,
+  "peak_sampled_rss_kib": 8693740,
+  "processes": 0,
+  "samples": 25439,
+  "sample_period_seconds": 5,
+  "scope": "processes with cwd anywhere beneath this workspace, including isolated dependency audits",
+  "shared_pages_counted_per_process": true,
+  "earlier_phases_not_included": true
+}

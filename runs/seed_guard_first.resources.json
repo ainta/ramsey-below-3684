@@ -1,0 +1,90 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/seed_guard_first.json",
+    "--modules",
+    "Kernel/SeedGuard",
+    "Ramsey3683Bootstrap/Certificate"
+  ],
+  "elapsed_seconds": 7.829297287971713,
+  "peak_sampled_rss_kib": 3700148,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 150,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.002,
+      13320,
+      1
+    ],
+    [
+      0.604,
+      814208,
+      2
+    ],
+    [
+      1.202,
+      175592,
+      2
+    ],
+    [
+      1.803,
+      776628,
+      2
+    ],
+    [
+      2.397,
+      439200,
+      2
+    ],
+    [
+      2.999,
+      985096,
+      2
+    ],
+    [
+      3.618,
+      2860896,
+      2
+    ],
+    [
+      4.225,
+      3305000,
+      2
+    ],
+    [
+      4.816,
+      3624740,
+      2
+    ],
+    [
+      5.414,
+      3686588,
+      2
+    ],
+    [
+      6.021,
+      3697220,
+      2
+    ],
+    [
+      6.619,
+      3700148,
+      2
+    ],
+    [
+      7.22,
+      13328,
+      1
+    ]
+  ],
+  "log": "runs/seed_guard_first.resources.log"
+}

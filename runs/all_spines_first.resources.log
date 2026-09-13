@@ -1,0 +1,42 @@
+BUILD SUPPORT Ramsey3683Bootstrap/AllSpines
+Ramsey3683Bootstrap/AllSpines.lean:22:30: warning: Possibly looping simp theorem: `Finset.card_eq_sum_ones`
+
+Note: Possibly caused by: `Finset.sum_const`
+
+Hint: You can disable a simp theorem from the default simp set by passing `- theoremName` to `simp`.
+Ramsey3683Bootstrap/AllSpines.lean:22:4: error: Tactic `simp` failed with a nested error:
+maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+Ramsey3683Bootstrap/AllSpines.lean:44:13: error(lean.unknownIdentifier): Unknown constant `Real.convexOn_exp.map_sum_le`
+Ramsey3683Bootstrap/AllSpines.lean:41:65: error: unsolved goals
+V : Type u
+inst✝¹ : Fintype V
+inst✝ : DecidableEq V
+X : Finset V
+hX : X.Nonempty
+f : V → ℝ
+α t : ℝ
+ht : 0 ≤ t
+havg : α * ↑(#X) ≤ ∑ v ∈ X, f v
+hn : 0 < ↑(#X)
+hw : ∑ _v ∈ X, 1 / ↑(#X) = 1
+⊢ ↑(#X) * Real.exp (t * α) ≤ ∑ v ∈ X, Real.exp (t * f v)
+'Ramsey3683Bootstrap.sum_weighted_commonRedNeighbors' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'Ramsey3683Bootstrap.exp_average_lower' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.MaximumRedClique.all_spines_upper' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 50, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 42, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/AllSpines.olean', 'Ramsey3683Bootstrap/AllSpines.lean']' returned non-zero exit status 1.

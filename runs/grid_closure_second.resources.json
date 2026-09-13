@@ -1,0 +1,64 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/grid_closure_second.json",
+    "--modules",
+    "Ramsey3683Bootstrap/GridClosure"
+  ],
+  "elapsed_seconds": 4.537144187022932,
+  "peak_sampled_rss_kib": 3593072,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 150,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13316,
+      1
+    ],
+    [
+      0.569,
+      13316,
+      1
+    ],
+    [
+      1.133,
+      716844,
+      2
+    ],
+    [
+      1.696,
+      2679464,
+      2
+    ],
+    [
+      2.267,
+      3420176,
+      2
+    ],
+    [
+      2.835,
+      3568252,
+      2
+    ],
+    [
+      3.401,
+      3590144,
+      2
+    ],
+    [
+      3.97,
+      3593072,
+      2
+    ]
+  ],
+  "log": "runs/grid_closure_second.resources.log"
+}

@@ -1,0 +1,134 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/packed_nat_catalog_bench.json",
+    "--modules",
+    "PackedNatCatalogBench"
+  ],
+  "elapsed_seconds": 12.569140140083618,
+  "peak_sampled_rss_kib": 2584052,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13324,
+      1
+    ],
+    [
+      0.57,
+      13324,
+      1
+    ],
+    [
+      1.143,
+      741264,
+      2
+    ],
+    [
+      1.714,
+      742384,
+      2
+    ],
+    [
+      2.285,
+      906288,
+      2
+    ],
+    [
+      2.857,
+      1038960,
+      2
+    ],
+    [
+      3.43,
+      1177000,
+      2
+    ],
+    [
+      4.001,
+      1293556,
+      2
+    ],
+    [
+      4.57,
+      1420712,
+      2
+    ],
+    [
+      5.14,
+      1556896,
+      2
+    ],
+    [
+      5.71,
+      1686520,
+      2
+    ],
+    [
+      6.281,
+      1835728,
+      2
+    ],
+    [
+      6.851,
+      1898592,
+      2
+    ],
+    [
+      7.425,
+      2031576,
+      2
+    ],
+    [
+      8.001,
+      2170356,
+      2
+    ],
+    [
+      8.571,
+      2300660,
+      2
+    ],
+    [
+      9.143,
+      2428512,
+      2
+    ],
+    [
+      9.713,
+      2553800,
+      2
+    ],
+    [
+      10.283,
+      2584052,
+      2
+    ],
+    [
+      10.86,
+      2584052,
+      2
+    ],
+    [
+      11.43,
+      2584052,
+      2
+    ],
+    [
+      11.998,
+      2584052,
+      2
+    ]
+  ],
+  "log": "runs/packed_nat_catalog_bench.resources.log"
+}

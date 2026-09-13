@@ -1,0 +1,153 @@
+BUILD SUPPORT Ramsey3683Bootstrap/ChainColumns
+Ramsey3683Bootstrap/ChainColumns.lean:71:12: error: Application type mismatch: The argument
+  hs.left
+has type
+  d.lookup ((d.node (d.lookup row (d.block b).col)).row - 1) (d.node (d.lookup row (d.block b).col)).col < d.nodeCount
+but is expected to have type
+  d.lookup (row - 1) (d.block b).col < d.nodeCount
+in the application
+  RowMatches.mk hs.left
+Ramsey3683Bootstrap/ChainColumns.lean:74:4: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  p ≥ 0
+  o ≥ 0
+  o - p ≥ 1
+  n ≥ 0
+  m ≥ 0
+  l ≥ 1
+  k ≥ 0
+  j ≥ 0
+  i ≥ 0
+  0 ≤ h ≤ 65535
+  g ≥ 0
+  f ≥ 0
+  f - j ≥ 1
+  f - k ≥ 1
+  e ≥ 0
+  e - g ≥ 0
+  c ≥ 1
+  c - g ≤ 0
+  c - o ≤ 0
+  a ≥ 0
+  a - i ≥ 1
+where
+ a := ↑d.blockCount
+ c := ↑(d.block b).lo
+ e := ↑d.N
+ f := ↑d.nodeCount
+ g := ↑(d.node (d.block b).upper).row
+ h := ↑(d.node (d.block b).upper).col
+ i := ↑(d.node (d.block b).upper).block
+ j := ↑(d.lookup (d.block b).hi (d.block b).col)
+ k := ↑(d.lookup ((d.node (d.lookup row (d.block b).col)).row - 1) (d.node (d.lookup row (d.block b).col)).col)
+ l := ↑(d.node (d.lookup row (d.block b).col)).row
+ m := ↑(d.node (d.lookup row (d.block b).col)).col
+ n := ↑(d.node (d.lookup row (d.block b).col)).block
+ o := ↑(row - 1)
+ p := ↑(d.node (d.lookup (row - 1) (d.block b).col)).row
+Ramsey3683Bootstrap/ChainColumns.lean:70:25: warning: This simp argument is unused:
+  hm.col_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [hm.row_eq, ̲hm.c̵o̵l̵_̵e̵q̵,̵h̵m̵.̵block_eq, ̲if_neg (ne_of_gt hrow)] at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Ramsey3683Bootstrap/ChainColumns.lean:101:4: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  e - f ≥ 1
+  c ≥ 0
+  a ≥ 1
+  a - c ≤ 0
+where
+ a := ↑(d.block b).lo
+ c := ↑(d.block b).hi
+ e := (rowNode d b row).pref
+ f := (rowNode d b row).cost * q
+Ramsey3683Bootstrap/ChainColumns.lean:105:4: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k - l ≥ 1
+  j ≥ 0
+  i ≥ 0
+  h ≥ 1
+  g ≥ 0
+  f ≥ 0
+  f - g ≥ 1
+  e ≥ 0
+  c ≥ 1
+  a ≥ 0
+  a - c ≥ 1
+  a - e ≤ 0
+where
+ a := ↑row
+ c := ↑(d.block b).lo
+ e := ↑(d.block b).hi
+ f := ↑d.nodeCount
+ g := ↑(d.lookup ((d.node (d.lookup row (d.block b).col)).row - 1) (d.node (d.lookup row (d.block b).col)).col)
+ h := ↑(d.node (d.lookup row (d.block b).col)).row
+ i := ↑(d.node (d.lookup row (d.block b).col)).col
+ j := ↑(d.node (d.lookup row (d.block b).col)).block
+ k := (d.node
+    (d.lookup ((d.node (d.lookup row (d.block b).col)).row - 1) (d.node (d.lookup row (d.block b).col)).col)).pref
+ l := (d.node (d.lookup (row - 1) (d.block b).col)).pref
+Ramsey3683Bootstrap/ChainColumns.lean:96:23: warning: This simp argument is unused:
+  hm.col_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [̵h̵m̵.̵r̵o̵w̵_̵e̵q̵,̵h̵m̵.̵c̵o̵l̵_̵e̵q̵,̵h̵m̵.̵b̵l̵o̵c̵k̵_̵e̵q̵]̵[̲h̲m̲.̲r̲o̲w̲_̲e̲q̲,̲ ̲h̲m̲.̲b̲l̲o̲c̲k̲_̲e̲q̲]̲ at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Ramsey3683Bootstrap/ChainColumns.lean:131:2: error: Type mismatch
+  hs.right.right.right.right.right
+has type
+  if (d.block (d.node (d.lookup (row + 1) (d.block b).col)).block).increasing = true then
+    (d.node
+            (d.lookup ((d.node (d.lookup (row + 1) (d.block b).col)).row - 1)
+              (d.node (d.lookup (row + 1) (d.block b).col)).col)).value -
+        before
+          (d.node
+            (d.lookup ((d.node (d.lookup (row + 1) (d.block b).col)).row - 1)
+              (d.node (d.lookup (row + 1) (d.block b).col)).col)) ≤
+      (d.node (d.lookup (row + 1) (d.block b).col)).value - before (d.node (d.lookup (row + 1) (d.block b).col))
+  else
+    (d.node (d.lookup (row + 1) (d.block b).col)).value - before (d.node (d.lookup (row + 1) (d.block b).col)) ≤
+      (d.node
+            (d.lookup ((d.node (d.lookup (row + 1) (d.block b).col)).row - 1)
+              (d.node (d.lookup (row + 1) (d.block b).col)).col)).value -
+        before
+          (d.node
+            (d.lookup ((d.node (d.lookup (row + 1) (d.block b).col)).row - 1)
+              (d.node (d.lookup (row + 1) (d.block b).col)).col))
+but is expected to have type
+  if (d.block b).increasing = true then
+    (rowNode d b row).value - before (rowNode d b row) ≤ (rowNode d b (row + 1)).value - before (rowNode d b (row + 1))
+  else
+    (rowNode d b (row + 1)).value - before (rowNode d b (row + 1)) ≤ (rowNode d b row).value - before (rowNode d b row)
+Ramsey3683Bootstrap/ChainColumns.lean:126:23: warning: This simp argument is unused:
+  hm.col_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [hm.row_eq, ̲hm.c̵o̵l̵_̵e̵q̵,̵h̵m̵.̵block_eq, ̲if_neg (show row ̲+ ̲1 ≠ (d.block b).lo by omega),
+      Nat.add_sub_cancel] at hs
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Ramsey3683Bootstrap/ChainColumns.lean:127:4: warning: This simp argument is unused:
+  Nat.add_sub_cancel
+
+Hint: Omit it from the simp argument list.
+  s̵i̵m̵p̵ ̵o̵n̵l̵y̵ ̵[̵h̵m̵.̵r̵o̵w̵_̵e̵q̵,̵h̵m̵.̵c̵o̵l̵_̵e̵q̵,̵h̵m̵.̵b̵l̵o̵c̵k̵_̵e̵q̵,̵i̵f̵_̵n̵e̵g̵ ̵(̵s̵h̵o̵w̵ ̵r̵o̵w̵+̵1̵ ̵≠̵ ̵(̵d̵.̵b̵l̵o̵c̵k̵ ̵b̵)̵.̵l̵o̵ ̵b̵y̵ ̵o̵m̵e̵g̵a̵)̵,̵
+  ̵ ̵ ̵ ̵ ̵N̵a̵t̵.̵a̵d̵d̵_̵s̵u̵b̵_̵c̵a̵n̵c̵e̵l̵]̵ ̵a̵t̵ ̵h̵s̵s̲i̲m̲p̲ ̲o̲n̲l̲y̲ ̲[̲h̲m̲.̲r̲o̲w̲_̲e̲q̲,̲ ̲h̲m̲.̲c̲o̲l̲_̲e̲q̲,̲ ̲h̲m̲.̲b̲l̲o̲c̲k̲_̲e̲q̲,̲
+  ̲ ̲ ̲ ̲ ̲i̲f̲_̲n̲e̲g̲ ̲(̲s̲h̲o̲w̲ ̲r̲o̲w̲ ̲+̲ ̲1̲ ̲≠̲ ̲(̲d̲.̲b̲l̲o̲c̲k̲ ̲b̲)̲.̲l̲o̲ ̲b̲y̲ ̲o̲m̲e̲g̲a̲)̲]̲ ̲a̲t̲ ̲h̲s̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Compact3684.Chain.block_rows' depends on axioms: [propext, sorryAx, Quot.sound]
+'Compact3684.Chain.block_prefix_step' depends on axioms: [propext, sorryAx, Quot.sound]
+'Compact3684.Chain.block_adjusted_step' depends on axioms: [propext, sorryAx, Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 53, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 45, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/ChainColumns.olean', 'Ramsey3683Bootstrap/ChainColumns.lean']' returned non-zero exit status 1.

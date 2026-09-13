@@ -1,0 +1,39 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/codec_lookup_proof.json",
+    "--modules",
+    "Kernel/Codec"
+  ],
+  "elapsed_seconds": 1.70649128803052,
+  "peak_sampled_rss_kib": 13336,
+  "peak_processes": 1,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 150,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13336,
+      1
+    ],
+    [
+      0.569,
+      13336,
+      1
+    ],
+    [
+      1.138,
+      0,
+      0
+    ]
+  ],
+  "log": "runs/codec_lookup_proof.resources.log"
+}

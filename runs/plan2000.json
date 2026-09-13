@@ -1,0 +1,14 @@
+{
+  "status": "SEARCH_PLAN_COUNTS_NOT_VERIFIED",
+  "tables": "runs/u2000m160/round_5.npz",
+  "reachable_records": 51435,
+  "expanded_path_references": 9389780,
+  "column_runs": 462003,
+  "input_markers": 0,
+  "input_markers_requiring_repair": 0,
+  "weighted_records": 51414,
+  "unconditional_path_records": 21,
+  "maximum_path_length": 995,
+  "maximum_runs_per_path": 39,
+  "trace_failures": 0
+}

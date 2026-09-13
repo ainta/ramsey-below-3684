@@ -1,0 +1,17 @@
+BUILD SUPPORT Kernel/TerminalSupport
+'Compact3684.TerminalSupport.checked' does not depend on any axioms
+BUILD SUPPORT TerminalStrict
+'Compact3684.terminal_numeric_lt_368395' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.affine_of_final_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.below_368395_of_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Kernel/TerminalSupport",
+    "TerminalStrict"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 3.229427492013201,
+  "headline_proved": false
+}

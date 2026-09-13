@@ -1,0 +1,14 @@
+BUILD SUPPORT Kernel/ChainChecks
+BUILD SUPPORT Kernel/CheckedChainData/R00
+BUILD SUPPORT Kernel/ChainChecks/R00N00000
+Kernel/ChainChecks/R00N00000.lean:7:7: error: unexpected token 'at'; expected identifier
+'Compact3684.CheckedChain.R00.N00000.checked' does not depend on any axioms
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 55, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 47, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Kernel/ChainChecks/R00N00000.olean', 'Kernel/ChainChecks/R00N00000.lean']' returned non-zero exit status 1.

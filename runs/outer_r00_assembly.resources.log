@@ -1,0 +1,15 @@
+BUILD SUPPORT Kernel/OuterChecks/R00CAll
+BUILD SUPPORT Kernel/OuterChecks/R00SAll
+BUILD SUPPORT Kernel/OuterChecks/R00Boundary
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Kernel/OuterChecks/R00CAll",
+    "Kernel/OuterChecks/R00SAll",
+    "Kernel/OuterChecks/R00Boundary"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 1.832534576067701,
+  "headline_proved": false
+}

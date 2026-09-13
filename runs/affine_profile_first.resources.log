@@ -1,0 +1,23 @@
+BUILD SUPPORT Ramsey3683Bootstrap/GridClosure
+Ramsey3683Bootstrap/GridClosure.lean:35:47: warning: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Ramsey3683Bootstrap/GridClosure.lean:185:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Ramsey3683Bootstrap/GridClosure.lean:308:23: error: unexpected token 'λ'; expected '_' or identifier
+'Ramsey3683Bootstrap.GridProfile.uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.GridProfile.of_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.GridCandidate.path' depends on axioms: [propext, Classical.choice, Quot.sound]
+Ramsey3683Bootstrap/GridClosure.lean:350:14: error(lean.unknownIdentifier): Unknown constant `affineProfile_support`
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 45, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 37, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/GridClosure.olean', 'Ramsey3683Bootstrap/GridClosure.lean']' returned non-zero exit status 1.

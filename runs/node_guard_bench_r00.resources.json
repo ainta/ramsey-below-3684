@@ -1,0 +1,39 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/node_guard_bench_r00.json",
+    "--modules",
+    "NodeGuardBenchR00"
+  ],
+  "elapsed_seconds": 1.7057762170443311,
+  "peak_sampled_rss_kib": 775848,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13164,
+      1
+    ],
+    [
+      0.57,
+      775848,
+      2
+    ],
+    [
+      1.138,
+      149572,
+      2
+    ]
+  ],
+  "log": "runs/node_guard_bench_r00.resources.log"
+}

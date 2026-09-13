@@ -1,0 +1,95 @@
+PASS 1695911 nodes, 41793102 runs, 813922863 implied edges
+PASS REFLECTION EXPORT {"round": 0, "records": 34447, "supports": 10343, "covers": 22403, "lines": 7603}
+PASS REFLECTION EXPORT {"round": 1, "records": 47007, "supports": 2694, "covers": 8719, "lines": 7424}
+EXPORTED RECORDS 100000
+PASS REFLECTION EXPORT {"round": 2, "records": 50670, "supports": 2326, "covers": 8500, "lines": 7566}
+PASS REFLECTION EXPORT {"round": 3, "records": 51404, "supports": 2586, "covers": 8731, "lines": 7541}
+EXPORTED RECORDS 200000
+PASS REFLECTION EXPORT {"round": 4, "records": 51809, "supports": 2519, "covers": 8711, "lines": 7534}
+EXPORTED RECORDS 300000
+EXPORTED RECORDS 400000
+EXPORTED RECORDS 500000
+EXPORTED RECORDS 600000
+PASS REFLECTION EXPORT {"round": 5, "records": 461501, "supports": 2663, "covers": 13263, "lines": 10647}
+EXPORTED RECORDS 700000
+EXPORTED RECORDS 800000
+EXPORTED RECORDS 900000
+EXPORTED RECORDS 1000000
+EXPORTED RECORDS 1100000
+PASS REFLECTION EXPORT {"round": 6, "records": 497597, "supports": 7479, "covers": 14359, "lines": 10134}
+EXPORTED RECORDS 1200000
+EXPORTED RECORDS 1300000
+EXPORTED RECORDS 1400000
+EXPORTED RECORDS 1500000
+EXPORTED RECORDS 1600000
+PASS REFLECTION EXPORT {"round": 7, "records": 501476, "supports": 6879, "covers": 13719, "lines": 10254}
+{
+  "status": "EXPORTED_RECHECKED_WITNESSES_NOT_LEAN_THEOREM",
+  "records": 1695911,
+  "rounds": [
+    {
+      "round": 0,
+      "records": 34447,
+      "supports": 10343,
+      "covers": 22403,
+      "lines": 7603
+    },
+    {
+      "round": 1,
+      "records": 47007,
+      "supports": 2694,
+      "covers": 8719,
+      "lines": 7424
+    },
+    {
+      "round": 2,
+      "records": 50670,
+      "supports": 2326,
+      "covers": 8500,
+      "lines": 7566
+    },
+    {
+      "round": 3,
+      "records": 51404,
+      "supports": 2586,
+      "covers": 8731,
+      "lines": 7541
+    },
+    {
+      "round": 4,
+      "records": 51809,
+      "supports": 2519,
+      "covers": 8711,
+      "lines": 7534
+    },
+    {
+      "round": 5,
+      "records": 461501,
+      "supports": 2663,
+      "covers": 13263,
+      "lines": 10647
+    },
+    {
+      "round": 6,
+      "records": 497597,
+      "supports": 7479,
+      "covers": 14359,
+      "lines": 10134
+    },
+    {
+      "round": 7,
+      "records": 501476,
+      "supports": 6879,
+      "covers": 13719,
+      "lines": 10254
+    }
+  ],
+  "final_support": [
+    10057,
+    10058,
+    462945813243
+  ],
+  "elapsed_seconds": 84.61613052198663,
+  "record_source_sha256": "47c28752d56420adbe483af2ed9f353cd8a140a0508f9388d2f750cd56eaa9dc",
+  "note": "Path starts are producer witnesses. Structural kernel validation remains mandatory."
+}

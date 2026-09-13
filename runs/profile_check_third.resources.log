@@ -1,0 +1,43 @@
+BUILD SUPPORT Ramsey3683Bootstrap/ProfileCheck
+Ramsey3683Bootstrap/ProfileCheck.lean:35:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Ramsey3683Bootstrap/ProfileCheck.lean:62:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/ProfileCheck.lean:62:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/ProfileCheck.lean:81:82: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/ProfileCheck.lean:91:82: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/ProfileCheck.lean:81:82: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/ProfileCheck.lean:91:82: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'Compact3684.ProfileCheck.shapeGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.ProfileCheck.activeGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.ProfileCheck.supportGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Kernel/ProfileData/R00
+BUILD SUPPORT Kernel/ProfileShapes/R00S0000
+'Compact3684.Reflected.R00.R00S0000.checked' does not depend on any axioms
+BUILD SUPPORT Kernel/ProfileRegions/R00G0000
+'Compact3684.Reflected.R00.R00G0000.checked' does not depend on any axioms
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Ramsey3683Bootstrap/ProfileCheck",
+    "Kernel/ProfileData/R00",
+    "Kernel/ProfileShapes/R00S0000",
+    "Kernel/ProfileRegions/R00G0000"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 16.25402353098616,
+  "headline_proved": false
+}

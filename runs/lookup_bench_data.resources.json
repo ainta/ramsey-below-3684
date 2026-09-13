@@ -1,0 +1,44 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--modules",
+    "LookupBench/Data",
+    "--report",
+    "runs/lookup_bench_data.json"
+  ],
+  "elapsed_seconds": 2.296911444980651,
+  "peak_sampled_rss_kib": 825112,
+  "peak_processes": 2,
+  "rss_limit_mib": 6144,
+  "time_limit_seconds": 300,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13432,
+      1
+    ],
+    [
+      0.572,
+      13448,
+      1
+    ],
+    [
+      1.142,
+      795320,
+      2
+    ],
+    [
+      1.711,
+      825112,
+      2
+    ]
+  ],
+  "log": "runs/lookup_bench_data.resources.log"
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "InitialUniform",
+    "ReflectedInitial",
+    "CheckedCatalogSound",
+    "TerminalStrict",
+    "CertifiedRound/R00",
+    "CertifiedRound/R01",
+    "CertifiedRound/R02",
+    "CertifiedRound/R03",
+    "CertifiedRound/R04",
+    "CertifiedRound/R05",
+    "CertifiedRound/R06",
+    "CertifiedRound/R07",
+    "CertifiedRound",
+    "RamseyBelow3684"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 39.024796460988,
+  "headline_proved": false
+}

@@ -1,0 +1,66 @@
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedParameters
+Ramsey3683Bootstrap/WeightedParameters.lean:35:36: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedLocal
+Ramsey3683Bootstrap/WeightedLocal.lean:77:23: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (M / N) ^ (θ * (↑r)⁻¹) * (M / N) ^ (1 - θ * (↑r)⁻¹)
+in the target expression
+  d ^ (↑r)⁻¹ * (a / α * (M / N)) = d ^ (↑r)⁻¹ * (a / α) * (M / N) ^ (θ * (↑r)⁻¹) * (M / N) ^ (1 - θ * (↑r)⁻¹)
+
+d c α a N M θ : ℝ
+r : ℕ
+hr : 0 < r
+hθ : 0 < θ
+hθr : θ < ↑r
+hd : 0 < d
+hc : 0 < c
+hα : 0 < α
+hN : 0 < N
+hM : 0 ≤ M
+hfail : ¬(0 ≤ a ∧ c * α ^ r * N ^ θ ≤ d * a ^ r * M ^ θ)
+hrR : 0 < ↑r
+hi : 0 < (↑r)⁻¹
+hθi : θ * (↑r)⁻¹ < 1
+hs : 0 < 1 - θ * (↑r)⁻¹
+hu0 : 0 ≤ M / N
+ha : 0 ≤ a
+hz : ¬M = 0
+hMp : 0 < M
+hu : 0 < M / N
+hstrict : d * a ^ r * M ^ θ < c * α ^ r * N ^ θ
+hden : 0 < α ^ r * N ^ θ
+hnorm : d * (a / α) ^ r * (M / N) ^ θ < c
+A : ℝ := d ^ (↑r)⁻¹ * (a / α) * (M / N) ^ (θ * (↑r)⁻¹)
+hA : 0 ≤ A
+hratioPow : ((M / N) ^ (θ * (↑r)⁻¹)) ^ r = (M / N) ^ θ
+hAr : A ^ r < c
+hroot : A ≤ c ^ (↑r)⁻¹
+hm : A * (M / N) ^ (1 - θ * (↑r)⁻¹) ≤ c ^ (↑r)⁻¹ * (M / N) ^ (1 - θ * (↑r)⁻¹)
+hcombine : (M / N) ^ (θ * (↑r)⁻¹) * (M / N) ^ (1 - θ * (↑r)⁻¹) = M / N
+⊢ d ^ (↑r)⁻¹ * (a / α * (M / N)) = d ^ (↑r)⁻¹ * (a / α) * (M / N) ^ (θ * (↑r)⁻¹) * (M / N) ^ (1 - θ * (↑r)⁻¹)
+Ramsey3683Bootstrap/WeightedLocal.lean:127:42: error: Application type mismatch: The argument
+  hmoment
+has type
+  α * N ≤ αR * R + αB * B + 1
+but is expected to have type
+  1 * (α * N) ≤ αR * R + αB * B + 1
+in the application
+  (le_div_iff₀ (mul_pos hα hN)).mpr hmoment
+Ramsey3683Bootstrap/WeightedLocal.lean:139:15: error: Type mismatch
+  add_le_add_right (add_le_add hred hblue') ?m.924
+has type
+  ?m.924 + (d ^ (↑r)⁻¹ * (αR / α) * (R / N) + d ^ (↑r)⁻¹ * (αB / α) * (B / N)) ≤
+    ?m.924 + (x ^ (↑r)⁻¹ * (R / N) ^ (1 - θ * (↑r)⁻¹) + μ ^ (θ * (↑r)⁻¹) * (B / N) ^ (1 - θ * (↑r)⁻¹))
+but is expected to have type
+  d ^ (↑r)⁻¹ * (αR / α) * (R / N) + d ^ (↑r)⁻¹ * (αB / α) * (B / N) + d ^ (↑r)⁻¹ / (α * N) ≤
+    x ^ (↑r)⁻¹ * (R / N) ^ (1 - θ * (↑r)⁻¹) + μ ^ (θ * (↑r)⁻¹) * (B / N) ^ (1 - θ * (↑r)⁻¹) + d ^ (↑r)⁻¹ / (α * N)
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 39, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 31, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/WeightedLocal.olean', 'Ramsey3683Bootstrap/WeightedLocal.lean']' returned non-zero exit status 1.

@@ -1,0 +1,140 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/initial_line_bridge.json",
+    "--modules",
+    "Ramsey3683Bootstrap/GridClosure",
+    "Ramsey3683Bootstrap/Certificate"
+  ],
+  "elapsed_seconds": 13.849094982026145,
+  "peak_sampled_rss_kib": 3738848,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13356,
+      1
+    ],
+    [
+      0.601,
+      814976,
+      2
+    ],
+    [
+      1.201,
+      434904,
+      2
+    ],
+    [
+      1.799,
+      1000428,
+      2
+    ],
+    [
+      2.402,
+      3125132,
+      2
+    ],
+    [
+      3.006,
+      3395624,
+      2
+    ],
+    [
+      3.612,
+      3552168,
+      2
+    ],
+    [
+      4.214,
+      3587472,
+      2
+    ],
+    [
+      4.815,
+      3596020,
+      2
+    ],
+    [
+      5.414,
+      3596864,
+      2
+    ],
+    [
+      6.023,
+      3602748,
+      2
+    ],
+    [
+      6.625,
+      13364,
+      1
+    ],
+    [
+      7.224,
+      462456,
+      2
+    ],
+    [
+      7.821,
+      1024028,
+      2
+    ],
+    [
+      8.418,
+      3127188,
+      2
+    ],
+    [
+      9.02,
+      3483380,
+      2
+    ],
+    [
+      9.621,
+      3683536,
+      2
+    ],
+    [
+      10.221,
+      3703816,
+      2
+    ],
+    [
+      10.822,
+      3706980,
+      2
+    ],
+    [
+      11.426,
+      3716996,
+      2
+    ],
+    [
+      12.031,
+      3726144,
+      2
+    ],
+    [
+      12.637,
+      3738848,
+      2
+    ],
+    [
+      13.243,
+      13364,
+      1
+    ]
+  ],
+  "log": "runs/initial_line_bridge.resources.log"
+}

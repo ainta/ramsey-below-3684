@@ -1,0 +1,20 @@
+BUILD SUPPORT Ramsey3683Bootstrap/ChainColumns
+Ramsey3683Bootstrap/ChainColumns.lean:86:24: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Ramsey3683Bootstrap/ChainColumns.lean:89:20: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Compact3684.Chain.block_rows' depends on axioms: [propext, Quot.sound]
+'Compact3684.Chain.block_prefix_step' depends on axioms: [propext, Quot.sound]
+'Compact3684.Chain.block_adjusted_step' depends on axioms: [propext, Quot.sound]
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Ramsey3683Bootstrap/ChainColumns"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 4.080002316972241,
+  "headline_proved": false
+}

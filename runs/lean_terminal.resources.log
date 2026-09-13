@@ -1,0 +1,5 @@
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/TerminalNumeric.lean:16:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', which is 'noncomputable'
+/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/TerminalNumeric.lean:17:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', which is 'noncomputable'
+'Compact3684.exp_affineA_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.exp_affineD_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.terminal_numeric_lt' depends on axioms: [propext, Classical.choice, Quot.sound]

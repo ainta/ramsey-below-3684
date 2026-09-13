@@ -1,0 +1,40 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/prefix_monotone.json",
+    "--modules",
+    "PrefixRange",
+    "Kernel/Codec"
+  ],
+  "elapsed_seconds": 1.7037567630177364,
+  "peak_sampled_rss_kib": 778504,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 150,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13316,
+      1
+    ],
+    [
+      0.569,
+      13316,
+      1
+    ],
+    [
+      1.137,
+      778504,
+      2
+    ]
+  ],
+  "log": "runs/prefix_monotone.resources.log"
+}

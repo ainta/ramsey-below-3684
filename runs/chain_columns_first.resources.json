@@ -1,0 +1,74 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/chain_columns_first.json",
+    "--modules",
+    "Ramsey3683Bootstrap/ChainColumns"
+  ],
+  "elapsed_seconds": 5.677783984108828,
+  "peak_sampled_rss_kib": 3677480,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      12988,
+      1
+    ],
+    [
+      0.569,
+      811828,
+      2
+    ],
+    [
+      1.141,
+      53100,
+      2
+    ],
+    [
+      1.706,
+      404168,
+      2
+    ],
+    [
+      2.273,
+      797216,
+      2
+    ],
+    [
+      2.839,
+      2100244,
+      2
+    ],
+    [
+      3.407,
+      3312200,
+      2
+    ],
+    [
+      3.973,
+      3586660,
+      2
+    ],
+    [
+      4.539,
+      3677480,
+      2
+    ],
+    [
+      5.11,
+      13292,
+      1
+    ]
+  ],
+  "log": "runs/chain_columns_first.resources.log"
+}

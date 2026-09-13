@@ -1,0 +1,54 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/chain_sound_first.json",
+    "--modules",
+    "Ramsey3683Bootstrap/ChainSound"
+  ],
+  "elapsed_seconds": 3.414258991018869,
+  "peak_sampled_rss_kib": 3687368,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13364,
+      1
+    ],
+    [
+      0.569,
+      13364,
+      1
+    ],
+    [
+      1.136,
+      711776,
+      2
+    ],
+    [
+      1.704,
+      2393708,
+      2
+    ],
+    [
+      2.274,
+      3510992,
+      2
+    ],
+    [
+      2.846,
+      3687368,
+      2
+    ]
+  ],
+  "log": "runs/chain_sound_first.resources.log"
+}

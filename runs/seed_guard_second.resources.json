@@ -1,0 +1,84 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/seed_guard_second.json",
+    "--modules",
+    "Ramsey3683Bootstrap/Certificate"
+  ],
+  "elapsed_seconds": 7.2134950699983165,
+  "peak_sampled_rss_kib": 3714032,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 150,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.016,
+      13316,
+      1
+    ],
+    [
+      0.709,
+      814764,
+      2
+    ],
+    [
+      1.321,
+      425124,
+      2
+    ],
+    [
+      1.938,
+      965224,
+      2
+    ],
+    [
+      2.54,
+      2853432,
+      2
+    ],
+    [
+      3.151,
+      3246040,
+      2
+    ],
+    [
+      3.756,
+      3366980,
+      2
+    ],
+    [
+      4.355,
+      3624444,
+      2
+    ],
+    [
+      4.941,
+      3688128,
+      2
+    ],
+    [
+      5.512,
+      3702044,
+      2
+    ],
+    [
+      6.082,
+      3703192,
+      2
+    ],
+    [
+      6.645,
+      3714032,
+      2
+    ]
+  ],
+  "log": "runs/seed_guard_second.resources.log"
+}

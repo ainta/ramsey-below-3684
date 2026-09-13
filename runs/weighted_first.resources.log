@@ -1,0 +1,55 @@
+BUILD SUPPORT Ramsey3683Bootstrap/WeightedParameters
+Ramsey3683Bootstrap/WeightedParameters.lean:37:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  @Tendsto ℕ ℝ (fun x => bookParameter p μ x * (1 - μ) ^ (θ - 1)) atTop (𝓝 (p ^ (1 / (1 - μ)) * (1 - μ) ^ θ))
+but is expected to have type
+  @Tendsto ℕ ℝ (weightedBookParameter p μ θ) atTop (𝓝 (p ^ (1 / (1 - μ)) * (1 - μ) ^ θ))
+Ramsey3683Bootstrap/WeightedParameters.lean:67:43: error: unsolved goals
+x θ ρ μ z : ℝ
+hx : 0 < x
+hθ : θ ≠ 0
+⊢ 1 - (1 - θ * ρ) = θ * ρ
+Ramsey3683Bootstrap/WeightedParameters.lean:85:43: error: unsolved goals
+x μ θ ρ β u v : ℝ
+hx : 0 < x
+hμ : 0 < μ
+hθ : 0 < θ
+hρ : 0 < ρ
+hθρ : θ * ρ < 1
+hμβ : μ ≤ β
+hβ : β < 1
+hcap : β ≤ μ / (x ^ θ⁻¹ + μ)
+hu : 0 ≤ u
+hv : 0 ≤ v
+huv : u + v ≤ 1
+hvβ : v ≤ β
+hs0 : 0 < 1 - θ * ρ
+hs1 : 1 - θ * ρ < 1
+h :
+  (x ^ θ⁻¹) ^ (1 - (1 - θ * ρ)) * u ^ (1 - θ * ρ) + μ ^ (1 - (1 - θ * ρ)) * v ^ (1 - θ * ρ) ≤
+    (x ^ θ⁻¹) ^ (1 - (1 - θ * ρ)) * (1 - μ) ^ (1 - θ * ρ) + β
+⊢ 1 - (1 - θ * ρ) = θ * ρ
+Ramsey3683Bootstrap/WeightedParameters.lean:87:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  x ^ (θ⁻¹ * (θ * ρ)) * u ^ (1 - θ * ρ) + μ ^ (θ * ρ) * v ^ (1 - θ * ρ) ≤
+    x ^ (θ⁻¹ * (θ * ρ)) * (1 - μ) ^ (1 - θ * ρ) + β
+but is expected to have type
+  x ^ ρ * u ^ (1 - θ * ρ) + μ ^ (θ * ρ) * v ^ (1 - θ * ρ) ≤ x ^ ρ * (1 - μ) ^ (1 - θ * ρ) + β
+Ramsey3683Bootstrap/WeightedParameters.lean:112:8: error: Function expected at
+  Real.mul_rpow (pow_nonneg (LT.lt.le hA) ?m.292) (Real.rpow_nonneg (LT.lt.le hB) ?m.298)
+but this term has type
+  (A ^ ?m.292 * B ^ ?m.298) ^ ?m.281 = (A ^ ?m.292) ^ ?m.281 * (B ^ ?m.298) ^ ?m.281
+
+Note: Expected a function because this term is being applied to the argument
+  _
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 39, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 31, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/WeightedParameters.olean', 'Ramsey3683Bootstrap/WeightedParameters.lean']' returned non-zero exit status 1.

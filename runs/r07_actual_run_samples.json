@@ -1,0 +1,13 @@
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Kernel/ChainChecks/R07P00000",
+    "Kernel/ChainChecks/R07P01738",
+    "Kernel/ChainChecks/R07P03474",
+    "Kernel/ChainChecks/R07P03475"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 71.1016455750214,
+  "headline_proved": false
+}

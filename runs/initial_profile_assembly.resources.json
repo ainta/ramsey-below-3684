@@ -1,0 +1,79 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/initial_profile_assembly.json",
+    "--modules",
+    "InitialProfile"
+  ],
+  "elapsed_seconds": 6.254639082006179,
+  "peak_sampled_rss_kib": 3735228,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13336,
+      1
+    ],
+    [
+      0.569,
+      814988,
+      2
+    ],
+    [
+      1.137,
+      332424,
+      2
+    ],
+    [
+      1.706,
+      874124,
+      2
+    ],
+    [
+      2.277,
+      1125136,
+      2
+    ],
+    [
+      2.845,
+      2420128,
+      2
+    ],
+    [
+      3.409,
+      3302212,
+      2
+    ],
+    [
+      3.98,
+      3409292,
+      2
+    ],
+    [
+      4.549,
+      3668296,
+      2
+    ],
+    [
+      5.118,
+      3735228,
+      2
+    ],
+    [
+      5.687,
+      13348,
+      1
+    ]
+  ],
+  "log": "runs/initial_profile_assembly.resources.log"
+}

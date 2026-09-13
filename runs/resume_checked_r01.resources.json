@@ -1,0 +1,29 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "verify_rounds.py",
+    "--round",
+    "1",
+    "--resume-from",
+    "runs/resume_checked_r01_input.json",
+    "--report",
+    "runs/resume_checked_r01.json"
+  ],
+  "elapsed_seconds": 0.5708357619587332,
+  "peak_sampled_rss_kib": 21964,
+  "peak_processes": 1,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      21964,
+      1
+    ]
+  ],
+  "log": "runs/resume_checked_r01.resources.log"
+}

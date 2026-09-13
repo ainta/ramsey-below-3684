@@ -1,0 +1,74 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/finset_cut_first.json",
+    "--modules",
+    "Ramsey3683Bootstrap/FinsetCut"
+  ],
+  "elapsed_seconds": 5.688556671957485,
+  "peak_sampled_rss_kib": 3610724,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 150,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13356,
+      1
+    ],
+    [
+      0.573,
+      13356,
+      1
+    ],
+    [
+      1.144,
+      715184,
+      2
+    ],
+    [
+      1.707,
+      2741752,
+      2
+    ],
+    [
+      2.275,
+      3425936,
+      2
+    ],
+    [
+      2.841,
+      3603100,
+      2
+    ],
+    [
+      3.411,
+      3605040,
+      2
+    ],
+    [
+      3.98,
+      3608504,
+      2
+    ],
+    [
+      4.549,
+      3609092,
+      2
+    ],
+    [
+      5.118,
+      3610724,
+      2
+    ]
+  ],
+  "log": "runs/finset_cut_first.resources.log"
+}

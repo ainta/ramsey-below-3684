@@ -1,0 +1,72 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "probe.py",
+    "--N",
+    "200",
+    "--M",
+    "80",
+    "--rounds",
+    "10",
+    "--output",
+    "runs/u200",
+    "--save-tables"
+  ],
+  "elapsed_seconds": 5.121551107033156,
+  "peak_sampled_rss_kib": 209468,
+  "peak_processes": 1,
+  "rss_limit_mib": 8192,
+  "time_limit_seconds": 600,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      26812,
+      1
+    ],
+    [
+      0.572,
+      165616,
+      1
+    ],
+    [
+      1.141,
+      173400,
+      1
+    ],
+    [
+      1.708,
+      185560,
+      1
+    ],
+    [
+      2.275,
+      190876,
+      1
+    ],
+    [
+      2.841,
+      201268,
+      1
+    ],
+    [
+      3.412,
+      209152,
+      1
+    ],
+    [
+      3.982,
+      209468,
+      1
+    ],
+    [
+      4.549,
+      209468,
+      1
+    ]
+  ],
+  "log": "runs/u200.resources.log"
+}

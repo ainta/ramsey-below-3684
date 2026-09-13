@@ -1,0 +1,139 @@
+PASS 41254 nodes, 878884 runs, 1676051 implied edges
+PASS RECORDS 10000 / 41254
+PASS RECORDS 20000 / 41254
+PASS RECORDS 30000 / 41254
+PASS RECORDS 40000 / 41254
+PASS ROUND 0 exponent 1.314186074282827866666666666666 records 41254
+{
+  "status": "PASS_FINITE_CHAIN_NOT_LEAN",
+  "terminal": {
+    "status": "TARGET_NOT_REACHED",
+    "target": "921/250",
+    "base_upper": "3714784296581/1000000000000",
+    "base_upper_decimal": "3.714784296581",
+    "selected_cell": 6496,
+    "intercept": "2720844487589681/5000000000000000",
+    "slope": "385480961453/500000000000",
+    "squared_margin_scaled": "-2277663701219693500055252744701444032944",
+    "scope": "Exact finite arithmetic plus the written global-affine maximum-clique transfer; not Lean verified"
+  },
+  "initial_majorant_sha256": "1d8c3653635b34a6ea9a8c0af59005c6b5f61e30e62b5c7f264cc266577e279f",
+  "metadata_sha256": "afbb711824511c4e5a7cb2807a938c32ec5c944f290b2a25322776fac7dadde3",
+  "record_file_sha256": "f059a25a7a09d93fb717661254015a905d6300036db8eafc5dd2c4a7834f4c35",
+  "edge_file_sha256": "ad8fada98dac6b902ced08978c102031ec5865f5f455f95be1280fbd6e285289",
+  "arithmetic": "exact fractions and directed integer intervals; path edges checked with overflow-checked C++ integers; no optimizer or floating-point arithmetic",
+  "rounds": [
+    {
+      "round": 0,
+      "N": 600,
+      "profiles": [
+        {
+          "start": [
+            1,
+            20
+          ],
+          "endpoint": [
+            131418929719152477,
+            100000000000000000
+          ],
+          "exponent_decimal": "1.314189297191524770000000000000"
+        },
+        {
+          "start": [
+            1,
+            10
+          ],
+          "endpoint": [
+            246410462631501419967184410061,
+            187500000000000000000000000000
+          ],
+          "exponent_decimal": "1.314189134034674239824983520325"
+        },
+        {
+          "start": [
+            1,
+            5
+          ],
+          "endpoint": [
+            2628376164772709,
+            2000000000000000
+          ],
+          "exponent_decimal": "1.314188082386354500000000000000"
+        },
+        {
+          "start": [
+            2,
+            5
+          ],
+          "endpoint": [
+            9856395557121209,
+            7500000000000000
+          ],
+          "exponent_decimal": "1.314186074282827866666666666666"
+        },
+        {
+          "start": [
+            3,
+            5
+          ],
+          "endpoint": [
+            6570954009436389543690239741,
+            5000000000000000000000000000
+          ],
+          "exponent_decimal": "1.314190801887277908738047948200"
+        },
+        {
+          "start": [
+            4,
+            5
+          ],
+          "endpoint": [
+            19713198623954077,
+            15000000000000000
+          ],
+          "exponent_decimal": "1.314213241596938466666666666666"
+        }
+      ],
+      "best_exponent": [
+        9856395557121209,
+        7500000000000000
+      ],
+      "support_endpoint": [
+        9856395557121209,
+        7500000000000000
+      ],
+      "support_knots": 6539
+    }
+  ],
+  "records": 41254,
+  "record_types": {
+    "weighted_path": 41186,
+    "unconditional_path": 68
+  },
+  "path_edges": 1676051,
+  "path_runs": 878884,
+  "weighted_seeds": 41186,
+  "maximum_dependency_depth": 57,
+  "exponent": [
+    9856395557121209,
+    7500000000000000
+  ],
+  "exponent_decimal_lower": "1.31418607428282786666666666666666",
+  "exponent_decimal_upper": "1.31418607428282786666666666666667",
+  "base_lower": "3.721720548076932279402010383281597401",
+  "base_upper": "3.721720548076932279402010383281597411",
+  "strict_upper_base_decimal": "3.72172055",
+  "minimum_margins": {
+    "path_size": "0.000000010414968066666666666666666666",
+    "blue_cost": "0.000000090033397790767274523217618223",
+    "seed_density": "0.000000000025442506413271151192303140",
+    "seed_size": "0.000000000199999846271554920543565361",
+    "unconditional_start": "0.000000145091600155848388060730628222",
+    "outer_start": "0.000000100000000000000000000000426441",
+    "outer_size": "0.000000040301057175404714614866666666",
+    "final_decimal": "0.000000000516714700972062047447409100"
+  },
+  "elapsed_seconds": 21.223049645894207,
+  "arithmetic_workers": 1,
+  "scope": "Finite analytic certificate conditional on the written graph-theoretic lemmas. No proof-system optimality or sub-3.6 claim."
+}

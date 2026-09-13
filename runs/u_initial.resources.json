@@ -1,0 +1,50 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "initial_profile.py",
+    "/home/ainta/manuscripts/ramsey/continuation_research/source/ramsey_candidate_continuation_release/baseline/certificate.json.gz",
+    "--output",
+    "initial_u.json"
+  ],
+  "elapsed_seconds": 3.4212875299854204,
+  "peak_sampled_rss_kib": 99796,
+  "peak_processes": 1,
+  "rss_limit_mib": 2048,
+  "time_limit_seconds": 120,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      37736,
+      1
+    ],
+    [
+      0.574,
+      99796,
+      1
+    ],
+    [
+      1.146,
+      99796,
+      1
+    ],
+    [
+      1.716,
+      99796,
+      1
+    ],
+    [
+      2.285,
+      99796,
+      1
+    ],
+    [
+      2.851,
+      99796,
+      1
+    ]
+  ],
+  "log": "runs/u_initial.resources.log"
+}

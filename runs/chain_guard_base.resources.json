@@ -1,0 +1,55 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/chain_guard_base.json",
+    "--modules",
+    "Kernel/CheckedLogChunk",
+    "Kernel/ChainGuard"
+  ],
+  "elapsed_seconds": 3.4305273849749938,
+  "peak_sampled_rss_kib": 815276,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13052,
+      1
+    ],
+    [
+      0.573,
+      766152,
+      2
+    ],
+    [
+      1.145,
+      815276,
+      2
+    ],
+    [
+      1.716,
+      679736,
+      2
+    ],
+    [
+      2.287,
+      200564,
+      2
+    ],
+    [
+      2.857,
+      790260,
+      2
+    ]
+  ],
+  "log": "runs/chain_guard_base.resources.log"
+}

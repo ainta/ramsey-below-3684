@@ -1,0 +1,12 @@
+PASS 1695911 nodes, 41793102 runs, 813922863 implied edges
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/export_reflection.py", line 218, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/export_reflection.py", line 186, in main
+    support_entries.append(dict(a=a,b=b,ab=reflected.support(a,b),ba=reflected.support(b,a)))
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/export_reflection.py", line 72, in support
+    assert weight*lb+(WEIGHT-weight)*rb<=WEIGHT*target_b, ('support-b',self.epoch,a,b,left,right)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('support-b', 0, 1774234773436, 148522760282, 19999, 19999)

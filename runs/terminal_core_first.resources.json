@@ -1,0 +1,109 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/terminal_core_first.json",
+    "--modules",
+    "Ramsey3683Bootstrap/TerminalCore"
+  ],
+  "elapsed_seconds": 9.706683957017958,
+  "peak_sampled_rss_kib": 3641232,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13376,
+      1
+    ],
+    [
+      0.57,
+      13376,
+      1
+    ],
+    [
+      1.143,
+      757856,
+      2
+    ],
+    [
+      1.713,
+      2820948,
+      2
+    ],
+    [
+      2.279,
+      3446292,
+      2
+    ],
+    [
+      2.859,
+      3573880,
+      2
+    ],
+    [
+      3.428,
+      3602800,
+      2
+    ],
+    [
+      3.999,
+      3603272,
+      2
+    ],
+    [
+      4.568,
+      3608200,
+      2
+    ],
+    [
+      5.138,
+      3612664,
+      2
+    ],
+    [
+      5.709,
+      3633356,
+      2
+    ],
+    [
+      6.28,
+      3632196,
+      2
+    ],
+    [
+      6.853,
+      3634368,
+      2
+    ],
+    [
+      7.423,
+      3637036,
+      2
+    ],
+    [
+      7.996,
+      3637624,
+      2
+    ],
+    [
+      8.566,
+      3638040,
+      2
+    ],
+    [
+      9.136,
+      3641232,
+      2
+    ]
+  ],
+  "log": "runs/terminal_core_first.resources.log"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "MONITORING",
+  "elapsed_seconds": 63265.38543723,
+  "current_sampled_rss_kib": 5804840,
+  "peak_sampled_rss_kib": 10007980,
+  "processes": 11,
+  "samples": 12489,
+  "sample_period_seconds": 5,
+  "scope": "processes with cwd anywhere beneath this workspace, including isolated dependency audits",
+  "shared_pages_counted_per_process": true,
+  "earlier_phases_not_included": true
+}

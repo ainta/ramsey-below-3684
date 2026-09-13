@@ -1,0 +1,119 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/node_guard_bench_r00_second.json",
+    "--modules",
+    "NodeGuardBenchR00"
+  ],
+  "elapsed_seconds": 10.796555487904698,
+  "peak_sampled_rss_kib": 1789024,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13396,
+      1
+    ],
+    [
+      0.571,
+      758940,
+      2
+    ],
+    [
+      1.143,
+      813304,
+      2
+    ],
+    [
+      1.712,
+      252224,
+      2
+    ],
+    [
+      2.28,
+      820108,
+      2
+    ],
+    [
+      2.847,
+      948680,
+      2
+    ],
+    [
+      3.418,
+      1021016,
+      2
+    ],
+    [
+      3.987,
+      1111284,
+      2
+    ],
+    [
+      4.555,
+      1184760,
+      2
+    ],
+    [
+      5.123,
+      1305340,
+      2
+    ],
+    [
+      5.691,
+      1419340,
+      2
+    ],
+    [
+      6.255,
+      1550268,
+      2
+    ],
+    [
+      6.822,
+      1653756,
+      2
+    ],
+    [
+      7.389,
+      1789024,
+      2
+    ],
+    [
+      7.956,
+      1727200,
+      2
+    ],
+    [
+      8.523,
+      1604844,
+      2
+    ],
+    [
+      9.093,
+      1652700,
+      2
+    ],
+    [
+      9.66,
+      1690164,
+      2
+    ],
+    [
+      10.228,
+      1696136,
+      2
+    ]
+  ],
+  "log": "runs/node_guard_bench_r00_second.resources.log"
+}

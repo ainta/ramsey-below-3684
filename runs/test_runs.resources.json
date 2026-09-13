@@ -1,0 +1,38 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "test_run_checker.py"
+  ],
+  "elapsed_seconds": 2.3331933489535004,
+  "peak_sampled_rss_kib": 57924,
+  "peak_processes": 3,
+  "rss_limit_mib": 2048,
+  "time_limit_seconds": 120,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13788,
+      1
+    ],
+    [
+      0.585,
+      57924,
+      3
+    ],
+    [
+      1.168,
+      13788,
+      1
+    ],
+    [
+      1.753,
+      18644,
+      1
+    ]
+  ],
+  "log": "runs/test_runs.resources.log"
+}

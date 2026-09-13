@@ -1,0 +1,94 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/initial_tangent_soundness_second.json",
+    "--modules",
+    "Ramsey3683Bootstrap/Certificate"
+  ],
+  "elapsed_seconds": 8.420009379973635,
+  "peak_sampled_rss_kib": 3729200,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13336,
+      1
+    ],
+    [
+      0.6,
+      814316,
+      2
+    ],
+    [
+      1.196,
+      451864,
+      2
+    ],
+    [
+      1.795,
+      798836,
+      2
+    ],
+    [
+      2.393,
+      1509332,
+      2
+    ],
+    [
+      2.993,
+      3247932,
+      2
+    ],
+    [
+      3.597,
+      3540532,
+      2
+    ],
+    [
+      4.196,
+      3634788,
+      2
+    ],
+    [
+      4.793,
+      3679720,
+      2
+    ],
+    [
+      5.392,
+      3692612,
+      2
+    ],
+    [
+      6.0,
+      3694520,
+      2
+    ],
+    [
+      6.61,
+      3707028,
+      2
+    ],
+    [
+      7.214,
+      3714108,
+      2
+    ],
+    [
+      7.818,
+      3729200,
+      2
+    ]
+  ],
+  "log": "runs/initial_tangent_soundness_second.resources.log"
+}

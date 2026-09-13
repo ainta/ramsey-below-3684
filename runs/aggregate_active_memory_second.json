@@ -1,0 +1,12 @@
+{
+  "status": "MONITORING",
+  "elapsed_seconds": 64934.46736094798,
+  "current_sampled_rss_kib": 5969904,
+  "peak_sampled_rss_kib": 10198460,
+  "processes": 11,
+  "samples": 12827,
+  "sample_period_seconds": 5,
+  "scope": "processes with cwd equal to this workspace or its lean subdirectory",
+  "shared_pages_counted_per_process": true,
+  "earlier_phases_not_included": true
+}

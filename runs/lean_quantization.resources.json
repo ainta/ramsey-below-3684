@@ -1,0 +1,59 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/ControlQuantization.lean"
+  ],
+  "elapsed_seconds": 4.552209490095265,
+  "peak_sampled_rss_kib": 3119572,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 120,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      105536,
+      1
+    ],
+    [
+      0.573,
+      734716,
+      1
+    ],
+    [
+      1.149,
+      1028336,
+      2
+    ],
+    [
+      1.714,
+      1953696,
+      2
+    ],
+    [
+      2.278,
+      2487920,
+      2
+    ],
+    [
+      2.847,
+      2838580,
+      2
+    ],
+    [
+      3.417,
+      3119572,
+      2
+    ],
+    [
+      3.984,
+      0,
+      0
+    ]
+  ],
+  "log": "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/runs/lean_quantization.resources.log"
+}

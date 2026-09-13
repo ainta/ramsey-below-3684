@@ -1,0 +1,135 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/packed_lookup.json",
+    "--modules",
+    "Kernel/Codec",
+    "PackedLookupBench"
+  ],
+  "elapsed_seconds": 12.53604534897022,
+  "peak_sampled_rss_kib": 2746704,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13288,
+      1
+    ],
+    [
+      0.57,
+      13288,
+      1
+    ],
+    [
+      1.139,
+      13292,
+      1
+    ],
+    [
+      1.705,
+      806132,
+      2
+    ],
+    [
+      2.272,
+      953380,
+      2
+    ],
+    [
+      2.839,
+      1084140,
+      2
+    ],
+    [
+      3.404,
+      1232564,
+      2
+    ],
+    [
+      3.972,
+      1371332,
+      2
+    ],
+    [
+      4.544,
+      1477492,
+      2
+    ],
+    [
+      5.117,
+      1628332,
+      2
+    ],
+    [
+      5.687,
+      1772092,
+      2
+    ],
+    [
+      6.258,
+      1909644,
+      2
+    ],
+    [
+      6.83,
+      2039880,
+      2
+    ],
+    [
+      7.403,
+      2191828,
+      2
+    ],
+    [
+      7.973,
+      2260316,
+      2
+    ],
+    [
+      8.547,
+      2405088,
+      2
+    ],
+    [
+      9.119,
+      2551076,
+      2
+    ],
+    [
+      9.692,
+      2694044,
+      2
+    ],
+    [
+      10.262,
+      2746704,
+      2
+    ],
+    [
+      10.83,
+      2746704,
+      2
+    ],
+    [
+      11.399,
+      2746704,
+      2
+    ],
+    [
+      11.968,
+      2658320,
+      2
+    ]
+  ],
+  "log": "runs/packed_lookup.resources.log"
+}

@@ -1,0 +1,94 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/region_guard_sound.json",
+    "--modules",
+    "Ramsey3683Bootstrap/ProfileCheck"
+  ],
+  "elapsed_seconds": 7.996015970944427,
+  "peak_sampled_rss_kib": 3716728,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      12592,
+      1
+    ],
+    [
+      0.571,
+      762784,
+      2
+    ],
+    [
+      1.141,
+      814972,
+      2
+    ],
+    [
+      1.708,
+      260056,
+      2
+    ],
+    [
+      2.281,
+      631584,
+      2
+    ],
+    [
+      2.848,
+      973556,
+      2
+    ],
+    [
+      3.417,
+      1903512,
+      2
+    ],
+    [
+      3.987,
+      3233192,
+      2
+    ],
+    [
+      4.559,
+      3348536,
+      2
+    ],
+    [
+      5.13,
+      3587584,
+      2
+    ],
+    [
+      5.704,
+      3668344,
+      2
+    ],
+    [
+      6.277,
+      3709920,
+      2
+    ],
+    [
+      6.846,
+      3716728,
+      2
+    ],
+    [
+      7.423,
+      13360,
+      1
+    ]
+  ],
+  "log": "runs/region_guard_sound.resources.log"
+}

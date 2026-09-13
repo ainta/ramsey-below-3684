@@ -1,0 +1,111 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/affine_profile_second.json",
+    "--modules",
+    "Ramsey3683Bootstrap/GridClosure",
+    "Ramsey3683Bootstrap/Certificate",
+    "Kernel/Codec"
+  ],
+  "elapsed_seconds": 9.679868092061952,
+  "peak_sampled_rss_kib": 3702672,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 150,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13332,
+      1
+    ],
+    [
+      0.569,
+      13332,
+      1
+    ],
+    [
+      1.14,
+      730024,
+      2
+    ],
+    [
+      1.709,
+      2829428,
+      2
+    ],
+    [
+      2.277,
+      3442720,
+      2
+    ],
+    [
+      2.845,
+      3565672,
+      2
+    ],
+    [
+      3.414,
+      3592388,
+      2
+    ],
+    [
+      3.981,
+      3595300,
+      2
+    ],
+    [
+      4.55,
+      3605608,
+      2
+    ],
+    [
+      5.115,
+      362500,
+      2
+    ],
+    [
+      5.68,
+      1082904,
+      2
+    ],
+    [
+      6.256,
+      3246736,
+      2
+    ],
+    [
+      6.823,
+      3634216,
+      2
+    ],
+    [
+      7.393,
+      3690200,
+      2
+    ],
+    [
+      7.961,
+      3702672,
+      2
+    ],
+    [
+      8.527,
+      13340,
+      1
+    ],
+    [
+      9.102,
+      13340,
+      1
+    ]
+  ],
+  "log": "runs/affine_profile_second.resources.log"
+}

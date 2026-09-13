@@ -1,0 +1,5 @@
+REBUILD 1 / 4 Kernel.Log18
+REBUILD 2 / 4 Kernel.ProfileGuard
+REBUILD 3 / 4 Kernel.Elementary
+REBUILD 4 / 4 Kernel.CheckedProfiles
+PASS Kernel.CheckedProfiles

@@ -1,0 +1,63 @@
+WAIT RESOURCE runs/chain_r00_full_second.resources.json
+WAIT RESOURCE runs/outer_r00_full.resources.json
+ASSEMBLE Kernel/ChainChecks/R00NGroup0000
+
+ASSEMBLE Kernel/ChainChecks/R00NGroup0001
+
+ASSEMBLE Kernel/ChainChecks/R00NAll
+'Compact3684.CheckedChain.R00.all_nodeGuard' depends on axioms: [propext, Quot.sound]
+
+ASSEMBLE Kernel/ChainChecks/R00BGroup0000
+
+ASSEMBLE Kernel/ChainChecks/R00BAll
+'Compact3684.CheckedChain.R00.all_blockGuard' depends on axioms: [propext, Quot.sound]
+
+ASSEMBLE Kernel/ChainChecks/R00PGroup0000
+
+ASSEMBLE Kernel/ChainChecks/R00PAll
+'Compact3684.CheckedChain.R00.all_runGuard' depends on axioms: [propext, Quot.sound]
+
+ASSEMBLE Kernel/OuterChecks/R00CAll
+
+ASSEMBLE Kernel/OuterChecks/R00SAll
+
+ASSEMBLE Kernel/OuterChecks/R00Boundary
+
+ASSEMBLE CertifiedRound/R00
+'Compact3684.CertifiedRound.R00.valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+WAIT MODULE Kernel/OuterChecks/R01Boundary
+ASSEMBLE CertifiedRound/R01
+'Compact3684.CertifiedRound.R01.valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+WAIT MODULE Kernel/OuterChecks/R02Boundary
+ASSEMBLE CertifiedRound/R02
+'Compact3684.CertifiedRound.R02.valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+WAIT MODULE Kernel/OuterChecks/R03Boundary
+ASSEMBLE CertifiedRound/R03
+'Compact3684.CertifiedRound.R03.valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+WAIT MODULE Kernel/OuterChecks/R04Boundary
+ASSEMBLE CertifiedRound/R04
+'Compact3684.CertifiedRound.R04.valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+WAIT MODULE Kernel/OuterChecks/R05Boundary
+ASSEMBLE CertifiedRound/R05
+'Compact3684.CertifiedRound.R05.valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+WAIT MODULE Kernel/OuterChecks/R06Boundary
+ASSEMBLE CertifiedRound/R06
+'Compact3684.CertifiedRound.R06.valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+WAIT MODULE Kernel/OuterChecks/R07Boundary
+ASSEMBLE CertifiedRound/R07
+'Compact3684.CertifiedRound.R07.valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+WAIT RESOURCE runs/rounds_01_06_full.resources.json
+WAIT RESOURCE runs/round_07_full.resources.json
+ASSEMBLE RamseyBelow3684
+'Compact3684.ramsey_le_368395' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Compact3684.ramsey_base_below_3684' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+PASS UNCONDITIONAL RAMSEY THEOREM BASE 3.68395

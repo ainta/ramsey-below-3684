@@ -1,0 +1,89 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/run_semantics_first.json",
+    "--modules",
+    "Ramsey3683Bootstrap/RunSemantics"
+  ],
+  "elapsed_seconds": 7.399803254054859,
+  "peak_sampled_rss_kib": 3714760,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      12076,
+      1
+    ],
+    [
+      0.568,
+      742364,
+      2
+    ],
+    [
+      1.133,
+      813148,
+      2
+    ],
+    [
+      1.702,
+      208552,
+      2
+    ],
+    [
+      2.274,
+      586056,
+      2
+    ],
+    [
+      2.847,
+      926388,
+      2
+    ],
+    [
+      3.416,
+      1770464,
+      2
+    ],
+    [
+      3.988,
+      3222140,
+      2
+    ],
+    [
+      4.556,
+      3301212,
+      2
+    ],
+    [
+      5.126,
+      3560804,
+      2
+    ],
+    [
+      5.695,
+      3644576,
+      2
+    ],
+    [
+      6.265,
+      3714760,
+      2
+    ],
+    [
+      6.833,
+      13348,
+      1
+    ]
+  ],
+  "log": "runs/run_semantics_first.resources.log"
+}

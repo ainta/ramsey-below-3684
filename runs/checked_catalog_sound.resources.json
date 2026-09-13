@@ -1,0 +1,65 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/checked_catalog_sound.json",
+    "--modules",
+    "Kernel/CheckedCatalog",
+    "CheckedCatalogSound"
+  ],
+  "elapsed_seconds": 4.594012313056737,
+  "peak_sampled_rss_kib": 3393600,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 240,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13364,
+      1
+    ],
+    [
+      0.571,
+      13372,
+      1
+    ],
+    [
+      1.145,
+      772660,
+      2
+    ],
+    [
+      1.742,
+      809840,
+      2
+    ],
+    [
+      2.315,
+      591660,
+      2
+    ],
+    [
+      2.884,
+      1883308,
+      2
+    ],
+    [
+      3.454,
+      3393600,
+      2
+    ],
+    [
+      4.025,
+      13372,
+      1
+    ]
+  ],
+  "log": "runs/checked_catalog_sound.resources.log"
+}

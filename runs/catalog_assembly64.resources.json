@@ -1,0 +1,69 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/catalog_assembly64.json",
+    "--modules",
+    "CatalogAssembly64"
+  ],
+  "elapsed_seconds": 5.476339865010232,
+  "peak_sampled_rss_kib": 3492592,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 150,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.002,
+      13320,
+      1
+    ],
+    [
+      0.634,
+      772288,
+      2
+    ],
+    [
+      1.242,
+      13336,
+      1
+    ],
+    [
+      1.841,
+      587440,
+      2
+    ],
+    [
+      2.438,
+      1559388,
+      2
+    ],
+    [
+      3.047,
+      2734284,
+      2
+    ],
+    [
+      3.655,
+      3195804,
+      2
+    ],
+    [
+      4.274,
+      3492592,
+      2
+    ],
+    [
+      4.878,
+      0,
+      0
+    ]
+  ],
+  "log": "runs/catalog_assembly64.resources.log"
+}

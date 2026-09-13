@@ -1,0 +1,13 @@
+*.olean
+*.ilean
+*.trace
+*.hash
+*.pyc
+__pycache__/
+.venv/
+.lake/
+lean/Kernel/*/
+certificates/
+dependencies/
+runs/*/
+runs/isolated-full*

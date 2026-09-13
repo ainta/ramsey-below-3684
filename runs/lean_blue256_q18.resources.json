@@ -1,0 +1,58 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    "lean",
+    "+v4.32.1",
+    "lean/BlueBench256Precision18.lean"
+  ],
+  "elapsed_seconds": 4.554553302004933,
+  "peak_sampled_rss_kib": 1036752,
+  "peak_processes": 1,
+  "rss_limit_mib": 2048,
+  "time_limit_seconds": 90,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      146120,
+      1
+    ],
+    [
+      0.572,
+      765860,
+      1
+    ],
+    [
+      1.141,
+      805940,
+      1
+    ],
+    [
+      1.711,
+      838736,
+      1
+    ],
+    [
+      2.283,
+      869504,
+      1
+    ],
+    [
+      2.853,
+      909648,
+      1
+    ],
+    [
+      3.423,
+      1036752,
+      1
+    ],
+    [
+      3.989,
+      0,
+      0
+    ]
+  ],
+  "log": "runs/lean_blue256_q18.resources.log"
+}

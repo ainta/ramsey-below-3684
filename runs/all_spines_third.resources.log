@@ -1,0 +1,31 @@
+BUILD SUPPORT Ramsey3683Bootstrap/AllSpines
+Ramsey3683Bootstrap/AllSpines.lean:39:0: warning: automatically included section variable(s) unused in theorem `Ramsey3683Bootstrap.exp_average_lower`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Ramsey3683Bootstrap/AllSpines.lean:128:31: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Ramsey3683Bootstrap.sum_weighted_commonRedNeighbors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.exp_average_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.MaximumRedClique.all_spines_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.MaximumRedClique.all_spines_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Ramsey3683Bootstrap/AllSpines"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 4.673659227904864,
+  "headline_proved": false
+}

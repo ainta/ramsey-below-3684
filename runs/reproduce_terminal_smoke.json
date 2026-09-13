@@ -1,0 +1,24 @@
+{
+  "status": "PASS_ISOLATED_SELECTED_LOCAL_IMPORT_CLOSURE",
+  "root_module": "TerminalNumeric",
+  "modules": [
+    {
+      "module": "TerminalNumeric",
+      "source_sha256": "58484e4566a6047c60bcc158fbe43d707859c8d8af8e2892b77b17091102308c",
+      "object_sha256": "60c68eed36be30213a1de4e06d9eb13099846c3af037ee91ca8777d69aed8a31",
+      "seconds": 1.8596691880375147,
+      "log": "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/runs/reproduce_terminal_smoke/TerminalNumeric.compile.log"
+    }
+  ],
+  "total_modules": 1,
+  "external_modules": [
+    "Mathlib.Analysis.Complex.Exponential",
+    "Mathlib.Analysis.Real.Sqrt",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.NormNum"
+  ],
+  "external_dependency_builds_reused": true,
+  "existing_local_objects_reused": false,
+  "output_root": "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/runs/reproduce_terminal_smoke",
+  "elapsed_seconds": 2.4470616340404376
+}

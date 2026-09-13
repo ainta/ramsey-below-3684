@@ -1,0 +1,59 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/schedule_growth.json",
+    "--modules",
+    "Ramsey3683Bootstrap/WeightedSchedules"
+  ],
+  "elapsed_seconds": 3.9860818299930543,
+  "peak_sampled_rss_kib": 3578448,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 120,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      13312,
+      1
+    ],
+    [
+      0.572,
+      814780,
+      2
+    ],
+    [
+      1.14,
+      677124,
+      2
+    ],
+    [
+      1.708,
+      2404768,
+      2
+    ],
+    [
+      2.277,
+      3401188,
+      2
+    ],
+    [
+      2.843,
+      3558868,
+      2
+    ],
+    [
+      3.41,
+      3578448,
+      2
+    ]
+  ],
+  "log": "runs/schedule_growth.resources.log"
+}

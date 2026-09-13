@@ -1,0 +1,59 @@
+BUILD SUPPORT Ramsey3683Bootstrap/TerminalTransfer
+Ramsey3683Bootstrap/TerminalTransfer.lean:24:6: warning: Try `simp at hb` instead of `simpa using hb`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Ramsey3683Bootstrap/TerminalTransfer.lean:40:15: error: unsolved goals
+V : Type u
+inst✝² : Fintype V
+inst✝¹ : DecidableEq V
+G : SimpleGraph V
+inst✝ : DecidableRel G.Adj
+Z : Finset V
+hrow : ∀ v ∈ Z, ↑(#(G.neighborFinset v ∩ Z)) + ↑(#(Gᶜ.neighborFinset v ∩ Z)) = ↑(#Z) - 1
+⊢ ↑(#Z) * ↑(#Z) - ↑(#Z) = ↑(#Z) * (↑(#Z) - 1)
+Ramsey3683Bootstrap/TerminalTransfer.lean:69:17: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?a * ?b / ?c
+in the target expression
+  ↑(#(W \ S)) ≤ C * B * s ^ 2 * ((B + s ^ 2 - 1) ^ #S / s ^ #S)
+
+V : Type u
+inst✝² : Fintype V
+inst✝¹ : DecidableEq V
+G : SimpleGraph V
+inst✝ : DecidableRel G.Adj
+Z : Finset V
+k : ℕ
+C B s : ℝ
+hk : 2 ≤ k
+hlarge : 32 * ↑k ^ 3 ≤ ↑(#Z)
+hdense : InternalRedAtLeast G Z (1 / 2)
+hnoRed : ¬hasRedClique G Z k
+hnoBlue : ¬hasBlueClique G Z k
+hC : 0 ≤ C
+hB : 0 ≤ B
+hs : 1 ≤ s
+hD : 1 ≤ (B + s ^ 2 - 1) / s
+hR : ∀ (r : ℕ), 0 < r → r ≤ k → ↑(ramseyNumber r k) ≤ C * B ^ r
+W S : Finset V
+hWZ : W ⊆ Z
+hS : MaximumRedClique G W S
+hSk : #S < k
+hXbig : 4 * ↑k ^ 2 ≤ ↑(#(W \ S))
+hsize : ↑(#Z) ≤ 8 * ↑k * ↑(#(W \ S))
+havg : (↑(#S) / 2 - 1) * ↑(#(W \ S)) ≤ ∑ v ∈ W \ S, ↑(#(G.neighborFinset v ∩ S))
+hk0 : 0 < ↑k
+hX : (W \ S).Nonempty
+ht : ↑(#(W \ S)) * s ^ #S ≤ C * B * s ^ 2 * (B + s ^ 2 - 1) ^ #S
+hs0 : 0 < s
+hp : 0 < s ^ #S
+⊢ ↑(#(W \ S)) ≤ C * B * s ^ 2 * ((B + s ^ 2 - 1) ^ #S / s ^ #S)
+'Ramsey3683Bootstrap.ramsey_terminal' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 50, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 42, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/TerminalTransfer.olean', 'Ramsey3683Bootstrap/TerminalTransfer.lean']' returned non-zero exit status 1.

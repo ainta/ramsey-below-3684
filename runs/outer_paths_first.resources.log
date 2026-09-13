@@ -1,0 +1,49 @@
+BUILD SUPPORT Kernel/OuterGuard
+BUILD SUPPORT Ramsey3683Bootstrap/OuterPaths
+Ramsey3683Bootstrap/OuterPaths.lean:41:21: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  exponent d.N (?x + ?cost * 1000000000000000000)
+in the target expression
+  GridUnconditional d.N (j + 1) (exponent d.N (p.value j + (d.node (p.ref j)).cost * Log18.q))
+
+case succ
+d : Chain.Data
+p : Path
+hF : UniformRamseyExpBound (ProfileCheck.profile d.oldLine d.oldLast)
+hlogs : ∀ (i : ℕ), LogValid (d.log i)
+ha : ∀ i < d.nodeCount, Chain.arithmeticGuard d i = true
+hg : ∀ i < d.nodeCount, Chain.Good d i
+hinit : initialGuard d p = true
+hsteps : ∀ (j : ℕ), p.start ≤ j → j < d.N → stepGuard d p j = true
+hN : 0 < d.N
+hstart : 0 < p.start
+hstartN : p.start < d.N
+hline : p.inputLine ≤ d.oldLast
+hpos : 0 < p.value p.start
+hinput : ((d.oldLine p.inputLine).a * ↑d.N + (d.oldLine p.inputLine).b * ↑p.start) * unit < p.value p.start * Log18.q
+hbase : GridUnconditional d.N p.start (exponent d.N (p.value p.start))
+hband :
+  ∀ {j : ℕ},
+    p.start ≤ j →
+      j < d.N →
+        GridUnconditional d.N j (exponent d.N (p.value j)) →
+          GridBand d.N j (exponent d.N (p.value j)) (scalar (d.node (p.ref j)).cost)
+j✝ j : ℕ
+hj : p.start ≤ j
+ih : j ≤ d.N → GridUnconditional d.N j (exponent d.N (p.value j))
+hjn : j + 1 ≤ d.N
+hs :
+  p.ref j < d.nodeCount ∧
+    (d.node (p.ref j)).row = j + 1 ∧
+      0 < p.value j ∧
+        (d.node (p.ref j)).value < p.value j ∧ p.value (j + 1) = p.value j + (d.node (p.ref j)).cost * Log18.q
+⊢ GridUnconditional d.N (j + 1) (exponent d.N (p.value j + (d.node (p.ref j)).cost * Log18.q))
+'Compact3684.Outer.pathGuard_sound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 55, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 47, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/OuterPaths.olean', 'Ramsey3683Bootstrap/OuterPaths.lean']' returned non-zero exit status 1.

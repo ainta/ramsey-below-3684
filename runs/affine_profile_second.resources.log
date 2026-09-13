@@ -1,0 +1,46 @@
+BUILD SUPPORT Ramsey3683Bootstrap/GridClosure
+Ramsey3683Bootstrap/GridClosure.lean:35:47: warning: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Ramsey3683Bootstrap/GridClosure.lean:185:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Ramsey3683Bootstrap.GridProfile.uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.GridProfile.of_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.GridCandidate.path' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Ramsey3683Bootstrap.affineProfile_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Ramsey3683Bootstrap/Certificate
+Ramsey3683Bootstrap/Certificate.lean:48:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/Certificate.lean:48:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/Certificate.lean:87:10: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/Certificate.lean:103:10: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Ramsey3683Bootstrap/Certificate.lean:87:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Ramsey3683Bootstrap/Certificate.lean:103:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'Compact3684.Certificate.checked_seed_candidate' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Kernel/Codec
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Ramsey3683Bootstrap/GridClosure",
+    "Ramsey3683Bootstrap/Certificate",
+    "Kernel/Codec"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 8.545817348058335,
+  "headline_proved": false
+}

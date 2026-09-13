@@ -1,0 +1,53 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "reproduce_lean.py",
+    "--module",
+    "TerminalNumeric",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--dependency-overlay",
+    "dependencies/upstream_overlay",
+    "--output-root",
+    "runs/reproduce_terminal_smoke",
+    "--report",
+    "runs/reproduce_terminal_smoke.json"
+  ],
+  "elapsed_seconds": 2.8755657089641318,
+  "peak_sampled_rss_kib": 2114956,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.004,
+      17596,
+      1
+    ],
+    [
+      0.582,
+      17620,
+      1
+    ],
+    [
+      1.152,
+      1097540,
+      2
+    ],
+    [
+      1.722,
+      2035196,
+      2
+    ],
+    [
+      2.293,
+      2114956,
+      2
+    ]
+  ],
+  "log": "runs/reproduce_terminal_smoke.resources.log"
+}

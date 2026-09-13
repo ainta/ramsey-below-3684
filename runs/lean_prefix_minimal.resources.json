@@ -1,0 +1,39 @@
+{
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/lean/PrefixRange.lean"
+  ],
+  "elapsed_seconds": 2.2816907729720697,
+  "peak_sampled_rss_kib": 1654708,
+  "peak_processes": 2,
+  "rss_limit_mib": 2048,
+  "time_limit_seconds": 120,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.001,
+      105476,
+      1
+    ],
+    [
+      0.574,
+      801452,
+      1
+    ],
+    [
+      1.144,
+      1654708,
+      2
+    ],
+    [
+      1.712,
+      0,
+      0
+    ]
+  ],
+  "log": "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/runs/lean_prefix_minimal.resources.log"
+}

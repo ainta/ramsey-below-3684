@@ -1,0 +1,59 @@
+{
+  "status": "PASS_PROCESS",
+  "returncode": 0,
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "build_support.py",
+    "--dependency-project",
+    "/home/ainta/manuscripts/ramsey/claude_revision/lean",
+    "--report",
+    "runs/initial_tangent_kernel64.json",
+    "--modules",
+    "Kernel/InitialTangentBench/C0000"
+  ],
+  "elapsed_seconds": 4.196229660999961,
+  "peak_sampled_rss_kib": 1121848,
+  "peak_processes": 2,
+  "rss_limit_mib": 4096,
+  "time_limit_seconds": 180,
+  "sample_period_seconds": 0.5,
+  "samples": [
+    [
+      0.004,
+      13372,
+      1
+    ],
+    [
+      0.592,
+      13372,
+      1
+    ],
+    [
+      1.192,
+      791660,
+      2
+    ],
+    [
+      1.798,
+      902424,
+      2
+    ],
+    [
+      2.397,
+      1010624,
+      2
+    ],
+    [
+      2.998,
+      1109548,
+      2
+    ],
+    [
+      3.597,
+      1121848,
+      2
+    ]
+  ],
+  "log": "runs/initial_tangent_kernel64.resources.log"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS_REGRESSION_NOT_FORMAL_PROOF",
+  "checks": 87,
+  "random_dags": 20,
+  "random_records": 9600,
+  "seed_range": [
+    0,
+    19
+  ],
+  "method": "Byte-identical outputs against expanded exact checker, plus malformed-input rejection"
+}

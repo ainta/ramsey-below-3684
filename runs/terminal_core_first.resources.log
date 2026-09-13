@@ -1,0 +1,27 @@
+BUILD SUPPORT Ramsey3683Bootstrap/TerminalCore
+Ramsey3683Bootstrap/TerminalCore.lean:17:37: error(lean.unknownIdentifier): Unknown constant `Finset.disjoint_sdiff_self_right`
+Ramsey3683Bootstrap/TerminalCore.lean:43:5: warning: Variable name `hp` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Ramsey3683Bootstrap/TerminalCore.lean:90:74: error: No goals to be solved
+Ramsey3683Bootstrap/TerminalCore.lean:92:40: error: not a positivity goal
+Ramsey3683Bootstrap/TerminalCore.lean:107:13: error: Application type mismatch: The argument
+  hsize
+has type
+  (1 / 2 - p) * ↑(#Z) ^ 2 - 1 / 2 * ↑(#Z) ≤ (1 - p) * ↑(#W) ^ 2
+but is expected to have type
+  (1 / 2 - p) * ↑(#Z) ^ 2 - ↑(#Z) / 2 ≤ (1 - p) * ↑(#W) ^ 2
+in the application
+  core_size_algebra ?m.476 hn ?m.482 ?m.483 hp hpdef hsize
+'Ramsey3683Bootstrap.exists_terminal_core' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+Traceback (most recent call last):
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 50, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/ainta/manuscripts/ramsey/compact_3684.NkkeIa/build_support.py", line 42, in main
+    subprocess.run(['lean','+v4.32.1','-o',name+'.olean',name+'.lean'],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['lean', '+v4.32.1', '-o', 'Ramsey3683Bootstrap/TerminalCore.olean', 'Ramsey3683Bootstrap/TerminalCore.lean']' returned non-zero exit status 1.

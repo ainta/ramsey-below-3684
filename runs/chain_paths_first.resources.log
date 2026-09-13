@@ -1,0 +1,19 @@
+BUILD SUPPORT Ramsey3683Bootstrap/RunSemantics
+Ramsey3683Bootstrap/RunSemantics.lean:46:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Compact3684.Certificate.continuation_of_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+BUILD SUPPORT Ramsey3683Bootstrap/ChainPaths
+'Compact3684.Chain.path_owners' depends on axioms: [propext, Quot.sound]
+'Compact3684.Chain.pathGuard_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+{
+  "status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM",
+  "modules": [
+    "Ramsey3683Bootstrap/RunSemantics",
+    "Ramsey3683Bootstrap/ChainPaths"
+  ],
+  "lean": "4.32.1",
+  "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "elapsed_seconds": 8.10005781892687,
+  "headline_proved": false
+}
