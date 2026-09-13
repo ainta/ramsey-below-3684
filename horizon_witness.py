@@ -32,6 +32,16 @@ def rif(f):
     return I.ri(f.numerator, f.denominator)
 
 
+def dec_floor(v, digits=12):
+    n = v * 10**digits // Q
+    return f'{n // 10**digits}.{n % 10**digits:0{digits}d}'
+
+
+def dec_ceil(v, digits=12):
+    n = I.ceil_div(v * 10**digits, Q)
+    return f'{n // 10**digits}.{n % 10**digits:0{digits}d}'
+
+
 def exp_neg(x):
     """e^{-x} for an interval x with 0 <= x <= 8, via eighth roots."""
     lo, hi = x
@@ -78,10 +88,10 @@ def witness(c_rel_interval, label):
           u[0] > rif(BOUND_U)[1] and
           u[0] - v[1] > rif(BOUND_GAP)[1])
     return ok, dict(reading=label,
-                    A=I.fmt(a[1], digits=12), B=I.fmt(b[1], digits=12),
-                    A_plus_t0_B_upper=I.fmt(v[1], digits=12),
-                    U_t0_lower=I.fmt(u[0], digits=12),
-                    gap_lower=I.fmt(u[0] - v[1], digits=12))
+                    A_upper=dec_ceil(a[1]), B_upper=dec_ceil(b[1]),
+                    A_plus_t0_B_upper=dec_ceil(v[1]),
+                    U_t0_lower=dec_floor(u[0]),
+                    gap_lower=dec_floor(u[0] - v[1]))
 
 
 def main():
