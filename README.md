@@ -1,5 +1,7 @@
 # Ramsey below 3.684: complete kernel-checked proof
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22737677.svg)](https://doi.org/10.5281/zenodo.22737677)
+
 **Complete:** Lean proves that, for all sufficiently large integers k,
 
     R(k,k) ≤ (73679/20000)^k = 3.68395^k,     3.68395 < 3.684.
