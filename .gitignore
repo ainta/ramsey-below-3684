@@ -11,3 +11,6 @@ certificates/
 dependencies/
 runs/*/
 runs/isolated-full*
+dist/
+.source-install-*/
+runs/rebuild-*

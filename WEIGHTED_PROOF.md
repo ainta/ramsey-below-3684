@@ -53,22 +53,23 @@ The final theorem's printed axioms are exactly:
 No sorry, extra axiom, native_decide, external verifier acceptance, or
 assumed certificate validity occurs in that theorem.
 
-The dependency environment reuses read-only build products from
-`/home/ainta/manuscripts/ramsey/claude_revision/lean`. Its BookInduction source
-matches the original bootstrap repository at
+The original weighted-theorem check reused matching dependency builds.
+Its BookInduction source matched the original bootstrap repository at
 `e53b8cf11d064daae70372b3a93b2556a5fee926` byte for byte:
 
     59af07cd79b2f11c657725c8f24bdfbd9e1d06eefbd1987b51b76a5a3574c7c2
 
 Mathlib is pinned at `520045ab14e26149ee970e2e617ca04b09bde5d6`.
-`runs/support_weighted_complete.resources.json` measures the expanded build
-with existing dependencies. Peak RSS is sampled, not an exact high-water
-measurement or a future guarantee.
+[`runs/support_weighted_complete.resources.json`](runs/support_weighted_complete.resources.json)
+records that supporting-library build and its sampled RAM usage.
 
-## Not a proof of the numerical headline
+## Connection to the final theorem
 
-This establishes the manuscript's weighted graph ingredient. It does not
-prove that the 1,695,911-record numerical chain is a Ramsey bound. Uniform
-continuation/profile closure, checker soundness with complete kernel
-execution, and terminal graph transfer remain unconnected. The full
-below-3.684 Lean theorem and its end-to-end runtime/RAM remain unestablished.
+The weighted theorem is now connected to uniform continuation, checker
+soundness, all eight concrete kernel-checked rounds, and terminal graph
+transfer. The resulting unconditional theorem is
+[`Compact3684.ramsey_le_368395`](lean/RamseyBelow3684.lean).
+
+The supporting-library report above records an earlier milestone. The
+completed end-to-end proof and its measurements are documented in
+[the verification record](docs/VERIFICATION.md) and [STATUS.json](STATUS.json).
