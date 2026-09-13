@@ -6,8 +6,8 @@ number. The final theorem is
 [`Compact3684.ramsey_le_368395`](../lean/RamseyBelow3684.lean).
 
 To keep the computation manageable, we shared **351,607 logarithm enclosures**,
-compressed long paths into **41,793,102 runs** (checked as **41,794,061**
-split batches), and checked bounded chunks in Lean. Large run batches use four 1,024-check declarations joined by a proved
+compressed long paths into **41,793,102 runs** (subdivided into
+**41,794,061** runs for checking), and checked bounded chunks in Lean. Large run batches use four 1,024-check declarations joined by a proved
 range lemma. The graph and checker-soundness proofs are reused across all rounds.
 
 The mathematical route is explained in [PROOF_ROUTE.md](../PROOF_ROUTE.md),
@@ -55,9 +55,10 @@ The main records are:
 - [pinned_final_theorem.log](../runs/pinned_final_theorem.log): final axiom
   inventory. Note: this historical log ends with a JSON footer from the
   support-build reporter (`"status": "PASS_SUPPORT_LIBRARY_NOT_RAMSEY_THEOREM"`,
-  `"headline_proved": false`); those fields describe that reporter's own scope
-  and predate the final assembly. The printed theorem and axiom list above the
-  footer, and the authoritative status in `pinned_final.json`, are the record.
+  `"headline_proved": false`); the reporter hard-codes these labels (see
+  `build_support.py`), and they describe its own scope, not the theorem. The
+  printed theorem and axiom list above the footer, and the authoritative status
+  in `pinned_final.json`, are the record.
 - [dependency_provenance.json](../runs/dependency_provenance.json): dependency audit.
 - [tool_session_recovery.json](../runs/tool_session_recovery.json): supervision recovery.
 
