@@ -13,6 +13,8 @@ It connects the initial Ramsey bound, eight certified bootstrap rounds,
 and the terminal graph argument. The full proof has been checked by Lean,
 using only `propext`, `Classical.choice`, and `Quot.sound`.
 
+[Paper (PDF)](paper/main.pdf) · [LaTeX source](paper/main.tex)
+
 ## Build
 
 The repository contains the reusable proofs and build tools. The source

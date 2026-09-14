@@ -1,4 +1,4 @@
-"""Rational-interval witness for the support-condition failure (paper, App. D).
+"""Rational-interval witness for the 3.6961 support-condition failure.
 
 Certifies, with outward rounding only, the two displayed bounds of the
 3.6961 witness proposition: at t0 = 0.00229,

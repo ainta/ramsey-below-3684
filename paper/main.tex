@@ -1,0 +1,1423 @@
+% arXiv version. Formatted like the author's multicolour Ramsey paper
+% (article 11pt, amsthm, hyperref); no journal class, volume or DOI.
+% The Lean artifact (compact_3684) is complete: Compact3684.ramsey_le_368395,
+% axioms propext/Classical.choice/Quot.sound, pinned-source recheck passed.
+% Cited release v1.2 (commit f4898b4, DOI 10.5281/zenodo.22738802);
+% v1.0 holds the numerical data assets; concept DOI 10.5281/zenodo.22737676.
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage[nameinlink,capitalise,noabbrev]{cleveref}
+\usepackage{xurl}
+\hypersetup{pdftitle={An Improved Upper Bound for Diagonal Ramsey Numbers},pdfauthor={Sunghyeon Jo}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\RR}{\mathcal R}
+\newcommand{\D}{\mathsf D}
+\newcommand{\bb}{b}
+\newcommand{\Gam}{\Gamma}
+\newcommand{\ceil}[1]{\left\lceil #1\right\rceil}
+\newcommand{\floor}[1]{\left\lfloor #1\right\rfloor}
+\numberwithin{equation}{section}
+\title{An Improved Upper Bound for Diagonal Ramsey Numbers}
+\author{%
+ Sunghyeon Jo\\
+ {\small Georgia Institute of Technology and QED Audit}\\
+ {\small\texttt{sjo65@gatech.edu}}
+}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We prove that $R(k,k)\le 3.68395^k$ for all sufficiently large $k$.
+The proof combines a weighted extension of the candidate lemma of
+Gupta, Ndiaye, Norin and Wei with a summation over subsets of a
+maximum red clique.
+The complete proof has been formally verified in Lean~4.
+\end{abstract}
+
+\section{Introduction}
+
+The Ramsey number $R(k,\ell)$ is the least integer $N$ such that every
+red--blue colouring of the edges of $K_N$ contains a red $K_k$ or a blue
+$K_\ell$. The classical bound of Erd\H{o}s and Szekeres~\cite{ES} is
+$R(k,\ell)\le\binom{k+\ell-2}{k-1}$. In particular,
+$R(k,k)\le 4^{k+o(k)}$. Successive improvements by
+Thomason~\cite{Thomason}, Conlon~\cite{Conlon} and Sah~\cite{Sah}
+improved the subexponential factor, but left the exponential base
+unchanged.
+
+Campos, Griffiths, Morris and Sahasrabudhe~\cite{CGMS} proved that
+$R(k,k)\le(4-\varepsilon)^k$ for some absolute constant
+$\varepsilon>0$. Their proof constructs large monochromatic books.
+A red book consists of a red clique $S$ and a disjoint set $T$, with
+all edges between $S$ and $T$ red; blue books are defined similarly.
+Off-diagonal Ramsey bounds then complete a monochromatic clique.
+Gupta, Ndiaye, Norin and Wei~\cite{GNNW} refined this argument, obtaining
+$R(k,k)\le(4e^{-0.14/e})^{k+o(k)}$, where
+$4e^{-0.14/e}=3.7992\ldots$, together with an explicit off-diagonal
+bound. Further iterations of their optimization have been reported
+numerically: an additional iteration with base $3.78233$, recorded as
+unverified in~\cite[Remark~17]{GNNW}, and an eight-round iteration
+with base $3.776$ in the thesis of Ndiaye~\cite{NdiayeThesis}.
+
+Neisler, Shin and Sukhatankar~\cite{NSS} then made the bootstrap
+self-consistent: the bound being proved itself defines the admissible
+parameters of every round, so the whole iteration of these rules
+collapses to a single system of inequalities. Optimizing
+rate functions within that system, they proved
+$R(k,k)\le3.769^{k+o(k)}$, with a kernel-checked Lean proof of the
+decimal bound $3.7690^k$.
+
+Our proof starts from the same off-diagonal estimate of~\cite{GNNW}.
+We introduce a weight $\theta$ into the candidate lemma and extend
+it by induction using density estimates established in earlier stages.
+We prove the following.
+
+\begin{theorem}\label{thm:main}
+For all sufficiently large positive integers $k$,
+\[
+ R(k,k)\le 3.68395^k.
+\]
+\end{theorem}
+
+The numerical inequalities and the arguments connecting them to
+Theorem~\ref{thm:main} have been formalized in the Lean proof
+assistant~\cite{Lean4}. The proof depends only on the axioms
+\textup{\texttt{propext}}, \textup{\texttt{Classical.choice}} and
+\textup{\texttt{Quot.sound}}. The complete development and its
+verification records are available in the accompanying
+repository~\cite{Artifact}. It builds on the
+formalization~\cite{GNNWLean} of the Ramsey definitions and of the
+input estimate of~\cite{GNNW}, in the copy distributed
+with~\cite{NSS}. Theorem~\ref{thm:main} improves the strongest
+previously established upper bound for $R(k,k)$, the kernel-checked
+$3.7690^k$ of~\cite{NSS}.
+
+Numerical claims with bases $3.7296$ and $3.6961$ appear in version~1
+of the HorizonMath benchmark~\cite{Horizon,HorizonCode}.
+Appendix~\ref{app:horizon} shows that the released checks do not
+establish all hypotheses of the density theorem on which these
+claims rely. This concerns their justification, not the possibility
+of proving either bound.
+
+\subsection{Outline of the proof}
+
+We first explain how to strengthen the candidate lemma. Consider
+disjoint sets $X$ and $Y$ with many red edges between them. Following
+\cite{GNNW}, we seek one of three outcomes: a red $K_k$ in $X\cup Y$,
+a blue $K_t$ in $X$, or a blue $K_\ell$ in $Y$. We prove a weighted
+version of this lemma, with a size condition on
+$|X|^\theta|Y|$ rather than $|X||Y|$. The parameter $\theta>0$ allows
+the sizes of the two sets to contribute differently to this condition.
+
+The next step is to extend this estimate to larger values of $t$.
+First discard the vertices of $X$ with few red neighbours in $Y$.
+Every remaining vertex has a prescribed minimum red degree into $Y$,
+and this remains true when $X$ is replaced by any of its subsets. We
+now keep $Y$ fixed and induct on $t$. If $X$ has sufficiently large
+red density, a previously proved density bound gives a red $K_k$ or
+a blue $K_t$. Otherwise, some vertex has a large blue neighbourhood
+in $X$. The induction applies to that neighbourhood together with $Y$;
+a blue $K_{t-1}$ in the neighbourhood extends by the chosen vertex.
+Thus the initial estimate can use the size of $Y$ without losing its
+contribution during the induction.
+
+The density bound used in this argument may itself have been
+proved by an earlier such induction. Repeated application gives an
+improved off-diagonal bound. In exponential coordinates, the size
+lost at a blue-neighbourhood step becomes a lower bound on the
+derivative of an exponent function. The strict inequalities in
+Theorem~\ref{thm:continuation} allow us to pass from
+these functions to integer clique sizes, including where successive
+pieces of a function meet.
+
+It remains to turn the off-diagonal bound into a diagonal one. Choose
+a colour of density at least $1/2$, say red, and pass to a subgraph of
+almost that minimum red degree. Let $S$ be a largest red clique. For
+a subset $A\subseteq S$, the common red neighbourhood of $A$ cannot
+contain a red clique of order greater than $|S|-|A|$, since $S$ is
+largest. When the off-diagonal bound has an affine exponent, these
+neighbourhood bounds can be summed over all subsets $A$ at once, with
+a weight geometric in $|A|$; convexity bounds the same sum from below
+in terms of the order of the graph. The same set $S$ controls both
+estimates; we need not know $|S|$ in advance.
+
+All logarithms are natural. To state the resulting inequality, put
+$\Gam=\limsup_{k\to\infty}k^{-1}\log R(k,k)$. If $a\ge0$, $d>\log2$, and
+\begin{equation}\label{eq:intro-affine}
+ \log R(k,\ell)\le ak+d\ell+o(k)
+\end{equation}
+uniformly for $1\le\ell\le k$, then
+\[
+ \Gam\le a+\log2+\tfrac12\log(e^d-1).
+\]
+The numerical application verifies the affine
+hypothesis~\eqref{eq:intro-affine} with $a=0.544$ and $d=0.7622$,
+proved in Proposition~\ref{prop:source}.
+
+We obtain the off-diagonal estimate by iterating the density bounds,
+with parameters chosen by numerical optimization. The resulting
+inequalities are verified by exact arithmetic over entire parameter
+intervals and for both orders of the Ramsey targets.
+
+In Section~\ref{sec:completion} we prove the maximum-clique argument,
+which applies to any suitable off-diagonal bound.
+Sections~\ref{sec:weighted} and~\ref{sec:continuation} give the weighted
+candidate estimate and the induction that extends it, and in
+Section~\ref{sec:certificate} we carry out the construction and complete
+the proof of Theorem~\ref{thm:main}. Section~\ref{sec:lean} states the
+formal result and describes its verification.
+Appendix~\ref{app:continuum} contains the interval estimates, and
+Appendix~\ref{app:data} describes the numerical data and their verification.
+Appendix~\ref{app:horizon}, which is independent of our proof,
+examines the HorizonMath claims~\cite{Horizon,HorizonCode}.
+
+\section{From off-diagonal to diagonal bounds}\label{sec:completion}
+
+We begin with the step that converts an off-diagonal bound into a
+diagonal one. It is independent of the construction in the later
+sections.
+
+We work with red--blue colourings of complete graphs, identifying
+vertex subsets with their induced subgraphs. We write $N_R(v)$ and
+$N_B(v)$ for the red and blue neighbourhoods of a vertex $v$.
+For disjoint vertex sets $X,Y$, let $e_R(X,Y)$ count the red edges
+between them, and put $d_R(X,Y)=e_R(X,Y)/(|X||Y|)$ when both sets
+are nonempty, with $d_R(X,Y)=0$ otherwise. For a graph $G$, let
+$e_R(G)$ count its red edges and let $\omega_R(G)$ be its red clique
+number, with $\omega_R(\emptyset)=0$. For nonempty $G$, write
+$\delta_R(G)$ for its minimum red degree, and for $|G|\ge2$ put
+$d_R(G)=e_R(G)/\binom{|G|}{2}$.
+
+\begin{definition}\label{def:profile}
+We call a function $E:[0,1]\to\mathbb R_{\ge0}$ a \emph{valid upper profile} if, for every $\varepsilon>0$ and all sufficiently large $k$,
+\[
+ \log R(k,\ell)\le k\bigl(E(\ell/k)+\varepsilon\bigr)
+ \qquad(1\le\ell\le k).
+\]
+A profile on a subinterval asserts the same uniform bound for ratios
+in that subinterval.
+\end{definition}
+
+We first pass to a subgraph of large minimum red degree.
+
+\begin{lemma}\label{lem:core}
+Let $0<p<1$. Every red--blue complete graph $G$ of order $n\ge1$ has a nonempty induced subgraph $W$ with
+\[
+ \delta_R(W)\ge p(|W|-1),\qquad
+ |W|\ge\frac{2e_R(G)}{n}-pn.
+\]
+\end{lemma}
+\begin{proof}
+Among the nonempty vertex subsets, choose $W$ maximizing
+$e_R(W)-p|W|^2/2$. If $|W|\ge2$ and $v\in W$, comparing $W$ with
+$W\setminus\{v\}$ gives
+$|N_R(v)\cap W|\ge p(|W|-\tfrac12)\ge p(|W|-1)$; for $|W|=1$ the degree
+condition is vacuous. Comparing $W$ with the whole vertex set gives
+$e_R(W)-p|W|^2/2\ge e_R(G)-pn^2/2$, and $e_R(W)\le n|W|/2$, which
+rearranges to the size bound.
+\end{proof}
+
+The next observation concerns the common neighbourhoods of the subsets
+of a largest red clique. The choice of a largest clique bounds the size
+of a red clique among those neighbours, and a weighted count over all
+subsets replaces any selection of a single subset.
+
+\begin{lemma}\label{lem:spines}
+Let $S$ be a red clique of maximum size in a red--blue complete graph, with $|S|=M$, and let $X$ be disjoint from $S$. For $A\subseteq S$, write $X_A=\bigcap_{a\in A}N_R(a)\cap X$, with $X_\emptyset=X$. Then
+$\omega_R(X_A)\le M-|A|$, and for every $z\ge0$,
+\[
+ \sum_{A\subseteq S}z^{|A|}|X_A|
+ =\sum_{x\in X}(1+z)^{|N_R(x)\cap S|}.
+\]
+\end{lemma}
+\begin{proof}
+A red clique of order $M-|A|+1$ in any $X_A$ would join $A$ to form a red clique larger than $S$. For the identity, both sides count each pair $(x,A)$ with $x\in X$ and $A\subseteq N_R(x)\cap S$ with weight $z^{|A|}$; the right side follows by the binomial theorem.
+\end{proof}
+
+We can now convert an affine off-diagonal estimate into a diagonal one.
+
+\begin{theorem}\label{thm:transfer}
+Let $a\ge0$ and $d>\log2$, and suppose that the affine function
+$t\mapsto a+dt$ is a valid upper profile on $(0,1]$. Then
+\[
+ \Gam\le a+\log2+\tfrac12\log(e^d-1).
+\]
+\end{theorem}
+\begin{proof}
+Fix $g>a+\log2+\tfrac12\log(e^d-1)$ and put
+$\varepsilon=\tfrac12\{g-a-\log2-\tfrac12\log(e^d-1)\}$. It suffices to
+prove that, for all sufficiently large $k$, every red--blue complete
+graph of order at least $e^{gk}$ contains a monochromatic $K_k$. The
+profile hypothesis and Ramsey symmetry give, for all sufficiently
+large $k$,
+\begin{equation}\label{eq:affine-input}
+ R(\ell,k)=R(k,\ell)\le e^{(a+\varepsilon)k+d\ell}
+ \qquad(1\le\ell\le k).
+\end{equation}
+
+Suppose, for such a $k$, some red--blue complete graph $G$ of order
+$N\ge e^{gk}$ contains no monochromatic $K_k$. Since $g>\log2>0$, we
+may assume $k\ge2$ and $N\ge32k^3$. After exchanging the colours if
+necessary, the red density of $G$ is at least $1/2$, so
+$2e_R(G)/N\ge(N-1)/2$. Apply Lemma~\ref{lem:core} with
+$p=\tfrac12-\tfrac1{2k}$: it provides a subgraph $W$ with
+\[
+ \delta_R(W)\ge p(|W|-1),\qquad
+ |W|\ge\frac N{2k}-\frac12\ge\frac N{4k}.
+\]
+
+Let $S$ be a red clique of maximum size in $W$, and put $M=|S|$ and
+$X=W\setminus S$. Then $1\le M\le k-1$ and
+$|X|\ge N/(4k)-k\ge N/(8k)\ge4k^2$. Each vertex of $S$ has at least
+$p(|W|-1)-(M-1)\ge p(|X|-1)-M$ red neighbours in $X$. Summing over $S$
+and averaging over $X$,
+\[
+ \frac1{|X|}\sum_{x\in X}|N_R(x)\cap S|
+ \ge M\Bigl\{p-\frac{p+M}{|X|}\Bigr\}
+ \ge Mp-\frac12\ge\frac M2-1,
+\]
+where the middle step uses $M\le k$ and $|X|\ge4k^2$, and the last
+uses $Mp\ge M/2-\tfrac12$.
+
+Put $z=e^d-2$, which is positive because $d>\log2$. Since $X_A$
+contains no blue $K_k$ and $\omega_R(X_A)\le M-|A|$ by
+Lemma~\ref{lem:spines}, we have $|X_A|<R(M-|A|+1,k)$, and
+$M-|A|+1\le k$. Hence, by~\eqref{eq:affine-input},
+\[
+ \sum_{A\subseteq S}z^{|A|}|X_A|
+ \le e^{(a+\varepsilon)k+d}\sum_{j=0}^M\binom Mj z^je^{d(M-j)}
+ =e^{(a+\varepsilon)k+d}\bigl\{2(e^d-1)\bigr\}^M.
+\]
+On the other hand, $u\mapsto(1+z)^u$ is convex and $1+z=e^d-1>1$, so
+the identity of Lemma~\ref{lem:spines} and the mean degree into $S$
+give
+\[
+ \sum_{A\subseteq S}z^{|A|}|X_A|
+ =\sum_{x\in X}(e^d-1)^{|N_R(x)\cap S|}
+ \ge|X|(e^d-1)^{M/2-1}.
+\]
+Comparing the two displays,
+\[
+ |X|\le e^{(a+\varepsilon)k+d}(e^d-1)
+ \bigl(2\sqrt{e^d-1}\bigr)^{M}
+ \le e^{(a+\varepsilon)k+d}(e^d-1)\bigl(2\sqrt{e^d-1}\bigr)^{k},
+\]
+because $2\sqrt{e^d-1}>2$ and $M\le k$. Consequently
+\[
+ e^{gk}\le N\le8k|X|
+ \le8ke^d(e^d-1)\,
+ e^{k\{a+\varepsilon+\log2+\frac12\log(e^d-1)\}}
+ =8ke^d(e^d-1)\,e^{(g-\varepsilon)k},
+\]
+which is a contradiction for all sufficiently large $k$. Therefore
+$R(k,k)\le\ceil{e^{gk}}$ for all sufficiently large $k$, and $\Gam\le g$.
+Let $g$ decrease to the stated value.
+\end{proof}
+
+\begin{remark}\label{rem:local}
+Only the affine form of the off-diagonal estimate enters. A bound for
+a general upper profile follows by applying the theorem to any affine
+majorant, and, for a concave profile, the best choice is a supporting
+line. In Section~\ref{sec:certificate}, the polygonal
+profile is dominated by an explicitly chosen affine bound.
+\end{remark}
+
+\section{A weighted form of the candidate lemma}\label{sec:weighted}
+
+We now turn to the construction of the off-diagonal bound. The starting
+point is the candidate lemma of Gupta, Ndiaye, Norin and Wei~\cite{GNNW}.
+We allow the sizes of the two candidate sets to enter with different
+weights.
+
+\begin{definition}\label{def:candidate}
+Following~\cite{GNNW}, a \emph{candidate} is a pair $(X,Y)$ of disjoint nonempty vertex sets. It is \emph{$(k,\ell,t)$-good} if the colouring contains a red $K_k$ in $X\cup Y$, a blue $K_t$ in $X$, or a blue $K_\ell$ in $Y$.
+\end{definition}
+
+\begin{definition}\label{def:region}
+The \emph{Ramsey region} $\RR$ is the closure, relative to $(0,1)^2$,
+of the pairs $(x,y)$ for which $R(k,\ell)\le x^{-k}y^{-\ell}$ whenever
+$k+\ell$ is sufficiently large. Following~\cite{GNNW}, write $\RR_*$
+for its interior. For a valid upper profile $E$ and $A>0$, define
+\[
+ \bb_E(A)=\max\left\{0,
+ \sup_{0<t\le1}\frac{E(t)-A}{t},
+ \sup_{0<t\le1}\bigl(E(t)-tA\bigr)\right\}.
+\]
+\end{definition}
+
+\begin{lemma}\label{lem:support}
+If $A,B>0$ and $B\ge\bb_E(A)$, then $(e^{-A},e^{-B})\in\RR$. For every $\delta>0$, the point $(e^{-A-\delta},e^{-B-\delta})$ is in $\RR_*$.
+\end{lemma}
+\begin{proof}
+The hypothesis gives the two \emph{support inequalities}
+$A+tB\ge E(t)$ and $B+tA\ge E(t)$ for $0<t\le1$.
+Use the first when $\ell\le k$ and the second, with Ramsey symmetry,
+when $k\le\ell$. The uniform error is absorbed by arbitrarily small
+positive additions to $A,B$. A further addition gives an interior point.
+\end{proof}
+
+\begin{theorem}\label{thm:weighted}
+Fix $\theta>0$ and $x,y,\mu,p\in(0,1)$ satisfying
+\[
+ (x,y)\in\RR_*,\qquad
+ x<(1-\mu)^\theta p^{1/(1-\mu)}.
+\]
+There is $L_0$ such that, for all positive integers $k,\ell,t$ with $\ell\ge L_0$, every candidate satisfying
+\[
+ d_R(X,Y)\ge p,\qquad
+ |X|^\theta|Y|\ge x^{-k}y^{-\ell}\mu^{-\theta t}
+\]
+is $(k,\ell,t)$-good.
+\end{theorem}
+
+When $\theta=1$, this is the candidate lemma of~\cite[Lemma 12]{GNNW}.
+The proof follows their density-excess induction, with the size factor
+$|X||Y|$ replaced by $|X|^\theta|Y|$.
+
+For the application, it is convenient to write $x=e^{-A}$ and $y=e^{-B}$.
+The strict density condition becomes
+\begin{equation}\label{eq:weighted-density}
+ (1-\mu)\{A+\theta\log(1-\mu)\}+\log p>0.
+\end{equation}
+If $\ell/k\to\lambda$, $t/k\to\alpha$, and
+$|X|=e^{ku+o(k)}$, $|Y|=e^{kv+o(k)}$, a sufficient strict size
+condition is
+\begin{equation}\label{eq:weighted-budget}
+ \theta u+v>A+\lambda B-\theta\alpha\log\mu.
+\end{equation}
+Both inequalities must be checked with the same value of $\theta$.
+
+\begin{corollary}\label{cor:weighted-density}
+Under the hypotheses of Theorem~\ref{thm:weighted}, fix $\lambda>0$ and let
+\[
+ z=\frac{A+\lambda B-\theta\lambda\log\mu}{1+\theta}.
+\]
+For every $g>z$ and all sufficiently large $k$, a graph on at least $e^{gk}$ vertices with red density at least $p$ contains a red $K_k$ or a blue $K_{\ceil{\lambda k}}$.
+\end{corollary}
+\begin{proof}
+A uniformly chosen balanced partition has expected red cross-density
+equal to the red density of the graph. Hence some balanced partition
+$(X,Y)$ has $d_R(X,Y)\ge p$. Each part has order at least $e^{gk-O(1)}$, so
+the size hypothesis of Theorem~\ref{thm:weighted} holds with
+$t=\ell=\ceil{\lambda k}$ for sufficiently large $k$. Any of its three
+conclusions gives the required clique.
+\end{proof}
+
+We now prove Theorem~\ref{thm:weighted}. The elementary Ramsey recursion
+\[
+ R(k,m)\le R(k-1,m)+R(k,m-1)
+\]
+follows by splitting the neighbours of one vertex according to their colour. Induction with $R(1,m)=R(k,1)=1$ therefore gives
+\begin{equation}\label{eq:binomial-Ramsey}
+ R(k,m)\le\binom{k+m-2}{m-1}.
+\end{equation}
+
+We also recall the averaging inequality of~\cite[Lemma~7]{GNNW}.
+
+\begin{lemma}\label{lem:averaging}
+For disjoint nonempty $X,Y$,
+\[
+ \sum_{v\in X}d_R(X,N_R(v)\cap Y)\,|N_R(v)\cap Y|
+ \ge d_R(X,Y)e_R(X,Y),
+\]
+where an empty neighbourhood contributes zero.
+\end{lemma}
+\begin{proof}
+Write $d_y=|N_R(y)\cap X|$. The left side is $|X|^{-1}\sum_{y\in Y}d_y^2$, which is at least $|X|^{-1}|Y|^{-1}(\sum_y d_y)^2$ by Cauchy--Schwarz. This is the right side.
+\end{proof}
+
+The next lemma is a variant of~\cite[Lemma~9]{GNNW}.
+
+\begin{lemma}\label{lem:blue-book}
+Fix $\alpha\in(0,1)$ and positive integers $k,b$. Put $m=\ceil{10\alpha^{-1}b^2}$. If at least $R(k,m)$ vertices of a set $X$ have blue degree at least $\alpha|X|$ within $X$, then $X$ contains a red $K_k$, or a blue clique $A$ of order $b$ with a common blue neighbourhood $T$ satisfying
+\[
+ |T|\ge\tfrac12\alpha^b|X|.
+\]
+\end{lemma}
+\begin{proof}
+In the absence of a red $K_k$, the high-degree vertices contain a blue clique $S$ of order $m$. Summing degrees from $S$ into $X$ gives an average of at least $\alpha m$ neighbours in $S$. Counting pairs consisting of $x\in X$ and a $b$-subset of its blue neighbours in $S$, and using discrete convexity of $u\mapsto\binom ub$, gives a $b$-subset $A\subseteq S$ with
+\[
+ |T|\ge |X|\frac{\binom{\floor{\alpha m}}b}{\binom mb}.
+\]
+The quotient is at least
+\[
+ \alpha^b\prod_{i=0}^{b-1}\left(1-\frac{i+1}{\alpha m}\right)
+ \ge\alpha^b\left(1-\frac{b(b+1)}{2\alpha m}\right)
+ \ge\tfrac12\alpha^b.
+\]
+All factors are nonnegative by the choice of $m$. A common blue neighbour cannot belong to $A$, so $T$ is disjoint from $A$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:weighted}]
+Choose perturbed parameters
+\[
+ x>x_0,\quad y>y_0,\quad \mu>\mu_0,\quad p<p_0
+\]
+where $x_0,y_0,\mu_0,p_0$ are the parameters in the theorem. The perturbation is small enough that $(x,y)\in\RR_*$ and $x<(1-\mu)^\theta p^{1/(1-\mu)}$ still hold. Since
+\[
+ \lim_{\rho\to\infty}(p^{1/\rho}-\mu)^\rho(1-\mu)^{\theta-\rho}
+ =(1-\mu)^\theta p^{1/(1-\mu)},
+\]
+we may choose a fixed $\rho>\max\{1,\theta\}$ with
+\begin{equation}\label{eq:weighted-rho}
+ x^{1/\rho}(1-\mu)^{1-\theta/\rho}+\mu<p^{1/\rho}.
+\end{equation}
+The limit follows by expanding $p^{1/\rho}=1+(\log p)/\rho+O(\rho^{-2})$ and taking logarithms. Also $x^{1/\theta}+\mu<1$.
+
+Set
+\[
+ f(\beta)=x^{1/\rho}(1-\beta)^{1-\theta/\rho}
+       +\mu^{\theta/\rho}\beta^{1-\theta/\rho}.
+\]
+Its derivative is positive before $\beta=\mu/(\mu+x^{1/\theta})>\mu$. Thus its maximum on $[0,\mu]$ is $f(\mu)$, the left side of~\eqref{eq:weighted-rho}. Choose a sufficiently small fixed $\varepsilon>0$ so that
+\begin{equation}\label{eq:weighted-epsilon}
+ \begin{gathered}
+ (x+\varepsilon,y+\varepsilon)\in\RR_*,\qquad
+ p-\varepsilon>0,\qquad \mu+\varepsilon<1,\\
+ \max_{0\le\beta\le\mu+\varepsilon}f(\beta)<(p-\varepsilon)^{1/\rho}.
+ \end{gathered}
+\end{equation}
+
+For $s=k+t$, let $\delta_s=\varepsilon/s$. We prove, by induction on $s$, the stronger assertion that a candidate is $(k,\ell,t)$-good whenever
+\begin{equation}\label{eq:weighted-induction}
+ z=d_R(X,Y)-p+\delta_s>0,\qquad
+ Q=z^\rho|X|^\theta|Y|\ge x^{-k}y^{-\ell}\mu^{-\theta t},
+\end{equation}
+uniformly for sufficiently large $\ell$. The cases $k=1$ or $t=1$ are immediate.
+
+First delete from $X$ any vertex with red degree less than $(p-\delta_s)|Y|$ into $Y$. To see that $Q$ does not decrease, write
+\[
+ Q=\{e_R(X,Y)-(p-\delta_s)|X||Y|\}^\rho
+       |X|^{\theta-\rho}|Y|^{1-\rho}.
+\]
+The expression in braces is positive and increases on deletion, while $\theta-\rho<0$. The process cannot delete every vertex, since the excess-edge expression would then be zero. Rename the remaining set $X$. We now have
+\begin{equation}\label{eq:weighted-row-floor}
+ |N_R(v)\cap Y|\ge(p-\delta_s)|Y|\qquad(v\in X).
+\end{equation}
+
+An interior region point gives an eventual Ramsey bound without a further error term: indeed, choose an eventual-bound point slightly above it in both coordinates using the definition of $\RR$ and its coordinatewise downward closure. Therefore, if
+\[
+ |Y|\ge(x+\varepsilon)^{-k}(y+\varepsilon)^{-\ell},
+\]
+the Ramsey bound inside $Y$ proves the assertion for sufficiently large
+$\ell$. Otherwise~\eqref{eq:weighted-induction} and $z\le1+\varepsilon$ imply
+\begin{equation}\label{eq:weighted-X-large}
+ |X|^\theta>
+ (1+\varepsilon)^{-\rho}
+ \left(\frac{x+\varepsilon}{x}\right)^k
+ \left(\frac{y+\varepsilon}{y}\right)^\ell
+ \mu^{-\theta t}.
+\end{equation}
+In particular there is a fixed $c>0$ such that $|X|\ge e^{c(k+\ell+t)}$ for all sufficiently large $\ell$.
+
+Choose an integer $b=b(s)=O(\log(s+2))$, with a sufficiently large implied constant, so that
+\begin{equation}\label{eq:weighted-b}
+ \left(\frac{\varepsilon}{(1+\varepsilon)s^2}\right)^\rho
+ 2^{-\theta}\left(\frac{\mu+\varepsilon}{\mu}\right)^{\theta b}\ge1.
+\end{equation}
+Let $m=\ceil{10(\mu+\varepsilon)^{-1}b^2}$ and let $W$ be the vertices of $X$ of blue degree at least $(\mu+\varepsilon)|X|$. By~\eqref{eq:binomial-Ramsey},
+\[
+ \log R(k,m)=O(\log^3(s+2)).
+\]
+In view of~\eqref{eq:weighted-X-large}, $R(k,m)/|X|$ is smaller than any fixed negative power of $s+2$, uniformly in $s$, once $\ell$ is sufficiently large. This follows because $C\log^3(s+2)-cs$ is bounded above for $s\ge2$, and the additional factor $e^{-c\ell}$ tends to zero.
+
+If $|W|\ge R(k,m)$, Lemma~\ref{lem:blue-book} gives the required red clique or a blue book $(A,T)$ with $|A|=b$ and $|T|\ge(\mu+\varepsilon)^b|X|/2$. If $b\ge t$, then $A$ contains the required blue clique. Otherwise, the degree bound into the unchanged set $Y$ gives
+\[
+ d_R(T,Y)-p+\delta_{s-b}\ge\delta_{s-b}-\delta_s\ge\varepsilon/s^2.
+\]
+Combining this with $Q\le(1+\varepsilon)^\rho|X|^\theta|Y|$ and~\eqref{eq:weighted-b} yields
+\[
+ [d_R(T,Y)-p+\delta_{s-b}]^\rho|T|^\theta|Y|
+ \ge\mu^{\theta b}Q
+ \ge x^{-k}y^{-\ell}\mu^{-\theta(t-b)}.
+\]
+Apply the induction hypothesis to $(T,Y)$. A blue $K_{t-b}$ in $T$
+joins $A$ to give a blue $K_t$ in $X$. A red $K_k$ in $T\cup Y$
+or a blue $K_\ell$ in $Y$ already gives the required conclusion.
+
+We may assume $|W|<R(k,m)$. Put $Y_v=N_R(v)\cap Y$. Lemma~\ref{lem:averaging}, followed by deletion of the terms with $v\in W$, gives
+\[
+ \sum_{v\notin W}d_R(X,Y_v)|Y_v|
+ \ge d_R(X,Y)e_R(X,Y)-|W||Y|.
+\]
+Since $e_R(X,Y)\ge(p-\varepsilon)|X||Y|$, the uniform estimate on $|W|/|X|$ makes the last loss at most $\varepsilon e_R(X,Y)/s^3$. The weights on $v\notin W$ sum to at most $e_R(X,Y)$. Hence there is $v\notin W$ for which, with $Y'=Y_v$,
+\begin{equation}\label{eq:weighted-pivot}
+ d_R(X,Y')\ge d_R(X,Y)-\varepsilon/s^3.
+\end{equation}
+Set
+\begin{gather*}
+ X_R=N_R(v)\cap X,\qquad X_B=N_B(v)\cap X,\\
+ q=|Y'|/|Y|,\qquad\gamma=|X_R|/|X|,\qquad\beta=|X_B|/|X|.
+\end{gather*}
+Then $q\ge p-\varepsilon$, $\beta\le\mu+\varepsilon$, and $\gamma+\beta=1-|X|^{-1}$. Write $z_R=d_R(X_R,Y')-p+\delta_{s-1}$ and define $z_B$ similarly when the children are nonempty.
+
+If $(X_R,Y')$ satisfies the induction hypothesis with targets
+$(k-1,\ell,t)$, a red $K_{k-1}$ extends by $v$, and either blue
+conclusion suffices directly. Similarly, if $(X_B,Y')$ satisfies it
+with targets $(k,\ell,t-1)$, a blue $K_{t-1}$ in $X_B$ extends by
+$v$, and the other two conclusions suffice. We may therefore assume
+that neither pair satisfies the induction hypothesis. Let
+$[w]_+=\max\{w,0\}$. The positive parts of their excesses then satisfy
+\[
+ [z_R]_+\le z x^{1/\rho}\gamma^{-\theta/\rho}q^{-1/\rho},
+ \qquad
+ [z_B]_+\le z\mu^{\theta/\rho}\beta^{-\theta/\rho}q^{-1/\rho}.
+\]
+An empty set $X_R$ or $X_B$ contributes zero to the next calculation. Every edge from $v$ to $Y'$ is red, so
+\begin{align*}
+ d_R(X,Y')-p+\delta_{s-1}
+ &\le\gamma[z_R]_++\beta[z_B]_++\frac{1+\varepsilon}{|X|}\\
+ &\le zq^{-1/\rho}f(\beta)+\frac{1+\varepsilon}{|X|}
+ \le z+\frac{1+\varepsilon}{|X|},
+\end{align*}
+where we used $\gamma\le1-\beta$, $\rho>\theta$, and~\eqref{eq:weighted-epsilon}. On the other hand,~\eqref{eq:weighted-pivot} gives
+\[
+ d_R(X,Y')-p+\delta_{s-1}
+ \ge z+\delta_{s-1}-\delta_s-\varepsilon/s^3
+ \ge z+\varepsilon/s^2-\varepsilon/s^3.
+\]
+These inequalities contradict~\eqref{eq:weighted-X-large} for sufficiently large $\ell$, uniformly in $s$. This completes the stronger induction.
+
+Finally, a candidate in the original theorem has excess at least $p_0-p$ for the perturbed parameters. The ratio of its guaranteed potential to the threshold in~\eqref{eq:weighted-induction} is at least
+\[
+ (p_0-p)^\rho(x/x_0)^k(y/y_0)^\ell(\mu/\mu_0)^{\theta t},
+\]
+which is at least one for all sufficiently large $\ell$. The stronger assertion applies and proves the theorem.
+\end{proof}
+
+\section{Extending the candidate lemma}\label{sec:continuation}
+
+We wish to apply an estimate for $(k,\ell,t)$-good candidates at larger
+values of $t$. The difficulty is to retain the information supplied by
+$Y$ as we pass to smaller subsets of $X$. A minimum degree condition
+into $Y$ is enough. Such minimum cross-degree conditions
+also appear in the multicolour book argument of
+Balister et al.~\cite{Multicolour}. Here we use the condition to extend
+a candidate estimate, with previously proved density bounds handling
+the red-dense case.
+
+\begin{lemma}\label{lem:rows}
+If $d_R(X,Y)\ge p_0>p_*$, then
+\[
+ X_*:=\{x\in X:|N_R(x)\cap Y|\ge p_*|Y|\}
+ \quad\text{satisfies}\quad
+ |X_*|\ge\frac{p_0-p_*}{1-p_*}|X|.
+\]
+Every nonempty $T\subseteq X_*$ satisfies $d_R(T,Y)\ge p_*$.
+\end{lemma}
+\begin{proof}
+The number of red cross-edges is at most
+\[
+ |X_*||Y|+p_*(|X|-|X_*|)|Y|.
+\]
+Compare with $p_0|X||Y|$ and rearrange. Every vertex of a subset $T\subseteq X_*$ still has at least
+$p_*|Y|$ red neighbours in $Y$. Summing these degree bounds gives the
+last assertion.
+\end{proof}
+
+We first state the induction for integer clique sizes.
+
+\begin{lemma}\label{lem:finite-continuation}
+Fix $k,\ell$, integers $1\le t_0\le t_1$, a positive integer $B_Y$, and $p_*\in(0,1)$. Let $A_t$ be positive integer thresholds. Suppose:
+\begin{enumerate}
+\item Every candidate with $|X|\ge A_{t_0}$, $|Y|\ge B_Y$, and red degree at least $p_*|Y|$ from every vertex of $X$ into $Y$ is $(k,\ell,t_0)$-good.
+\item For each $t_0<t\le t_1$, a previously proved density bound with threshold $q_t\in(0,1)$ gives a red $K_k$ or a blue $K_t$ in every graph of order at least $A_t$ and red density at least $q_t$.
+\item $A_{t-1}\le(1-q_t)(A_t-1)$ for each $t_0<t\le t_1$.
+\end{enumerate}
+Then the first assertion holds with $(t_0,A_{t_0})$ replaced by $(t,A_t)$ for every $t_0\le t\le t_1$.
+\end{lemma}
+\begin{proof}
+We induct on $t$, the initial case being the first hypothesis. Suppose
+$t>t_0$. If the red density within $X$ is at least $q_t$, the second
+hypothesis gives a red $K_k$ or a blue $K_t$ in $X$. Otherwise some
+$x\in X$ has a blue neighbourhood $T\subseteq X$ of order at least
+$(1-q_t)(|X|-1)\ge A_{t-1}$. Every vertex of $T$ satisfies the same
+red degree bound into $Y$, so the induction hypothesis applies to
+$(T,Y)$. A red $K_k$ in $T\cup Y$ or a blue $K_\ell$ in $Y$ proves
+the assertion. In the remaining case, a blue $K_{t-1}$ in $T$ extends
+by $x$ to a blue $K_t$ in $X$.
+\end{proof}
+
+To use the preceding lemma with piecewise-defined exponent functions,
+we need density estimates that allow a small increase in the blue target.
+We record that requirement in the following notation.
+
+\begin{definition}\label{def:density}
+For $r,z>0$ and $q\in(0,1)$, write $\D(r,z,q)$ if there exists $\delta>0$ such that, for every $\varepsilon>0$ and all sufficiently large $k$, every graph on at least $e^{k(z+\varepsilon)}$ vertices with red density at least $q$ contains a red $K_k$ or a blue $K_{\ceil{(r+\delta)k}}$.
+\end{definition}
+
+By monotonicity, a statement $\D(r,z,q)$ also covers smaller blue
+targets. The margin $\delta$ makes the statement robust under a small
+increase in the blue target, allowing its use on both sides of a nearby
+junction in a piecewise-defined function. Unlike a valid upper profile,
+this statement assumes a lower bound on the red density.
+
+\begin{theorem}\label{thm:continuation}
+Fix $0<\alpha<\lambda$, $v>0$, and $0<p_*<p_0<1$. Let $u$ be positive, increasing, continuous and piecewise $C^1$ on $[\alpha,\lambda]$. Suppose there are seed parameters $A_0,B_0,\theta_0>0$, $\mu_0\in(0,1)$, with $(e^{-A_0},e^{-B_0})\in\RR_*$, such that
+\begin{align}
+ (1-\mu_0)\{A_0+\theta_0\log(1-\mu_0)\}+\log p_*&>0,\label{eq:seed-density}\\
+ \theta_0u(\alpha)+v&>A_0+\lambda B_0-\theta_0\alpha\log\mu_0.\label{eq:seed-budget}
+\end{align}
+On each closed smooth piece $I$, suppose fixed $z_I>0$ and $q_I\in(0,1)$ are supplied by an earlier robust density statement $\D(\sup I,z_I,q_I)$ and satisfy
+\begin{equation}\label{eq:continuation-conditions}
+ u(s)>z_I,\qquad u'(s)>-\log(1-q_I)\qquad(s\in I),
+\end{equation}
+using one-sided derivatives at endpoints. Then, for every $\varepsilon>0$ and all sufficiently large $k$, every candidate with
+\[
+ d_R(X,Y)\ge p_0,\quad
+ |X|\ge e^{k(u(\lambda)+\varepsilon)},\quad
+ |Y|\ge e^{k(v+\varepsilon)}
+\]
+is $(k,\ceil{\lambda k},\ceil{\lambda k})$-good.
+If $u(\lambda)<v$, the same data establish $\D(\lambda,v,p_0)$.
+\end{theorem}
+\begin{proof}
+Fix $\varepsilon>0$. There are finitely many pieces, and all inequalities in the hypotheses are strict on their closed domains. On the interior of a piece its density statement is valid for the current target and has positive size and slope margins. At a junction, choose the density statement from the side with the
+smaller one-sided derivative. Both adjacent limiting derivatives exceed
+$-\log(1-q)$ for that statement, and its size inequality persists by
+continuity of $u$. If the statement is taken from the left, its positive
+margin in the blue target allows its use a little to the right. If it
+is taken from the right, monotonicity allows its use to the left.
+
+It follows that $[\alpha,\lambda]$ has a finite open cover by neighbourhoods with fixed density controls and a common positive margin $\eta$ such that, throughout each neighbourhood,
+\[
+ u(s)\ge z+\eta,\qquad u'(s)\ge-\log(1-q)+\eta
+\]
+where the derivative exists. Choose $k$ large enough that all of these finitely many density
+statements apply. Extend $u$ a short distance beyond each endpoint, affinely with its endpoint derivative, when integer rounding requires it; the endpoint conditions persist.
+
+Apply Lemma~\ref{lem:rows} once to obtain the minimum degree condition
+into $Y$. This loses only a fixed proportion of $X$, which is absorbed
+by the $\varepsilon k$ margin. Set $t_0=\ceil{\alpha k}$, $t_1=\ceil{\lambda k}$, $\ell=\ceil{\lambda k}$, and use the integer thresholds
+\[
+ A_t=\ceil{\exp(k[u(t/k)+\varepsilon/3])},\qquad
+ B_Y=\ceil{\exp(k[v+\varepsilon/3])}.
+\]
+By~\eqref{eq:seed-budget}, the logarithm of $A_{t_0}^{\theta_0}B_Y$ exceeds
+\[
+ A_0k+B_0\ell-\theta_0t_0\log\mu_0
+\]
+for large $k$. The error from rounding $\alpha k$ and $\lambda k$ is $O(1)$. Equation~\eqref{eq:seed-density} and Theorem~\ref{thm:weighted} give
+the initial case of Lemma~\ref{lem:finite-continuation}.
+
+For every $t_0<t\le t_1$, the interval $[(t-1)/k,t/k]$ lies in one of the finitely many neighbourhoods when $k$ is large. Use its controls $(z,q)$. The density statement applies at $A_t$ because $u(t/k)>z$. Integration of the slope inequality gives
+\[
+ k\{u(t/k)-u((t-1)/k)\}\ge-\log(1-q)+\eta.
+\]
+Consequently,
+\[
+ \frac{A_{t-1}}{A_t-1}\le e^{-\eta}(1-q)+o(1)<1-q,
+\]
+uniformly in $t$. Here the rounding error is uniform because $u$ has a positive minimum. The hypotheses of Lemma~\ref{lem:finite-continuation} now hold. The
+sets remaining after the deletion have orders at least $A_{t_1}$ and
+$B_Y$, respectively, proving the first assertion.
+
+For the last assertion, choose $\lambda'>\lambda$ sufficiently close to $\lambda$ and extend the last piece affinely. Its density input is valid at $\lambda'$ by robustness. The strict endpoint, slope, and seed conditions survive, including $u(\lambda')<v$. A graph on $e^{(v+\varepsilon)k}$ vertices with red density at least
+$p_0$ has a balanced partition with red cross-density at least $p_0$.
+Both parts have exponent $v+\varepsilon+o(1)$. Applying the first assertion at $\lambda'$ proves $\D(\lambda,v,p_0)$.
+\end{proof}
+
+In later applications, we may replace a weighted density bound by a
+statement $\D(r,z,q)$ proved by an earlier application of the theorem.
+The initial candidate estimate still uses both $X$ and $Y$; only the density bound
+for the red-dense case is replaced.
+
+\begin{proposition}\label{prop:unconditional-start}
+Keep the hypotheses on $u$ and the density estimates in
+Theorem~\ref{thm:continuation}, and suppose a continuous valid upper
+profile $E$ is available near $\alpha$. Replace the weighted seed
+hypotheses by $u(\alpha)>E(\alpha)$. Then
+\[
+ \log R(k,\ceil{\lambda k})\le ku(\lambda)+o(k).
+\]
+For every $v>u(\lambda)$, the same data give $\D(\lambda,v,p_0)$ for any fixed $p_0\in(0,1)$.
+\end{proposition}
+\begin{proof}
+Use the same thresholds $A_t$ and the same neighbourhood cover as in the preceding proof. The unconditional input gives $A_{t_0}\ge R(k,t_0)$ for large $k$. Induct on $t$: the dense branch gives a red $K_k$ or a blue $K_t$ directly, and the other branch has a blue neighbourhood with at least $A_{t-1}$ vertices. A blue $K_{t-1}$ supplied by the induction extends by the chosen
+vertex. This argument does not use a second set $Y$. The result holds with arbitrarily small positive exponential slack. For the robust conclusion, extend the final piece slightly while retaining $u(\lambda')<v$ and all density conditions. The resulting unconditional conclusion implies the stated density assertion.
+\end{proof}
+
+\section{Proof of Theorem~\ref{thm:main}}\label{sec:certificate}
+
+We now assemble the off-diagonal estimate needed in
+Theorem~\ref{thm:transfer}. The first step is to convert the density
+statements of the preceding section into an unconditional Ramsey
+bound. As before, we induct on the blue target, using a density
+statement when the graph is red-dense and a blue neighbourhood
+otherwise.
+
+\begin{theorem}\label{thm:outer}
+Let $0<L=\lambda_0<\lambda_1<\cdots<\lambda_n=1$. Suppose a continuous valid input profile $E_0$ is available near $L$. For each $i$, suppose $\D(\lambda_i,v_i,p_i)$ has already been proved. Let $F$ be continuous and affine with positive slope $s_i$ on $[\lambda_{i-1},\lambda_i]$, and assume
+\[
+ F(L)>E_0(L),\qquad
+ F(\lambda_{i-1})>v_i,\qquad
+ s_i>-\log(1-p_i).
+\]
+Then, uniformly for $L\le\ell/k\le1$,
+\[
+ \log R(k,\ell)\le kF(\ell/k)+o(k).
+\]
+\end{theorem}
+\begin{proof}
+On the interior of interval $i$, the statement $\D(\lambda_i,v_i,p_i)$ applies to all current blue targets up to that interval's right endpoint. Since $F$ is increasing, the size inequality holds throughout the interval. At a knot choose the controls of the adjacent interval with smaller slope. Both adjacent slopes exceed the cost of those controls. Their size margin extends across the knot by continuity; their target margin extends by robustness when the controls are taken from the left. Thus, as in the proof of Theorem~\ref{thm:continuation}, there is a finite neighbourhood cover with uniform positive size and slope margins.
+
+Fix $\varepsilon>0$ and set $A_\ell=\ceil{e^{k(F(\ell/k)+\varepsilon)}}$, making a continuous affine extension over the $O(k^{-1})$ endpoint adjustment if needed. At $\ell_0=\ceil{Lk}$, the strict input inequality and continuity give $A_{\ell_0}\ge R(k,\ell_0)$ for large $k$. On each subsequent step select controls covering $[(\ell-1)/k,\ell/k]$. They give $A_{\ell-1}\le(1-p)(A_\ell-1)$ by integration of the strict slope bound. If the graph at order $A_\ell$ has red density at least $p$, its density statement gives the conclusion. Otherwise a vertex has a blue neighbourhood of size at least $A_{\ell-1}$, to which induction applies. This proves the asserted bound uniformly; let $\varepsilon$ decrease to zero.
+\end{proof}
+
+\begin{proposition}\label{prop:composition}
+Consider a finite list of profile, region, candidate, and robust density statements, starting from established Ramsey estimates. Suppose every subsequent statement follows from earlier statements by Lemma~\ref{lem:support}, Theorems~\ref{thm:weighted}, \ref{thm:continuation} and~\ref{thm:outer}, Proposition~\ref{prop:unconditional-start}, taking a pointwise minimum of established upper bounds, or pointwise enlargement of an upper bound. If the hypotheses of each result used are satisfied, every statement in the list is valid.
+
+In particular, if a profile $F$ obtained from Theorem~\ref{thm:outer} is replaced by a continuous piecewise-affine majorant $P$, checking $P\ge F$ at every knot of their common subdivision suffices to justify reuse of $P$ as an input profile on that interval. The support check must use a valid bound on the whole ratio domain $(0,1]$.
+\end{proposition}
+\begin{proof}
+Induct along the finite list. For the last assertion, $P-F$ is affine between consecutive knots. Combine the interval bound with the previously established bounds on the rest of the ratio domain before applying Lemma~\ref{lem:support}.
+\end{proof}
+
+We take the initial input from~\cite[Theorem 1]{GNNW}:
+\begin{equation}\label{eq:U}
+ U(t)=(1+t)\log(1+t)-t\log t
+ +\left(-\frac t4+\frac{3t^2}{100}+\frac{2t^3}{25}\right)e^{-t}.
+\end{equation}
+In the notation of version~2 of that theorem,
+\[
+ \log R(k,\ell)\le kU(\ell/k)+o(k)
+ \qquad(1\le\ell\le k),
+\]
+with an error uniform in $\ell$. This is the only external Ramsey
+estimate used in the construction.
+
+In the numerical construction, the functions $u$ of
+Theorem~\ref{thm:continuation} are piecewise affine; we refer to their
+graphs as paths. The construction applies the preceding rules in eight
+rounds: five with mesh denominator $2000$, followed by three with mesh
+denominator $6000$. Its data comprise about $1.7$ million density
+records, almost all with weighted starts, and about $814$ million
+references to earlier density statements along these paths.
+Appendix~\ref{app:data} describes the records, their compressed
+representation, and the exact counts.
+Decimal constants are exact rationals throughout; in particular
+$0.544=68/125$, $0.7622=3811/5000$ and $3.68395=73679/20000$.
+
+\begin{proposition}\label{prop:source}
+The affine function $t\mapsto0.544+0.7622\,t$ is a continuous valid
+upper profile on $(0,1]$.
+\end{proposition}
+\begin{proof}
+We apply the construction in Appendix~\ref{app:data}, starting
+from $U$. Its initial stage replaces $U$ by a polygonal majorant,
+whose validity follows from tangent estimates. Each subsequent density
+statement is obtained in one of two ways. A weighted initial estimate,
+together with the recorded size and slope inequalities, gives an
+application of Theorem~\ref{thm:continuation}. An unconditional
+initial estimate instead gives an application of
+Proposition~\ref{prop:unconditional-start}. Every density statement
+used in either argument precedes the statement being proved. Thus all
+of them follow by induction along the finite list.
+
+Theorem~\ref{thm:outer} gives off-diagonal upper profiles in each of
+the eight rounds. We take pointwise minima and then concave majorants;
+these remain valid upper bounds by
+Proposition~\ref{prop:composition}.
+
+The required inequalities are checked as described in
+Section~\ref{sec:lean} and Appendix~\ref{app:data}. They
+include the support inequalities, the estimates near ratio zero from
+Appendix~\ref{app:continuum}, and the domination of the reconstructed
+polygon by the line $0.544+0.7622\,t$ at every knot; between
+consecutive knots the difference is affine, so the line dominates the
+polygon throughout its range, and it is a valid upper profile there by
+Proposition~\ref{prop:composition}. Below the first knot $L$ of the
+polygon, the comparison with $U$ in Appendix~\ref{app:continuum}
+extends the domination to the remaining small ratios, using the
+checked slope inequality $0.7622<U'(L)$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Rational enclosures give $0.7622>\log2$. Proposition~\ref{prop:source}
+and Theorem~\ref{thm:transfer} imply
+\[
+ \Gam\le 0.544+\log2+\tfrac12\log(e^{0.7622}-1)
+ =\log\bigl(2e^{0.544}\sqrt{e^{0.7622}-1}\bigr).
+\]
+The terminal calculation compares squares, avoiding logarithms and
+square roots. Twelve-term enclosures of the two exponentials give
+\begin{equation}\label{eq:terminal-enclosure}
+ e^{0.544}\le\frac{17228847}{10^7},\qquad
+ e^{0.7622}\le\frac{21429857}{10^7},
+\end{equation}
+and exact rational arithmetic gives
+\[
+ 4\left(\frac{17228847}{10^7}\right)^{\!2}
+ \left(\frac{21429857}{10^7}-1\right)<3.68395^2.
+\]
+Hence $2e^{0.544}\sqrt{e^{0.7622}-1}<3.68395$, so
+$\Gam<\log3.68395$, which proves the theorem for all sufficiently
+large $k$.
+\end{proof}
+
+\begin{remark}
+Theorem~\ref{thm:transfer} gives the final improvement: the affine bound
+evaluated at $t=1$ gives only $\Gam\le1.3062$, that is, the diagonal
+base $e^{1.3062}=3.6921\ldots$, while Theorem~\ref{thm:transfer}
+gives $3.68388\ldots$ The iteration was stopped after eight rounds;
+the constant reflects the chosen verification budget.
+\end{remark}
+
+\section{The formal verification}\label{sec:lean}
+
+The Lean development proves the inequalities of
+Section~\ref{sec:certificate}, the soundness of the finite checks,
+and the graph-theoretic results. This section states the formal result
+and describes how the numerical inequalities are checked; the
+components and statistics are listed in Appendix~\ref{app:data}.
+
+\subsection{The formal statement}
+
+The concluding theorem is stated in the file
+\texttt{RamseyBelow3684.lean} of the repository~\cite{Artifact}:
+\begin{gather*}
+ \texttt{Compact3684.ramsey\_le\_368395}:\\
+ \forall^{\mathrm f}k\in\mathbb N,\qquad
+ \texttt{ramseyNumber}\,k\,k\le(73679/20000)^k,
+\end{gather*}
+where $\forall^{\mathrm f}$ is Lean's eventual quantifier along the
+filter \texttt{atTop}, so that the statement holds for all sufficiently
+large $k$, with no explicit threshold extracted, and the inequality is
+between real numbers. Since
+$73679/20000=3.68395$ exactly, this is Theorem~\ref{thm:main}. The
+definition \texttt{ramseyNumber} is taken unchanged from the
+formalization~\cite{GNNWLean}. The command \texttt{\#print axioms}
+reports exactly \texttt{propext}, \texttt{Classical.choice} and
+\texttt{Quot.sound}, the standard classical axioms of Lean's logic.
+The proof contains no \texttt{sorry} or additional axioms. The
+numerical checks do not rely on \texttt{native\_decide}; they are
+evaluated by the kernel.
+
+The graph-theoretic inputs are formalized in full:
+Theorem~\ref{thm:weighted}, in a uniform, self-contained version;
+the induction of Lemma~\ref{lem:finite-continuation}; the
+off-diagonal estimate of Theorem~\ref{thm:outer}, together with a
+monotone extension from the red-target grid to all integer targets;
+and the finite-graph inequality proved in
+Section~\ref{sec:completion}. The induction is formalized for the
+grid used in the records; the piecewise-$C^1$ statement of
+Theorem~\ref{thm:continuation} is its mathematical generalization.
+The soundness of the record and path
+checkers---the statement that acceptance of the finite data implies
+the corresponding density and profile statements---is itself a Lean
+theorem, proved by well-founded induction on the reference order
+described in Appendix~\ref{app:data}.
+
+\subsection{Verifying the numerical inequalities}
+
+Checked naively, the construction requires several elementary-function
+enclosures for each of its $1.7$ million records, and kernel
+arithmetic at that volume is prohibitive. We instead spend a small
+part of the construction's numerical slack to make the enclosures
+shareable. Fix $\varepsilon=18\cdot10^{-6}$ and $h=16\cdot10^{-6}$,
+and transform every statement by
+\[
+ E(t)\mapsto E(t)+\varepsilon t,\qquad
+ v\mapsto v+\varepsilon r,\qquad
+ B\mapsto B+\varepsilon,\qquad
+ c\mapsto c+\varepsilon,
+\]
+with $A$ unchanged. Here $v$ and $r$ are the exponent and target
+ratio of a record, $p$ is its density threshold, and $c$ is its
+blue-neighbourhood cost, satisfying $c> -\log(1-p)$, as in
+Appendix~\ref{app:data}.
+We then round $\mu$ and $1-p$ downward onto a rational grid whose
+consecutive ratios are at most $1+h$. Since $t\le1$, both support
+inequalities remain valid:
+$A+t(B+\varepsilon)\ge E(t)+\varepsilon t$ and
+$B+\varepsilon+tA\ge E(t)+\varepsilon t$. The gained $\varepsilon$
+pays for both roundings, and the strict density floor moves by less
+than the recorded margins. These scalar implications are Lean lemmas
+with explicit hypotheses.
+
+An identity on the grid makes the accounting exact: under this
+transformation, every interval size margin in a path or an application of
+Theorem~\ref{thm:outer} decreases by exactly
+$\varepsilon/N$, where $N$ is the mesh denominator---not by the path
+length times $\varepsilon/N$. Before the transformation, all these
+recorded margins exceed
+$10^{-8}$, whereas $\varepsilon/2000=9\cdot10^{-9}$ and
+$\varepsilon/6000=3\cdot10^{-9}$. The cancellation behind this claim
+is proved once, as the lemma \texttt{linearLift\_compose}, and applied
+to every path.
+
+After the transformation, the controls take $351{,}607$ distinct
+logarithm arguments in place of several million. Each is enclosed
+once, to eighteen decimal places, by the dyadically reduced series of
+Appendix~\ref{app:continuum} with twenty terms, and checked by the
+kernel. A further $20{,}000$ kernel-checked tangent bounds certify the
+initial polygonal majorant against the formalized input theorem, and
+$126{,}192$ checks cover the support and profile inequalities.
+
+All eight round assemblies, the final theorem, and a recheck of the
+final theorem against the pinned upstream sources were compiled and
+kernel-checked. The complete observed verification took $56$ hours
+$43$ minutes, and the final recheck peaked at $5.40$~GiB of sampled
+resident memory. The
+repository~\cite{Artifact} records the run reports, the reuse of
+cached upstream builds, and the source audit of the pinned upstream;
+Appendix~\ref{app:data} lists the components and statistics.
+
+\section*{AI Usage Disclosure}
+OpenAI's GPT-5.6 Sol was used for exploratory discussions during the
+development of the proofs. OpenAI's GPT-6 Astra carried out the
+numerical construction, its control quantization, and the development
+and execution of the Lean verification, and assisted with
+drafting. Anthropic's Claude Fable 5 assisted with drafting and
+revising the manuscript and with preparing the released repository.
+The author takes full responsibility for the paper's contents and
+correctness.
+% Author action: if a journal asks for the locations of AI-contributed
+% ideas, confirm whether the summing-over-spines argument (Section 2) and the
+% control-quantization scheme (Section 6) should be identified as such.
+
+\appendix
+\section{Verification on parameter intervals}\label{app:continuum}
+
+This appendix explains how to check the analytic hypotheses of Section~\ref{sec:continuation} on whole intervals. The paths are piecewise affine, so their size conditions reduce to endpoint comparisons.
+
+\begin{proposition}\label{prop:affine-checks}
+Let $x$ be the value of an increasing piecewise-affine path at its
+right endpoint. Number the intervals from right to left, with lengths
+$h_1,\ldots,h_m>0$ and slopes $s_1,\ldots,s_m>0$.
+On interval $j$, use an earlier robust density statement with exponent
+$v_j$ and threshold $q_j$. Put $C_j=\sum_{i=1}^j h_i s_i$.
+
+The size inequalities on all intervals are equivalent to
+\[
+ x>\max_{1\le j\le m}(v_j+C_j).
+\]
+The slope inequalities are $s_j+\log(1-q_j)>0$. The exponent at the initial endpoint is exactly $x-C_m$.
+\end{proposition}
+\begin{proof}
+The left endpoint of interval $j$ has value $x-C_j$. As the path increases, this is its smallest value on that interval. Subtraction proves the size equivalence, and the other assertions are the definitions of the slope and accumulated increment.
+\end{proof}
+
+\begin{lemma}\label{lem:polygon-support}
+On a positive interval where $E$ is piecewise affine, it suffices to check both support inequalities at every knot. If $E=U$ on $(0,L]$ and
+\[
+ U(L)-LU'(L)\le A\le U'(L),
+\]
+the two support suprema over $(0,L]$ are attained at $L$. Thus the same knot tests cover that small-ratio interval as well.
+\end{lemma}
+\begin{proof}
+On an affine piece, each of $A+tB-E(t)$ and $B+tA-E(t)$ is affine, so its minimum occurs at an endpoint. For the small-ratio statement, $U$ is concave. To verify this directly, differentiate~\eqref{eq:U}:
+\[
+ U''(t)=-\frac1{t(1+t)}
+ +e^{-t}\left(0.56+0.11t-0.45t^2+0.08t^3\right)<0
+ \quad(0<t\le1).
+\]
+The polynomial is at most $0.75$, and $0.75t(1+t)e^{-t}\le1.5/e<1$. Consequently $C(t)=U(t)-tU'(t)$ is increasing and $U'$ is decreasing. The derivatives of the two support expressions are
+\[
+ \frac{d}{dt}\frac{U(t)-A}{t}=\frac{A-C(t)}{t^2}\ge0,
+ \qquad
+ \frac{d}{dt}\{U(t)-tA\}=U'(t)-A\ge0.
+\]
+This proves the endpoint assertion.
+\end{proof}
+
+\paragraph{Extension below the first knot.}
+Some unconditional starting records use ratios below the first polygonal
+knot $L$. Let $P$ have first slope $s$, and extend its first segment
+linearly to $0<t<L$. The verification checks $P(L)>U(L)$ and $s<U'(L)$.
+Concavity of $U$ therefore gives
+\[
+ P(L)+s(t-L)
+ >U(L)+U'(L)(t-L)\ge U(t)\qquad(0<t<L).
+\]
+Thus this extension is itself a valid upper bound. In particular, an
+unconditional start below $L$ does not require extrapolating an
+unverified numerical approximation to $U$.
+The terminal line of Proposition~\ref{prop:source} is handled by the
+same comparison: its value at $L$ dominates $P(L)>U(L)$ by the knot
+checks, and its slope satisfies $0.7622<U'(L)$, so the displayed
+inequality extends its domination over $(0,L)$ as well.
+At the other endpoint, Ramsey symmetry supplies the continuous extension
+$tP(1/t)$ for $t>1$ close to $1$. Thus the right-hand target margins
+required for unconditional records at ratio $1$ are also available.
+
+If the actual input is a pointwise minimum of several polygons, its subdivision includes all rational intersections of their affine pieces. A subsequent concave majorant is checked on this full subdivision. Concavity can accelerate searches for the support maxima, but the finite knot inequalities establish their validity directly. When the tangent-window condition in Lemma~\ref{lem:polygon-support} is unavailable, the small-ratio inequalities require their own analytic or interval justification.
+
+\paragraph{Bounds for logarithms and exponentials.}
+For rational $z>0$, write $z=2^a y$ with $a\in\mathbb Z$ and
+$1\le y\le2$, put $w=(y-1)/(y+1)$, and, for $n\ge1$, use
+\[
+ \log y=2\sum_{j=0}^{n-1}\frac{w^{2j+1}}{2j+1}+\mathcal E_n,
+ \qquad
+ 0\le\mathcal E_n\le\frac{2w^{2n+1}}{(2n+1)(1-w^2)}.
+\]
+Here $0\le w\le1/3$; the same formula at $y=2$ encloses $\log2$. For $0\le z\le2$, the exponential series through degree $n$ has a positive tail at most $2z^{n+1}/(n+1)!$ when $n\ge2$. Reciprocal intervals enclose $e^{-z}$. Every operation is rounded outward on a rational grid. These formulas justify the elementary-function comparisons without assuming the correctness of a floating-point optimizer.
+
+\section{The numerical data and their verification}\label{app:data}
+
+\subsection{The records}
+
+The proof is organized as a finite list of records. A density record has a target ratio $r$, exponent $v$, density floor $p$, and a blue-neighbourhood cost $c$ with
+\[
+ c+\log(1-p)>0.
+\]
+It asserts $\D(r,v,p)$. A record also carries its justification and
+references only previously established records. There are two
+principal justifications. A weighted record specifies a path for the
+induction of Theorem~\ref{thm:continuation}, the initial parameters
+$(A,B,\theta,\mu,p_*)$, and the exponent $v$. An unconditional record
+instead starts from a previously established unconditional bound.
+The strict endpoint gap $u(r)<v$ makes each output robust, as in
+Theorem~\ref{thm:continuation} and
+Proposition~\ref{prop:unconditional-start}. A path with no intervals
+uses its initial estimate directly. For a weighted start, $u(r)<v$
+and the strict initial size condition put $v$ strictly above the
+threshold in Corollary~\ref{cor:weighted-density}; a small increase
+of both blue targets preserves the inequalities. An unconditional
+start uses the input profile near its target, or the target margin
+already established for an earlier unconditional record.
+
+For a piecewise-affine path $u$ from ratio $\alpha$ to $r=i/N$, the
+data list the earlier density references from right to left. The $j$th
+reference supplies an exponent $v_j$ and a slope $c_j$ over an interval
+of width $1/N$. The value at the right endpoint is $x=u(r)=v-g$,
+where $g>0$; the other path values are reconstructed by subtracting
+the slope increments. If the path has $m$ intervals, put
+$C_j=N^{-1}\sum_{h=1}^j c_h$. The exact checks are
+\[
+ x>v_j+C_j\quad\text{for every referenced interval},\qquad
+ u(\alpha)=x-C_m>0.
+\]
+These are precisely the path-size conditions in Proposition~\ref{prop:affine-checks}. For a weighted start, the remaining checks are the two support inequalities from Lemma~\ref{lem:support}, the strict seed-density inequality~\eqref{eq:seed-density}, and the strict seed-budget inequality~\eqref{eq:seed-budget}. For an unconditional start, the check is $u(\alpha)>E(\alpha)$ or the corresponding previously proved unconditional record.
+
+The checker verifies both the numerical inequalities and the logical
+types of the references. In particular, a conditional density
+statement cannot be used as an unconditional starting bound.
+References must have the required target ratio and must precede the
+current record. In each round, records are arranged in rows indexed
+by the target ratio; a column number distinguishes the density
+estimates at each row. The records are ordered lexicographically by
+round, row, and column. Within a round, references along a path have
+smaller row, or the same row and smaller column. This order permits
+induction over all the records.
+
+Consecutive path references with the same column number are stored
+as a single \emph{constant-column run}, recording the column and the
+run length. Successive references in a run have decreasing,
+consecutive row indices.
+
+\subsection{The resulting upper bound}
+
+For each profile obtained from Theorem~\ref{thm:outer}, the data
+record an initial ratio and exponent, followed by one density
+reference per interval. The checker verifies the initial
+unconditional bound, the interval size inequalities, and the blue
+costs in that theorem. It reconstructs the profile by exact rational
+summation. Between rounds, pointwise minima include all exact affine
+intersections, and any subsequent concave majorant is checked to
+dominate the minimum at its knots. The resulting profile is therefore
+available to the next round by Proposition~\ref{prop:composition}.
+
+The full data comprise eight rounds: five with mesh denominator
+$2000$ and three with mesh denominator $6000$. There are
+$1{,}695{,}911$ density records ($1{,}691{,}788$ weighted,
+$4{,}123$ unconditional) and $813{,}922{,}863$ density
+references along these paths. The references are represented by
+$41{,}793{,}102$ constant-column runs, subdivided into
+$41{,}794{,}061$ runs for checking. The terminal inference checks the
+domination of the reconstructed polygon by the line
+$0.544+0.7622\,t$ at every knot,
+and the tail comparison of Appendix~\ref{app:continuum} below the
+first knot; between consecutive knots the difference is affine. After
+the slack transformation of Section~\ref{sec:lean}, the reconstructed
+final profile is dominated by the line. The replay also selects a
+supporting line of that profile and applies the transfer to it,
+reporting the upper bound $3.683749312877$; the chosen line
+$0.544+0.7622\,t$ gives $3.683889327713$. The terminal
+enclosures~\eqref{eq:terminal-enclosure} are obtained from the
+rational series of Appendix~\ref{app:continuum}.
+
+\subsection{The Lean development}
+
+The development uses Lean~4 (toolchain 4.32.1) and
+Mathlib~\cite{mathlib}. It imports the definition of the Ramsey number
+and the input theorem for the profile~\eqref{eq:U} from the
+formalization~\cite{GNNWLean}, in the copy distributed with~\cite{NSS}.
+Its reusable theorems are the uniform weighted candidate theorem, the induction of
+Lemma~\ref{lem:finite-continuation}, the off-diagonal estimate of
+Theorem~\ref{thm:outer} with monotone extension to all integer
+targets, the result of Section~\ref{sec:completion} in finite and
+asymptotic forms, the strict terminal inequality, the scalar lemmas
+of the control quantization, and the soundness of the checkers for
+records, paths, and output profiles. The soundness proof shows that
+if the Boolean checks of a round accept its data, then every record
+of that round asserts a valid density statement. It proceeds by
+well-founded induction on the lexicographic order described above.
+
+The generated
+material comprises the initial tangent bounds, the shared logarithm
+catalog, the support and profile checks, and the per-round guards,
+organized into eight round assemblies whose composed validity yields
+the final profile; the transfer and terminal modules then give
+Theorem~\ref{thm:main}. Each shared catalog enclosure is
+independently recomputed before it is shared.
+Table~\ref{tab:lean} collects the statistics.
+
+\begin{table}[t]
+\centering
+\caption{The scale of the formal proof.}
+\label{tab:lean}
+\begin{tabular}{lr}
+\toprule
+Rounds (mesh $2000$ / mesh $6000$) & $5+3$\\
+Density records (weighted) & $1{,}695{,}911$ \ ($1{,}691{,}788$)\\
+Density references along paths & $813{,}922{,}863$\\
+Constant-column runs (split for checking) & $41{,}793{,}102$ \ ($41{,}794{,}061$)\\
+Shared logarithm enclosures & $351{,}607$\\
+Initial tangent bounds & $20{,}000$\\
+Support and profile checks & $126{,}192$\\
+Transfer over the selected supporting line & $3.683749312877$\\
+Proved base & $3.68395$\\
+Generated Lean source & $\approx2.6$\,GB\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Reproducing the verification}
+
+The full build uses the tagged repository together with the generated
+Lean sources, manifest and checksums attached to its GitHub
+release~\cite{Artifact}.
+
+We pin the upstream repository of~\cite{NSS} at the commit
+\texttt{e53b8cf11d06}, and Mathlib correspondingly, and the shared
+upstream source modules were audited against those commits. The run
+reports, the resource and monitoring records, the source audit, and
+the reproduction commands are documented in the
+repository~\cite{Artifact}; its driver script rebuilds the
+development against a matching upstream checkout and replays the
+final theorem and its axiom audit.
+
+\section{Support conditions in the HorizonMath constructions}\label{app:horizon}
+
+This appendix explains why the claimed upper bounds $3.7296^k$ and
+$3.6961^k$, from version~1 of~\cite{Horizon} and the repository
+snapshot~\cite{HorizonCode}, are not justified by their released
+verifications. Both constructions invoke a density theorem whose
+hypotheses include membership in the Ramsey region $\RR$, and the
+supplied checks do not establish this hypothesis. For the $3.6961$
+construction, Neisler, Shin and Sukhatankar have observed
+independently that it fails their self-consistency
+inequality~\cite{NSS}; the analysis here concerns the support
+conditions, and covers both constructions. The issue concerns
+these derivations, not the possibility of proving either numerical
+bound by another argument.
+
+\subsection{The density theorem}
+
+A refinement starts with an established off-diagonal upper bound
+\[
+ \log R(k,\ell)\le kE(\ell/k)+o(k)\qquad(1\le\ell\le k).
+\]
+From this bound it constructs admissible parameters $(x,y)$ for a density theorem. Admissibility means that $(x,y)$ belongs to the asymptotic Ramsey region $\RR$: small inward perturbations yield $R(k,\ell)\le x^{-k}y^{-\ell}$ for all sufficiently large $k+\ell$, in either order of the two targets.
+
+The density theorem used in the released refinement is the case $\theta=1$ of the candidate method~\cite[Theorem 13]{GNNW}. Its hypotheses include
+\begin{equation}\label{eq:D-density}
+ (x,y)\in\RR_*,\qquad
+ x<(1-\mu)p^{1/(1-\mu)}.
+\end{equation}
+With these hypotheses, sufficiently large red-dense graphs of order at least $x^{-k/2}(\mu y)^{-\ell/2}$ have the required clique.
+
+For a proposed exponent function $F$, the induction relates the
+density threshold to the derivative by $p\approx1-e^{-F'(t)}$.
+Writing $m$ for the parameter $\mu$, define, for $s>0$ and $0<m<1$,
+\[
+ \chi(s,m)=(1-m)(1-e^{-s})^{1/(1-m)}.
+\]
+The local parameter conditions are region membership, the slope condition $x<\chi(F'(t),m)$, and the size condition
+\begin{equation}\label{eq:D-budget}
+ F(t)+\tfrac12\{\log x+t\log m+t\log y\}>0.
+\end{equation}
+Together with the initial bound and the usual strictness and continuity conditions, these justify the refinement. Choosing $x$ from the slope condition and checking~\eqref{eq:D-budget} still leaves the region-membership hypothesis in~\eqref{eq:D-density} to be established.
+
+\subsection{The two support inequalities}
+
+Put $A=-\log x$ and $B=-\log y$. To establish the required region membership using the input profile $E$, the two target orders give respectively
+\begin{equation}\label{eq:D-support}
+ A+tB\ge E(t),\qquad B+tA\ge E(t)\qquad(0<t\le1).
+\end{equation}
+Indeed, the first inequality compares $Ak+B\ell$ with $kE(\ell/k)$ when $\ell\le k$; the second compares the same expression with $\ell E(k/\ell)$ when $k\le\ell$. Thus the two inequalities require
+\[
+ B\ge\max\{0,b_u(A),b_s(A)\},\quad
+ b_u(A)=\sup_t\frac{E(t)-A}{t},\quad
+ b_s(A)=\sup_t(E(t)-tA).
+\]
+Both suprema are over $0<t\le1$. Symmetry exchanges the two families;
+it does not allow either family to be discarded. Their common
+specialization at $t=1$ is only the diagonal test $A+B\ge E(1)$.
+
+\begin{proposition}\label{prop:D-min}
+Replacing the maximum $\max\{b_u(A),b_s(A)\}$ by the minimum
+$\min\{b_u(A),b_s(A)\}$ does not establish~\eqref{eq:D-support}.
+\end{proposition}
+\begin{proof}
+The two inequalities require $B\ge b_u(A)$ and $B\ge b_s(A)$ simultaneously. The minimum encodes their disjunction.
+
+For a concrete example, take $E(t)=(1+t)\log(1+t)-t\log t$, $A=1/100$, and $B=2\log2-A$. Since $E'(t)=\log(1+1/t)>A$ on $(0,1]$, the second supremum is $b_s(A)=E(1)-A=B$. The minimum test therefore accepts this point. At $t=1/100$, however,
+\[
+ A+tB<\frac{1+2\log2}{100}
+ <\frac{\log100}{100}<E(1/100),
+\]
+so the first support inequality fails.
+\end{proof}
+
+The first solution printed in Appendix~A.2 of~\cite{Horizon} uses precisely this minimum:
+\[
+ \texttt{b\_table[i] = max(0.0, min(bu, bs))}.
+\]
+The same minimum appears in the archived copy of \texttt{B\_of\_a} supplied with the repository snapshot~\cite{HorizonCode}. This condition does not establish the two support inequalities.
+
+\subsection{The 3.6961 construction}
+
+The separate $3.6961$ construction has a different parameter rule. The second solution printed in Appendix A.2 of~\cite{Horizon} uses
+\[
+ F(t)=(1+t)\log(1+t)-t\log t+P(t)e^{-t},
+\]
+\[
+ P(t)=-0.25t+0.033t^2+0.08t^3-0.0778t^5.
+\]
+Here we write $X,Y$ for the numerical parameters $x,y$, not for
+vertex sets. The construction chooses
+$Y=(1-0.0012)\min\{1,c_{\mathrm{rel}}/X\}$, where the released decimal is
+\[
+ c_{\mathrm{rel}}=0.26292278641656774
+ \approx\tfrac14 e^{0.137/e}.
+\]
+On the branch $c_{\mathrm{rel}}/X<1$, this imposes a condition on the product $XY$, or equivalently on $A+B$. Such a diagonal condition does not imply the full family~\eqref{eq:D-support}.
+
+\begin{proposition}\label{prop:D-witness}
+At the first interval of the released $3.6961$ construction, set
+\begin{gather*}
+ t_*=0.001,\qquad m_*=0.001,\\
+ X_* =\chi(F'(t_*),m_*),\qquad
+ Y_*=(1-0.0012)\frac{c_{\mathrm{rel}}}{X_*}.
+\end{gather*}
+For $A=-\log X_*$, $B=-\log Y_*$, and $t_0=0.00229$, one has
+\[
+ A+t_0B<0.005342,\qquad U(t_0)>0.015642,
+\]
+where $U$ is the established input profile~\eqref{eq:U}. In particular, this point violates the first support inequality for $U$.
+\end{proposition}
+\begin{proof}
+Substitution gives
+\begin{align*}
+ X_*&=0.9977179\ldots, &Y_*&=0.2632079\ldots,\\
+ A&=0.0022846\ldots, &B&=1.3348109\ldots.
+\end{align*}
+The rational-interval calculation \texttt{horizon\_witness.py} in the repository~\cite{Artifact} proves the two displayed bounds with a gap exceeding $0.0103$, for both the printed decimal $c_{\mathrm{rel}}$ and its indicated exponential value, so either interpretation gives the violation.
+
+The construction's own curve also satisfies
+\[
+ F(t_0)-U(t_0)=(0.003t_0^2-0.0778t_0^5)e^{-t_0}>0.
+\]
+Thus the same point fails the support test against $F$ as well. The region hypothesis required to apply the density theorem is not established by either of these asserted inputs.
+\end{proof}
+The two findings concern different released arguments. For $3.7296$, the support validator checks an insufficient condition. For $3.6961$, a specific parameter used in the construction violates the required profile-domination inequality by a fixed positive margin. Interval arithmetic applied to the remaining slope and size conditions cannot supply the missing region certificate. Consequently, the released verification does not justify either claimed Ramsey upper bound.
+
+\begin{thebibliography}{99}
+\bibitem{Multicolour}
+P.~Balister, B.~Bollob\'as, M.~Campos, S.~Griffiths, E.~Hurley, R.~Morris,
+J.~Sahasrabudhe and M.~Tiba,
+\emph{Upper bounds for multicolour Ramsey numbers},
+J. Amer. Math. Soc. \textbf{39} (2026), 765--780.
+\bibitem{CGMS}
+M.~Campos, S.~Griffiths, R.~Morris and J.~Sahasrabudhe,
+\emph{An exponential improvement for diagonal Ramsey},
+Ann. of Math. (2) \textbf{203} (2026), 869--932.
+\bibitem{Conlon}
+D.~Conlon,
+\emph{A new upper bound for diagonal Ramsey numbers},
+Ann. of Math. (2) \textbf{170} (2009), 941--960.
+\bibitem{Lean4}
+L.~de~Moura and S.~Ullrich,
+\emph{The Lean 4 theorem prover and programming language},
+in: Automated Deduction -- CADE 28, Lecture Notes in Comput. Sci.
+\textbf{12699}, Springer, 2021, pp.~625--635.
+\bibitem{ES}
+P.~Erd\H{o}s and G.~Szekeres,
+\emph{A combinatorial problem in geometry},
+Compos. Math. \textbf{2} (1935), 463--470.
+\bibitem{GNNW}
+P.~Gupta, N.~Ndiaye, S.~Norin and L.~Wei,
+\emph{Optimizing the CGMS upper bound on Ramsey numbers},
+arXiv:2407.19026, 2024; version 2, 29 August 2026.
+\bibitem{GNNWLean}
+P.~Gupta, N.~Ndiaye, S.~Norin and L.~Wei,
+\emph{RamseyLean: Lean~4 formalization accompanying \cite{GNNW}},
+2026, \url{https://github.com/snorin239/RamseyLean}.
+\bibitem{HorizonCode}
+{\raggedright
+HorizonMath contributors,
+\emph{HorizonMath support validator},
+file \texttt{validators/ramsey\_asymptotic.py}, function \texttt{B\_of\_a},
+lines 276--299, repository commit
+\texttt{36e14b5cfdcb3219b818ee142028460fce51cc7c}, 2026,
+\href{https://github.com/ewang26/HorizonMath/blob/36e14b5cfdcb3219b818ee142028460fce51cc7c/validators/ramsey_asymptotic.py}
+{\nolinkurl{github.com/ewang26/HorizonMath}}.\par}
+\bibitem{Artifact}
+S.~Jo,
+\emph{Ramsey below 3.684: Lean~4 proof and data},
+2026, \url{https://github.com/ainta/ramsey-below-3684},
+release \href{https://github.com/ainta/ramsey-below-3684/releases/tag/v1.2}{\texttt{v1.2}},
+commit \texttt{f4898b4d15fdb4d7049427af918255b9e687e82f};
+repository snapshot archived at \url{https://doi.org/10.5281/zenodo.22738802}.
+\bibitem{mathlib}
+The mathlib Community,
+\emph{The Lean mathematical library},
+in: Proceedings of the 9th ACM SIGPLAN International Conference on
+Certified Programs and Proofs (CPP 2020), ACM, 2020, pp.~367--381.
+\bibitem{NdiayeThesis}
+N.~Ndiaye,
+\emph{Guarantee of cliques and uncertainty of trees: Ramsey theory and
+leaf powers},
+PhD thesis, McGill University, 2026,
+\url{https://escholarship.mcgill.ca/concern/theses/kw52jf80j}.
+% Author action: add an arXiv identifier for this preprint if one exists.
+\bibitem{NSS}
+C.~Neisler, R.~M.~J. Shin and S.~Sukhatankar,
+\emph{A self-consistent bootstrap for the book algorithm and the bound
+$R(k,k)\le3.769^{k+o(k)}$},
+preprint, version 3, 2 September 2026; distributed with the Lean
+formalization at \url{https://github.com/wamlat/RamseyLean-bootstrap};
+the development of~\cite{Artifact} pins commit
+\texttt{e53b8cf11d064daae70372b3a93b2556a5fee926}.
+\bibitem{Sah}
+A.~Sah,
+\emph{Diagonal Ramsey via effective quasirandomness},
+Duke Math. J. \textbf{172} (2023), 545--567.
+\bibitem{Thomason}
+A.~Thomason,
+\emph{An upper bound for some Ramsey numbers},
+J. Graph Theory \textbf{12} (1988), 509--517.
+\bibitem{Horizon}
+E.~Y. Wang, S.~Motwani, J.~V. Roggeveen, E.~Hodges, D.~Jayalath,
+C.~London, K.~Ramakrishnan, F.~Cipcigan, P.~Torr and A.~Abate,
+\emph{HorizonMath: Measuring AI progress toward mathematical discovery
+with automatic verification},
+arXiv:2603.15617, version 1, 16 March 2026.
+\end{thebibliography}
+
+\end{document}
